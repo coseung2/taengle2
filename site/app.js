@@ -142,7 +142,7 @@ function renderLeagues(leagues, selectedLeague, onSelect) {
   const draw = () => {
     const list = expanded ? leagues : leagues.slice(0, 8);
     el.innerHTML = list
-      .map(([lg, cnt]) => `<button type="button" class="league-row ${selectedLeague === lg ? "on" : ""}" aria-pressed="${selectedLeague === lg}" data-league="${esc(lg)}"><span>${esc(lg)}</span><span class="cnt">${cnt}</span></button>`)
+      .map(([lg, cnt]) => `<button type="button" class="league-row ${selectedLeague === lg ? "on" : ""}" aria-pressed="${selectedLeague === lg}" data-league="${esc(lg)}"><span class="league-name">${esc(lg)}</span><span class="cnt">${cnt}</span></button>`)
       .join("");
     el.querySelectorAll("[data-league]").forEach((row) => {
       row.onclick = () => onSelect(row.dataset.league);
@@ -367,7 +367,7 @@ function renderAccount() {
   $("#accountIdentity").textContent = `${ACCOUNT.user.username}님으로 로그인됨`;
   $("#keyStatus").textContent = ACCOUNT.keyConfigured
     ? `API 키 등록됨 (••••${ACCOUNT.keyLast4 || ""}) · 서버 암호화 보관`
-    : "본인 The Odds API 키를 등록하면 관측을 켤 수 있습니다.";
+    : "API 키 미등록";
   const list = $("#watchList");
   list.innerHTML = ACCOUNT.watches.length
     ? ACCOUNT.watches.map((watch) => `<div class="watch-item">

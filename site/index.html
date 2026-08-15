@@ -40,9 +40,10 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .sec .link { font-size: 12px; font-weight: 700; color: var(--color-accent-blue); white-space: nowrap; }
 
 /* league list */
-.league-row { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 7px 10px; border: 0; border-radius: 9px; background: transparent; text-align: left; font: inherit; font-size: 14px; color: var(--color-text-secondary); cursor: pointer; }
+.league-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; width: 100%; padding: 7px 10px; border: 0; border-radius: 9px; background: transparent; text-align: left; font: inherit; font-size: 14px; color: var(--color-text-secondary); cursor: pointer; }
 .league-row:hover { background: var(--color-bg-tab); }
-.league-row .cnt { font-size: 11px; color: var(--color-text-tertiary); }
+.league-row .league-name { flex: 1; min-width: 0; line-height: 1.35; white-space: normal; overflow-wrap: anywhere; }
+.league-row .cnt { flex: none; padding-top: 2px; font-size: 11px; color: var(--color-text-tertiary); }
 .league-row.on { color: var(--color-accent-blue); background: var(--color-bg-tab); font-weight: 700; }
 #allLeagues { width: 100%; border: 0; background: transparent; text-align: left; font: inherit; font-size: 12px; color: var(--color-text-secondary); padding: 8px 10px; cursor: pointer; }
 
@@ -129,6 +130,11 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .account-actions .row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
 .account-actions .row button { flex: 1; }
 .account-message { font-size: 11px; line-height: 1.5; color: var(--color-text-tertiary); margin: 8px 0 0; }
+.api-key-guide { display: grid; gap: 7px; margin: 10px 0; padding: 10px 0; border-top: 1px solid var(--color-border-default); border-bottom: 1px solid var(--color-border-default); }
+.api-key-guide-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 11px; font-weight: 800; }
+.api-key-guide-head a { color: var(--color-accent-blue); font-weight: 700; text-decoration: none; white-space: nowrap; }
+.api-key-guide-head a:hover, .api-key-guide-head a:focus-visible { text-decoration: underline; outline: none; }
+.api-key-guide ol { display: grid; gap: 3px; margin: 0; padding-left: 18px; color: var(--color-text-tertiary); font-size: 10px; line-height: 1.45; }
 .watch-list { display: grid; gap: 7px; margin-top: 10px; }
 .watch-item { border-top: 1px solid var(--color-border-default); padding-top: 8px; }
 .watch-item .name { font-size: 11px; font-weight: 700; line-height: 1.35; }
@@ -168,6 +174,17 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
       </div>
       <div id="authUser" hidden>
         <p class="account-message" id="accountIdentity"></p>
+        <div class="api-key-guide" aria-labelledby="apiKeyGuideTitle">
+          <div class="api-key-guide-head">
+            <span id="apiKeyGuideTitle">Odds API 키 발급</span>
+            <a href="https://the-odds-api.com/#get-access" target="_blank" rel="noopener noreferrer">공식 발급 페이지 ↗</a>
+          </div>
+          <ol>
+            <li>Starter FREE 플랜 선택</li>
+            <li>이메일로 받은 API Key 복사</li>
+            <li>아래 입력창에 붙여넣고 저장</li>
+          </ol>
+        </div>
         <form class="account-form" id="keyForm">
           <input id="apiKey" name="apiKey" type="password" autocomplete="off" placeholder="The Odds API 키">
           <button class="primary" type="submit">키 저장 / 교체</button>
@@ -235,6 +252,6 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
 </main>
 
 <footer>Source: betman.co.kr (프로토 승부식) · 디자인 시스템 <a href="https://www.figma.com/design/OcKhOxsU6zddMeRWlXFyYt">Figma</a> · tokens <a href="https://github.com/coseung2/taengle2/tree/main/design-tokens">design-tokens/</a></footer>
-<script src="app.js?v=20260816-0318"></script>
+<script src="app.js?v=20260816-odds-guide"></script>
 </body>
 </html>
