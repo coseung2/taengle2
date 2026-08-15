@@ -195,10 +195,17 @@ function renderMatches(matches) {
       ? `<button type="button" class="watch-button ${watch?.enabled ? "on" : ""}" data-watch-key="${esc(watchKey(m))}">${watch?.enabled ? "관측 ON" : "관측 추가"}</button>`
       : "";
     return `<div class="match">
-      <div><div class="m-league">${esc(m.league)}${totals ? " · 언오버" : ""}</div><div class="m-time">${esc(t)}${totals && point != null ? ` · 기준점 ${esc(point)}` : ""}</div></div>
-      <div class="m-teams" title="${esc(m.home)} vs ${esc(m.away)}">${esc(m.home)}<span class="vs">vs</span>${esc(m.away)}</div>
-      <div class="m-actions">
-        <div class="m-odds">${cells}</div>
+      <div class="match-meta">
+        <span class="market-kind ${totals ? "totals" : "h2h"}">${totals ? "언오버" : "승무패"}</span>
+        <div class="m-league" title="${esc(m.league)}">${esc(m.league)}</div>
+        <div class="m-time">${esc(t)}</div>
+      </div>
+      <div class="m-event">
+        <div class="m-teams" title="${esc(m.home)} vs ${esc(m.away)}"><span class="m-team home">${esc(m.home)}</span><span class="vs">vs</span><span class="m-team away">${esc(m.away)}</span></div>
+        ${totals && point != null ? `<div class="m-point">기준점 ${esc(point)}</div>` : ""}
+      </div>
+      <div class="m-odds ${totals ? "totals" : "h2h"}">${cells}</div>
+      <div class="m-state">
         ${cutPill}
         ${watchButton}
       </div>

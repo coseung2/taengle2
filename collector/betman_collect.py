@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import datetime as dt
 import json
+import re
 import sys
 import urllib.request
 import urllib.error
@@ -54,6 +55,14 @@ def num(v):
         f = float(v)
         return f if f > 0 else None
     except (TypeError, ValueError):
+        if isinstance(v, str):
+            match = re.search(r"-?\d+(?:\.\d+)?", v.replace(",", ""))
+            if match:
+                try:
+                    f = float(match.group())
+                    return f if f > 0 else None
+                except ValueError:
+                    pass
         return None
 
 
@@ -62,6 +71,38 @@ def first_num(row: dict, *names: str):
         value = num(row.get(name))
         if value is not None:
             return value
+    return None
+
+
+def total_point(row: dict, values: list) -> float | None:
+    # Betman exposes the totals line under a handicap-like field. `point` is
+    # also present in some payloads, but it is an internal value (often 9),
+    # not the actual Over/Under line.
+    point = first_num(
+        row,
+        "totalPoint",
+        "totPoint",
+        "totalLine",
+        "baseLine",
+        "basePoint",
+        "handicapPoint",
+        "handiPoint",
+        "handiCap",
+        "handicap",
+        "handi",
+        "handiValue",
+        "handicapValue",
+        "lineValue",
+        "betLine",
+        "gamePoint",
+    )
+    if point is not None:
+        return point
+    # The current Betman table keeps the handicap/total line at column 19.
+    # Keep this positional fallback behind named fields so unrelated `point`
+    # values can never win over the actual line.
+    if len(values) > 19:
+        return num(values[19])
     return None
 
 
@@ -85,23 +126,8 @@ def parse_matches(table: dict) -> list[dict]:
             else None
         )
         bet_type = m.get("betTypNm") or (None if draw else "승패")
-        total_point = first_num(
-            m,
-            "totalPoint",
-            "totPoint",
-            "totalLine",
-            "baseLine",
-            "basePoint",
-            "gamePoint",
-            "point",
-            "line",
-            "handicapPoint",
-            "handiPoint",
-            "handiCap",
-            "handicap",
-            "handi",
-        )
         is_total = "언더" in str(bet_type) or "오버" in str(bet_type)
+        total_line = total_point(m, r) if is_total else None
         row = {
             "kickoff": kickoff,
             "league": m.get("leagueShortName") or m.get("leagueName"),
@@ -116,7 +142,7 @@ def parse_matches(table: dict) -> list[dict]:
         }
         if is_total:
             row["marketType"] = "totals"
-            row["totalPoint"] = total_point
+            row["totalPoint"] = total_line
             row["over"] = win
             row["under"] = lose
         else:
