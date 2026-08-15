@@ -94,16 +94,13 @@ async function load() {
         group.push(match);
         grouped.set(key, group);
       }
-      const displayGroups = [];
+      const displayMatches = [];
       for (const group of grouped.values()) {
         group.sort((a, b) => Number(matchMarketType(a) === "totals") - Number(matchMarketType(b) === "totals"));
-        displayGroups.push({
-          h2h: group.find((match) => matchMarketType(match) !== "totals") || null,
-          totals: group.find((match) => matchMarketType(match) === "totals") || null,
-        });
-        if (displayGroups.length >= 8) break;
+        displayMatches.push(...group);
+        if (displayMatches.length >= 8) break;
       }
-      renderMatches(displayGroups);
+      renderMatches(displayMatches.slice(0, 12));
       renderPredictions(viewUpcoming);
     }
   };
@@ -164,67 +161,58 @@ function cutBadge(cut) {
     : `<span class="c edge" title="해외보다 높은 배당">▲${(-cut * 100).toFixed(1)}%</span>`;
 }
 
-function oddCell(label, betman, market, cut, className = "") {
+function oddCell(label, betman, market, cut) {
   const mLine = market ? `<span class="m">해외 ${market.toFixed(2)}</span>` : "";
-  return `<div class="cell ${className}"><span class="l">${label}</span><span class="v">${betman.toFixed(2)}</span>${mLine}${cutBadge(cut)}</div>`;
+  return `<div class="cell"><span class="l">${label}</span><span class="v">${betman.toFixed(2)}</span>${mLine}${cutBadge(cut)}</div>`;
 }
 
-function emptyOddCell(label, className = "") {
-  return `<div class="cell empty ${className}"><span class="l">${label}</span><span class="v">—</span></div>`;
-}
-
-function marketState(m) {
-  if (!m) return "";
-  const mk = m.market;
-  const totals = matchMarketType(m) === "totals";
-  const watch = watchedFor(m);
-  const cutPill = mk && mk.cutAvg != null
-    ? (mk.cutAvg >= 0
-      ? `<span class="cut-pill" title="${totals ? `기준점 ${mk.point} 언오버` : "승무패"} 삭감률 평균 (컨센서스 ${mk.books}개 북)">삭감 ${(mk.cutAvg * 100).toFixed(1)}%</span>`
-      : `<span class="cut-pill edge" title="해외보다 높은 평균 배당 (컨센서스 ${mk.books}개 북)">우대 ${(-mk.cutAvg * 100).toFixed(1)}%</span>`)
-    : `<span class="market-pill" title="The Odds API에서 동일 리그·팀·시간 경기를 찾지 못함">해외 미매칭</span>`;
-  const watchButton = mk?.marketId
-    ? `<button type="button" class="watch-button ${watch?.enabled ? "on" : ""}" aria-label="${totals ? "언오버" : "승무패"} ${watch?.enabled ? "관측 끄기" : "관측 추가"}" data-watch-key="${esc(watchKey(m))}">${watch?.enabled ? "관측 ON" : "관측 추가"}</button>`
-    : "";
-  return `<div class="market-action">${cutPill}${watchButton}</div>`;
-}
-
-function renderMatches(groups) {
-  CURRENT_MATCHES = groups;
+function renderMatches(matches) {
+  CURRENT_MATCHES = matches;
   const el = $("#matchList");
-  if (!groups.length) { el.innerHTML = '<p class="note" style="padding:14px;">예정된 비교 가능 경기가 없습니다.</p>'; return; }
-  el.innerHTML = groups.map(({ h2h, totals }) => {
-    const primary = h2h || totals;
-    const h2hMarket = h2h?.market;
-    const totalsMarket = totals?.market;
-    const t = (primary.kickoff || "").slice(5, 16).replace("T", " ");
-    const point = totals?.totalPoint ?? totalsMarket?.point;
-    const cells = [
-      h2h ? oddCell("승", h2h.win, h2hMarket?.consensus?.win, h2hMarket?.cutConsensus?.win) : emptyOddCell("승"),
-      h2h?.draw ? oddCell("무", h2h.draw, h2hMarket?.consensus?.draw, h2hMarket?.cutConsensus?.draw) : emptyOddCell("무"),
-      h2h ? oddCell("패", h2h.lose, h2hMarket?.consensus?.lose, h2hMarket?.cutConsensus?.lose) : emptyOddCell("패"),
-      totals ? oddCell("오버", totals.over, totalsMarket?.consensus?.over, totalsMarket?.cutConsensus?.over, "totals-start") : emptyOddCell("오버", "totals-start"),
-      totals ? oddCell("언더", totals.under, totalsMarket?.consensus?.under, totalsMarket?.cutConsensus?.under) : emptyOddCell("언더"),
-    ].join("");
+  if (!matches.length) { el.innerHTML = '<p class="note" style="padding:14px;">예정된 비교 가능 경기가 없습니다.</p>'; return; }
+  el.innerHTML = matches.map((m) => {
+    const mk = m.market;
+    const watch = watchedFor(m);
+    const totals = matchMarketType(m) === "totals";
+    const t = (m.kickoff || "").slice(5, 16).replace("T", " ");
+    const point = m.totalPoint ?? mk?.point;
+    const cells = totals
+      ? [
+        oddCell("오버", m.over, mk?.consensus?.over, mk?.cutConsensus?.over),
+        oddCell("언더", m.under, mk?.consensus?.under, mk?.cutConsensus?.under),
+      ].join("")
+      : [
+        oddCell("승", m.win, mk?.consensus?.win, mk?.cutConsensus?.win),
+        m.draw ? oddCell("무", m.draw, mk?.consensus?.draw, mk?.cutConsensus?.draw) : "",
+        oddCell("패", m.lose, mk?.consensus?.lose, mk?.cutConsensus?.lose),
+      ].join("");
+    const cutPill = mk && mk.cutAvg != null
+      ? (mk.cutAvg >= 0
+        ? `<span class="cut-pill" title="${totals ? `기준점 ${mk.point} 언오버` : "승무패"} 삭감률 평균 (컨센서스 ${mk.books}개 북)">삭감 ${(mk.cutAvg * 100).toFixed(1)}%</span>`
+        : `<span class="cut-pill edge" title="해외보다 높은 평균 배당 (컨센서스 ${mk.books}개 북)">우대 ${(-mk.cutAvg * 100).toFixed(1)}%</span>`)
+      : `<span class="market-pill" title="The Odds API에서 동일 리그·팀·시간 경기를 찾지 못함">해외 미매칭</span>`;
+    const watchButton = mk?.marketId
+      ? `<button type="button" class="watch-button ${watch?.enabled ? "on" : ""}" data-watch-key="${esc(watchKey(m))}">${watch?.enabled ? "관측 ON" : "관측 추가"}</button>`
+      : "";
     return `<div class="match">
       <div class="match-meta">
-        <div class="m-league" title="${esc(primary.league)}">${esc(primary.league)}</div>
+        <span class="market-kind ${totals ? "totals" : "h2h"}">${totals ? "언오버" : "승무패"}</span>
+        <div class="m-league" title="${esc(m.league)}">${esc(m.league)}</div>
         <div class="m-time">${esc(t)}</div>
       </div>
       <div class="m-event">
-        <div class="m-teams" title="${esc(primary.home)} vs ${esc(primary.away)}"><span class="m-team home">${esc(primary.home)}</span><span class="vs">vs</span><span class="m-team away">${esc(primary.away)}</span></div>
+        <div class="m-teams" title="${esc(m.home)} vs ${esc(m.away)}"><span class="m-team home">${esc(m.home)}</span><span class="vs">vs</span><span class="m-team away">${esc(m.away)}</span></div>
         ${totals && point != null ? `<div class="m-point">기준점 ${esc(point)}</div>` : ""}
       </div>
-      <div class="m-odds">${cells}</div>
+      <div class="m-odds ${totals ? "totals" : "h2h"}">${cells}</div>
       <div class="m-state">
-        ${marketState(h2h)}
-        ${marketState(totals)}
+        ${cutPill}
+        ${watchButton}
       </div>
     </div>`;
   }).join("");
-  const marketByWatchKey = new Map(groups.flatMap((group) => [group.h2h, group.totals]).filter(Boolean).map((match) => [watchKey(match), match]));
   el.querySelectorAll("[data-watch-key]").forEach((button) => {
-    const match = marketByWatchKey.get(button.dataset.watchKey);
+    const match = matches.find((item) => watchKey(item) === button.dataset.watchKey);
     button.onclick = () => addWatch(match);
   });
 }
