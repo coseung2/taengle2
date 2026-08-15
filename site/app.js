@@ -217,7 +217,7 @@ function renderMatches(groups) {
         oddCell("언더", totals.under, totalsMarket?.consensus?.under, totalsMarket?.cutConsensus?.under),
       ].join("")
       : '<span class="market-empty">미제공</span>';
-    return `<div class="match">
+    return `<div class="match odds-collapsed">
       <div class="match-top">
         <div class="match-meta">
           <div class="m-league" title="${esc(primary.league)}">${esc(primary.league)}</div>
@@ -226,7 +226,7 @@ function renderMatches(groups) {
         <div class="m-event">
           <div class="m-teams" title="${esc(primary.home)} vs ${esc(primary.away)}"><span class="m-team home">${esc(primary.home)}</span><span class="vs">vs</span><span class="m-team away">${esc(primary.away)}</span></div>
         </div>
-        <button type="button" class="odds-toggle" data-odds-toggle aria-label="배당정보 접기" title="배당정보 접기" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 15-6-6-6 6"></path></svg></button>
+        <button type="button" class="odds-toggle" data-odds-toggle aria-label="배당정보 펼치기" title="배당정보 펼치기" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></button>
       </div>
       <div class="match-bottom">
         <div class="market-block">
@@ -248,14 +248,14 @@ function renderMatches(groups) {
   el.querySelectorAll("[data-odds-toggle]").forEach((button) => {
     button.onclick = () => {
       const match = button.closest(".match");
-      const expanded = match.dataset.oddsExpanded !== "false";
-      match.dataset.oddsExpanded = String(!expanded);
-      match.classList.toggle("odds-collapsed", expanded);
-      button.setAttribute("aria-expanded", String(!expanded));
-      const label = expanded ? "배당정보 펼치기" : "배당정보 접기";
+      const expanded = !match.classList.contains("odds-collapsed");
+      const nextExpanded = !expanded;
+      match.classList.toggle("odds-collapsed", !nextExpanded);
+      button.setAttribute("aria-expanded", String(nextExpanded));
+      const label = nextExpanded ? "배당정보 접기" : "배당정보 펼치기";
       button.setAttribute("aria-label", label);
       button.setAttribute("title", label);
-      button.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${expanded ? "m6 9 6 6 6-6" : "m18 15-6-6-6 6"}"></path></svg>`;
+      button.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${nextExpanded ? "m18 15-6-6-6 6" : "m6 9 6 6 6-6"}"></path></svg>`;
     };
   });
 }
