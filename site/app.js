@@ -216,21 +216,24 @@ function renderMatches(groups) {
         </div>
         <div class="m-event">
           <div class="m-teams" title="${esc(primary.home)} vs ${esc(primary.away)}"><span class="m-team home">${esc(primary.home)}</span><span class="vs">vs</span><span class="m-team away">${esc(primary.away)}</span></div>
-          ${totals && point != null ? `<div class="m-point">기준점 ${esc(point)}</div>` : ""}
         </div>
+        <button type="button" class="odds-toggle" data-odds-toggle aria-expanded="true">배당정보 접기</button>
       </div>
       <div class="match-bottom">
         <div class="market-block">
-          <span class="market-label">승무패</span>
+          <div class="market-info">
+            <span class="market-label">승무패</span>
+            ${marketState(h2h)}
+          </div>
           <div class="m-odds h2h">${h2hCells}</div>
         </div>
         <div class="market-block">
-          <span class="market-label">언오버</span>
+          <div class="market-info">
+            <span class="market-label">언오버</span>
+            ${point != null ? `<span class="market-point">기준점 ${esc(point)}</span>` : ""}
+            ${marketState(totals)}
+          </div>
           <div class="m-odds totals">${totalsCells}</div>
-        </div>
-        <div class="m-state">
-          ${marketState(h2h)}
-          ${marketState(totals)}
         </div>
       </div>
     </div>`;
@@ -239,6 +242,16 @@ function renderMatches(groups) {
   el.querySelectorAll("[data-watch-key]").forEach((button) => {
     const match = marketByWatchKey.get(button.dataset.watchKey);
     button.onclick = () => addWatch(match);
+  });
+  el.querySelectorAll("[data-odds-toggle]").forEach((button) => {
+    button.onclick = () => {
+      const match = button.closest(".match");
+      const expanded = match.dataset.oddsExpanded !== "false";
+      match.dataset.oddsExpanded = String(!expanded);
+      match.classList.toggle("odds-collapsed", expanded);
+      button.setAttribute("aria-expanded", String(!expanded));
+      button.textContent = expanded ? "배당정보 펼치기" : "배당정보 접기";
+    };
   });
 }
 
