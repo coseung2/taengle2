@@ -1,0 +1,10 @@
+[workspace]
+members = ["apps/taengle", "crates/odds-domain"]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+license = "MIT"
+
+[workspace.dependencies]
+dioxus = "0.7.0"
