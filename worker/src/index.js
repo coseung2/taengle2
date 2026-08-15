@@ -64,11 +64,14 @@ async function decryptApiKey(row, env) {
 }
 
 function cookie(name, value, maxAge = SESSION_TTL_MS / 1000) {
-  return `${name}=${value}; Max-Age=${maxAge}; Path=/; HttpOnly; Secure; SameSite=Lax`;
+  // The site is hosted on GitHub Pages while the API runs on a different
+  // origin. Lax cookies are omitted from the cross-site fetches used by the
+  // account panel, so the session must explicitly allow that context.
+  return `${name}=${value}; Max-Age=${maxAge}; Path=/; HttpOnly; Secure; SameSite=None`;
 }
 
 function clearCookie(name) {
-  return `${name}=; Max-Age=0; Path=/; HttpOnly; Secure; SameSite=Lax`;
+  return `${name}=; Max-Age=0; Path=/; HttpOnly; Secure; SameSite=None`;
 }
 
 function sessionToken(request) {
