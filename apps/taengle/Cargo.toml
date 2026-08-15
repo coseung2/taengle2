@@ -1,0 +1,15 @@
+[package]
+name = "taengle"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+dioxus = { workspace = true }
+taengle-odds-domain = { path = "../../crates/odds-domain" }
+
+[features]
+default = ["web"]
+web = ["dioxus/web"]
+desktop = ["dioxus/desktop"]
+mobile = ["dioxus/mobile"]
