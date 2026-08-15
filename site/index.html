@@ -48,8 +48,9 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 
 /* match rows */
 .match-list { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-top: 0; border-radius: 0 0 12px 12px; overflow: hidden; }
-.match { display: grid; grid-template-columns: 112px minmax(150px, 1fr) minmax(280px, 2fr) 98px; align-items: center; gap: 10px; padding: 12px 14px; border-bottom: 1px solid var(--color-border-default); }
+.match { display: grid; grid-template-columns: 1fr; gap: 0; padding: 12px 14px; border-bottom: 1px solid var(--color-border-default); }
 .match:last-child { border-bottom: 0; }
+.match-top { display: grid; grid-template-columns: 112px minmax(0, 1fr); align-items: center; gap: 14px; min-width: 0; }
 .match-meta { min-width: 0; }
 .m-league { font-size: 12px; font-weight: 800; line-height: 1.3; color: var(--color-text-secondary); overflow-wrap: anywhere; }
 .m-time { font-size: 11px; color: var(--color-text-tertiary); margin-top: 3px; }
@@ -60,10 +61,13 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .m-team.away { text-align: left; }
 .m-teams .vs { font-size: 10px; color: var(--color-text-tertiary); font-weight: 400; margin: 0 6px; }
 .m-point { margin-top: 6px; text-align: center; color: var(--color-text-tertiary); font-size: 11px; font-weight: 700; }
-.m-odds { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 4px; width: 100%; min-width: 0; }
+.match-bottom { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 98px; align-items: start; gap: 14px; min-width: 0; margin-top: 12px; padding-top: 10px; border-top: 1px solid var(--color-border-default); }
+.market-block { display: flex; min-width: 0; align-items: flex-start; gap: 10px; }
+.market-label { flex: 0 0 36px; color: var(--color-text-secondary); font-size: 10px; font-weight: 800; line-height: 1.2; }
+.market-empty { color: var(--color-text-tertiary); font-size: 11px; }
+.m-odds { display: grid; flex: 1; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; width: 100%; min-width: 0; }
+.m-odds.totals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .cell { display: flex; min-width: 0; flex-direction: column; align-items: center; justify-content: center; padding: 3px 5px; text-align: center; background: transparent; border: 0; border-radius: 0; }
-.cell.totals-start { margin-left: 5px; border-left: 1px solid var(--color-border-default); padding-left: 10px; }
-.cell.empty { opacity: .38; }
 .cell .l { display: block; font-size: 9px; font-weight: 800; color: var(--color-text-tertiary); margin-bottom: 4px; }
 .cell .v { font-size: 13px; font-weight: 700; }
 .cell .m { display: block; font-size: 9px; color: var(--color-text-tertiary); margin-top: 4px; }
@@ -81,14 +85,17 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .market-action .cut-pill, .market-action .market-pill { max-width: 100%; text-align: right; font-size: 10px; padding: 4px 7px; }
 .market-action .watch-button { padding: 4px 7px; font-size: 9px; }
 @media (max-width: 840px) {
-  .match { grid-template-columns: 110px minmax(140px, 1fr) minmax(260px, 1.8fr); }
-  .m-state { grid-column: 2 / 4; flex-direction: row; justify-content: flex-end; align-items: center; gap: 12px; }
+  .match-bottom { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; }
+  .m-state { grid-column: 1 / -1; flex-direction: row; justify-content: flex-end; align-items: center; gap: 12px; }
 }
 @media (max-width: 620px) {
   .match { grid-template-columns: 1fr; gap: 10px; padding: 14px; }
+  .match-top { grid-template-columns: 1fr; gap: 6px; }
+  .match-bottom { grid-template-columns: 1fr; gap: 8px; }
   .m-odds { gap: 2px; }
+  .market-block { gap: 8px; }
+  .market-label { flex-basis: 40px; }
   .cell { padding-inline: 2px; }
-  .cell.totals-start { margin-left: 3px; padding-left: 6px; }
   .m-teams { font-size: 13px; }
   .m-state { grid-column: auto; flex-direction: row; justify-content: flex-end; gap: 10px; }
   .market-action { flex: 1; align-items: flex-end; }

@@ -169,10 +169,6 @@ function oddCell(label, betman, market, cut, className = "") {
   return `<div class="cell ${className}"><span class="l">${label}</span><span class="v">${betman.toFixed(2)}</span>${mLine}${cutBadge(cut)}</div>`;
 }
 
-function emptyOddCell(label, className = "") {
-  return `<div class="cell empty ${className}"><span class="l">${label}</span><span class="v">—</span></div>`;
-}
-
 function marketState(m) {
   if (!m) return "";
   const mk = m.market;
@@ -199,26 +195,43 @@ function renderMatches(groups) {
     const totalsMarket = totals?.market;
     const t = (primary.kickoff || "").slice(5, 16).replace("T", " ");
     const point = totals?.totalPoint ?? totalsMarket?.point;
-    const cells = [
-      h2h ? oddCell("승", h2h.win, h2hMarket?.consensus?.win, h2hMarket?.cutConsensus?.win) : emptyOddCell("승"),
-      h2h?.draw ? oddCell("무", h2h.draw, h2hMarket?.consensus?.draw, h2hMarket?.cutConsensus?.draw) : emptyOddCell("무"),
-      h2h ? oddCell("패", h2h.lose, h2hMarket?.consensus?.lose, h2hMarket?.cutConsensus?.lose) : emptyOddCell("패"),
-      totals ? oddCell("오버", totals.over, totalsMarket?.consensus?.over, totalsMarket?.cutConsensus?.over, "totals-start") : emptyOddCell("오버", "totals-start"),
-      totals ? oddCell("언더", totals.under, totalsMarket?.consensus?.under, totalsMarket?.cutConsensus?.under) : emptyOddCell("언더"),
-    ].join("");
+    const h2hCells = h2h
+      ? [
+        oddCell("승", h2h.win, h2hMarket?.consensus?.win, h2hMarket?.cutConsensus?.win),
+        h2h.draw ? oddCell("무", h2h.draw, h2hMarket?.consensus?.draw, h2hMarket?.cutConsensus?.draw) : "",
+        oddCell("패", h2h.lose, h2hMarket?.consensus?.lose, h2hMarket?.cutConsensus?.lose),
+      ].join("")
+      : '<span class="market-empty">미제공</span>';
+    const totalsCells = totals
+      ? [
+        oddCell("오버", totals.over, totalsMarket?.consensus?.over, totalsMarket?.cutConsensus?.over),
+        oddCell("언더", totals.under, totalsMarket?.consensus?.under, totalsMarket?.cutConsensus?.under),
+      ].join("")
+      : '<span class="market-empty">미제공</span>';
     return `<div class="match">
-      <div class="match-meta">
-        <div class="m-league" title="${esc(primary.league)}">${esc(primary.league)}</div>
-        <div class="m-time">${esc(t)}</div>
+      <div class="match-top">
+        <div class="match-meta">
+          <div class="m-league" title="${esc(primary.league)}">${esc(primary.league)}</div>
+          <div class="m-time">${esc(t)}</div>
+        </div>
+        <div class="m-event">
+          <div class="m-teams" title="${esc(primary.home)} vs ${esc(primary.away)}"><span class="m-team home">${esc(primary.home)}</span><span class="vs">vs</span><span class="m-team away">${esc(primary.away)}</span></div>
+          ${totals && point != null ? `<div class="m-point">기준점 ${esc(point)}</div>` : ""}
+        </div>
       </div>
-      <div class="m-event">
-        <div class="m-teams" title="${esc(primary.home)} vs ${esc(primary.away)}"><span class="m-team home">${esc(primary.home)}</span><span class="vs">vs</span><span class="m-team away">${esc(primary.away)}</span></div>
-        ${totals && point != null ? `<div class="m-point">기준점 ${esc(point)}</div>` : ""}
-      </div>
-      <div class="m-odds">${cells}</div>
-      <div class="m-state">
-        ${marketState(h2h)}
-        ${marketState(totals)}
+      <div class="match-bottom">
+        <div class="market-block">
+          <span class="market-label">승무패</span>
+          <div class="m-odds h2h">${h2hCells}</div>
+        </div>
+        <div class="market-block">
+          <span class="market-label">언오버</span>
+          <div class="m-odds totals">${totalsCells}</div>
+        </div>
+        <div class="m-state">
+          ${marketState(h2h)}
+          ${marketState(totals)}
+        </div>
       </div>
     </div>`;
   }).join("");
