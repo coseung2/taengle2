@@ -48,11 +48,9 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 
 /* match rows */
 .match-list { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-top: 0; border-radius: 0 0 12px 12px; overflow: hidden; }
-.match { display: grid; grid-template-columns: 156px minmax(180px, 1fr) 204px 126px; align-items: center; gap: 14px; padding: 14px 16px; border-bottom: 1px solid var(--color-border-default); }
+.match { display: grid; grid-template-columns: 112px minmax(150px, 1fr) minmax(280px, 2fr) 98px; align-items: center; gap: 10px; padding: 12px 14px; border-bottom: 1px solid var(--color-border-default); }
 .match:last-child { border-bottom: 0; }
 .match-meta { min-width: 0; }
-.market-kind { display: inline-flex; align-items: center; width: fit-content; margin-bottom: 6px; padding: 4px 7px; border-radius: 6px; background: var(--color-bg-tab); color: var(--color-accent-blue); font-size: 10px; font-weight: 800; line-height: 1; }
-.market-kind.totals { color: var(--color-status-warning); }
 .m-league { font-size: 12px; font-weight: 800; line-height: 1.3; color: var(--color-text-secondary); overflow-wrap: anywhere; }
 .m-time { font-size: 11px; color: var(--color-text-tertiary); margin-top: 3px; }
 .m-event { min-width: 0; }
@@ -62,13 +60,14 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .m-team.away { text-align: left; }
 .m-teams .vs { font-size: 10px; color: var(--color-text-tertiary); font-weight: 400; margin: 0 6px; }
 .m-point { margin-top: 6px; text-align: center; color: var(--color-text-tertiary); font-size: 11px; font-weight: 700; }
-.m-odds { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; width: 100%; min-width: 0; }
-.m-odds.totals { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.cell { min-width: 0; text-align: center; background: var(--color-bg-cell); border: 1px solid var(--color-border-default); border-radius: var(--radius-9); padding: 8px 5px; }
+.m-odds { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 5px; width: 100%; min-width: 0; }
+.cell { min-width: 0; text-align: center; background: var(--color-bg-cell); border: 1px solid var(--color-border-default); border-radius: var(--radius-9); padding: 7px 3px; }
+.cell.totals-start { margin-left: 5px; }
+.cell.empty { opacity: .38; }
 .cell .l { display: block; font-size: 9px; font-weight: 800; color: var(--color-text-tertiary); margin-bottom: 4px; }
-.cell .v { font-size: 13px; font-weight: 700; }
-.cell .m { display: block; font-size: 9px; color: var(--color-text-tertiary); margin-top: 4px; }
-.cell .c { display: block; font-size: 10px; font-weight: 800; margin-top: 1px; }
+.cell .v { font-size: 12px; font-weight: 700; }
+.cell .m { display: block; font-size: 8px; color: var(--color-text-tertiary); margin-top: 4px; }
+.cell .c { display: block; font-size: 9px; font-weight: 800; margin-top: 1px; }
 .cell .c.cut { color: var(--color-status-danger); }
 .cell .c.edge { color: var(--color-accent-blue); }
 .cut-pill { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 800; padding: 5px 9px; border-radius: 999px; background: var(--color-bg-tab); color: var(--color-status-danger); }
@@ -77,18 +76,22 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .watch-button { border: 1px solid var(--color-border-default); border-radius: 999px; padding: 5px 9px; background: var(--color-bg-elevated); color: var(--color-text-secondary); font: inherit; font-size: 10px; font-weight: 800; cursor: pointer; white-space: nowrap; }
 .watch-button:hover, .watch-button.on { color: var(--color-accent-blue); border-color: var(--color-accent-blue); background: var(--color-bg-tab); }
 .watch-button:disabled { opacity: .55; cursor: not-allowed; }
-.m-state { display: flex; min-width: 0; flex-direction: column; align-items: flex-end; gap: 8px; }
-.m-state .cut-pill, .m-state .market-pill { max-width: 100%; text-align: right; }
+.m-state { display: flex; min-width: 0; flex-direction: column; align-items: stretch; gap: 6px; }
+.market-action { display: flex; min-width: 0; flex-direction: column; align-items: flex-end; gap: 5px; }
+.market-action .cut-pill, .market-action .market-pill { max-width: 100%; text-align: right; font-size: 10px; padding: 4px 7px; }
+.market-action .watch-button { padding: 4px 7px; font-size: 9px; }
 @media (max-width: 840px) {
-  .match { grid-template-columns: 132px minmax(0, 1fr) 184px; }
-  .m-state { grid-column: 2 / 4; flex-direction: row; justify-content: flex-end; align-items: center; }
+  .match { grid-template-columns: 110px minmax(140px, 1fr) minmax(260px, 1.8fr); }
+  .m-state { grid-column: 2 / 4; flex-direction: row; justify-content: flex-end; align-items: center; gap: 12px; }
 }
 @media (max-width: 620px) {
   .match { grid-template-columns: 1fr; gap: 10px; padding: 14px; }
-  .match-meta { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 8px; align-items: start; }
-  .market-kind { grid-row: span 2; margin-bottom: 0; }
+  .m-odds { gap: 4px; }
+  .cell { padding-inline: 2px; }
+  .cell.totals-start { margin-left: 3px; }
   .m-teams { font-size: 14px; }
-  .m-state { grid-column: auto; justify-content: space-between; }
+  .m-state { grid-column: auto; flex-direction: row; justify-content: flex-end; gap: 10px; }
+  .market-action { flex: 1; align-items: flex-end; }
 }
 
 /* prediction cards */
