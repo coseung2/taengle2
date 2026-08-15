@@ -2,7 +2,7 @@
 """The Odds API 해외배당 수집기 -> site/data/market_odds.json
 
 Usage:
-    set ODDS_API_KEY=xxxx
+    set ODDS_API_KEYS=account1-key,account2-key
     python collector/market_collect.py
 
 주의: API 키는 환경변수로만 주입한다. 출력 JSON에 키를 쓰지 않는다.
@@ -34,73 +34,133 @@ SPORT_MAP = {
 }
 
 BASE = "https://api.the-odds-api.com/v4/sports"
+MARKETS = "h2h,totals"
 KST = dt.timezone(dt.timedelta(hours=9))
 
 
 def fetch_sport(api_key: str, sport_key: str, regions: str) -> tuple[list, str | None]:
     url = (
         f"{BASE}/{sport_key}/odds/?apiKey={api_key}"
-        f"&regions={regions}&markets=h2h&oddsFormat=decimal&dateFormat=iso"
+        f"&regions={regions}&markets={MARKETS}&oddsFormat=decimal&dateFormat=iso"
     )
     req = urllib.request.Request(url, headers={"User-Agent": "taengle-collector/1.0"})
     with urllib.request.urlopen(req, timeout=30) as r:
-        return json.load(r), r.headers.get("x-requests-remaining")
+        events = json.load(r)
+        now = dt.datetime.now(dt.timezone.utc)
+        future = [event for event in events if dt.datetime.fromisoformat(event["commence_time"].replace("Z", "+00:00")) > now]
+        return future, r.headers.get("x-requests-remaining")
+
+
+def average_prices(values: dict[str, list[float]]) -> dict[str, float]:
+    result = {}
+    for key, items in values.items():
+        clean = [value for value in items if 1.01 <= value <= 20]
+        if clean:
+            ordered = sorted(clean)
+            middle = len(ordered) // 2
+            median = ordered[middle] if len(ordered) % 2 else (ordered[middle - 1] + ordered[middle]) / 2
+            result[key] = round(median, 4)
+    return result
 
 
 def summarize_event(ev: dict) -> dict:
-    """북메이커 배당 -> 컨센서스(평균) + 피나클 기준가."""
+    """북메이커 배당 -> h2h 및 totals 컨센서스(중앙값) + 피나클 기준가."""
     home, away = ev["home_team"], ev["away_team"]
     prices: dict[str, list[float]] = {"home": [], "draw": [], "away": []}
     pinnacle: dict[str, float] = {}
+    totals_by_point: dict[float, dict[str, list[float]]] = {}
+    totals_pinnacle: dict[float, dict[str, float]] = {}
     for bk in ev.get("bookmakers", []):
         outcomes = {}
         for m in bk.get("markets", []):
-            if m.get("key") != "h2h":
-                continue
-            for o in m.get("outcomes", []):
-                if o["name"] == home:
-                    outcomes["home"] = o["price"]
-                elif o["name"] == away:
-                    outcomes["away"] = o["price"]
-                elif o["name"] == "Draw":
-                    outcomes["draw"] = o["price"]
+            if m.get("key") == "h2h":
+                for o in m.get("outcomes", []):
+                    if o["name"] == home:
+                        outcomes["home"] = o["price"]
+                    elif o["name"] == away:
+                        outcomes["away"] = o["price"]
+                    elif o["name"] == "Draw":
+                        outcomes["draw"] = o["price"]
+            elif m.get("key") == "totals":
+                for o in m.get("outcomes", []):
+                    point = o.get("point")
+                    if point is None or o.get("name") not in {"Over", "Under"}:
+                        continue
+                    point = float(point)
+                    bucket = totals_by_point.setdefault(point, {"over": [], "under": []})
+                    bucket[o["name"].lower()].append(o["price"])
+                    if bk.get("key") == "pinnacle":
+                        totals_pinnacle.setdefault(point, {})[o["name"].lower()] = o["price"]
         for k, v in outcomes.items():
             prices[k].append(v)
         if bk.get("key") == "pinnacle":
             pinnacle = outcomes
-    consensus = {k: round(sum(v) / len(v), 4) for k, v in prices.items() if v}
-    return {
+    result = {
         "id": ev["id"],
         "sportKey": ev["sport_key"],
         "commenceUtc": ev["commence_time"],
         "homeEn": home,
         "awayEn": away,
         "books": len(ev.get("bookmakers", [])),
-        "consensus": consensus,
+        "consensus": average_prices(prices),
         "pinnacle": pinnacle,
     }
+    if totals_by_point:
+        point, values = max(totals_by_point.items(), key=lambda item: sum(len(v) for v in item[1].values()))
+        result["totals"] = {
+            "point": point,
+            "consensus": average_prices(values),
+            "pinnacle": totals_pinnacle.get(point, {}),
+            "books": max(len(values.get("over", [])), len(values.get("under", []))),
+        }
+    return result
+
+
+def read_api_keys() -> list[str]:
+    pool = os.environ.get("ODDS_API_KEYS", "")
+    keys = [key.strip() for key in pool.split(",") if key.strip()]
+    if not keys:
+        legacy = os.environ.get("ODDS_API_KEY", "").strip()
+        if legacy:
+            keys = [legacy]
+    return list(dict.fromkeys(keys))
 
 
 def main() -> int:
-    api_key = os.environ.get("ODDS_API_KEY", "").strip()
-    if not api_key:
-        print("[error] ODDS_API_KEY 환경변수가 필요합니다", file=sys.stderr)
+    api_keys = read_api_keys()
+    if not api_keys:
+        print("[error] ODDS_API_KEYS 또는 ODDS_API_KEY 환경변수가 필요합니다", file=sys.stderr)
         return 1
-    regions = os.environ.get("ODDS_REGIONS", "eu,uk").strip() or "eu,uk"
+    expected_accounts = int(os.environ.get("ODDS_EXPECTED_ACCOUNTS", "0") or 0)
+    if expected_accounts and len(api_keys) < expected_accounts:
+        print(f"[error] API 계정 {expected_accounts}개가 필요하지만 {len(api_keys)}개만 설정됨", file=sys.stderr)
+        return 1
+    regions = os.environ.get("ODDS_REGIONS", "eu").strip() or "eu"
+    offset_env = os.environ.get("ODDS_ACCOUNT_OFFSET", "").strip()
+    if offset_env:
+        account_offset = int(offset_env) % len(api_keys)
+    else:
+        now = dt.datetime.now(dt.timezone.utc)
+        account_offset = (now.timetuple().tm_yday + int(now.hour >= 12)) % len(api_keys)
 
     out_sports: dict[str, list] = {}
-    remaining = None
-    for league, sport_key in SPORT_MAP.items():
+    credits: dict[str, int] = {}
+    for index, (league, sport_key) in enumerate(SPORT_MAP.items()):
+        account_index = (index + account_offset) % len(api_keys)
+        api_key = api_keys[account_index]
+        account_name = f"account-{account_index + 1}"
         try:
             events, remaining = fetch_sport(api_key, sport_key, regions)
         except urllib.error.HTTPError as e:
-            print(f"[skip] {league} ({sport_key}): HTTP {e.code}", file=sys.stderr)
+            print(f"[skip] {league} ({sport_key}) {account_name}: HTTP {e.code}", file=sys.stderr)
             continue
         except urllib.error.URLError as e:
-            print(f"[skip] {league} ({sport_key}): {e}", file=sys.stderr)
+            print(f"[skip] {league} ({sport_key}) {account_name}: {e}", file=sys.stderr)
             continue
+        if remaining and remaining.isdigit():
+            credits[account_name] = int(remaining)
         out_sports[league] = [summarize_event(ev) for ev in events]
-        print(f"[ok] {league} ({sport_key}): {len(events)}경기")
+        print(f"[ok] {league} ({sport_key}) {account_name}: {len(events)}경기")
 
     if not out_sports:
         print("[error] 수집된 해외배당 없음", file=sys.stderr)
@@ -110,13 +170,16 @@ def main() -> int:
         "source": "the-odds-api.com",
         "regions": regions,
         "fetchedAt": dt.datetime.now(KST).isoformat(),
-        "creditsRemaining": int(remaining) if remaining and remaining.isdigit() else remaining,
+        "accounts": len(api_keys),
+        "accountOffset": account_offset,
+        "creditsRemaining": sum(credits.values()) if credits else None,
+        "creditsByAccount": credits,
         "leagues": out_sports,
     }
     out_path = Path(__file__).resolve().parents[1] / "site" / "data" / "market_odds.json"
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
-    print(f"[done] {out_path} ({out_path.stat().st_size} bytes), 잔여 크레딧: {remaining}")
+    print(f"[done] {out_path} ({out_path.stat().st_size} bytes), 계정 {len(api_keys)}개, 잔여 크레딧 합계: {sum(credits.values()) if credits else '확인 불가'}")
     return 0
 
 

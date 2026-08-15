@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "taengle-api",
+  "main": "src/index.js",
+  "compatibility_date": "2026-08-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "workers_dev": true,
+  "observability": { "enabled": true },
+  "vars": {
+    "CORS_ORIGIN": "https://coseung2.github.io,http://localhost:8936,http://localhost:8937",
+    "SNAPSHOT_URL": "https://coseung2.github.io/taengle2/data/snapshots.json"
+  },
+  "triggers": {
+    "crons": ["*/10 * * * *"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "taengle-user-data",
+      "database_id": "2eb08ba2-9657-4c8c-8524-3719946ee0be",
+      "migrations_dir": "migrations"
+    }
+  ]
+}

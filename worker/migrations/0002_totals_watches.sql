@@ -1,0 +1,2 @@
+ALTER TABLE watches ADD COLUMN market_type TEXT NOT NULL DEFAULT 'h2h';
+ALTER TABLE watches ADD COLUMN total_point REAL;

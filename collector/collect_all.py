@@ -2,7 +2,8 @@
 """전체 수집 파이프라인: 베트맨 -> 해외 컨센서스 -> 병합.
 
 Usage:
-    set ODDS_API_KEY=xxxx
+set ODDS_API_KEYS=account1-key,account2-key
+set ODDS_REGIONS=eu
     python collector/collect_all.py
 """
 

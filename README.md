@@ -1,6 +1,6 @@
 # TAENGLE
 
-베트맨 배당과 해외 시장 컨센서스를 같은 경기·같은 마켓 기준으로 비교해, 환수율과 배당 삭감률을 보여주는 스포츠 데이터 앱입니다.
+베트맨 배당과 해외 시장 컨센서스를 같은 경기·같은 마켓 기준으로 비교해, 배당 삭감률을 보여주는 스포츠 데이터 앱입니다.
 
 ## 현재 상태
 
@@ -9,7 +9,7 @@
 - Dioxus 기반 Web / Desktop / Mobile 공용 앱 구조
 - 모바일 우선 오늘 경기 홈
 - Betman / Market / Cut 지표를 바로 비교하는 경기 행
-- `DecimalOdds`, 3-way market, 환수율, 오버라운드, no-vig, 삭감률 계산을 담은 독립 Rust 도메인 크레이트
+- `DecimalOdds`, 3-way market, 오버라운드, no-vig, 삭감률 계산을 담은 독립 Rust 도메인 크레이트
 - 도메인 테스트와 GitHub Actions CI
 - 데이터 수집과 정규화 방향을 정리한 제품 설계 문서
 
@@ -22,11 +22,13 @@ Rust/Dioxus 앱 셸의 기본 화면은 도메인 데모를 포함하고, 실제
 수집기를 실행하려면 The Odds API 키를 환경변수로 주입합니다. 키는 공개 저장소에 저장하지 않습니다.
 
 ```bash
-set ODDS_API_KEY=your-key
+set ODDS_API_KEYS=account1-key,account2-key
 python collector/collect_all.py
 ```
 
-파이프라인은 베트맨 실배당 수집 → 해외 h2h 컨센서스 수집 → 팀명·킥오프 검증 병합 → 삭감률 계산 순서로 동작합니다. 비교 가능한 베트맨 유형은 `승무패`와 `일반 승패`이며, 핸디캡·언더오버·홀짝은 별도 마켓이라 제외합니다. 상세 구현은 [`docs/site-implementation.md`](docs/site-implementation.md)를 참고하세요.
+공개 수집은 두 계정 키를 `ODDS_API_KEYS`에 쉼표로 넣어 사용하며, 키는 GitHub Actions secret으로만 저장합니다. 11개 종목을 두 계정에 번갈아 배분하고 월 44회 실행해 계정당 약 484크레딧을 사용합니다.
+
+파이프라인은 베트맨 실배당 수집 → 해외 `h2h`·`totals` 컨센서스 수집 → 팀명·킥오프·기준점 검증 병합 → 삭감률 계산 순서로 동작합니다. `승무패`·`일반 승패`는 h2h, `일반 언더오버`는 같은 기준점의 totals와 비교하며 핸디캡·홀짝은 별도 마켓이라 제외합니다. 상세 구현은 [`docs/site-implementation.md`](docs/site-implementation.md)를 참고하세요.
 
 ## 구조
 
@@ -34,7 +36,8 @@ python collector/collect_all.py
 Rust 2024
 ├── apps/taengle            Dioxus 앱 (Web / Desktop / Mobile)
 ├── crates/odds-domain      플랫폼 독립 배당 계산 로직
-└── docs/product-plan.md    MVP / 비교군 / 정규화 / 데이터 모델
+├── docs/product-plan.md    MVP / 비교군 / 정규화 / 데이터 모델
+└── worker/                 Cloudflare Worker + D1 개인 계정/관측 API
 ```
 
 ## 실행
@@ -74,7 +77,6 @@ cargo check -p taengle --target wasm32-unknown-unknown --no-default-features --f
 
 - **Book percentage**: 각 결과의 암시확률 합
 - **Overround**: `book percentage - 1`
-- **Payout rate**: `1 / book percentage`
 - **Fair odds**: 마진을 비례 제거한 no-vig 배당
 - **Cut rate**: `1 - 베트맨 배당 / 해외 기준 배당`
 

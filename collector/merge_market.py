@@ -8,8 +8,8 @@
   3) 후보가 여러 개인데 이름 미확인 -> 매칭 실패 (오매칭 방지)
 삭감률: cut = 1 - 베트맨배당 / 해외배당 (양수면 베트맨이 더 짠 배당)
 
-대상 베팅 유형: 승무패(1X2), 일반 승패(머니라인)만 해외 h2h와 비교 가능.
-(승N패=야구승1패, 핸디캡, 언더오버, 홀짝은 시장 h2h와 비교 불가 -> 제외)
+대상 베팅 유형: 승무패·일반 승패는 해외 h2h, 일반 언더오버는 해외 totals와 비교한다.
+(승N패=야구승1패, 핸디캡, 홀짝은 별도 마켓이라 제외)
 
 Usage:
     python collector/merge_market.py
@@ -28,6 +28,7 @@ MARKET = ROOT / "site" / "data" / "market_odds.json"
 TEAM_MAP = ROOT / "collector" / "team_map.json"
 TOL_SEC = 20 * 60
 COMPARE_BET_TYPES = {"승무패", "일반 승패"}
+TOTAL_BET_TYPES = {"일반 언더오버", "언더오버"}
 
 
 def parse_ts(s: str) -> dt.datetime:
@@ -38,6 +39,12 @@ def cut(betman: float | None, market: float | None) -> float | None:
     if not betman or not market:
         return None
     return round(1 - betman / market, 4)
+
+
+def market_type(m: dict) -> str:
+    if m.get("marketType") == "totals" or m.get("betType") in TOTAL_BET_TYPES or "언더" in str(m.get("betType")):
+        return "totals"
+    return "h2h"
 
 
 def main() -> int:
@@ -59,12 +66,14 @@ def main() -> int:
             lg = m.get("league")
             ko = m.get("kickoff")
             events = leagues.get(lg)
+            kind = market_type(m)
+            comparable = m.get("betType") in COMPARE_BET_TYPES if kind == "h2h" else kind == "totals"
             if (
                 not events
                 or not ko
-                or not m.get("win")
-                or not m.get("lose")
-                or m.get("betType") not in COMPARE_BET_TYPES
+                or not comparable
+                or (kind == "h2h" and (not m.get("win") or not m.get("lose")))
+                or (kind == "totals" and (not m.get("over") or not m.get("under") or m.get("totalPoint") is None))
             ):
                 continue
             st = stats.setdefault(lg, [0, 0])
@@ -90,30 +99,57 @@ def main() -> int:
                     map_miss.add(f"{lg}: {m.get('home')} / {m.get('away')}")
             if not best:
                 continue
-            cons, pin = best.get("consensus", {}), best.get("pinnacle", {})
-            cuts_cons = {
-                "win": cut(m.get("win"), cons.get("home")),
-                "draw": cut(m.get("draw"), cons.get("draw")),
-                "lose": cut(m.get("lose"), cons.get("away")),
-            }
-            cuts_pin = {
-                "win": cut(m.get("win"), pin.get("home")),
-                "draw": cut(m.get("draw"), pin.get("draw")),
-                "lose": cut(m.get("lose"), pin.get("away")),
-            }
+            if kind == "totals":
+                totals = best.get("totals")
+                if not totals or abs(float(m["totalPoint"]) - float(totals.get("point"))) > 0.01:
+                    continue
+                cons, pin = totals.get("consensus", {}), totals.get("pinnacle", {})
+                cuts_cons = {"over": cut(m.get("over"), cons.get("over")), "under": cut(m.get("under"), cons.get("under"))}
+                cuts_pin = {"over": cut(m.get("over"), pin.get("over")), "under": cut(m.get("under"), pin.get("under"))}
+                market_data = {
+                    "marketType": "totals",
+                    "marketId": best.get("id"),
+                    "sportKey": best.get("sportKey"),
+                    "point": totals.get("point"),
+                    "books": totals.get("books"),
+                    "homeEn": best.get("homeEn"),
+                    "awayEn": best.get("awayEn"),
+                    "consensus": {"over": cons.get("over"), "under": cons.get("under")},
+                    "pinnacle": {"over": pin.get("over"), "under": pin.get("under")},
+                    "cutConsensus": cuts_cons,
+                    "cutPinnacle": cuts_pin,
+                }
+            else:
+                cons, pin = best.get("consensus", {}), best.get("pinnacle", {})
+                cuts_cons = {
+                    "win": cut(m.get("win"), cons.get("home")),
+                    "draw": cut(m.get("draw"), cons.get("draw")),
+                    "lose": cut(m.get("lose"), cons.get("away")),
+                }
+                cuts_pin = {
+                    "win": cut(m.get("win"), pin.get("home")),
+                    "draw": cut(m.get("draw"), pin.get("draw")),
+                    "lose": cut(m.get("lose"), pin.get("away")),
+                }
+                market_data = {
+                    "marketType": "h2h",
+                    "marketId": best.get("id"),
+                    "sportKey": best.get("sportKey"),
+                    "books": best.get("books"),
+                    "homeEn": best.get("homeEn"),
+                    "awayEn": best.get("awayEn"),
+                    "consensus": {"win": cons.get("home"), "draw": cons.get("draw"), "lose": cons.get("away")},
+                    "pinnacle": {"win": pin.get("home"), "draw": pin.get("draw"), "lose": pin.get("away")},
+                    "cutConsensus": cuts_cons,
+                    "cutPinnacle": cuts_pin,
+                }
             valid = [v for v in cuts_cons.values() if v is not None]
-            m["market"] = {
-                "books": best.get("books"),
-                "homeEn": best.get("homeEn"),
-                "awayEn": best.get("awayEn"),
-                "consensus": {"win": cons.get("home"), "draw": cons.get("draw"), "lose": cons.get("away")},
-                "pinnacle": {"win": pin.get("home"), "draw": pin.get("draw"), "lose": pin.get("away")},
-                "cutConsensus": cuts_cons,
-                "cutPinnacle": cuts_pin,
-                "cutAvg": round(sum(valid) / len(valid), 4) if valid else None,
-                "timeDiffSec": int(best_diff),
-                "matchedBy": matched_by,
-            }
+            if not valid:
+                continue
+            market_data["cutAvg"] = round(sum(valid) / len(valid), 4) if valid else None
+            market_data["timeDiffSec"] = int(best_diff)
+            market_data["matchedBy"] = matched_by
+            m["market"] = market_data
             st[0] += 1
 
     snap["marketSource"] = market.get("source")

@@ -2,7 +2,7 @@
 
 ## Product statement
 
-TAENGLE is a private sports-odds intelligence app. It compares Betman with overseas market references only when the event, market, line and settlement rules match, then exposes payout rate, market margin and relative cut rate in a fast mobile-first interface.
+TAENGLE is a private sports-odds intelligence app. It compares Betman with overseas market references only when the event, market, line and settlement rules match, then exposes relative cut rate in a fast mobile-first interface.
 
 The visual direction takes inspiration from 4590fb.com's dense, scan-first sports information layout: users should land directly on today's actionable match list instead of a marketing-heavy home page. TAENGLE does not copy its branding or page structure.
 
@@ -16,15 +16,13 @@ The visual direction takes inspiration from 4590fb.com's dense, scan-first sport
 
 ### Match detail
 - Same-market bookmaker comparison table.
-- Betman payout rate and overround.
-- Overseas market payout rate.
 - Consensus no-vig fair odds.
 - Snapshot history chart.
 
 ### Ranking
 - Lowest-cut matches today.
 - Highest-cut matches today.
-- League-level average payout and cut rate.
+- League-level average cut rate.
 
 ## Comparison set
 
@@ -32,7 +30,7 @@ Start with a small set of references with distinct roles rather than dozens of n
 
 - Betman: local comparison target.
 - Pinnacle: sharp-book benchmark.
-- Betfair Exchange: exchange reference; keep commission-aware metrics separate from standard bookmaker payout.
+- Betfair Exchange: exchange reference; keep commission-aware metrics separate from standard bookmaker markets.
 - SBOBET or SingBet: Asian-market reference.
 - bet365: mainstream global bookmaker.
 - Unibet: mainstream European bookmaker.
@@ -62,7 +60,6 @@ For decimal odds `o_i`:
 - implied probability: `1 / o_i`
 - book percentage: `sum(1 / o_i)`
 - overround: `book percentage - 1`
-- theoretical payout: `1 / book percentage`
 - proportional no-vig probability: `(1 / o_i) / book percentage`
 - fair odds: `1 / no-vig probability`
 - relative cut rate: `1 - local_odds / benchmark_odds`

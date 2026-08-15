@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TAENGLE — 베트맨 배당 인텔리전스</title>
+<link rel="icon" href="data:,">
 <link rel="stylesheet" href="tokens.css">
 <style>
 * { box-sizing: border-box; }
@@ -17,14 +18,14 @@ header { position: sticky; top: 0; z-index: 20; background: var(--color-bg-topba
 .status { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; color: var(--color-text-secondary); }
 .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--color-status-success); box-shadow: 0 0 14px var(--color-status-success); }
 .nav { display: flex; gap: 4px; }
-.nav a { font-size: 14px; font-weight: 700; padding: 8px 10px; border-radius: 999px; color: var(--color-text-secondary); }
-.nav a.on { color: var(--color-accent-blue); }
+.nav button { border: 0; background: transparent; font: inherit; font-size: 14px; font-weight: 700; padding: 8px 10px; border-radius: 999px; color: var(--color-text-secondary); cursor: pointer; }
+.nav button:hover, .nav button.on { color: var(--color-accent-blue); background: var(--color-bg-tab); }
 .tools { display: flex; align-items: center; gap: 12px; }
 button.theme { font: inherit; font-size: 12px; font-weight: 700; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--color-border-default); background: var(--color-bg-elevated); color: var(--color-text-primary); cursor: pointer; }
 
 /* layout */
 main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid; grid-template-columns: 280px minmax(0, 1fr) 320px; gap: 16px; align-items: start; }
-@media (max-width: 1020px) { main { grid-template-columns: 1fr; } .col-side { display: none; } }
+@media (max-width: 1020px) { main { grid-template-columns: 1fr; } .col-side { display: none; } main > .col-side:first-child { display: block; } }
 
 /* cards */
 .card { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-radius: 12px; padding: 16px; }
@@ -39,11 +40,11 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .sec .link { font-size: 12px; font-weight: 700; color: var(--color-accent-blue); white-space: nowrap; }
 
 /* league list */
-.league-row { display: flex; align-items: center; justify-content: space-between; padding: 7px 10px; border-radius: 9px; font-size: 14px; color: var(--color-text-secondary); cursor: pointer; }
+.league-row { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 7px 10px; border: 0; border-radius: 9px; background: transparent; text-align: left; font: inherit; font-size: 14px; color: var(--color-text-secondary); cursor: pointer; }
 .league-row:hover { background: var(--color-bg-tab); }
 .league-row .cnt { font-size: 11px; color: var(--color-text-tertiary); }
-.league-row.on { color: var(--color-accent-blue); font-weight: 700; }
-#allLeagues { font-size: 12px; color: var(--color-text-secondary); padding: 8px 10px; cursor: pointer; }
+.league-row.on { color: var(--color-accent-blue); background: var(--color-bg-tab); font-weight: 700; }
+#allLeagues { width: 100%; border: 0; background: transparent; text-align: left; font: inherit; font-size: 12px; color: var(--color-text-secondary); padding: 8px 10px; cursor: pointer; }
 
 /* match rows */
 .match-list { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-top: 0; border-radius: 0 0 12px 12px; overflow: hidden; }
@@ -61,13 +62,13 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .cell .c { display: block; font-size: 10px; font-weight: 800; margin-top: 1px; }
 .cell .c.cut { color: var(--color-status-danger); }
 .cell .c.edge { color: var(--color-accent-blue); }
-.payout-pill { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700; padding: 5px 9px; border-radius: 999px; background: var(--color-bg-tab); color: var(--color-text-secondary); }
-.payout-pill.good { color: var(--color-status-success); }
-.payout-pill.warn { color: var(--color-status-warning); }
-.payout-pill.bad { color: var(--color-status-danger); }
 .cut-pill { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 800; padding: 5px 9px; border-radius: 999px; background: var(--color-bg-tab); color: var(--color-status-danger); }
 .cut-pill.edge { color: var(--color-accent-blue); }
 .market-pill { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700; padding: 5px 9px; border-radius: 999px; background: var(--color-bg-tab); color: var(--color-text-tertiary); white-space: nowrap; }
+.watch-button { border: 1px solid var(--color-border-default); border-radius: 999px; padding: 5px 9px; background: var(--color-bg-elevated); color: var(--color-text-secondary); font: inherit; font-size: 10px; font-weight: 800; cursor: pointer; white-space: nowrap; }
+.watch-button:hover, .watch-button.on { color: var(--color-accent-blue); border-color: var(--color-accent-blue); background: var(--color-bg-tab); }
+.watch-button:disabled { opacity: .55; cursor: not-allowed; }
+.m-actions { display: flex; align-items: center; gap: 8px; }
 
 /* prediction cards */
 .pred-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
@@ -87,11 +88,27 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .rank-row .bar2 { height: 6px; border-radius: 999px; background: var(--color-bg-tab); flex: 1; margin: 0 10px; overflow: hidden; }
 .rank-row .bar2 i { display: block; height: 100%; background: var(--color-accent-blue); border-radius: 999px; }
 .rank-row .v { font-size: 12px; font-weight: 700; }
+.ranking-list { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-top: 0; border-radius: 0 0 12px 12px; overflow: hidden; }
+.ranking-list .rank-row { padding: 12px 16px; border-bottom: 1px solid var(--color-border-default); }
+.ranking-list .rank-row:last-child { border-bottom: 0; }
 
 /* data status */
 .kv { font-size: 12px; color: var(--color-text-secondary); display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px dashed var(--color-border-strong); }
 .kv:last-child { border-bottom: 0; }
 .kv b { color: var(--color-text-primary); font-weight: 700; text-align: right; }
+.account-form { display: grid; gap: 8px; }
+.account-form input { width: 100%; border: 1px solid var(--color-border-default); border-radius: 8px; padding: 9px 10px; background: var(--color-bg-cell); color: var(--color-text-primary); font: inherit; font-size: 12px; }
+.account-form button, .account-actions button { border: 1px solid var(--color-border-default); border-radius: 8px; padding: 8px 10px; background: var(--color-bg-elevated); color: var(--color-text-primary); font: inherit; font-size: 11px; font-weight: 700; cursor: pointer; }
+.account-form button.primary { border-color: var(--color-accent-blue); background: var(--color-accent-blue); color: white; }
+.account-form button.linkish, .account-actions button.linkish { border: 0; padding: 4px 0; background: transparent; color: var(--color-accent-blue); text-align: left; }
+.account-actions { display: grid; gap: 8px; }
+.account-actions .row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.account-actions .row button { flex: 1; }
+.account-message { font-size: 11px; line-height: 1.5; color: var(--color-text-tertiary); margin: 8px 0 0; }
+.watch-list { display: grid; gap: 7px; margin-top: 10px; }
+.watch-item { border-top: 1px solid var(--color-border-default); padding-top: 8px; }
+.watch-item .name { font-size: 11px; font-weight: 700; line-height: 1.35; }
+.watch-item .meta { color: var(--color-text-tertiary); font-size: 10px; margin: 3px 0 6px; }
 
 footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 12px; color: var(--color-text-tertiary); }
 </style>
@@ -101,7 +118,10 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
   <div class="header-in">
     <div class="brand">TAENGLE</div>
     <nav class="nav">
-      <a class="on" href="#">전체</a><a href="#">축구</a><a href="#">야구</a><a href="#">랭킹</a>
+      <button type="button" class="on" data-mode="all">전체</button>
+      <button type="button" data-mode="soccer">축구</button>
+      <button type="button" data-mode="baseball">야구</button>
+      <button type="button" data-mode="ranking">랭킹</button>
     </nav>
     <div class="tools">
       <span class="status"><span class="dot"></span><span id="dataStatus">실데이터 로딩중</span></span>
@@ -112,14 +132,34 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
 
 <main>
   <div class="col-side">
+    <div class="card account-card">
+      <h3>내 관측</h3>
+      <div id="authGuest">
+        <form class="account-form" id="authForm">
+          <input id="authUsername" name="username" autocomplete="username" placeholder="아이디" minlength="2" maxlength="24" required>
+          <input id="authPassword" name="password" type="password" autocomplete="current-password" placeholder="비밀번호 (8자 이상)" minlength="8" maxlength="128" required>
+          <button class="primary" id="authSubmit" type="submit">로그인</button>
+          <button class="linkish" id="authMode" type="button">처음이면 회원가입</button>
+        </form>
+      </div>
+      <div id="authUser" hidden>
+        <p class="account-message" id="accountIdentity"></p>
+        <form class="account-form" id="keyForm">
+          <input id="apiKey" name="apiKey" type="password" autocomplete="off" placeholder="The Odds API 키">
+          <button class="primary" type="submit">키 저장 / 교체</button>
+        </form>
+        <div class="account-actions">
+          <p class="account-message" id="keyStatus"></p>
+          <div class="row"><button class="linkish" id="removeKey" type="button">키 삭제</button><button class="linkish" id="logout" type="button">로그아웃</button></div>
+        </div>
+        <div class="watch-list" id="watchList"></div>
+      </div>
+      <p class="account-message" id="accountMessage">로그인하면 경기별 10분 관측을 사용할 수 있습니다.</p>
+    </div>
     <div class="card">
       <h3>톱 리그</h3>
       <div id="leagueList"></div>
-      <div id="allLeagues">모든 리그 ▾</div>
-    </div>
-    <div class="card">
-      <h3>리그별 환수율</h3>
-      <div id="payoutRank"></div>
+      <button type="button" id="allLeagues">모든 리그 ▾</button>
     </div>
     <div class="card">
       <h3>데이터 상태</h3>
@@ -128,26 +168,35 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
   </div>
 
   <div class="col-main">
-    <div class="sec">
-      <h2>오늘의 빅매치</h2>
-      <span class="link">베트맨 26096회차 · 승부식</span>
-    </div>
-    <div class="match-list" id="matchList"></div>
+    <div id="matchesView">
+      <div class="sec">
+        <h2>오늘의 빅매치</h2>
+        <span class="link">베트맨 26096회차 · 승부식</span>
+      </div>
+      <div class="match-list" id="matchList"></div>
 
-    <div class="sec">
-      <h2>데이터분석 매치 예측</h2>
-      <span class="link">no-vig 확률 · 실배당 기반</span>
+      <div class="sec">
+        <h2>데이터분석 매치 예측</h2>
+        <span class="link">no-vig 확률 · 실배당 기반</span>
+      </div>
+      <div class="match-list">
+        <div class="pred-grid" id="predGrid"></div>
+        <p class="note" style="padding:12px 16px;">확률은 베트맨 실배당에서 마진을 제거한 no-vig 공정확률입니다.</p>
+      </div>
     </div>
-    <div class="match-list">
-      <div class="pred-grid" id="predGrid"></div>
-      <p class="note" style="padding:12px 16px;">확률은 베트맨 실배당에서 마진을 제거한 no-vig 공정확률입니다.</p>
+    <div id="rankingView" hidden>
+      <div class="sec">
+        <h2>삭감률 랭킹</h2>
+        <span class="link">낮은 순 · 해외 컨센서스 기준</span>
+      </div>
+      <div class="ranking-list" id="rankingList"></div>
     </div>
   </div>
 
   <div class="col-side">
     <div class="card">
       <h3>삭감률 TOP</h3>
-      <p class="note" style="margin-bottom:10px;">해외 컨센서스 대비 베트맨 배당이 가장 많이 깎인 경기</p>
+      <p class="note" style="margin-bottom:10px;">해외 컨센서스 대비 베트맨 배당이 유리한 경기부터</p>
       <div id="cutRank"></div>
     </div>
     <div class="card">
@@ -156,7 +205,7 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
     </div>
     <div class="card">
       <h3>이용 안내</h3>
-      <p class="note" style="line-height:1.6;">베트맨 실배당(승무패/승패)과 해외 컨센서스(The Odds API 수십 개 북 평균)를 비교해 삭감률을 계산합니다. 삭감률 = 1 − 베트맨배당 ÷ 해외배당. 양수면 베트맨이 더 낮은 배당입니다.</p>
+      <p class="note" style="line-height:1.6;">베트맨 실배당(승무패/승패/언더오버)과 해외 컨센서스(The Odds API 중앙값)를 같은 마켓·기준점으로 비교합니다. 삭감률 = 1 − 베트맨배당 ÷ 해외배당. 양수면 베트맨이 더 낮은 배당입니다.</p>
     </div>
   </div>
 </main>

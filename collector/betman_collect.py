@@ -57,6 +57,14 @@ def num(v):
         return None
 
 
+def first_num(row: dict, *names: str):
+    for name in names:
+        value = num(row.get(name))
+        if value is not None:
+            return value
+    return None
+
+
 def parse_matches(table: dict) -> list[dict]:
     keys = table.get("keys", [])
     rows = table.get("datas", [])
@@ -76,6 +84,24 @@ def parse_matches(table: dict) -> list[dict]:
             if isinstance(ts, (int, float))
             else None
         )
+        bet_type = m.get("betTypNm") or (None if draw else "승패")
+        total_point = first_num(
+            m,
+            "totalPoint",
+            "totPoint",
+            "totalLine",
+            "baseLine",
+            "basePoint",
+            "gamePoint",
+            "point",
+            "line",
+            "handicapPoint",
+            "handiPoint",
+            "handiCap",
+            "handicap",
+            "handi",
+        )
+        is_total = "언더" in str(bet_type) or "오버" in str(bet_type)
         row = {
             "kickoff": kickoff,
             "league": m.get("leagueShortName") or m.get("leagueName"),
@@ -86,8 +112,15 @@ def parse_matches(table: dict) -> list[dict]:
             "lose": lose,
             "status": m.get("protoStatus"),
             "score": m.get("mchScore") or None,
-            "betType": m.get("betTypNm") or (None if draw else "승패"),
+            "betType": bet_type,
         }
+        if is_total:
+            row["marketType"] = "totals"
+            row["totalPoint"] = total_point
+            row["over"] = win
+            row["under"] = lose
+        else:
+            row["marketType"] = "h2h"
         matches.append(row)
     return matches
 
