@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TAENGLE Design System</title>
+<link rel="stylesheet" href="tokens.css">
+<style>
+:root { color-scheme: light; }
+.dark { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin:0; font-family: Inter, system-ui, sans-serif; background: var(--color-bg-base); color: var(--color-text-primary); transition: background .2s, color .2s; }
+header { position: sticky; top:0; z-index:10; background: var(--color-bg-topbar); backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-border-default); }
+.header-in { max-width:1100px; margin:0 auto; padding: 14px 20px; display:flex; align-items:center; justify-content:space-between; }
+h1 { font-size: 22px; font-weight: 900; letter-spacing: .01em; margin:0; }
+.sub { font-size: 12px; color: var(--color-text-secondary); }
+button { font: inherit; font-weight:700; font-size:13px; color: var(--color-text-primary); background: var(--color-bg-elevated); border:1px solid var(--color-border-default); border-radius: var(--radius-full); padding: 7px 14px; cursor:pointer; }
+main { max-width:1100px; margin:0 auto; padding: 32px 20px 80px; }
+section { margin: 40px 0; }
+h2 { font-size: 20px; font-weight: 700; margin: 0 0 6px; }
+.note { font-size: 12px; color: var(--color-text-secondary); margin: 0 0 14px; }
+.grid { display:flex; flex-wrap:wrap; gap: 10px; }
+.swatch { width: 118px; }
+.sw { height: 64px; border-radius: var(--radius-9); border: 1px solid var(--color-border-default); }
+.sw-name { font-size: 11px; font-weight:700; margin-top:5px; }
+.sw-var { font-size: 9px; color: var(--color-text-tertiary); }
+.type-row { padding: 10px 0; border-bottom: 1px solid var(--color-border-strong); }
+.type-name { font-size: 11px; color: var(--color-text-secondary); }
+.type-spec { font-size: 10px; color: var(--color-text-tertiary); }
+.comps { display:grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.comp { background: var(--color-bg-elevated); border:1px solid var(--color-border-default); border-radius: var(--radius-12); padding: 12px; }
+.comp img { width:100%; border-radius: var(--radius-9); border:1px solid var(--color-border-default); }
+.comp-name { font-size: 12px; font-weight:700; margin-top:8px; }
+a { color: var(--color-accent-blue); }
+footer { max-width:1100px; margin:0 auto; padding: 20px; font-size: 12px; color: var(--color-text-tertiary); }
+</style>
+</head>
+<body>
+<header><div class="header-in">
+  <div><h1>TAENGLE <span class="sub">Design System v1.3</span></h1></div>
+  <button id="theme" onclick="document.documentElement.classList.toggle('dark');this.textContent=document.documentElement.classList.contains('dark')?'Light 모드':'Dark 모드'">Dark 모드</button>
+</div></header>
+<main>
+  <section><h2>Semantic Colors</h2><p class="note">Light 기본 / Dark는 토글 — Figma 변수와 동일 매핑</p><div class="grid">
+<section><h2></h2><div class="grid"><div class="swatch"><div class="sw" style="background:var(--color-bg-base)"></div><div class="sw-name">color/bg/base</div><div class="sw-var">--color-bg-base</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-bg-base-top)"></div><div class="sw-name">color/bg/base-top</div><div class="sw-var">--color-bg-base-top</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-bg-topbar)"></div><div class="sw-name">color/bg/topbar</div><div class="sw-var">--color-bg-topbar</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-bg-nav)"></div><div class="sw-name">color/bg/nav</div><div class="sw-var">--color-bg-nav</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-bg-row)"></div><div class="sw-name">color/bg/row</div><div class="sw-var">--color-bg-row</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-bg-elevated)"></div><div class="sw-name">color/bg/elevated</div><div class="sw-var">--color-bg-elevated</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-bg-tab)"></div><div class="sw-name">color/bg/tab</div><div class="sw-var">--color-bg-tab</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-bg-cell)"></div><div class="sw-name">color/bg/cell</div><div class="sw-var">--color-bg-cell</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-text-primary)"></div><div class="sw-name">color/text/primary</div><div class="sw-var">--color-text-primary</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-text-secondary)"></div><div class="sw-name">color/text/secondary</div><div class="sw-var">--color-text-secondary</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-text-tertiary)"></div><div class="sw-name">color/text/tertiary</div><div class="sw-var">--color-text-tertiary</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-accent-blue)"></div><div class="sw-name">color/accent/blue</div><div class="sw-var">--color-accent-blue</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-status-success)"></div><div class="sw-name">color/status/success</div><div class="sw-var">--color-status-success</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-status-warning)"></div><div class="sw-name">color/status/warning</div><div class="sw-var">--color-status-warning</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-status-danger)"></div><div class="sw-name">color/status/danger</div><div class="sw-var">--color-status-danger</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-border-default)"></div><div class="sw-name">color/border/default</div><div class="sw-var">--color-border-default</div></div>
+<div class="swatch"><div class="sw" style="background:var(--color-border-strong)"></div><div class="sw-name">color/border/strong</div><div class="sw-var">--color-border-strong</div></div></div></section>
+  </div></section>
+  <section><h2>Primitives (라이트 계열)</h2><div class="grid">
+<section><h2></h2><div class="grid"><div class="swatch"><div class="sw" style="background:var(--gray-50)"></div><div class="sw-name">gray/50</div><div class="sw-var">--gray-50</div></div>
+<div class="swatch"><div class="sw" style="background:var(--gray-100)"></div><div class="sw-name">gray/100</div><div class="sw-var">--gray-100</div></div>
+<div class="swatch"><div class="sw" style="background:var(--gray-200)"></div><div class="sw-name">gray/200</div><div class="sw-var">--gray-200</div></div>
+<div class="swatch"><div class="sw" style="background:var(--gray-300)"></div><div class="sw-name">gray/300</div><div class="sw-var">--gray-300</div></div>
+<div class="swatch"><div class="sw" style="background:var(--gray-400)"></div><div class="sw-name">gray/400</div><div class="sw-var">--gray-400</div></div>
+<div class="swatch"><div class="sw" style="background:var(--gray-500)"></div><div class="sw-name">gray/500</div><div class="sw-var">--gray-500</div></div>
+<div class="swatch"><div class="sw" style="background:var(--gray-550)"></div><div class="sw-name">gray/550</div><div class="sw-var">--gray-550</div></div>
+<div class="swatch"><div class="sw" style="background:var(--gray-600)"></div><div class="sw-name">gray/600</div><div class="sw-var">--gray-600</div></div>
+<div class="swatch"><div class="sw" style="background:var(--gray-700)"></div><div class="sw-name">gray/700</div><div class="sw-var">--gray-700</div></div>
+<div class="swatch"><div class="sw" style="background:var(--gray-800)"></div><div class="sw-name">gray/800</div><div class="sw-var">--gray-800</div></div>
+<div class="swatch"><div class="sw" style="background:var(--gray-900)"></div><div class="sw-name">gray/900</div><div class="sw-var">--gray-900</div></div>
+<div class="swatch"><div class="sw" style="background:var(--gray-950)"></div><div class="sw-name">gray/950</div><div class="sw-var">--gray-950</div></div>
+<div class="swatch"><div class="sw" style="background:var(--blue-50)"></div><div class="sw-name">blue/50</div><div class="sw-var">--blue-50</div></div>
+<div class="swatch"><div class="sw" style="background:var(--blue-100)"></div><div class="sw-name">blue/100</div><div class="sw-var">--blue-100</div></div>
+<div class="swatch"><div class="sw" style="background:var(--blue-500)"></div><div class="sw-name">blue/500</div><div class="sw-var">--blue-500</div></div>
+<div class="swatch"><div class="sw" style="background:var(--blue-600)"></div><div class="sw-name">blue/600</div><div class="sw-var">--blue-600</div></div>
+<div class="swatch"><div class="sw" style="background:var(--blue-700)"></div><div class="sw-name">blue/700</div><div class="sw-var">--blue-700</div></div>
+<div class="swatch"><div class="sw" style="background:var(--green-500)"></div><div class="sw-name">green/500</div><div class="sw-var">--green-500</div></div>
+<div class="swatch"><div class="sw" style="background:var(--green-600)"></div><div class="sw-name">green/600</div><div class="sw-var">--green-600</div></div>
+<div class="swatch"><div class="sw" style="background:var(--amber-500)"></div><div class="sw-name">amber/500</div><div class="sw-var">--amber-500</div></div>
+<div class="swatch"><div class="sw" style="background:var(--amber-600)"></div><div class="sw-name">amber/600</div><div class="sw-var">--amber-600</div></div>
+<div class="swatch"><div class="sw" style="background:var(--amber-700)"></div><div class="sw-name">amber/700</div><div class="sw-var">--amber-700</div></div>
+<div class="swatch"><div class="sw" style="background:var(--red-500)"></div><div class="sw-name">red/500</div><div class="sw-var">--red-500</div></div>
+<div class="swatch"><div class="sw" style="background:var(--red-600)"></div><div class="sw-name">red/600</div><div class="sw-var">--red-600</div></div>
+<div class="swatch"><div class="sw" style="background:var(--white)"></div><div class="sw-name">white</div><div class="sw-var">--white</div></div>
+<div class="swatch"><div class="sw" style="background:var(--white-62)"></div><div class="sw-name">white/62</div><div class="sw-var">--white-62</div></div>
+<div class="swatch"><div class="sw" style="background:var(--white-94)"></div><div class="sw-name">white/94</div><div class="sw-var">--white-94</div></div>
+<div class="swatch"><div class="sw" style="background:var(--white-96)"></div><div class="sw-name">white/96</div><div class="sw-var">--white-96</div></div></div></section>
+  </div></section>
+  <section><h2>Typography (Inter)</h2><div class="type-row"><div class="type-name">typography/display/mobile</div><div class="type-sample" style="font-size:29px;font-weight:700;letter-spacing:-0.04em">가나다 Abc 123</div><div class="type-spec">Inter 700 · 29px · tracking -0.04em</div></div>
+<div class="type-row"><div class="type-name">typography/display/desktop</div><div class="type-sample" style="font-size:38px;font-weight:700;letter-spacing:-0.04em">가나다 Abc 123</div><div class="type-spec">Inter 700 · 38px · tracking -0.04em</div></div>
+<div class="type-row"><div class="type-name">typography/eyebrow</div><div class="type-sample" style="font-size:11px;font-weight:800;letter-spacing:0.13em">가나다 Abc 123</div><div class="type-spec">Inter 800 · 11px · tracking 0.13em</div></div>
+<div class="type-row"><div class="type-name">typography/brand</div><div class="type-sample" style="font-size:16px;font-weight:900;letter-spacing:0.12em">가나다 Abc 123</div><div class="type-spec">Inter 900 · 16px · tracking 0.12em</div></div>
+<div class="type-row"><div class="type-name">typography/body</div><div class="type-sample" style="font-size:14px;font-weight:400;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 400 · 14px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/section-title</div><div class="type-sample" style="font-size:17px;font-weight:700;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 700 · 17px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/metric-value</div><div class="type-sample" style="font-size:15px;font-weight:700;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 700 · 15px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/metric-label</div><div class="type-sample" style="font-size:10px;font-weight:400;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 400 · 10px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/tab-label</div><div class="type-sample" style="font-size:13px;font-weight:700;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 700 · 13px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/status</div><div class="type-sample" style="font-size:11px;font-weight:400;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 400 · 11px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/match-meta</div><div class="type-sample" style="font-size:11px;font-weight:400;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 400 · 11px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/league</div><div class="type-sample" style="font-size:11px;font-weight:800;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 800 · 11px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/teams</div><div class="type-sample" style="font-size:16px;font-weight:700;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 700 · 16px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/vs</div><div class="type-sample" style="font-size:10px;font-weight:400;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 400 · 10px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/odds-label</div><div class="type-sample" style="font-size:9px;font-weight:800;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 800 · 9px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/odds-value</div><div class="type-sample" style="font-size:13px;font-weight:700;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 700 · 13px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/nav-label</div><div class="type-sample" style="font-size:12px;font-weight:700;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 700 · 12px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/logo</div><div class="type-sample" style="font-size:22px;font-weight:900;letter-spacing:0.01em">가나다 Abc 123</div><div class="type-spec">Inter 900 · 22px · tracking 0.01em</div></div>
+<div class="type-row"><div class="type-name">typography/nav</div><div class="type-sample" style="font-size:14px;font-weight:700;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 700 · 14px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/card-title</div><div class="type-sample" style="font-size:14px;font-weight:700;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 700 · 14px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/team</div><div class="type-sample" style="font-size:14px;font-weight:700;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 700 · 14px · tracking 0</div></div>
+<div class="type-row"><div class="type-name">typography/score</div><div class="type-sample" style="font-size:18px;font-weight:700;letter-spacing:0">가나다 Abc 123</div><div class="type-spec">Inter 700 · 18px · tracking 0</div></div></section>
+  <section><h2>Components (28)</h2><div class="comps"><div class="comp"><img loading="lazy" src="components/BottomNav.png" alt="BottomNav"><div class="comp-name">BottomNav</div></div>
+<div class="comp"><img loading="lazy" src="components/GapBadge.png" alt="GapBadge"><div class="comp-name">GapBadge</div></div>
+<div class="comp"><img loading="lazy" src="components/GuideCard.png" alt="GuideCard"><div class="comp-name">GuideCard</div></div>
+<div class="comp"><img loading="lazy" src="components/Hero.png" alt="Hero"><div class="comp-name">Hero</div></div>
+<div class="comp"><img loading="lazy" src="components/HomepageDemo.png" alt="HomepageDemo"><div class="comp-name">HomepageDemo</div></div>
+<div class="comp"><img loading="lazy" src="components/LeagueNavItem.png" alt="LeagueNavItem"><div class="comp-name">LeagueNavItem</div></div>
+<div class="comp"><img loading="lazy" src="components/LeagueTab.png" alt="LeagueTab"><div class="comp-name">LeagueTab</div></div>
+<div class="comp"><img loading="lazy" src="components/MatchRow.png" alt="MatchRow"><div class="comp-name">MatchRow</div></div>
+<div class="comp"><img loading="lazy" src="components/MatchScoreRow.png" alt="MatchScoreRow"><div class="comp-name">MatchScoreRow</div></div>
+<div class="comp"><img loading="lazy" src="components/MetricCard.png" alt="MetricCard"><div class="comp-name">MetricCard</div></div>
+<div class="comp"><img loading="lazy" src="components/NavBar.png" alt="NavBar"><div class="comp-name">NavBar</div></div>
+<div class="comp"><img loading="lazy" src="components/OddsCell.png" alt="OddsCell"><div class="comp-name">OddsCell</div></div>
+<div class="comp"><img loading="lazy" src="components/PopularPostsCard.png" alt="PopularPostsCard"><div class="comp-name">PopularPostsCard</div></div>
+<div class="comp"><img loading="lazy" src="components/PostListItem.png" alt="PostListItem"><div class="comp-name">PostListItem</div></div>
+<div class="comp"><img loading="lazy" src="components/PredictionCard.png" alt="PredictionCard"><div class="comp-name">PredictionCard</div></div>
+<div class="comp"><img loading="lazy" src="components/PrimaryButton.png" alt="PrimaryButton"><div class="comp-name">PrimaryButton</div></div>
+<div class="comp"><img loading="lazy" src="components/RankingTab.png" alt="RankingTab"><div class="comp-name">RankingTab</div></div>
+<div class="comp"><img loading="lazy" src="components/RecentVisitStrip.png" alt="RecentVisitStrip"><div class="comp-name">RecentVisitStrip</div></div>
+<div class="comp"><img loading="lazy" src="components/SearchField.png" alt="SearchField"><div class="comp-name">SearchField</div></div>
+<div class="comp"><img loading="lazy" src="components/SectionCard.png" alt="SectionCard"><div class="comp-name">SectionCard</div></div>
+<div class="comp"><img loading="lazy" src="components/SectionHeading.png" alt="SectionHeading"><div class="comp-name">SectionHeading</div></div>
+<div class="comp"><img loading="lazy" src="components/ShortcutRow.png" alt="ShortcutRow"><div class="comp-name">ShortcutRow</div></div>
+<div class="comp"><img loading="lazy" src="components/SiteHeader.png" alt="SiteHeader"><div class="comp-name">SiteHeader</div></div>
+<div class="comp"><img loading="lazy" src="components/StatusBadge.png" alt="StatusBadge"><div class="comp-name">StatusBadge</div></div>
+<div class="comp"><img loading="lazy" src="components/TeamRankingCard.png" alt="TeamRankingCard"><div class="comp-name">TeamRankingCard</div></div>
+<div class="comp"><img loading="lazy" src="components/TopBar.png" alt="TopBar"><div class="comp-name">TopBar</div></div>
+<div class="comp"><img loading="lazy" src="components/TopLeagueCard.png" alt="TopLeagueCard"><div class="comp-name">TopLeagueCard</div></div>
+<div class="comp"><img loading="lazy" src="components/TopNavItem.png" alt="TopNavItem"><div class="comp-name">TopNavItem</div></div></div></section>
+</main>
+<footer>Source: <a href="https://www.figma.com/design/OcKhOxsU6zddMeRWlXFyYt">Figma — TAENGLE Design System</a> · tokens: <a href="https://github.com/coseung2/taengle2/tree/main/design-tokens">design-tokens/</a></footer>
+</body>
+</html>
