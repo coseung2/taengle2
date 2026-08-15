@@ -169,20 +169,28 @@ function oddCell(label, betman, market, cut, className = "") {
   return `<div class="cell ${className}"><span class="l">${label}</span><span class="v">${betman.toFixed(2)}</span>${mLine}${cutBadge(cut)}</div>`;
 }
 
-function marketState(m) {
+function emptyOddCell() {
+  return '<div class="cell empty" aria-hidden="true"></div>';
+}
+
+function pointCell(point) {
+  return `<div class="cell point"><span class="l">기준점</span><span class="v">${point != null ? esc(point) : "—"}</span></div>`;
+}
+
+function marketMeta(m) {
   if (!m) return "";
   const mk = m.market;
   const totals = matchMarketType(m) === "totals";
   const watch = watchedFor(m);
-  const cutPill = mk && mk.cutAvg != null
+  const cutText = mk && mk.cutAvg != null
     ? (mk.cutAvg >= 0
-      ? `<span class="cut-pill" title="${totals ? `기준점 ${mk.point} 언오버` : "승무패"} 삭감률 평균 (컨센서스 ${mk.books}개 북)">삭감 ${(mk.cutAvg * 100).toFixed(1)}%</span>`
-      : `<span class="cut-pill edge" title="해외보다 높은 평균 배당 (컨센서스 ${mk.books}개 북)">우대 ${(-mk.cutAvg * 100).toFixed(1)}%</span>`)
-    : `<span class="market-pill" title="The Odds API에서 동일 리그·팀·시간 경기를 찾지 못함">해외 미매칭</span>`;
+      ? `<span class="market-meta-cut" title="${totals ? `기준점 ${mk.point} 언오버` : "승무패"} 삭감률 평균 (컨센서스 ${mk.books}개 북)">삭감 ${(mk.cutAvg * 100).toFixed(1)}%</span>`
+      : `<span class="market-meta-cut edge" title="해외보다 높은 평균 배당 (컨센서스 ${mk.books}개 북)">우대 ${(-mk.cutAvg * 100).toFixed(1)}%</span>`)
+    : `<span class="market-meta-muted">미매칭</span>`;
   const watchButton = mk?.marketId
-    ? `<button type="button" class="watch-button ${watch?.enabled ? "on" : ""}" aria-label="${totals ? "언오버" : "승무패"} ${watch?.enabled ? "관측 끄기" : "관측 추가"}" data-watch-key="${esc(watchKey(m))}">${watch?.enabled ? "관측 ON" : "관측 추가"}</button>`
+    ? `<button type="button" class="watch-link ${watch?.enabled ? "on" : ""}" aria-label="${totals ? "언오버" : "승무패"} ${watch?.enabled ? "관측 끄기" : "관측 추가"}" data-watch-key="${esc(watchKey(m))}">${watch?.enabled ? "관측 ON" : "+ 관측"}</button>`
     : "";
-  return `<div class="market-action">${cutPill}${watchButton}</div>`;
+  return `<div class="market-meta">${cutText}${watchButton}</div>`;
 }
 
 function renderMatches(groups) {
@@ -198,13 +206,14 @@ function renderMatches(groups) {
     const h2hCells = h2h
       ? [
         oddCell("승", h2h.win, h2hMarket?.consensus?.win, h2hMarket?.cutConsensus?.win),
-        h2h.draw ? oddCell("무", h2h.draw, h2hMarket?.consensus?.draw, h2hMarket?.cutConsensus?.draw) : "",
+        h2h.draw ? oddCell("무", h2h.draw, h2hMarket?.consensus?.draw, h2hMarket?.cutConsensus?.draw) : emptyOddCell(),
         oddCell("패", h2h.lose, h2hMarket?.consensus?.lose, h2hMarket?.cutConsensus?.lose),
       ].join("")
       : '<span class="market-empty">미제공</span>';
     const totalsCells = totals
       ? [
         oddCell("오버", totals.over, totalsMarket?.consensus?.over, totalsMarket?.cutConsensus?.over),
+        pointCell(point),
         oddCell("언더", totals.under, totalsMarket?.consensus?.under, totalsMarket?.cutConsensus?.under),
       ].join("")
       : '<span class="market-empty">미제공</span>';
@@ -221,19 +230,12 @@ function renderMatches(groups) {
       </div>
       <div class="match-bottom">
         <div class="market-block">
-          <div class="market-info">
-            <span class="market-label">승무패</span>
-            ${marketState(h2h)}
-          </div>
           <div class="m-odds h2h">${h2hCells}</div>
+          ${marketMeta(h2h)}
         </div>
         <div class="market-block">
-          <div class="market-info">
-            <span class="market-label">언오버</span>
-            ${point != null ? `<span class="market-point">기준점 ${esc(point)}</span>` : ""}
-            ${marketState(totals)}
-          </div>
           <div class="m-odds totals">${totalsCells}</div>
+          ${marketMeta(totals)}
         </div>
       </div>
     </div>`;
