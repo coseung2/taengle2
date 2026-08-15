@@ -29,6 +29,50 @@ const SOCCER_LEAGUES = new Set([
 
 let SNAPSHOT = null;
 
+const THEME_ICONS = {
+  moon: '<svg class="lucide lucide-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>',
+  sun: '<svg class="lucide lucide-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="m4.93 4.93 1.42 1.42"></path><path d="m17.66 17.66 1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path></svg>',
+};
+
+function renderThemeToggle() {
+  const button = $("#themeToggle");
+  if (!button) return;
+  const dark = document.documentElement.classList.contains("dark");
+  const label = dark ? "라이트 모드로 전환" : "다크 모드로 전환";
+  button.innerHTML = dark ? THEME_ICONS.sun : THEME_ICONS.moon;
+  button.setAttribute("aria-label", label);
+  button.setAttribute("title", label);
+}
+
+function initTheme() {
+  const saved = localStorage.getItem("taengle-theme");
+  if (saved === "dark") document.documentElement.classList.add("dark");
+  if (saved === "light") document.documentElement.classList.remove("dark");
+  renderThemeToggle();
+  $("#themeToggle")?.addEventListener("click", () => {
+    const dark = document.documentElement.classList.toggle("dark");
+    localStorage.setItem("taengle-theme", dark ? "dark" : "light");
+    renderThemeToggle();
+  });
+}
+
+function formatRefreshTime(value) {
+  const date = new Date(value || "");
+  if (Number.isNaN(date.getTime())) return "-";
+  const parts = new Intl.DateTimeFormat("ko-KR", {
+    timeZone: "Asia/Seoul", month: "2-digit", day: "2-digit",
+    hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+  }).formatToParts(date).reduce((acc, part) => ({ ...acc, [part.type]: part.value }), {});
+  return `${parts.month}.${parts.day} ${parts.hour}:${parts.minute}`;
+}
+
+function formatRefreshInterval(minutes) {
+  const value = Number(minutes) || 630;
+  const hours = Math.floor(value / 60);
+  const rest = value % 60;
+  return rest ? `${hours}시간 ${rest}분` : `${hours}시간`;
+}
+
 const impliedTotal = (m) => 1 / m.win + (m.draw ? 1 / m.draw : 0) + 1 / m.lose;
 const noVig = (m) => {
   const b = impliedTotal(m);
@@ -132,8 +176,11 @@ function renderNav(mode) {
 function renderHeader(game, upcoming, matched, selectedLeague, mode) {
   const modeLabel = mode === "soccer" ? "축구" : mode === "baseball" ? "야구" : mode === "ranking" ? "랭킹" : "";
   const context = [modeLabel, selectedLeague].filter(Boolean).join(" · ");
-  $("#dataStatus").textContent =
-    `${game.gameName}${context ? ` · ${context}` : ""} · 예정 ${upcoming.length}경기 · 해외 매칭 ${matched.length}경기`;
+  const fetchedAt = SNAPSHOT.marketFetchedAt || SNAPSHOT.fetchedAt;
+  const status = $("#dataStatus");
+  const interval = formatRefreshInterval(SNAPSHOT.marketRefreshIntervalMinutes);
+  status.textContent = `${interval} 주기 · 최근 ${formatRefreshTime(fetchedAt)}`;
+  status.parentElement.title = `${game.gameName}${context ? ` · ${context}` : ""} · 예정 ${upcoming.length}경기 · 해외 매칭 ${matched.length}경기 · 30일 균등 갱신 · 최근 ${fetchedAt || "-"}`;
 }
 
 function renderLeagues(leagues, selectedLeague, onSelect) {
@@ -494,6 +541,7 @@ function initAccount() {
   refreshAccount();
 }
 
+initTheme();
 initAccount();
 load().catch((e) => {
   $("#dataStatus").textContent = "데이터 로드 실패";

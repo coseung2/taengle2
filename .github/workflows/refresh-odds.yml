@@ -1,11 +1,23 @@
 name: Refresh Betman and market odds
 
 on:
-  # 44회/월: 1~22일에 하루 2회. 11개 종목 x (h2h+totals) x eu = 22 credits/run.
-  # 두 계정에 번갈아 종목을 배분해 계정당 약 484 credits/month를 사용한다.
+  # 10시간 30분 간격, 주 16회(월 약 69회). 활성 7종목 x 2 markets = 최대 14 credits/run.
+  # 두 계정 합계 월 약 966 credits로 30일 전체에 고르게 배분한다. 시간은 UTC다.
   schedule:
-    - cron: "10 0 1-22 * *"
-    - cron: "10 12 1-22 * *"
+    - cron: "0 0,21 * * 0"
+    - cron: "30 10 * * 0"
+    - cron: "30 7 * * 1"
+    - cron: "0 18 * * 1"
+    - cron: "30 4 * * 2"
+    - cron: "0 15 * * 2"
+    - cron: "30 1,22 * * 3"
+    - cron: "0 12 * * 3"
+    - cron: "0 9 * * 4"
+    - cron: "30 19 * * 4"
+    - cron: "0 6 * * 5"
+    - cron: "30 16 * * 5"
+    - cron: "0 3 * * 6"
+    - cron: "30 13 * * 6"
   workflow_dispatch:
 
 permissions:
@@ -32,6 +44,8 @@ jobs:
           ODDS_API_KEYS: ${{ secrets.ODDS_API_KEYS }}
           ODDS_EXPECTED_ACCOUNTS: "2"
           ODDS_REGIONS: eu
+          ODDS_MAX_SPORTS_PER_RUN: "7"
+          ODDS_REFRESH_INTERVAL_MINUTES: "630"
         run: python collector/collect_all.py
 
       - name: Commit refreshed data

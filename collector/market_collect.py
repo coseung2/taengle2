@@ -36,6 +36,11 @@ SPORT_MAP = {
 BASE = "https://api.the-odds-api.com/v4/sports"
 MARKETS = "h2h,totals"
 KST = dt.timezone(dt.timedelta(hours=9))
+ROOT = Path(__file__).resolve().parents[1]
+SNAPSHOT_PATH = ROOT / "site" / "data" / "snapshots.json"
+OUT_PATH = ROOT / "site" / "data" / "market_odds.json"
+DEFAULT_MAX_SPORTS_PER_RUN = 7
+DEFAULT_REFRESH_INTERVAL_MINUTES = 630
 
 
 def fetch_sport(api_key: str, sport_key: str, regions: str) -> tuple[list, str | None]:
@@ -126,6 +131,51 @@ def read_api_keys() -> list[str]:
     return list(dict.fromkeys(keys))
 
 
+def read_previous_market() -> dict:
+    if not OUT_PATH.exists():
+        return {}
+    try:
+        return json.loads(OUT_PATH.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return {}
+
+
+def active_leagues(now: dt.datetime | None = None) -> list[str]:
+    """Return mapped leagues with future Betman matches, nearest kickoff first."""
+    if not SNAPSHOT_PATH.exists():
+        return list(SPORT_MAP)
+    now = now or dt.datetime.now(dt.timezone.utc)
+    snapshot = json.loads(SNAPSHOT_PATH.read_text(encoding="utf-8"))
+    earliest: dict[str, dt.datetime] = {}
+    for game in snapshot.get("games", []):
+        for match in game.get("matches", []):
+            league = match.get("league")
+            kickoff = match.get("kickoff")
+            if league not in SPORT_MAP or not kickoff:
+                continue
+            try:
+                kickoff_at = dt.datetime.fromisoformat(kickoff.replace("Z", "+00:00"))
+            except ValueError:
+                continue
+            if kickoff_at <= now:
+                continue
+            current = earliest.get(league)
+            if current is None or kickoff_at < current:
+                earliest[league] = kickoff_at
+    return sorted(earliest, key=lambda league: (earliest[league], list(SPORT_MAP).index(league)))
+
+
+def select_leagues(leagues: list[str], maximum: int, now: dt.datetime | None = None) -> list[str]:
+    """Bound each run's cost and rotate overflow leagues between runs."""
+    if maximum <= 0 or len(leagues) <= maximum:
+        return leagues
+    now = now or dt.datetime.now(dt.timezone.utc)
+    interval = int(os.environ.get("ODDS_REFRESH_INTERVAL_MINUTES", DEFAULT_REFRESH_INTERVAL_MINUTES))
+    slot = int(now.timestamp() // (interval * 60))
+    start = (slot * maximum) % len(leagues)
+    return [leagues[(start + index) % len(leagues)] for index in range(maximum)]
+
+
 def main() -> int:
     api_keys = read_api_keys()
     if not api_keys:
@@ -143,9 +193,28 @@ def main() -> int:
         now = dt.datetime.now(dt.timezone.utc)
         account_offset = (now.timetuple().tm_yday + int(now.hour >= 12)) % len(api_keys)
 
-    out_sports: dict[str, list] = {}
-    credits: dict[str, int] = {}
-    for index, (league, sport_key) in enumerate(SPORT_MAP.items()):
+    now = dt.datetime.now(dt.timezone.utc)
+    maximum = int(os.environ.get("ODDS_MAX_SPORTS_PER_RUN", DEFAULT_MAX_SPORTS_PER_RUN))
+    refresh_interval = int(os.environ.get("ODDS_REFRESH_INTERVAL_MINUTES", DEFAULT_REFRESH_INTERVAL_MINUTES))
+    active = active_leagues(now)
+    selected = select_leagues(active, maximum, now)
+    previous = read_previous_market()
+    previous_leagues = previous.get("leagues", {})
+    out_sports: dict[str, list] = {
+        league: previous_leagues[league]
+        for league in active
+        if league in previous_leagues
+    }
+    league_fetched_at = {
+        league: fetched_at
+        for league, fetched_at in previous.get("leagueFetchedAt", {}).items()
+        if league in active
+    }
+    credits: dict[str, int] = dict(previous.get("creditsByAccount", {}))
+    fetched_at = dt.datetime.now(KST).isoformat()
+    fetched_leagues: list[str] = []
+    for index, league in enumerate(selected):
+        sport_key = SPORT_MAP[league]
         account_index = (index + account_offset) % len(api_keys)
         api_key = api_keys[account_index]
         account_name = f"account-{account_index + 1}"
@@ -160,23 +229,31 @@ def main() -> int:
         if remaining and remaining.isdigit():
             credits[account_name] = int(remaining)
         out_sports[league] = [summarize_event(ev) for ev in events]
+        league_fetched_at[league] = fetched_at
+        fetched_leagues.append(league)
         print(f"[ok] {league} ({sport_key}) {account_name}: {len(events)}경기")
 
-    if not out_sports:
+    if not fetched_leagues:
         print("[error] 수집된 해외배당 없음", file=sys.stderr)
         return 1
 
     payload = {
         "source": "the-odds-api.com",
         "regions": regions,
-        "fetchedAt": dt.datetime.now(KST).isoformat(),
+        "fetchedAt": fetched_at,
         "accounts": len(api_keys),
         "accountOffset": account_offset,
         "creditsRemaining": sum(credits.values()) if credits else None,
         "creditsByAccount": credits,
+        "refreshIntervalMinutes": refresh_interval,
+        "maxSportsPerRun": maximum,
+        "estimatedCreditsPerRun": len(selected) * len(MARKETS.split(",")),
+        "activeLeagues": active,
+        "fetchedLeagues": fetched_leagues,
+        "leagueFetchedAt": league_fetched_at,
         "leagues": out_sports,
     }
-    out_path = Path(__file__).resolve().parents[1] / "site" / "data" / "market_odds.json"
+    out_path = OUT_PATH
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text(json.dumps(payload, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"[done] {out_path} ({out_path.stat().st_size} bytes), 계정 {len(api_keys)}개, 잔여 크레딧 합계: {sum(credits.values()) if credits else '확인 불가'}")

@@ -155,6 +155,10 @@ def main() -> int:
     snap["marketSource"] = market.get("source")
     snap["marketFetchedAt"] = market.get("fetchedAt")
     snap["marketCreditsRemaining"] = market.get("creditsRemaining")
+    snap["marketRefreshIntervalMinutes"] = market.get("refreshIntervalMinutes")
+    snap["marketEstimatedCreditsPerRun"] = market.get("estimatedCreditsPerRun")
+    snap["marketActiveLeagues"] = market.get("activeLeagues", [])
+    snap["marketFetchedLeagues"] = market.get("fetchedLeagues", [])
     SNAP.write_text(json.dumps(snap, ensure_ascii=False, indent=1), encoding="utf-8")
 
     print("=== 리그별 매칭 (matched/total) ===")

@@ -15,13 +15,15 @@ a { color: var(--color-accent-blue); text-decoration: none; }
 header { position: sticky; top: 0; z-index: 20; background: var(--color-bg-topbar); backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-border-default); }
 .header-in { max-width: 1440px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .brand { font-size: 22px; font-weight: 900; letter-spacing: .01em; }
-.status { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; color: var(--color-text-secondary); }
+.status { display: inline-flex; align-items: center; gap: 7px; min-width: 0; font-size: 11px; color: var(--color-text-secondary); white-space: nowrap; }
 .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--color-status-success); box-shadow: 0 0 14px var(--color-status-success); }
 .nav { display: flex; gap: 4px; }
 .nav button { border: 0; background: transparent; font: inherit; font-size: 14px; font-weight: 700; padding: 8px 10px; border-radius: 999px; color: var(--color-text-secondary); cursor: pointer; }
 .nav button:hover, .nav button.on { color: var(--color-accent-blue); background: var(--color-bg-tab); }
-.tools { display: flex; align-items: center; gap: 12px; }
-button.theme { font: inherit; font-size: 12px; font-weight: 700; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--color-border-default); background: var(--color-bg-elevated); color: var(--color-text-primary); cursor: pointer; }
+.tools { display: flex; align-items: center; gap: 8px; }
+button.theme { display: inline-grid; width: 44px; height: 44px; flex: none; place-items: center; padding: 0; border: 0; background: transparent; color: var(--color-text-secondary); cursor: pointer; }
+button.theme:hover, button.theme:focus-visible { color: var(--color-accent-blue); outline: none; }
+button.theme svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
 /* layout */
 main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid; grid-template-columns: 280px minmax(0, 1fr) 320px; gap: 16px; align-items: start; }
@@ -154,8 +156,8 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
       <button type="button" data-mode="ranking">랭킹</button>
     </nav>
     <div class="tools">
-      <span class="status"><span class="dot"></span><span id="dataStatus">실데이터 로딩중</span></span>
-      <button class="theme" onclick="document.documentElement.classList.toggle('dark');this.textContent=document.documentElement.classList.contains('dark')?'Light':'Dark'">Dark</button>
+      <span class="status"><span class="dot"></span><span id="dataStatus">갱신 정보 로딩중</span></span>
+      <button class="theme" id="themeToggle" type="button" aria-label="다크 모드로 전환" title="다크 모드로 전환"></button>
     </div>
   </div>
 </header>
@@ -252,6 +254,6 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
 </main>
 
 <footer>Source: betman.co.kr (프로토 승부식) · 디자인 시스템 <a href="https://www.figma.com/design/OcKhOxsU6zddMeRWlXFyYt">Figma</a> · tokens <a href="https://github.com/coseung2/taengle2/tree/main/design-tokens">design-tokens/</a></footer>
-<script src="app.js?v=20260816-odds-guide"></script>
+<script src="app.js?v=20260816-status-theme"></script>
 </body>
 </html>
