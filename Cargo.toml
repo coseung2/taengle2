@@ -1,0 +1,11 @@
+[workspace]
+resolver = "2"
+members = ["apps/taengle", "crates/odds-domain"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "UNLICENSED"
+
+[workspace.dependencies]
+dioxus = { version = "0.7.10" }
