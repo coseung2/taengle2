@@ -12,7 +12,7 @@ a { color: var(--color-accent-blue); text-decoration: none; }
 
 /* header */
 header { position: sticky; top: 0; z-index: 20; background: var(--color-bg-topbar); backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-border-default); }
-.header-in { max-width: 1180px; margin: 0 auto; padding: 12px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.header-in { width: 100%; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .brand { font-size: 22px; font-weight: 900; letter-spacing: .01em; }
 .status { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; color: var(--color-text-secondary); }
 .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--color-status-success); box-shadow: 0 0 14px var(--color-status-success); }
@@ -23,17 +23,17 @@ header { position: sticky; top: 0; z-index: 20; background: var(--color-bg-topba
 button.theme { font: inherit; font-size: 12px; font-weight: 700; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--color-border-default); background: var(--color-bg-elevated); color: var(--color-text-primary); cursor: pointer; }
 
 /* layout */
-main { max-width: 1180px; margin: 20px auto 60px; padding: 0 20px; display: grid; grid-template-columns: 260px 1fr 300px; gap: 20px; align-items: start; }
+main { width: 100%; margin: 0; padding: 0; display: grid; grid-template-columns: 280px 1fr 320px; gap: 0; align-items: start; }
 @media (max-width: 1020px) { main { grid-template-columns: 1fr; } .col-side { display: none; } }
 
 /* cards */
-.card { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-radius: var(--radius-12); padding: 13px; }
-.card + .card { margin-top: 16px; }
+.card { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-radius: 0; padding: 10px 12px; }
+.card + .card { margin-top: 0; border-top: 0; }
 .card h3 { margin: 0 0 10px; font-size: 14px; font-weight: 700; }
 .card .note { font-size: 11px; color: var(--color-text-tertiary); margin: 0 0 10px; }
 
 /* section header */
-.sec { display: flex; align-items: center; justify-content: space-between; background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-bottom: 0; border-radius: var(--radius-12) var(--radius-12) 0 0; padding: 13px 15px; }
+.sec { display: flex; align-items: center; justify-content: space-between; background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-bottom: 0; border-radius: 0; padding: 10px 12px; }
 .sec h2 { margin: 0; font-size: 17px; font-weight: 700; }
 .sec .link { font-size: 12px; font-weight: 700; color: var(--color-accent-blue); }
 
@@ -45,8 +45,8 @@ main { max-width: 1180px; margin: 20px auto 60px; padding: 0 20px; display: grid
 #allLeagues { font-size: 12px; color: var(--color-text-secondary); padding: 8px 10px; cursor: pointer; }
 
 /* match rows */
-.match-list { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-top: 0; border-radius: 0 0 var(--radius-12) var(--radius-12); }
-.match { display: grid; grid-template-columns: 150px 1fr auto; align-items: center; gap: 10px; padding: 13px 15px; border-bottom: 1px solid var(--color-border-default); }
+.match-list { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-top: 0; border-radius: 0; }
+.match { display: grid; grid-template-columns: 150px 1fr auto; align-items: center; gap: 10px; padding: 10px 12px; border-bottom: 1px solid var(--color-border-default); }
 .match:last-child { border-bottom: 0; }
 .m-league { font-size: 11px; font-weight: 800; color: var(--color-text-secondary); }
 .m-time { font-size: 11px; color: var(--color-text-tertiary); margin-top: 3px; }
@@ -62,9 +62,9 @@ main { max-width: 1180px; margin: 20px auto 60px; padding: 0 20px; display: grid
 .payout-pill.bad { color: var(--color-status-danger); }
 
 /* prediction cards */
-.pred-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 12px; }
+.pred-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid var(--color-border-default); }
 @media (max-width: 720px) { .pred-grid { grid-template-columns: 1fr; } }
-.pred { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-radius: var(--radius-12); padding: 13px; }
+.pred { background: var(--color-bg-elevated); border: 0; border-right: 1px solid var(--color-border-default); border-bottom: 1px solid var(--color-border-default); border-radius: 0; padding: 10px 12px; }
 .pred .tag { display: inline-block; font-size: 10px; font-weight: 700; color: var(--color-accent-blue); background: var(--color-bg-tab); padding: 4px 8px; border-radius: 999px; margin-bottom: 8px; }
 .pred .title { font-size: 14px; font-weight: 700; line-height: 1.4; margin-bottom: 8px; }
 .pred .teams { font-size: 13px; font-weight: 700; margin-bottom: 10px; }
@@ -85,7 +85,7 @@ main { max-width: 1180px; margin: 20px auto 60px; padding: 0 20px; display: grid
 .kv:last-child { border-bottom: 0; }
 .kv b { color: var(--color-text-primary); font-weight: 700; text-align: right; }
 
-footer { max-width: 1180px; margin: 0 auto; padding: 20px; font-size: 12px; color: var(--color-text-tertiary); }
+footer { width: 100%; padding: 12px 14px; font-size: 12px; color: var(--color-text-tertiary); border-top: 1px solid var(--color-border-default); }
 </style>
 </head>
 <body>
@@ -126,7 +126,7 @@ footer { max-width: 1180px; margin: 0 auto; padding: 20px; font-size: 12px; colo
     </div>
     <div class="match-list" id="matchList"></div>
 
-    <div class="sec" style="margin-top:20px; border-radius:var(--radius-12) var(--radius-12) 0 0;">
+    <div class="sec" style="margin-top:0; border-radius:0;">
       <h2>데이터분석 매치 예측</h2>
       <span class="link">no-vig 확률 · 실배당 기반</span>
     </div>
