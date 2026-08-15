@@ -12,7 +12,7 @@ a { color: var(--color-accent-blue); text-decoration: none; }
 
 /* header */
 header { position: sticky; top: 0; z-index: 20; background: var(--color-bg-topbar); backdrop-filter: blur(12px); border-bottom: 1px solid var(--color-border-default); }
-.header-in { width: 100%; padding: 10px 14px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.header-in { max-width: 1440px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .brand { font-size: 22px; font-weight: 900; letter-spacing: .01em; }
 .status { display: inline-flex; align-items: center; gap: 7px; font-size: 11px; color: var(--color-text-secondary); }
 .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--color-status-success); box-shadow: 0 0 14px var(--color-status-success); }
@@ -23,19 +23,20 @@ header { position: sticky; top: 0; z-index: 20; background: var(--color-bg-topba
 button.theme { font: inherit; font-size: 12px; font-weight: 700; padding: 7px 14px; border-radius: 999px; border: 1px solid var(--color-border-default); background: var(--color-bg-elevated); color: var(--color-text-primary); cursor: pointer; }
 
 /* layout */
-main { width: 100%; margin: 0; padding: 0; display: grid; grid-template-columns: 280px 1fr 320px; gap: 0; align-items: start; }
+main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid; grid-template-columns: 280px minmax(0, 1fr) 320px; gap: 16px; align-items: start; }
 @media (max-width: 1020px) { main { grid-template-columns: 1fr; } .col-side { display: none; } }
 
 /* cards */
-.card { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-radius: 0; padding: 10px 12px; }
-.card + .card { margin-top: 0; border-top: 0; }
-.card h3 { margin: 0 0 10px; font-size: 14px; font-weight: 700; }
-.card .note { font-size: 11px; color: var(--color-text-tertiary); margin: 0 0 10px; }
+.card { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-radius: 12px; padding: 16px; }
+.card + .card { margin-top: 16px; }
+.card h3 { margin: 0 0 12px; font-size: 14px; font-weight: 700; }
+.card .note { font-size: 11px; color: var(--color-text-tertiary); margin: 0; }
 
 /* section header */
-.sec { display: flex; align-items: center; justify-content: space-between; background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-bottom: 0; border-radius: 0; padding: 10px 12px; }
+.sec { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-bottom: 0; border-radius: 12px 12px 0 0; padding: 14px 16px; }
+.sec:not(:first-child) { margin-top: 16px; }
 .sec h2 { margin: 0; font-size: 17px; font-weight: 700; }
-.sec .link { font-size: 12px; font-weight: 700; color: var(--color-accent-blue); }
+.sec .link { font-size: 12px; font-weight: 700; color: var(--color-accent-blue); white-space: nowrap; }
 
 /* league list */
 .league-row { display: flex; align-items: center; justify-content: space-between; padding: 7px 10px; border-radius: 9px; font-size: 14px; color: var(--color-text-secondary); cursor: pointer; }
@@ -45,26 +46,33 @@ main { width: 100%; margin: 0; padding: 0; display: grid; grid-template-columns:
 #allLeagues { font-size: 12px; color: var(--color-text-secondary); padding: 8px 10px; cursor: pointer; }
 
 /* match rows */
-.match-list { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-top: 0; border-radius: 0; }
-.match { display: grid; grid-template-columns: 150px 1fr auto; align-items: center; gap: 10px; padding: 10px 12px; border-bottom: 1px solid var(--color-border-default); }
+.match-list { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-top: 0; border-radius: 0 0 12px 12px; overflow: hidden; }
+.match { display: grid; grid-template-columns: 150px minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--color-border-default); }
 .match:last-child { border-bottom: 0; }
 .m-league { font-size: 11px; font-weight: 800; color: var(--color-text-secondary); }
 .m-time { font-size: 11px; color: var(--color-text-tertiary); margin-top: 3px; }
-.m-teams { font-size: 15px; font-weight: 700; }
+.m-teams { font-size: 15px; font-weight: 700; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .m-teams .vs { font-size: 10px; color: var(--color-text-tertiary); font-weight: 400; margin: 0 6px; }
 .m-odds { display: flex; gap: 6px; }
 .cell { min-width: 58px; text-align: center; background: var(--color-bg-cell); border: 1px solid var(--color-border-default); border-radius: var(--radius-9); padding: 8px 10px; }
 .cell .l { display: block; font-size: 9px; font-weight: 800; color: var(--color-text-tertiary); margin-bottom: 4px; }
 .cell .v { font-size: 13px; font-weight: 700; }
+.cell .m { display: block; font-size: 9px; color: var(--color-text-tertiary); margin-top: 4px; }
+.cell .c { display: block; font-size: 10px; font-weight: 800; margin-top: 1px; }
+.cell .c.cut { color: var(--color-status-danger); }
+.cell .c.edge { color: var(--color-accent-blue); }
 .payout-pill { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700; padding: 5px 9px; border-radius: 999px; background: var(--color-bg-tab); color: var(--color-text-secondary); }
 .payout-pill.good { color: var(--color-status-success); }
 .payout-pill.warn { color: var(--color-status-warning); }
 .payout-pill.bad { color: var(--color-status-danger); }
+.cut-pill { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 800; padding: 5px 9px; border-radius: 999px; background: var(--color-bg-tab); color: var(--color-status-danger); }
+.cut-pill.edge { color: var(--color-accent-blue); }
+.market-pill { display: inline-flex; align-items: center; gap: 4px; font-size: 11px; font-weight: 700; padding: 5px 9px; border-radius: 999px; background: var(--color-bg-tab); color: var(--color-text-tertiary); white-space: nowrap; }
 
 /* prediction cards */
-.pred-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 1px solid var(--color-border-default); }
+.pred-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
 @media (max-width: 720px) { .pred-grid { grid-template-columns: 1fr; } }
-.pred { background: var(--color-bg-elevated); border: 0; border-right: 1px solid var(--color-border-default); border-bottom: 1px solid var(--color-border-default); border-radius: 0; padding: 10px 12px; }
+.pred { background: var(--color-bg-elevated); border: 0; border-right: 1px solid var(--color-border-default); border-bottom: 1px solid var(--color-border-default); padding: 14px 16px; }
 .pred .tag { display: inline-block; font-size: 10px; font-weight: 700; color: var(--color-accent-blue); background: var(--color-bg-tab); padding: 4px 8px; border-radius: 999px; margin-bottom: 8px; }
 .pred .title { font-size: 14px; font-weight: 700; line-height: 1.4; margin-bottom: 8px; }
 .pred .teams { font-size: 13px; font-weight: 700; margin-bottom: 10px; }
@@ -85,7 +93,7 @@ main { width: 100%; margin: 0; padding: 0; display: grid; grid-template-columns:
 .kv:last-child { border-bottom: 0; }
 .kv b { color: var(--color-text-primary); font-weight: 700; text-align: right; }
 
-footer { width: 100%; padding: 12px 14px; font-size: 12px; color: var(--color-text-tertiary); border-top: 1px solid var(--color-border-default); }
+footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 12px; color: var(--color-text-tertiary); }
 </style>
 </head>
 <body>
@@ -126,24 +134,29 @@ footer { width: 100%; padding: 12px 14px; font-size: 12px; color: var(--color-te
     </div>
     <div class="match-list" id="matchList"></div>
 
-    <div class="sec" style="margin-top:0; border-radius:0;">
+    <div class="sec">
       <h2>데이터분석 매치 예측</h2>
       <span class="link">no-vig 확률 · 실배당 기반</span>
     </div>
-    <div class="match-list" style="border-top:0;">
+    <div class="match-list">
       <div class="pred-grid" id="predGrid"></div>
-      <p class="note" style="padding:10px 15px; margin:0;">확률은 베트맨 실배당에서 마진을 제거한 no-vig 공정확률입니다.</p>
+      <p class="note" style="padding:12px 16px;">확률은 베트맨 실배당에서 마진을 제거한 no-vig 공정확률입니다.</p>
     </div>
   </div>
 
   <div class="col-side">
+    <div class="card">
+      <h3>삭감률 TOP</h3>
+      <p class="note" style="margin-bottom:10px;">해외 컨센서스 대비 베트맨 배당이 가장 많이 깎인 경기</p>
+      <div id="cutRank"></div>
+    </div>
     <div class="card">
       <h3>오늘의 지표</h3>
       <div id="todayMetrics"></div>
     </div>
     <div class="card">
       <h3>이용 안내</h3>
-      <p class="note" style="line-height:1.6;">베트맨 실배당(승/무/패)을 수집해 환수율과 공정확률을 계산합니다. 해외 컨센서스 연동 시 삭감률이 추가됩니다.</p>
+      <p class="note" style="line-height:1.6;">베트맨 실배당(승무패/승패)과 해외 컨센서스(The Odds API 수십 개 북 평균)를 비교해 삭감률을 계산합니다. 삭감률 = 1 − 베트맨배당 ÷ 해외배당. 양수면 베트맨이 더 낮은 배당입니다.</p>
     </div>
   </div>
 </main>

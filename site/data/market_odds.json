@@ -1,0 +1,2484 @@
+{
+ "source": "the-odds-api.com",
+ "regions": "eu,uk",
+ "fetchedAt": "2026-08-15T23:26:25.522150+09:00",
+ "creditsRemaining": 454,
+ "leagues": {
+  "MLB": [
+   {
+    "id": "cbbb7f035af8c6962dbaf7ef81ec594f",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T17:10:00Z",
+    "homeEn": "Detroit Tigers",
+    "awayEn": "Chicago White Sox",
+    "books": 37,
+    "consensus": {
+     "home": 1.6949,
+     "away": 2.2119
+    },
+    "pinnacle": {
+     "away": 2.24,
+     "home": 1.75
+    }
+   },
+   {
+    "id": "62943d2963a59424707e551cf46e5987",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T18:21:00Z",
+    "homeEn": "Chicago Cubs",
+    "awayEn": "St. Louis Cardinals",
+    "books": 37,
+    "consensus": {
+     "home": 1.5508,
+     "away": 2.5014
+    },
+    "pinnacle": {
+     "home": 1.58,
+     "away": 2.58
+    }
+   },
+   {
+    "id": "dbbb481a063336e996454ea669238bf7",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T19:08:00Z",
+    "homeEn": "Toronto Blue Jays",
+    "awayEn": "New York Yankees",
+    "books": 37,
+    "consensus": {
+     "home": 2.4368,
+     "away": 1.5724
+    },
+    "pinnacle": {
+     "away": 1.62,
+     "home": 2.49
+    }
+   },
+   {
+    "id": "a9d5955568a03f0891eda9aba40a95f6",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T20:06:00Z",
+    "homeEn": "San Francisco Giants",
+    "awayEn": "Colorado Rockies",
+    "books": 37,
+    "consensus": {
+     "home": 1.5681,
+     "away": 2.4519
+    },
+    "pinnacle": {
+     "away": 2.48,
+     "home": 1.62
+    }
+   },
+   {
+    "id": "79741766452af66a44a3ea604d9c3e43",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T20:11:00Z",
+    "homeEn": "New York Mets",
+    "awayEn": "Washington Nationals",
+    "books": 37,
+    "consensus": {
+     "home": 1.6965,
+     "away": 2.187
+    },
+    "pinnacle": {
+     "home": 1.74,
+     "away": 2.24
+    }
+   },
+   {
+    "id": "93719cc1bad0db5bf175f542387ea869",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T22:11:00Z",
+    "homeEn": "Tampa Bay Rays",
+    "awayEn": "Baltimore Orioles",
+    "books": 37,
+    "consensus": {
+     "home": 1.6622,
+     "away": 2.2422
+    },
+    "pinnacle": {
+     "away": 2.32,
+     "home": 1.69
+    }
+   },
+   {
+    "id": "5bab26a4a86845bfbf909f59a676a22a",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T22:41:00Z",
+    "homeEn": "Cincinnati Reds",
+    "awayEn": "Miami Marlins",
+    "books": 37,
+    "consensus": {
+     "home": 1.8808,
+     "away": 1.9405
+    },
+    "pinnacle": {
+     "home": 1.95,
+     "away": 1.97
+    }
+   },
+   {
+    "id": "96401141a6a40b437d7e705946993a7b",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T23:11:00Z",
+    "homeEn": "Cleveland Guardians",
+    "awayEn": "San Diego Padres",
+    "books": 35,
+    "consensus": {
+     "home": 1.8069,
+     "away": 2.0257
+    },
+    "pinnacle": {
+     "home": 1.85,
+     "away": 2.07
+    }
+   },
+   {
+    "id": "69928d29919a7b30493d93a7e4d73a32",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T23:11:00Z",
+    "homeEn": "Houston Astros",
+    "awayEn": "Seattle Mariners",
+    "books": 36,
+    "consensus": {
+     "home": 1.8031,
+     "away": 2.0342
+    },
+    "pinnacle": {
+     "home": 1.84,
+     "away": 2.1
+    }
+   },
+   {
+    "id": "4cbeb5e491e3002fdaa00b7006777419",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T23:11:00Z",
+    "homeEn": "Minnesota Twins",
+    "awayEn": "Philadelphia Phillies",
+    "books": 36,
+    "consensus": {
+     "home": 2.2375,
+     "away": 1.67
+    },
+    "pinnacle": {
+     "home": 2.3,
+     "away": 1.71
+    }
+   },
+   {
+    "id": "d3dfabfdd39cb168285821d91a382724",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T23:15:00Z",
+    "homeEn": "Atlanta Braves",
+    "awayEn": "Arizona Diamondbacks",
+    "books": 35,
+    "consensus": {
+     "home": 1.7271,
+     "away": 2.1511
+    },
+    "pinnacle": {
+     "away": 2.18,
+     "home": 1.78
+    }
+   },
+   {
+    "id": "70b9a39a05a83f14d55b30a01b17396f",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T23:15:00Z",
+    "homeEn": "Los Angeles Dodgers",
+    "awayEn": "Milwaukee Brewers",
+    "books": 35,
+    "consensus": {
+     "home": 2.0769,
+     "away": 1.7769
+    },
+    "pinnacle": {
+     "home": 2.1,
+     "away": 1.84
+    }
+   },
+   {
+    "id": "229c4156bb02dc75dc6f247f5380c6ca",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-15T23:16:00Z",
+    "homeEn": "Pittsburgh Pirates",
+    "awayEn": "Boston Red Sox",
+    "books": 35,
+    "consensus": {
+     "home": 2.0591,
+     "away": 1.7866
+    },
+    "pinnacle": {
+     "away": 1.82,
+     "home": 2.12
+    }
+   },
+   {
+    "id": "c7a2e07e8423be48d4f797c2aab365ae",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-16T01:38:00Z",
+    "homeEn": "Los Angeles Angels",
+    "awayEn": "Kansas City Royals",
+    "books": 35,
+    "consensus": {
+     "home": 1.6377,
+     "away": 2.2949
+    },
+    "pinnacle": {
+     "away": 2.38,
+     "home": 1.67
+    }
+   },
+   {
+    "id": "1145a9db8d138b13599e168a340ad3c7",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-08-16T01:40:00Z",
+    "homeEn": "Athletics",
+    "awayEn": "Texas Rangers",
+    "books": 35,
+    "consensus": {
+     "home": 2.2077,
+     "away": 1.6917
+    },
+    "pinnacle": {
+     "home": 2.26,
+     "away": 1.73
+    }
+   }
+  ],
+  "KBO": [
+   {
+    "id": "92f22f788263f6669ea3d7564999d874",
+    "sportKey": "baseball_kbo",
+    "commenceUtc": "2026-08-16T10:00:00Z",
+    "homeEn": "Kia Tigers",
+    "awayEn": "Doosan Bears",
+    "books": 8,
+    "consensus": {
+     "home": 1.825,
+     "away": 1.925
+    },
+    "pinnacle": {
+     "away": 1.97,
+     "home": 1.85
+    }
+   },
+   {
+    "id": "738bc48b974d5a1ab32581286e38472d",
+    "sportKey": "baseball_kbo",
+    "commenceUtc": "2026-08-16T10:00:00Z",
+    "homeEn": "Samsung Lions",
+    "awayEn": "Hanwha Eagles",
+    "books": 9,
+    "consensus": {
+     "home": 1.5522,
+     "away": 2.3867
+    },
+    "pinnacle": {
+     "away": 2.45,
+     "home": 1.56
+    }
+   },
+   {
+    "id": "6519a74912eeeec90ca86ff6fc26573c",
+    "sportKey": "baseball_kbo",
+    "commenceUtc": "2026-08-16T10:00:00Z",
+    "homeEn": "KT Wiz",
+    "awayEn": "Kiwoom Heroes",
+    "books": 8,
+    "consensus": {
+     "home": 1.2913,
+     "away": 3.4
+    },
+    "pinnacle": {
+     "away": 3.48,
+     "home": 1.31
+    }
+   },
+   {
+    "id": "8784216ee066896ddbaa90b4c0007bae",
+    "sportKey": "baseball_kbo",
+    "commenceUtc": "2026-08-16T10:00:00Z",
+    "homeEn": "LG Twins",
+    "awayEn": "SSG Landers",
+    "books": 9,
+    "consensus": {
+     "home": 1.6544,
+     "away": 2.1811
+    },
+    "pinnacle": {
+     "home": 1.67,
+     "away": 2.23
+    }
+   },
+   {
+    "id": "8860661ce2079723d3278b357ad871ec",
+    "sportKey": "baseball_kbo",
+    "commenceUtc": "2026-08-16T10:00:00Z",
+    "homeEn": "Lotte Giants",
+    "awayEn": "NC Dinos",
+    "books": 9,
+    "consensus": {
+     "home": 2.1156,
+     "away": 1.6956
+    },
+    "pinnacle": {
+     "home": 2.14,
+     "away": 1.72
+    }
+   }
+  ],
+  "NPB": [
+   {
+    "id": "837c3dd36d92acd0753a5e331da6934d",
+    "sportKey": "baseball_npb",
+    "commenceUtc": "2026-08-16T04:00:00Z",
+    "homeEn": "Fukuoka SoftBank Hawks",
+    "awayEn": "Tohoku Rakuten Golden Eagles",
+    "books": 9,
+    "consensus": {
+     "home": 1.44,
+     "away": 2.7433
+    },
+    "pinnacle": {
+     "home": 1.47,
+     "away": 2.84
+    }
+   },
+   {
+    "id": "a57d5326310ce5e82303963c74454156",
+    "sportKey": "baseball_npb",
+    "commenceUtc": "2026-08-16T04:00:00Z",
+    "homeEn": "Orix Buffaloes",
+    "awayEn": "Hokkaido Nippon-Ham Fighters",
+    "books": 9,
+    "consensus": {
+     "home": 2.1244,
+     "away": 1.6933
+    },
+    "pinnacle": {
+     "away": 1.74,
+     "home": 2.19
+    }
+   },
+   {
+    "id": "cdcee0ab2e3f196bd93c6484364b2f7d",
+    "sportKey": "baseball_npb",
+    "commenceUtc": "2026-08-16T04:30:00Z",
+    "homeEn": "Chunichi Dragons",
+    "awayEn": "Yomiuri Giants",
+    "books": 9,
+    "consensus": {
+     "home": 1.83,
+     "away": 1.9322
+    },
+    "pinnacle": {
+     "home": 1.89,
+     "away": 2.0
+    }
+   },
+   {
+    "id": "0c46ab87c3e63d7ee120d207593375e0",
+    "sportKey": "baseball_npb",
+    "commenceUtc": "2026-08-16T08:00:00Z",
+    "homeEn": "Saitama Seibu Lions",
+    "awayEn": "Chiba Lotte Marines",
+    "books": 8,
+    "consensus": {
+     "home": 1.6725,
+     "away": 2.1638
+    },
+    "pinnacle": {
+     "away": 2.24,
+     "home": 1.71
+    }
+   },
+   {
+    "id": "483aa5c80e0e82065e534a9f4e913051",
+    "sportKey": "baseball_npb",
+    "commenceUtc": "2026-08-16T09:00:00Z",
+    "homeEn": "Hiroshima Toyo Carp",
+    "awayEn": "Hanshin Tigers",
+    "books": 8,
+    "consensus": {
+     "home": 2.0925,
+     "away": 1.72
+    },
+    "pinnacle": {
+     "away": 1.76,
+     "home": 2.16
+    }
+   },
+   {
+    "id": "1b8788136f48a5426f85716df02e1126",
+    "sportKey": "baseball_npb",
+    "commenceUtc": "2026-08-16T09:00:00Z",
+    "homeEn": "Tokyo Yakult Swallows",
+    "awayEn": "Yokohama DeNA BayStars",
+    "books": 8,
+    "consensus": {
+     "home": 2.1412,
+     "away": 1.6825
+    },
+    "pinnacle": {
+     "home": 2.22,
+     "away": 1.72
+    }
+   }
+  ],
+  "K리그1": [
+   {
+    "id": "71f3d835fcbd6f23b0f6ff88b240699b",
+    "sportKey": "soccer_korea_kleague1",
+    "commenceUtc": "2026-08-16T10:30:00Z",
+    "homeEn": "Bucheon FC 1995",
+    "awayEn": "Jeonbuk Hyundai Motors",
+    "books": 34,
+    "consensus": {
+     "home": 4.1562,
+     "draw": 3.3974,
+     "away": 1.7929
+    },
+    "pinnacle": {
+     "home": 4.43,
+     "away": 1.85,
+     "draw": 3.64
+    }
+   },
+   {
+    "id": "2238dcca465c6c0ffe8f74648b5c76db",
+    "sportKey": "soccer_korea_kleague1",
+    "commenceUtc": "2026-08-16T10:30:00Z",
+    "homeEn": "Ulsan Hyundai FC",
+    "awayEn": "Gangwon FC",
+    "books": 34,
+    "consensus": {
+     "home": 2.615,
+     "draw": 3.1794,
+     "away": 2.4712
+    },
+    "pinnacle": {
+     "away": 2.68,
+     "home": 2.68,
+     "draw": 3.42
+    }
+   },
+   {
+    "id": "4135b007000cfcd365dfc48d6370bd73",
+    "sportKey": "soccer_korea_kleague1",
+    "commenceUtc": "2026-08-16T10:30:00Z",
+    "homeEn": "Incheon United",
+    "awayEn": "Sangju Sangmu FC",
+    "books": 34,
+    "consensus": {
+     "home": 2.0459,
+     "draw": 3.2085,
+     "away": 3.3879
+    },
+    "pinnacle": {
+     "home": 2.12,
+     "away": 3.68,
+     "draw": 3.39
+    }
+   },
+   {
+    "id": "400daeffa1a75001085f2fc109afff84",
+    "sportKey": "soccer_korea_kleague1",
+    "commenceUtc": "2026-08-22T10:30:00Z",
+    "homeEn": "Pohang Steelers",
+    "awayEn": "Bucheon FC 1995",
+    "books": 8,
+    "consensus": {
+     "home": 1.99,
+     "draw": 2.9875,
+     "away": 3.3875
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "06d3b748d4e75f90bacc40139a75b2a9",
+    "sportKey": "soccer_korea_kleague1",
+    "commenceUtc": "2026-08-22T10:30:00Z",
+    "homeEn": "FC Anyang",
+    "awayEn": "FC Seoul",
+    "books": 23,
+    "consensus": {
+     "home": 3.8013,
+     "draw": 3.3174,
+     "away": 1.8226
+    },
+    "pinnacle": {
+     "home": 4.04,
+     "away": 1.94,
+     "draw": 3.45
+    }
+   }
+  ],
+  "MLS": [
+   {
+    "id": "cf2d7beb03aa818fba73e06b15081005",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-15T23:30:00Z",
+    "homeEn": "Atlanta United FC",
+    "awayEn": "New York Red Bulls",
+    "books": 40,
+    "consensus": {
+     "home": 2.0163,
+     "draw": 3.9242,
+     "away": 3.1255
+    },
+    "pinnacle": {
+     "home": 2.06,
+     "away": 3.29,
+     "draw": 4.09
+    }
+   },
+   {
+    "id": "04b9b6a8ed4f72c2072b326d55310108",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-15T23:30:00Z",
+    "homeEn": "CF Montreal",
+    "awayEn": "D.C. United",
+    "books": 39,
+    "consensus": {
+     "home": 2.1523,
+     "draw": 3.5631,
+     "away": 3.0751
+    },
+    "pinnacle": {
+     "home": 2.19,
+     "away": 3.28,
+     "draw": 3.67
+    }
+   },
+   {
+    "id": "5c2f5b559ef265b51ae01949ff1d66b1",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-15T23:30:00Z",
+    "homeEn": "Charlotte FC",
+    "awayEn": "Columbus Crew SC",
+    "books": 40,
+    "consensus": {
+     "home": 2.2477,
+     "draw": 3.5108,
+     "away": 2.9215
+    },
+    "pinnacle": {
+     "home": 2.33,
+     "away": 3.09,
+     "draw": 3.57
+    }
+   },
+   {
+    "id": "efa8affdba1ca1e015a891f2e0c0ff45",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-15T23:30:00Z",
+    "homeEn": "Orlando City SC",
+    "awayEn": "FC Cincinnati",
+    "books": 40,
+    "consensus": {
+     "home": 2.1705,
+     "draw": 4.1473,
+     "away": 2.6902
+    },
+    "pinnacle": {
+     "away": 2.73,
+     "home": 2.28,
+     "draw": 4.37
+    }
+   },
+   {
+    "id": "7d87a0de5f3e7c3a075cd1c1e0863e4f",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-15T23:30:00Z",
+    "homeEn": "Toronto FC",
+    "awayEn": "New England Revolution",
+    "books": 40,
+    "consensus": {
+     "home": 2.0155,
+     "draw": 3.635,
+     "away": 3.3273
+    },
+    "pinnacle": {
+     "away": 3.5,
+     "home": 2.06,
+     "draw": 3.79
+    }
+   },
+   {
+    "id": "91d4e94bde30d52438d3cd07b52d0e9f",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-16T00:30:00Z",
+    "homeEn": "Houston Dynamo",
+    "awayEn": "LA Galaxy",
+    "books": 40,
+    "consensus": {
+     "home": 1.6758,
+     "draw": 3.96,
+     "away": 4.5375
+    },
+    "pinnacle": {
+     "home": 1.68,
+     "away": 4.91,
+     "draw": 4.22
+    }
+   },
+   {
+    "id": "58973bb6280506fad9ae370deb9de85a",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-16T00:30:00Z",
+    "homeEn": "Nashville SC",
+    "awayEn": "Inter Miami CF",
+    "books": 40,
+    "consensus": {
+     "home": 2.412,
+     "draw": 3.727,
+     "away": 2.5692
+    },
+    "pinnacle": {
+     "away": 2.69,
+     "home": 2.52,
+     "draw": 3.79
+    }
+   },
+   {
+    "id": "6b340f239dd579a9bd28b470673e1e11",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-16T01:30:00Z",
+    "homeEn": "Colorado Rapids",
+    "awayEn": "Sporting Kansas City",
+    "books": 40,
+    "consensus": {
+     "home": 1.451,
+     "draw": 4.6985,
+     "away": 5.86
+    },
+    "pinnacle": {
+     "home": 1.47,
+     "away": 6.38,
+     "draw": 4.97
+    }
+   },
+   {
+    "id": "ffbec045e6bd26649f263200a7d3bbe0",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-16T01:30:00Z",
+    "homeEn": "Real Salt Lake",
+    "awayEn": "Minnesota United FC",
+    "books": 40,
+    "consensus": {
+     "home": 1.715,
+     "draw": 3.8818,
+     "away": 4.3758
+    },
+    "pinnacle": {
+     "away": 4.72,
+     "home": 1.78,
+     "draw": 3.84
+    }
+   },
+   {
+    "id": "6847e874e75652b36108e9958e8247d2",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-16T02:30:00Z",
+    "homeEn": "Los Angeles FC",
+    "awayEn": "San Diego FC",
+    "books": 39,
+    "consensus": {
+     "home": 1.6128,
+     "draw": 4.2959,
+     "away": 4.5741
+    },
+    "pinnacle": {
+     "home": 1.66,
+     "away": 4.6,
+     "draw": 4.49
+    }
+   },
+   {
+    "id": "762af8fa5bf4befb1e6aee416452e3ad",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-16T02:30:00Z",
+    "homeEn": "San Jose Earthquakes",
+    "awayEn": "St. Louis City SC",
+    "books": 39,
+    "consensus": {
+     "home": 2.1118,
+     "draw": 3.7641,
+     "away": 2.9905
+    },
+    "pinnacle": {
+     "home": 2.14,
+     "away": 3.14,
+     "draw": 3.94
+    }
+   },
+   {
+    "id": "af52fb96f1a5ea0fe7e11c6896158211",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-16T22:00:00Z",
+    "homeEn": "Chicago Fire",
+    "awayEn": "Portland Timbers",
+    "books": 39,
+    "consensus": {
+     "home": 1.4908,
+     "draw": 4.7372,
+     "away": 5.1077
+    },
+    "pinnacle": {
+     "home": 1.5,
+     "away": 5.41,
+     "draw": 4.94
+    }
+   },
+   {
+    "id": "c3be3958beef3c35ea4a9dac6e028863",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-16T22:00:00Z",
+    "homeEn": "New York City FC",
+    "awayEn": "Philadelphia Union",
+    "books": 39,
+    "consensus": {
+     "home": 2.2546,
+     "draw": 3.6046,
+     "away": 2.8208
+    },
+    "pinnacle": {
+     "home": 2.32,
+     "away": 2.79,
+     "draw": 3.84
+    }
+   },
+   {
+    "id": "0198abf59a592bb8855ebf7430656607",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-17T00:30:00Z",
+    "homeEn": "Austin FC",
+    "awayEn": "FC Dallas",
+    "books": 39,
+    "consensus": {
+     "home": 2.8454,
+     "draw": 3.6021,
+     "away": 2.2274
+    },
+    "pinnacle": {
+     "home": 2.93,
+     "away": 2.3,
+     "draw": 3.66
+    }
+   },
+   {
+    "id": "235d6733ba040815d12859e40de81c1e",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-17T02:30:00Z",
+    "homeEn": "Seattle Sounders FC",
+    "awayEn": "Vancouver Whitecaps FC",
+    "books": 39,
+    "consensus": {
+     "home": 3.8159,
+     "draw": 3.8305,
+     "away": 1.8118
+    },
+    "pinnacle": {
+     "home": 4.09,
+     "away": 1.8,
+     "draw": 3.95
+    }
+   },
+   {
+    "id": "1a74c0910d0889eee77b071464bdd425",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-19T23:30:00Z",
+    "homeEn": "Columbus Crew SC",
+    "awayEn": "CF Montreal",
+    "books": 33,
+    "consensus": {
+     "home": 1.5091,
+     "draw": 4.0221,
+     "away": 4.6861
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "4db00a59112cd720836cc81f5f166891",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-19T23:30:00Z",
+    "homeEn": "Toronto FC",
+    "awayEn": "Charlotte FC",
+    "books": 32,
+    "consensus": {
+     "home": 2.1516,
+     "draw": 3.3912,
+     "away": 2.66
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "5272777a4297a857ce64730e5acad9c0",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-19T23:30:00Z",
+    "homeEn": "Orlando City SC",
+    "awayEn": "Chicago Fire",
+    "books": 34,
+    "consensus": {
+     "home": 2.7056,
+     "draw": 3.835,
+     "away": 2.1306
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "8cffcdf66d60b1dcf8c8e09b3722d3b5",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-19T23:30:00Z",
+    "homeEn": "D.C. United",
+    "awayEn": "New England Revolution",
+    "books": 32,
+    "consensus": {
+     "home": 1.9281,
+     "draw": 3.3919,
+     "away": 3.1259
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "14b96e8187af15d1fb36a3dcdcc7a94e",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-19T23:30:00Z",
+    "homeEn": "FC Cincinnati",
+    "awayEn": "New York City FC",
+    "books": 34,
+    "consensus": {
+     "home": 1.9315,
+     "draw": 3.6797,
+     "away": 2.9121
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "b0008918d077b2578c42dfc8e47054b4",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-19T23:30:00Z",
+    "homeEn": "Philadelphia Union",
+    "awayEn": "Inter Miami CF",
+    "books": 30,
+    "consensus": {
+     "home": 2.3017,
+     "draw": 3.6633,
+     "away": 2.294
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "7223e207f74e072fe9946a77a80670c1",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-19T23:30:00Z",
+    "homeEn": "New York Red Bulls",
+    "awayEn": "Nashville SC",
+    "books": 34,
+    "consensus": {
+     "home": 2.7124,
+     "draw": 3.5856,
+     "away": 2.1697
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "4da3791663bf9bd12cbe9ac812822ed3",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-20T00:00:00Z",
+    "homeEn": "Sporting Kansas City",
+    "awayEn": "St. Louis City SC",
+    "books": 32,
+    "consensus": {
+     "home": 3.0303,
+     "draw": 3.5869,
+     "away": 1.8859
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "95c0e0609765c4caf2818afb1750afaa",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-20T00:30:00Z",
+    "homeEn": "Minnesota United FC",
+    "awayEn": "Atlanta United FC",
+    "books": 32,
+    "consensus": {
+     "home": 1.6316,
+     "draw": 3.6338,
+     "away": 4.0762
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "c2901f48a23b3546e3552f939ae9ef66",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-20T01:30:00Z",
+    "homeEn": "Seattle Sounders FC",
+    "awayEn": "Austin FC",
+    "books": 30,
+    "consensus": {
+     "home": 1.5877,
+     "draw": 3.7333,
+     "away": 4.1837
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "a17888b50cffbbfd73fea1a7265df61e",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-20T01:30:00Z",
+    "homeEn": "Colorado Rapids",
+    "awayEn": "Los Angeles FC",
+    "books": 30,
+    "consensus": {
+     "home": 2.6113,
+     "draw": 3.439,
+     "away": 2.148
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "8c84a04394a475ece8d03e092ce43dbe",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-20T01:30:00Z",
+    "homeEn": "Real Salt Lake",
+    "awayEn": "FC Dallas",
+    "books": 32,
+    "consensus": {
+     "home": 1.7872,
+     "draw": 3.6709,
+     "away": 3.2825
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "ddf6a7abca4ac037c8c62b97f582fb26",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-20T02:30:00Z",
+    "homeEn": "Vancouver Whitecaps FC",
+    "awayEn": "Houston Dynamo",
+    "books": 32,
+    "consensus": {
+     "home": 1.4053,
+     "draw": 4.3113,
+     "away": 5.5434
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "e2a48a3415f53affd071b29ab64023f8",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-20T02:30:00Z",
+    "homeEn": "LA Galaxy",
+    "awayEn": "San Jose Earthquakes",
+    "books": 32,
+    "consensus": {
+     "home": 2.2225,
+     "draw": 3.6222,
+     "away": 2.5166
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "b0a96001cc3056e18abd450a83d0a575",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-20T02:30:00Z",
+    "homeEn": "Portland Timbers",
+    "awayEn": "San Diego FC",
+    "books": 30,
+    "consensus": {
+     "home": 1.892,
+     "draw": 3.8137,
+     "away": 2.8463
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "e1ce411d4290f2045ff63237ae0e3f46",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-22T23:30:00Z",
+    "homeEn": "CF Montreal",
+    "awayEn": "LA Galaxy",
+    "books": 12,
+    "consensus": {
+     "home": 2.42,
+     "draw": 3.5342,
+     "away": 2.515
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "37b2cdcb2f3ef5e0a3a6ae0828aa0621",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-22T23:30:00Z",
+    "homeEn": "Charlotte FC",
+    "awayEn": "D.C. United",
+    "books": 13,
+    "consensus": {
+     "home": 1.8538,
+     "draw": 3.5815,
+     "away": 3.5723
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "1f2c9d94287ba78bd0373a75b6e7e376",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-22T23:30:00Z",
+    "homeEn": "New York Red Bulls",
+    "awayEn": "Chicago Fire",
+    "books": 13,
+    "consensus": {
+     "home": 3.2577,
+     "draw": 3.7869,
+     "away": 1.8946
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "0841e4946df93f8579b0881bd6d3cab8",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-22T23:30:00Z",
+    "homeEn": "FC Cincinnati",
+    "awayEn": "Seattle Sounders FC",
+    "books": 13,
+    "consensus": {
+     "home": 1.8531,
+     "draw": 3.83,
+     "away": 3.3469
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "b74e4eba6e16a35870ff88e9c0e4def8",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-22T23:30:00Z",
+    "homeEn": "Inter Miami CF",
+    "awayEn": "Toronto FC",
+    "books": 13,
+    "consensus": {
+     "home": 1.4062,
+     "draw": 4.83,
+     "away": 5.5554
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "6d0c7da3ab5047d0a45912b40ba07c61",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-22T23:30:00Z",
+    "homeEn": "Orlando City SC",
+    "awayEn": "Real Salt Lake",
+    "books": 13,
+    "consensus": {
+     "home": 2.2977,
+     "draw": 3.7654,
+     "away": 2.5092
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "8db4ded3b88d8974f261c9e2c7eee67c",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-23T00:30:00Z",
+    "homeEn": "Austin FC",
+    "awayEn": "Philadelphia Union",
+    "books": 13,
+    "consensus": {
+     "home": 2.6031,
+     "draw": 3.4654,
+     "away": 2.3508
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "a59435c8f186d183eaf572f25af86e5c",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-23T00:30:00Z",
+    "homeEn": "Nashville SC",
+    "awayEn": "Columbus Crew SC",
+    "books": 13,
+    "consensus": {
+     "home": 1.6977,
+     "draw": 3.6708,
+     "away": 4.2023
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "3c3734c6427be87c586d064448d5ab0c",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-23T00:30:00Z",
+    "homeEn": "St. Louis City SC",
+    "awayEn": "Houston Dynamo",
+    "books": 13,
+    "consensus": {
+     "home": 1.8569,
+     "draw": 3.6338,
+     "away": 3.5038
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "f95f8dcfc80fb5adce73941310bfb690",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-23T01:30:00Z",
+    "homeEn": "Vancouver Whitecaps FC",
+    "awayEn": "FC Dallas",
+    "books": 13,
+    "consensus": {
+     "home": 1.4562,
+     "draw": 4.4638,
+     "away": 5.3377
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "3694aa4b60ed1371baf2e5281f9880c8",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-23T02:30:00Z",
+    "homeEn": "San Diego FC",
+    "awayEn": "Colorado Rapids",
+    "books": 13,
+    "consensus": {
+     "home": 1.9023,
+     "draw": 3.7992,
+     "away": 3.2169
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "37a1cb60c0cdcdf1d20abb6ff0954acc",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-23T02:30:00Z",
+    "homeEn": "Los Angeles FC",
+    "awayEn": "Portland Timbers",
+    "books": 13,
+    "consensus": {
+     "home": 1.4077,
+     "draw": 4.6862,
+     "away": 5.7092
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "93c38f71c66953eae0f63e44c88b9bb9",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-23T02:30:00Z",
+    "homeEn": "San Jose Earthquakes",
+    "awayEn": "Minnesota United FC",
+    "books": 8,
+    "consensus": {
+     "home": 1.9238,
+     "draw": 3.7688,
+     "away": 3.2625
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "5c3310ddac30d3e22332be25958e7672",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-23T20:30:00Z",
+    "homeEn": "New England Revolution",
+    "awayEn": "New York City FC",
+    "books": 13,
+    "consensus": {
+     "home": 2.4631,
+     "draw": 3.3654,
+     "away": 2.52
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "2f9249fe6c4d11d6aa89a85dc63d9581",
+    "sportKey": "soccer_usa_mls",
+    "commenceUtc": "2026-08-23T23:00:00Z",
+    "homeEn": "Atlanta United FC",
+    "awayEn": "Sporting Kansas City",
+    "books": 8,
+    "consensus": {
+     "home": 1.685,
+     "draw": 3.8625,
+     "away": 4.2687
+    },
+    "pinnacle": {}
+   }
+  ],
+  "EFL챔": [
+   {
+    "id": "0518dd5358a1955d59561b30f702a651",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-15T14:00:00Z",
+    "homeEn": "Bristol City",
+    "awayEn": "Millwall",
+    "books": 32,
+    "consensus": {
+     "home": 2.5759,
+     "draw": 2.8784,
+     "away": 2.8428
+    },
+    "pinnacle": {
+     "home": 2.47,
+     "away": 2.93,
+     "draw": 3.2
+    }
+   },
+   {
+    "id": "d2e7e245e43705d3059b84dec8d007fe",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-15T14:00:00Z",
+    "homeEn": "Charlton Athletic",
+    "awayEn": "Derby County",
+    "books": 32,
+    "consensus": {
+     "home": 5.7588,
+     "draw": 3.5941,
+     "away": 1.6406
+    },
+    "pinnacle": {
+     "home": 2.63,
+     "away": 3.09,
+     "draw": 2.81
+    }
+   },
+   {
+    "id": "04cd3d29e95a89f25a34447296856443",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-15T14:00:00Z",
+    "homeEn": "Middlesbrough",
+    "awayEn": "Lincoln City",
+    "books": 31,
+    "consensus": {
+     "home": 2.6587,
+     "draw": 3.2016,
+     "away": 2.5016
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "570a465b84ec706d58cc57f558ebf29b",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-15T14:00:00Z",
+    "homeEn": "Norwich City",
+    "awayEn": "West Bromwich Albion",
+    "books": 32,
+    "consensus": {
+     "home": 1.9075,
+     "draw": 3.0522,
+     "away": 4.3128
+    },
+    "pinnacle": {
+     "home": 1.9,
+     "away": 4.4,
+     "draw": 3.3
+    }
+   },
+   {
+    "id": "c028d320a770bf1b99597c63a0a0fc55",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-15T14:00:00Z",
+    "homeEn": "Portsmouth",
+    "awayEn": "Queens Park Rangers",
+    "books": 32,
+    "consensus": {
+     "home": 1.4534,
+     "draw": 3.8897,
+     "away": 7.3709
+    },
+    "pinnacle": {
+     "home": 2.26,
+     "away": 3.37,
+     "draw": 3.12
+    }
+   },
+   {
+    "id": "779b9ecca0a96a9b638dcdc38bee85cd",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-15T14:00:00Z",
+    "homeEn": "Stoke City",
+    "awayEn": "Swansea City",
+    "books": 32,
+    "consensus": {
+     "home": 2.3419,
+     "draw": 2.8844,
+     "away": 3.2462
+    },
+    "pinnacle": {
+     "home": 1.53,
+     "away": 6.41,
+     "draw": 3.88
+    }
+   },
+   {
+    "id": "0cb1b113469e83f07b4593116cfa9339",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-15T16:30:00Z",
+    "homeEn": "Sheffield United",
+    "awayEn": "Birmingham City",
+    "books": 40,
+    "consensus": {
+     "home": 2.351,
+     "draw": 3.2905,
+     "away": 2.9773
+    },
+    "pinnacle": {
+     "away": 3.13,
+     "home": 2.39,
+     "draw": 3.4
+    }
+   },
+   {
+    "id": "0e01068c7b15cd9fdddf8ad5237d2170",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-16T12:30:00Z",
+    "homeEn": "Watford",
+    "awayEn": "Southampton",
+    "books": 39,
+    "consensus": {
+     "home": 3.4031,
+     "draw": 3.4905,
+     "away": 2.0551
+    },
+    "pinnacle": {
+     "away": 2.09,
+     "home": 3.56,
+     "draw": 3.56
+    }
+   },
+   {
+    "id": "fd2380fb0d0736468c7a58dfe8c1d6e2",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-16T15:00:00Z",
+    "homeEn": "Burnley",
+    "awayEn": "West Ham United",
+    "books": 40,
+    "consensus": {
+     "home": 3.0003,
+     "draw": 3.466,
+     "away": 2.245
+    },
+    "pinnacle": {
+     "home": 3.13,
+     "away": 2.22,
+     "draw": 3.56
+    }
+   },
+   {
+    "id": "bb0f8db2a6c8fd7984342d6ad2dcf569",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-17T19:00:00Z",
+    "homeEn": "Cardiff City",
+    "awayEn": "Wrexham AFC",
+    "books": 39,
+    "consensus": {
+     "home": 2.3949,
+     "draw": 3.4359,
+     "away": 2.7585
+    },
+    "pinnacle": {
+     "home": 2.45,
+     "away": 2.8,
+     "draw": 3.51
+    }
+   },
+   {
+    "id": "b437b1083581f60a0c7f81e63ef514ec",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-22T11:30:00Z",
+    "homeEn": "Birmingham City",
+    "awayEn": "Bristol City",
+    "books": 26,
+    "consensus": {
+     "home": 1.7265,
+     "draw": 3.3877,
+     "away": 3.8562
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "594fd5e4069045b86966b844d23cdb14",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-22T11:30:00Z",
+    "homeEn": "Lincoln City",
+    "awayEn": "Portsmouth",
+    "books": 26,
+    "consensus": {
+     "home": 2.7231,
+     "draw": 3.24,
+     "away": 2.2762
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "cd3730b9f546d0b9068a01cf294b7ae9",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-22T11:30:00Z",
+    "homeEn": "Millwall",
+    "awayEn": "Norwich City",
+    "books": 23,
+    "consensus": {
+     "home": 1.8509,
+     "draw": 3.36,
+     "away": 3.9683
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "9dceb21cc88af7a630d4dfaa3f194a49",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-22T14:00:00Z",
+    "homeEn": "Blackburn Rovers",
+    "awayEn": "Middlesbrough",
+    "books": 26,
+    "consensus": {
+     "home": 2.935,
+     "draw": 3.1785,
+     "away": 2.1396
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "8ea9758ad6c96f7b5c79a12acc3cec14",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-22T14:00:00Z",
+    "homeEn": "Queens Park Rangers",
+    "awayEn": "Bolton Wanderers",
+    "books": 24,
+    "consensus": {
+     "home": 1.7571,
+     "draw": 3.3579,
+     "away": 3.6529
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "b4c43a415b55e596ca83146d35e0b909",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-22T14:00:00Z",
+    "homeEn": "Derby County",
+    "awayEn": "Cardiff City",
+    "books": 26,
+    "consensus": {
+     "home": 1.6204,
+     "draw": 3.4715,
+     "away": 4.42
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "d696e786a539df50282025c57b209f45",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-22T14:00:00Z",
+    "homeEn": "West Ham United",
+    "awayEn": "Charlton Athletic",
+    "books": 26,
+    "consensus": {
+     "home": 1.2423,
+     "draw": 5.015,
+     "away": 9.2335
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "4134daf3370a8bb2039d0a203a7866ad",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-22T14:00:00Z",
+    "homeEn": "Preston North End",
+    "awayEn": "Wolverhampton Wanderers",
+    "books": 27,
+    "consensus": {
+     "home": 4.1974,
+     "draw": 3.5563,
+     "away": 1.6415
+    },
+    "pinnacle": {
+     "home": 4.44,
+     "away": 1.76,
+     "draw": 3.84
+    }
+   },
+   {
+    "id": "aab7c65a91e15b9d58b0d40bfdc755da",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-22T14:00:00Z",
+    "homeEn": "Swansea City",
+    "awayEn": "Sheffield United",
+    "books": 26,
+    "consensus": {
+     "home": 2.3246,
+     "draw": 3.3208,
+     "away": 2.4362
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "7b351c66ca6c16eb13f88136c69af5c7",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-22T14:00:00Z",
+    "homeEn": "Southampton",
+    "awayEn": "Stoke City",
+    "books": 26,
+    "consensus": {
+     "home": 1.6323,
+     "draw": 3.7246,
+     "away": 4.0092
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "160e8293208f9a7e09c8588d68a3c0b7",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-22T14:00:00Z",
+    "homeEn": "Wrexham AFC",
+    "awayEn": "Watford",
+    "books": 23,
+    "consensus": {
+     "home": 1.8822,
+     "draw": 3.2548,
+     "away": 3.2583
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "527485dd2db8f4f232b37d4d2b1c434b",
+    "sportKey": "soccer_efl_champ",
+    "commenceUtc": "2026-08-23T11:00:00Z",
+    "homeEn": "West Bromwich Albion",
+    "awayEn": "Burnley",
+    "books": 22,
+    "consensus": {
+     "home": 2.5845,
+     "draw": 3.0241,
+     "away": 2.2714
+    },
+    "pinnacle": {}
+   }
+  ],
+  "에레디비": [
+   {
+    "id": "5481f59b5fdb433276833eb766aa07d5",
+    "sportKey": "soccer_netherlands_eredivisie",
+    "commenceUtc": "2026-08-15T14:30:00Z",
+    "homeEn": "Willem II",
+    "awayEn": "NEC Nijmegen",
+    "books": 39,
+    "consensus": {
+     "home": 4.7792,
+     "draw": 4.3374,
+     "away": 1.5849
+    },
+    "pinnacle": {
+     "away": 1.62,
+     "home": 4.95,
+     "draw": 4.59
+    }
+   },
+   {
+    "id": "2e55b844634f3ab5b6cd0269a71856b6",
+    "sportKey": "soccer_netherlands_eredivisie",
+    "commenceUtc": "2026-08-15T16:45:00Z",
+    "homeEn": "FC Utrecht",
+    "awayEn": "AZ Alkmaar",
+    "books": 39,
+    "consensus": {
+     "home": 2.6733,
+     "draw": 3.5915,
+     "away": 2.401
+    },
+    "pinnacle": {
+     "away": 2.53,
+     "home": 2.7,
+     "draw": 3.73
+    }
+   },
+   {
+    "id": "a0a58332486a9064bd8673b5b229b75e",
+    "sportKey": "soccer_netherlands_eredivisie",
+    "commenceUtc": "2026-08-15T18:00:00Z",
+    "homeEn": "Excelsior",
+    "awayEn": "PSV Eindhoven",
+    "books": 39,
+    "consensus": {
+     "home": 5.8851,
+     "draw": 4.6903,
+     "away": 1.4574
+    },
+    "pinnacle": {
+     "home": 6.48,
+     "away": 1.48,
+     "draw": 4.84
+    }
+   },
+   {
+    "id": "5d0a33dc08a7e0da69c8437915fa85fa",
+    "sportKey": "soccer_netherlands_eredivisie",
+    "commenceUtc": "2026-08-15T19:00:00Z",
+    "homeEn": "Fortuna Sittard",
+    "awayEn": "SC Cambuur",
+    "books": 39,
+    "consensus": {
+     "home": 1.6218,
+     "draw": 4.2318,
+     "away": 4.6318
+    },
+    "pinnacle": {
+     "home": 1.65,
+     "away": 4.79,
+     "draw": 4.46
+    }
+   },
+   {
+    "id": "e7058353789b7cf1130a7709f703f2b5",
+    "sportKey": "soccer_netherlands_eredivisie",
+    "commenceUtc": "2026-08-16T10:15:00Z",
+    "homeEn": "ADO Den Haag",
+    "awayEn": "Groningen",
+    "books": 36,
+    "consensus": {
+     "home": 2.7317,
+     "draw": 3.5769,
+     "away": 2.3547
+    },
+    "pinnacle": {
+     "home": 2.82,
+     "away": 2.45,
+     "draw": 3.62
+    }
+   },
+   {
+    "id": "6a1f5f932469fde24238a49813c3ccc4",
+    "sportKey": "soccer_netherlands_eredivisie",
+    "commenceUtc": "2026-08-16T12:30:00Z",
+    "homeEn": "FC Twente Enschede",
+    "awayEn": "FC Zwolle",
+    "books": 39,
+    "consensus": {
+     "home": 1.2277,
+     "draw": 6.3362,
+     "away": 10.1826
+    },
+    "pinnacle": {
+     "home": 1.24,
+     "away": 10.12,
+     "draw": 6.79
+    }
+   },
+   {
+    "id": "b2962f5347e9afbc16cf79303c4acc03",
+    "sportKey": "soccer_netherlands_eredivisie",
+    "commenceUtc": "2026-08-16T12:30:00Z",
+    "homeEn": "Feyenoord",
+    "awayEn": "Go Ahead Eagles",
+    "books": 39,
+    "consensus": {
+     "home": 1.3497,
+     "draw": 5.4295,
+     "away": 6.9059
+    },
+    "pinnacle": {
+     "home": 1.38,
+     "away": 6.92,
+     "draw": 5.71
+    }
+   },
+   {
+    "id": "09a9e817d0717bcfbae9e7fca709a15d",
+    "sportKey": "soccer_netherlands_eredivisie",
+    "commenceUtc": "2026-08-16T14:45:00Z",
+    "homeEn": "Ajax",
+    "awayEn": "Heerenveen",
+    "books": 38,
+    "consensus": {
+     "home": 1.4308,
+     "draw": 4.7905,
+     "away": 6.0703
+    },
+    "pinnacle": {
+     "home": 1.44,
+     "away": 6.14,
+     "draw": 4.98
+    }
+   }
+  ],
+  "엘리테세": [
+   {
+    "id": "b1e3a1ca106ecfc9319796d74046c2a0",
+    "sportKey": "soccer_norway_eliteserien",
+    "commenceUtc": "2026-08-15T14:00:00Z",
+    "homeEn": "KFUM",
+    "awayEn": "Lillestrom",
+    "books": 29,
+    "consensus": {
+     "home": 3.3931,
+     "draw": 3.0831,
+     "away": 2.0841
+    },
+    "pinnacle": {
+     "home": 3.45,
+     "away": 2.01,
+     "draw": 3.73
+    }
+   },
+   {
+    "id": "71cde5854df64d0c125026c01fdf5801",
+    "sportKey": "soccer_norway_eliteserien",
+    "commenceUtc": "2026-08-16T12:30:00Z",
+    "homeEn": "Aalesund",
+    "awayEn": "Vålerenga",
+    "books": 40,
+    "consensus": {
+     "home": 2.611,
+     "draw": 3.738,
+     "away": 2.3247
+    },
+    "pinnacle": {
+     "home": 2.69,
+     "away": 2.47,
+     "draw": 3.83
+    }
+   },
+   {
+    "id": "029f6bfe29cfa3b2d7253fe87b9c3dc7",
+    "sportKey": "soccer_norway_eliteserien",
+    "commenceUtc": "2026-08-16T15:00:00Z",
+    "homeEn": "SK Brann",
+    "awayEn": "HamKam",
+    "books": 39,
+    "consensus": {
+     "home": 1.5292,
+     "draw": 4.2395,
+     "away": 5.1633
+    },
+    "pinnacle": {
+     "away": 5.33,
+     "home": 1.61,
+     "draw": 4.14
+    }
+   },
+   {
+    "id": "d946c99484025d2fb1182a2860943359",
+    "sportKey": "soccer_norway_eliteserien",
+    "commenceUtc": "2026-08-16T15:00:00Z",
+    "homeEn": "Molde",
+    "awayEn": "Tromso",
+    "books": 39,
+    "consensus": {
+     "home": 2.2141,
+     "draw": 3.5031,
+     "away": 2.8603
+    },
+    "pinnacle": {
+     "home": 2.25,
+     "away": 2.98,
+     "draw": 3.73
+    }
+   },
+   {
+    "id": "212bff296b4c00730355c327b34f0dae",
+    "sportKey": "soccer_norway_eliteserien",
+    "commenceUtc": "2026-08-16T15:00:00Z",
+    "homeEn": "Sarpsborg FK",
+    "awayEn": "Sandefjord",
+    "books": 39,
+    "consensus": {
+     "home": 1.77,
+     "draw": 3.8731,
+     "away": 3.8115
+    },
+    "pinnacle": {
+     "away": 4.12,
+     "home": 1.81,
+     "draw": 3.93
+    }
+   },
+   {
+    "id": "de5e7844ab0a9a374e350704d975df62",
+    "sportKey": "soccer_norway_eliteserien",
+    "commenceUtc": "2026-08-16T17:15:00Z",
+    "homeEn": "Fredrikstad FK",
+    "awayEn": "Kristiansund BK",
+    "books": 39,
+    "consensus": {
+     "home": 1.8438,
+     "draw": 3.5587,
+     "away": 3.7762
+    },
+    "pinnacle": {
+     "home": 1.87,
+     "away": 4.05,
+     "draw": 3.72
+    }
+   }
+  ],
+  "라리가": [
+   {
+    "id": "4b1211e0f448d01cf2b7fabd07aee49e",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-15T17:30:00Z",
+    "homeEn": "Alavés",
+    "awayEn": "Getafe",
+    "books": 38,
+    "consensus": {
+     "home": 2.3737,
+     "draw": 2.7903,
+     "away": 3.6887
+    },
+    "pinnacle": {
+     "home": 2.46,
+     "away": 3.64,
+     "draw": 2.84
+    }
+   },
+   {
+    "id": "90a7c2b1668f47eaf38c10c7b49ac166",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-15T19:30:00Z",
+    "homeEn": "Sevilla",
+    "awayEn": "Rayo Vallecano",
+    "books": 38,
+    "consensus": {
+     "home": 2.4082,
+     "draw": 3.0876,
+     "away": 3.2039
+    },
+    "pinnacle": {
+     "away": 3.26,
+     "home": 2.47,
+     "draw": 3.16
+    }
+   },
+   {
+    "id": "f32c9c00fd77e4ec1abd5e34d67a6817",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-16T15:00:00Z",
+    "homeEn": "Real Racing Club de Santander",
+    "awayEn": "Villarreal",
+    "books": 38,
+    "consensus": {
+     "home": 3.2555,
+     "draw": 3.5292,
+     "away": 2.1558
+    },
+    "pinnacle": {
+     "home": 3.35,
+     "away": 2.14,
+     "draw": 3.72
+    }
+   },
+   {
+    "id": "4e24891d0ee382bfda6305eabbc54754",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-16T17:00:00Z",
+    "homeEn": "Espanyol",
+    "awayEn": "Levante",
+    "books": 38,
+    "consensus": {
+     "home": 2.0642,
+     "draw": 3.2663,
+     "away": 3.7929
+    },
+    "pinnacle": {
+     "home": 2.11,
+     "away": 3.86,
+     "draw": 3.33
+    }
+   },
+   {
+    "id": "7b9f4d89d66c48e0c496aab1679e4ae4",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-17T19:00:00Z",
+    "homeEn": "Deportivo La Coruña",
+    "awayEn": "Elche CF",
+    "books": 34,
+    "consensus": {
+     "home": 2.3297,
+     "draw": 3.0185,
+     "away": 3.3726
+    },
+    "pinnacle": {
+     "home": 2.4,
+     "away": 3.48,
+     "draw": 3.03
+    }
+   },
+   {
+    "id": "857e387be2e9f73e825ad02a2ec74cc3",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-19T19:00:00Z",
+    "homeEn": "Atlético Madrid",
+    "awayEn": "Málaga",
+    "books": 33,
+    "consensus": {
+     "home": 1.283,
+     "draw": 5.4776,
+     "away": 10.7061
+    },
+    "pinnacle": {
+     "home": 1.3,
+     "away": 10.4,
+     "draw": 5.75
+    }
+   },
+   {
+    "id": "4feb0ef58a41849f92fcc270268734d4",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-20T19:00:00Z",
+    "homeEn": "Rayo Vallecano",
+    "awayEn": "Alavés",
+    "books": 35,
+    "consensus": {
+     "home": 2.1446,
+     "draw": 3.05,
+     "away": 3.6989
+    },
+    "pinnacle": {
+     "away": 3.8,
+     "home": 2.17,
+     "draw": 3.07
+    }
+   },
+   {
+    "id": "623ff84505dae8a0598eefd6a15b5e14",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-21T19:00:00Z",
+    "homeEn": "Real Betis",
+    "awayEn": "Real Sociedad",
+    "books": 31,
+    "consensus": {
+     "home": 2.0606,
+     "draw": 3.3587,
+     "away": 3.4623
+    },
+    "pinnacle": {
+     "home": 2.05,
+     "away": 3.69,
+     "draw": 3.41
+    }
+   },
+   {
+    "id": "382e164289b17ff11f658279d77c1c1d",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-22T15:00:00Z",
+    "homeEn": "Athletic Bilbao",
+    "awayEn": "Sevilla",
+    "books": 32,
+    "consensus": {
+     "home": 1.685,
+     "draw": 3.3766,
+     "away": 4.5516
+    },
+    "pinnacle": {
+     "home": 1.75,
+     "away": 4.71,
+     "draw": 3.71
+    }
+   },
+   {
+    "id": "1fd2c356ef34923d9cf24e2cb6933770",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-22T17:30:00Z",
+    "homeEn": "Valencia",
+    "awayEn": "Celta Vigo",
+    "books": 31,
+    "consensus": {
+     "home": 2.0403,
+     "draw": 3.1265,
+     "away": 3.4203
+    },
+    "pinnacle": {
+     "away": 3.53,
+     "home": 2.12,
+     "draw": 3.38
+    }
+   },
+   {
+    "id": "142b9f77470fa57ac5f1e1f69a28d44e",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-22T19:30:00Z",
+    "homeEn": "Espanyol",
+    "awayEn": "Real Madrid",
+    "books": 31,
+    "consensus": {
+     "home": 5.6797,
+     "draw": 4.1723,
+     "away": 1.5335
+    },
+    "pinnacle": {
+     "home": 5.68,
+     "away": 1.57,
+     "draw": 4.08
+    }
+   },
+   {
+    "id": "4290b7b558285b2ec3a5ed42feca310d",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-23T15:00:00Z",
+    "homeEn": "Atlético Madrid",
+    "awayEn": "Villarreal",
+    "books": 30,
+    "consensus": {
+     "home": 1.8653,
+     "draw": 3.5897,
+     "away": 3.932
+    },
+    "pinnacle": {
+     "home": 1.86,
+     "away": 4.12,
+     "draw": 3.68
+    }
+   },
+   {
+    "id": "8ef1d272900aafd279fdb80f7d75e36e",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-23T17:30:00Z",
+    "homeEn": "Getafe",
+    "awayEn": "Real Racing Club de Santander",
+    "books": 31,
+    "consensus": {
+     "home": 1.8481,
+     "draw": 2.8616,
+     "away": 4.4639
+    },
+    "pinnacle": {
+     "home": 1.91,
+     "away": 5.05,
+     "draw": 3.02
+    }
+   },
+   {
+    "id": "b06b6cc4d9eaea1fe78adf24afa350a3",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-23T19:30:00Z",
+    "homeEn": "Elche CF",
+    "awayEn": "Barcelona",
+    "books": 31,
+    "consensus": {
+     "home": 8.6694,
+     "draw": 5.5197,
+     "away": 1.3006
+    },
+    "pinnacle": {
+     "away": 1.31,
+     "home": 7.9,
+     "draw": 5.92
+    }
+   },
+   {
+    "id": "b86f1854fe9f0915d4f9ee47f23a14bf",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-24T17:30:00Z",
+    "homeEn": "CA Osasuna",
+    "awayEn": "Levante",
+    "books": 31,
+    "consensus": {
+     "home": 1.7994,
+     "draw": 3.4197,
+     "away": 4.021
+    },
+    "pinnacle": {
+     "home": 1.82,
+     "away": 4.36,
+     "draw": 3.66
+    }
+   },
+   {
+    "id": "030285b126b6a2f7e022261006ed770e",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-24T19:30:00Z",
+    "homeEn": "Málaga",
+    "awayEn": "Deportivo La Coruña",
+    "books": 27,
+    "consensus": {
+     "home": 2.3644,
+     "draw": 2.857,
+     "away": 2.7967
+    },
+    "pinnacle": {
+     "away": 2.97,
+     "home": 2.6,
+     "draw": 3.06
+    }
+   },
+   {
+    "id": "86eee7d1c8e3dfb4e52cb45c875d4c4e",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-25T19:00:00Z",
+    "homeEn": "Valencia",
+    "awayEn": "Real Betis",
+    "books": 27,
+    "consensus": {
+     "home": 2.5363,
+     "draw": 3.0863,
+     "away": 2.5256
+    },
+    "pinnacle": {
+     "away": 2.71,
+     "home": 2.69,
+     "draw": 3.24
+    }
+   },
+   {
+    "id": "a979daf40170f19586fa4e8682ba698d",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-26T19:00:00Z",
+    "homeEn": "Real Madrid",
+    "awayEn": "Real Sociedad",
+    "books": 28,
+    "consensus": {
+     "home": 1.3625,
+     "draw": 5.1032,
+     "away": 7.3725
+    },
+    "pinnacle": {
+     "home": 1.39,
+     "away": 7.13,
+     "draw": 5.11
+    }
+   },
+   {
+    "id": "0b765da573acccbad3b07923f279c567",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-27T18:30:00Z",
+    "homeEn": "Celta Vigo",
+    "awayEn": "CA Osasuna",
+    "books": 28,
+    "consensus": {
+     "home": 1.9336,
+     "draw": 3.1611,
+     "away": 3.4536
+    },
+    "pinnacle": {}
+   },
+   {
+    "id": "4e67f40bc51c915154f04559a7ab692c",
+    "sportKey": "soccer_spain_la_liga",
+    "commenceUtc": "2026-08-27T19:00:00Z",
+    "homeEn": "Barcelona",
+    "awayEn": "Athletic Bilbao",
+    "books": 28,
+    "consensus": {
+     "home": 1.375,
+     "draw": 4.9954,
+     "away": 7.2029
+    },
+    "pinnacle": {
+     "away": 7.13,
+     "home": 1.39,
+     "draw": 5.09
+    }
+   }
+  ],
+  "코파리베": [
+   {
+    "id": "30a4c76820f0398dbb11f45d7da45b85",
+    "sportKey": "soccer_conmebol_copa_libertadores",
+    "commenceUtc": "2026-08-18T22:00:00Z",
+    "homeEn": "Independiente Rivadavia",
+    "awayEn": "Fluminense-RJ",
+    "books": 33,
+    "consensus": {
+     "home": 2.3867,
+     "draw": 2.8697,
+     "away": 3.1076
+    },
+    "pinnacle": {
+     "away": 3.39,
+     "home": 2.44,
+     "draw": 2.86
+    }
+   },
+   {
+    "id": "5d066e1a5292f4f65a3879ab41a7d483",
+    "sportKey": "soccer_conmebol_copa_libertadores",
+    "commenceUtc": "2026-08-19T00:30:00Z",
+    "homeEn": "Deportes Tolima",
+    "awayEn": "Independiente del Valle",
+    "books": 28,
+    "consensus": {
+     "home": 2.8107,
+     "draw": 3.0964,
+     "away": 2.4168
+    },
+    "pinnacle": {
+     "home": 3.02,
+     "away": 2.48,
+     "draw": 3.13
+    }
+   },
+   {
+    "id": "3775491be22c3be12c4c5e4e02915d57",
+    "sportKey": "soccer_conmebol_copa_libertadores",
+    "commenceUtc": "2026-08-19T00:30:00Z",
+    "homeEn": "Universidad Católica (CHI)",
+    "awayEn": "Estudiantes La Plata",
+    "books": 34,
+    "consensus": {
+     "home": 2.4503,
+     "draw": 2.8606,
+     "away": 2.7226
+    },
+    "pinnacle": {
+     "away": 2.89,
+     "home": 2.66,
+     "draw": 3.01
+    }
+   },
+   {
+    "id": "9ef8246be1f962d5ec31a7321c3494fb",
+    "sportKey": "soccer_conmebol_copa_libertadores",
+    "commenceUtc": "2026-08-19T22:00:00Z",
+    "homeEn": "Cerro Porteño",
+    "awayEn": "Palmeiras-SP",
+    "books": 35,
+    "consensus": {
+     "home": 4.4,
+     "draw": 3.2157,
+     "away": 1.7571
+    },
+    "pinnacle": {
+     "home": 5.0,
+     "away": 1.78,
+     "draw": 3.38
+    }
+   },
+   {
+    "id": "236c7a4c2b419b7894b9ce6b37eb03e8",
+    "sportKey": "soccer_conmebol_copa_libertadores",
+    "commenceUtc": "2026-08-19T22:00:00Z",
+    "homeEn": "Coquimbo Unido",
+    "awayEn": "Platense",
+    "books": 31,
+    "consensus": {
+     "home": 2.2323,
+     "draw": 2.9161,
+     "away": 2.9684
+    },
+    "pinnacle": {
+     "home": 2.38,
+     "away": 3.25,
+     "draw": 3.06
+    }
+   },
+   {
+    "id": "c197aad1aed8f8090132be9cbaee3115",
+    "sportKey": "soccer_conmebol_copa_libertadores",
+    "commenceUtc": "2026-08-20T00:30:00Z",
+    "homeEn": "Flamengo-RJ",
+    "awayEn": "Cruzeiro",
+    "books": 34,
+    "consensus": {
+     "home": 1.6144,
+     "draw": 3.6021,
+     "away": 5.2779
+    },
+    "pinnacle": {
+     "away": 6.02,
+     "home": 1.66,
+     "draw": 3.44
+    }
+   },
+   {
+    "id": "75a9e9d10a96820fadf35bfa73647855",
+    "sportKey": "soccer_conmebol_copa_libertadores",
+    "commenceUtc": "2026-08-20T22:00:00Z",
+    "homeEn": "LDU Quito",
+    "awayEn": "Mirassol",
+    "books": 33,
+    "consensus": {
+     "home": 1.5703,
+     "draw": 3.56,
+     "away": 4.977
+    },
+    "pinnacle": {
+     "home": 1.62,
+     "away": 5.47,
+     "draw": 3.85
+    }
+   },
+   {
+    "id": "afac77c82c22f3d1654f178b1c8d4215",
+    "sportKey": "soccer_conmebol_copa_libertadores",
+    "commenceUtc": "2026-08-21T00:30:00Z",
+    "homeEn": "Corinthians-SP",
+    "awayEn": "Rosario Central",
+    "books": 32,
+    "consensus": {
+     "home": 1.8228,
+     "draw": 2.8841,
+     "away": 4.1678
+    },
+    "pinnacle": {
+     "home": 1.88,
+     "away": 4.96,
+     "draw": 3.07
+    }
+   }
+  ],
+  "J1리그": [
+   {
+    "id": "ed5b4f7a795b2350a66e07d48b5fe36a",
+    "sportKey": "soccer_japan_j_league",
+    "commenceUtc": "2026-08-21T10:00:00Z",
+    "homeEn": "Kashiwa Reysol",
+    "awayEn": "V-Varen Nagasaki",
+    "books": 15,
+    "consensus": {
+     "home": 1.6213,
+     "draw": 3.704,
+     "away": 4.8227
+    },
+    "pinnacle": {
+     "home": 1.68,
+     "away": 5.09,
+     "draw": 3.79
+    }
+   },
+   {
+    "id": "40836aa7f6c0afcb53b9279f7b9543b8",
+    "sportKey": "soccer_japan_j_league",
+    "commenceUtc": "2026-08-21T10:30:00Z",
+    "homeEn": "FC Tokyo",
+    "awayEn": "JEF United Chiba",
+    "books": 16,
+    "consensus": {
+     "home": 1.4763,
+     "draw": 3.9888,
+     "away": 5.9337
+    },
+    "pinnacle": {
+     "home": 1.51,
+     "away": 6.34,
+     "draw": 4.22
+    }
+   },
+   {
+    "id": "31df1890be633668338dc40f40a8a95c",
+    "sportKey": "soccer_japan_j_league",
+    "commenceUtc": "2026-08-22T09:00:00Z",
+    "homeEn": "Kashima Antlers",
+    "awayEn": "Avispa Fukuoka",
+    "books": 14,
+    "consensus": {
+     "home": 1.7021,
+     "draw": 3.3129,
+     "away": 4.7571
+    },
+    "pinnacle": {
+     "away": 5.11,
+     "home": 1.76,
+     "draw": 3.46
+    }
+   },
+   {
+    "id": "f0d7185bbedbc394715ad138824137be",
+    "sportKey": "soccer_japan_j_league",
+    "commenceUtc": "2026-08-22T09:30:00Z",
+    "homeEn": "Fagiano Okayama",
+    "awayEn": "Tokyo Verdy",
+    "books": 13,
+    "consensus": {
+     "home": 2.0992,
+     "draw": 2.9015,
+     "away": 3.5362
+    },
+    "pinnacle": {
+     "home": 2.24,
+     "away": 3.76,
+     "draw": 2.96
+    }
+   },
+   {
+    "id": "01150b5dc6b8ec80c959f9780ae2b4ff",
+    "sportKey": "soccer_japan_j_league",
+    "commenceUtc": "2026-08-22T10:00:00Z",
+    "homeEn": "Cerezo Osaka",
+    "awayEn": "Shimizu S Pulse",
+    "books": 15,
+    "consensus": {
+     "home": 2.1613,
+     "draw": 3.3107,
+     "away": 2.9673
+    },
+    "pinnacle": {
+     "home": 2.27,
+     "away": 3.13,
+     "draw": 3.45
+    }
+   },
+   {
+    "id": "98e97226a2b9271747921090e531aa94",
+    "sportKey": "soccer_japan_j_league",
+    "commenceUtc": "2026-08-22T10:00:00Z",
+    "homeEn": "Nagoya Grampus",
+    "awayEn": "Gamba Osaka",
+    "books": 14,
+    "consensus": {
+     "home": 2.2407,
+     "draw": 3.335,
+     "away": 2.8179
+    },
+    "pinnacle": {
+     "away": 2.9,
+     "home": 2.37,
+     "draw": 3.53
+    }
+   },
+   {
+    "id": "eed9639da566ff3f48758e0985936824",
+    "sportKey": "soccer_japan_j_league",
+    "commenceUtc": "2026-08-22T10:00:00Z",
+    "homeEn": "Kyoto Purple Sanga",
+    "awayEn": "Mito HollyHock",
+    "books": 16,
+    "consensus": {
+     "home": 1.9975,
+     "draw": 3.2794,
+     "away": 3.415
+    },
+    "pinnacle": {
+     "home": 2.07,
+     "away": 3.55,
+     "draw": 3.5
+    }
+   },
+   {
+    "id": "c3535e35505ab2996d415e40d1dbd3d3",
+    "sportKey": "soccer_japan_j_league",
+    "commenceUtc": "2026-08-22T10:15:00Z",
+    "homeEn": "Hiroshima Sanfrecce FC",
+    "awayEn": "Kawasaki Frontale",
+    "books": 16,
+    "consensus": {
+     "home": 1.6056,
+     "draw": 3.915,
+     "away": 4.51
+    },
+    "pinnacle": {
+     "home": 1.65,
+     "away": 4.8,
+     "draw": 4.14
+    }
+   },
+   {
+    "id": "cd589b86ab55b4134510b83f5f296a3e",
+    "sportKey": "soccer_japan_j_league",
+    "commenceUtc": "2026-08-22T10:30:00Z",
+    "homeEn": "Yokohama F Marinos",
+    "awayEn": "Vissel Kobe",
+    "books": 14,
+    "consensus": {
+     "home": 3.3264,
+     "draw": 3.2429,
+     "away": 2.0257
+    },
+    "pinnacle": {
+     "away": 2.1,
+     "home": 3.5,
+     "draw": 3.45
+    }
+   }
+  ]
+ }
+}
