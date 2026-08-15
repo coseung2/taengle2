@@ -1,0 +1,29 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  rust:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: wasm32-unknown-unknown
+          components: rustfmt, clippy
+      - uses: Swatinem/rust-cache@v2
+
+      - name: Format
+        run: cargo fmt --all -- --check
+
+      - name: Domain tests
+        run: cargo test -p taengle-odds-domain
+
+      - name: Domain clippy
+        run: cargo clippy -p taengle-odds-domain --all-targets -- -D warnings
+
+      - name: Web check
+        run: cargo check -p taengle --target wasm32-unknown-unknown --no-default-features --features web
