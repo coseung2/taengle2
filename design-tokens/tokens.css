@@ -1,0 +1,158 @@
+/* TAENGLE design tokens — generated from design-tokens/tokens.json (Figma source) */
+/* Light-first. Apply .dark on <html> or a container to switch themes. */
+
+:root {
+  --gray-50: #f8f9fa;
+  --gray-100: #f0f2f5;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-550: #5f6a7c;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #1a2233;
+  --gray-950: #0b1220;
+  --blue-50: #eef3ff;
+  --blue-100: #e2eaff;
+  --blue-500: #2f6bf0;
+  --blue-600: #1e55d8;
+  --blue-700: #1740a8;
+  --green-500: #56dc91;
+  --green-600: #1f9d62;
+  --amber-500: #f5a623;
+  --amber-600: #d97706;
+  --amber-700: #b45309;
+  --red-500: #ef3050;
+  --red-600: #d51f3d;
+  --dark-25: #f5f7fb;
+  --dark-400: #707989;
+  --dark-450: #8a94a4;
+  --dark-500: #8f9aaa;
+  --dark-600: #242c3a;
+  --dark-650: #202633;
+  --dark-700: #171b25;
+  --dark-750: #121722;
+  --dark-800: #111620;
+  --dark-850: #11151d;
+  --dark-900: #0e1118;
+  --dark-925: #0a0c11;
+  --dark-950: #090b10;
+  --white: #ffffff;
+  --white-62: rgba(255 255 255 / 0.62);
+  --white-94: rgba(255 255 255 / 0.94);
+  --white-96: rgba(255 255 255 / 0.96);
+  --dark-950-94: rgba(9 11 16 / 0.94);
+  --dark-925-96: rgba(10 12 17 / 0.96);
+  --dark-900-62: rgba(14 17 24 / 0.62);
+  --spacing-4: 4px;
+  --spacing-7: 7px;
+  --spacing-8: 8px;
+  --spacing-9: 9px;
+  --spacing-10: 10px;
+  --spacing-11: 11px;
+  --spacing-13: 13px;
+  --spacing-15: 15px;
+  --spacing-18: 18px;
+  --spacing-26: 26px;
+  --spacing-58: 58px;
+  --spacing-66: 66px;
+  --spacing-84: 84px;
+  --radius-9: 9px;
+  --radius-12: 12px;
+  --radius-14: 14px;
+  --radius-full: 999px;
+  --color-bg-base: #f8f9fa;
+  --color-bg-base-top: #ffffff;
+  --color-bg-topbar: rgba(255 255 255 / 0.94);
+  --color-bg-nav: rgba(255 255 255 / 0.96);
+  --color-bg-row: #ffffff;
+  --color-bg-elevated: #ffffff;
+  --color-bg-tab: #f0f2f5;
+  --color-bg-cell: #ffffff;
+  --color-text-primary: #1a2233;
+  --color-text-secondary: #6b7280;
+  --color-text-tertiary: #9ca3af;
+  --color-accent-blue: #2f6bf0;
+  --color-status-success: #1f9d62;
+  --color-status-warning: #d97706;
+  --color-status-danger: #ef3050;
+  --color-border-default: #e5e7eb;
+  --color-border-strong: #d1d5db;
+}
+
+.dark {
+  --color-bg-base: #090b10;
+  --color-bg-base-top: #171b25;
+  --color-bg-topbar: rgba(9 11 16 / 0.94);
+  --color-bg-nav: rgba(10 12 17 / 0.96);
+  --color-bg-row: rgba(14 17 24 / 0.62);
+  --color-bg-elevated: #121722;
+  --color-bg-tab: #11151d;
+  --color-bg-cell: #111620;
+  --color-text-primary: #f5f7fb;
+  --color-text-secondary: #8f9aaa;
+  --color-text-tertiary: #707989;
+  --color-accent-blue: #2f6bf0;
+  --color-status-success: #56dc91;
+  --color-status-warning: #f5a623;
+  --color-status-danger: #ef3050;
+  --color-border-default: #242c3a;
+  --color-border-strong: #202633;
+}
+
+/* Typography scale (Figma text styles) */
+:root {
+  --font-display-mobile: 29px/116%;
+  --font-display-mobile-weight: 700;
+  --font-display-mobile-tracking: -0.04em;
+  --font-display-desktop: 38px/116%;
+  --font-display-desktop-weight: 700;
+  --font-display-desktop-tracking: -0.04em;
+  --font-eyebrow: 11px;
+  --font-eyebrow-weight: 800;
+  --font-eyebrow-tracking: 0.13em;
+  --font-brand: 16px;
+  --font-brand-weight: 900;
+  --font-brand-tracking: 0.12em;
+  --font-body: 14px/150%;
+  --font-body-weight: 400;
+  --font-section-title: 17px;
+  --font-section-title-weight: 700;
+  --font-metric-value: 15px;
+  --font-metric-value-weight: 700;
+  --font-metric-label: 10px;
+  --font-metric-label-weight: 400;
+  --font-tab-label: 13px;
+  --font-tab-label-weight: 700;
+  --font-status: 11px;
+  --font-status-weight: 400;
+  --font-match-meta: 11px;
+  --font-match-meta-weight: 400;
+  --font-league: 11px;
+  --font-league-weight: 800;
+  --font-teams: 16px;
+  --font-teams-weight: 700;
+  --font-vs: 10px;
+  --font-vs-weight: 400;
+  --font-odds-label: 9px;
+  --font-odds-label-weight: 800;
+  --font-odds-value: 13px;
+  --font-odds-value-weight: 700;
+  --font-nav-label: 12px;
+  --font-nav-label-weight: 700;
+  --font-logo: 22px;
+  --font-logo-weight: 900;
+  --font-logo-tracking: 0.01em;
+  --font-nav: 14px;
+  --font-nav-weight: 700;
+  --font-card-title: 14px;
+  --font-card-title-weight: 700;
+  --font-team: 14px;
+  --font-team-weight: 700;
+  --font-score: 18px;
+  --font-score-weight: 700;
+}
+
+/* Usage: background: var(--color-bg-base); border-radius: var(--radius-12); gap: var(--spacing-10); */
