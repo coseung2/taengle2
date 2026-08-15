@@ -226,7 +226,7 @@ function renderMatches(groups) {
         <div class="m-event">
           <div class="m-teams" title="${esc(primary.home)} vs ${esc(primary.away)}"><span class="m-team home">${esc(primary.home)}</span><span class="vs">vs</span><span class="m-team away">${esc(primary.away)}</span></div>
         </div>
-        <button type="button" class="odds-toggle" data-odds-toggle aria-expanded="true">배당정보 접기</button>
+        <button type="button" class="odds-toggle" data-odds-toggle aria-label="배당정보 접기" title="배당정보 접기" aria-expanded="true"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m18 15-6-6-6 6"></path></svg></button>
       </div>
       <div class="match-bottom">
         <div class="market-block">
@@ -252,7 +252,10 @@ function renderMatches(groups) {
       match.dataset.oddsExpanded = String(!expanded);
       match.classList.toggle("odds-collapsed", expanded);
       button.setAttribute("aria-expanded", String(!expanded));
-      button.textContent = expanded ? "배당정보 펼치기" : "배당정보 접기";
+      const label = expanded ? "배당정보 펼치기" : "배당정보 접기";
+      button.setAttribute("aria-label", label);
+      button.setAttribute("title", label);
+      button.innerHTML = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${expanded ? "m6 9 6 6 6-6" : "m18 15-6-6-6 6"}"></path></svg>`;
     };
   });
 }
