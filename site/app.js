@@ -48,6 +48,8 @@ const LEAGUE_FULL_NAMES = Object.freeze({
 const leagueFullName = (league) => LEAGUE_FULL_NAMES[league] || league;
 
 let SNAPSHOT = null;
+let CURRENT_MATCH_RENDER = null;
+const MATCHES_PER_PAGE = 30;
 
 const THEME_ICONS = {
   moon: '<svg class="lucide lucide-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg>',
@@ -113,14 +115,16 @@ async function load() {
 
   let activeMode = "all";
   let selectedLeague = null;
+  let selectedMatchCategory = "all";
   const modeFilter = (mode, matches) => {
     if (mode === "soccer") return matches.filter((m) => SOCCER_LEAGUES.has(m.league));
     if (mode === "baseball") return matches.filter((m) => BASEBALL_LEAGUES.has(m.league));
     return matches;
   };
-  const applyView = (mode = "all", league = null) => {
+  const applyView = (mode = "all", league = null, requestedPage = 1, matchCategory = selectedMatchCategory) => {
     activeMode = mode;
     selectedLeague = league;
+    selectedMatchCategory = matchCategory;
     const modeAll = mode === "ranking" ? all : modeFilter(mode, all);
     const modeUpcoming = mode === "ranking" ? upcoming : modeFilter(mode, upcoming);
     const viewAll = league ? modeAll.filter((m) => m.league === league) : modeAll;
@@ -144,7 +148,10 @@ async function load() {
     } else {
       matchesView.hidden = false;
       rankingView.hidden = true;
-      const sortedMatches = [...viewUpcoming].sort((a, b) => (a.kickoff || "").localeCompare(b.kickoff || ""));
+      renderMatchCategories(selectedMatchCategory, (nextCategory) => applyView(activeMode, selectedLeague, 1, nextCategory));
+      const sortedMatches = [...viewUpcoming]
+        .filter((match) => selectedMatchCategory === "all" || matchMarketType(match) === selectedMatchCategory)
+        .sort((a, b) => (a.kickoff || "").localeCompare(b.kickoff || ""));
       const grouped = new Map();
       for (const match of sortedMatches) {
         const key = [match.league, match.kickoff, match.home, match.away].join("|");
@@ -159,9 +166,17 @@ async function load() {
           h2h: group.find((match) => matchMarketType(match) !== "totals") || null,
           totals: group.find((match) => matchMarketType(match) === "totals") || null,
         });
-        if (displayGroups.length >= 8) break;
       }
-      renderMatches(displayGroups);
+      const totalPages = Math.max(1, Math.ceil(displayGroups.length / MATCHES_PER_PAGE));
+      const page = Math.min(Math.max(1, requestedPage), totalPages);
+      const start = (page - 1) * MATCHES_PER_PAGE;
+      renderMatches(
+        displayGroups.slice(start, start + MATCHES_PER_PAGE),
+        { page, totalPages, totalCount: displayGroups.length, onPage: (nextPage) => {
+          applyView(activeMode, selectedLeague, nextPage, selectedMatchCategory);
+          $("#matchesView")?.scrollIntoView({ behavior: "smooth", block: "start" });
+        } },
+      );
     }
   };
 
@@ -194,6 +209,18 @@ function renderHeader(game, upcoming, matched, selectedLeague, mode) {
   const interval = formatRefreshInterval(SNAPSHOT.marketRefreshIntervalMinutes);
   status.textContent = `${interval} 주기 · 최근 ${formatRefreshTime(fetchedAt)}`;
   status.parentElement.title = `${game.gameName}${context ? ` · ${context}` : ""} · 예정 ${upcoming.length}경기 · 해외 매칭 ${matched.length}경기 · 30일 균등 갱신 · 최근 ${fetchedAt || "-"}`;
+}
+
+function renderMatchCategories(selectedCategory, onSelect) {
+  const el = $("#matchCategories");
+  if (!el) return;
+  const categories = [["all", "전체"], ["h2h", "승무패"], ["totals", "언오버"]];
+  el.innerHTML = `<span class="match-category-label">분류</span>${categories.map(([value, label]) =>
+    `<button type="button" class="${selectedCategory === value ? "on" : ""}" data-match-category="${value}" aria-pressed="${selectedCategory === value}">${label}</button>`,
+  ).join("")}`;
+  el.querySelectorAll("[data-match-category]").forEach((button) => {
+    button.onclick = () => onSelect(button.dataset.matchCategory || "all");
+  });
 }
 
 function renderLeagues(leagues, selectedLeague, onSelect) {
@@ -255,10 +282,16 @@ function marketMeta(m) {
   return `<div class="market-meta">${cutText}${watchButton}</div>`;
 }
 
-function renderMatches(groups) {
-  CURRENT_MATCHES = groups;
+function renderMatches(groups, pagination = {}) {
+  CURRENT_MATCH_RENDER = { groups, pagination };
   const el = $("#matchList");
-  if (!groups.length) { el.innerHTML = '<p class="note" style="padding:14px;">예정된 비교 가능 경기가 없습니다.</p>'; return; }
+  const pager = $("#matchPagination");
+  if (!groups.length) {
+    el.innerHTML = '<p class="note" style="padding:14px;">예정된 비교 가능 경기가 없습니다.</p>';
+    pager.hidden = true;
+    pager.innerHTML = "";
+    return;
+  }
   el.innerHTML = groups.map(({ h2h, totals }) => {
     const primary = h2h || totals;
     const h2hMarket = h2h?.market;
@@ -279,6 +312,10 @@ function renderMatches(groups) {
         oddCell("언더", totals.under, totalsMarket?.consensus?.under, totalsMarket?.cutConsensus?.under),
       ].join("")
       : '<span class="market-empty">미제공</span>';
+    const marketBlocks = [
+      h2h ? `<div class="market-block"><div class="m-odds h2h">${h2hCells}</div>${marketMeta(h2h)}</div>` : "",
+      totals ? `<div class="market-block"><div class="m-odds totals">${totalsCells}</div>${marketMeta(totals)}</div>` : "",
+    ].filter(Boolean).join("");
     return `<div class="match odds-collapsed">
       <div class="match-top">
         <div class="match-meta">
@@ -290,15 +327,8 @@ function renderMatches(groups) {
         </div>
         <button type="button" class="odds-toggle" data-odds-toggle aria-label="배당정보 펼치기" title="배당정보 펼치기" aria-expanded="false"></button>
       </div>
-      <div class="match-bottom">
-        <div class="market-block">
-          <div class="m-odds h2h">${h2hCells}</div>
-          ${marketMeta(h2h)}
-        </div>
-        <div class="market-block">
-          <div class="m-odds totals">${totalsCells}</div>
-          ${marketMeta(totals)}
-        </div>
+      <div class="match-bottom ${h2h && totals ? "" : "single-market"}">
+        ${marketBlocks}
       </div>
     </div>`;
   }).join("");
@@ -319,6 +349,17 @@ function renderMatches(groups) {
       button.setAttribute("title", label);
       button.textContent = "";
     };
+  });
+  const { page = 1, totalPages = 1, onPage } = pagination;
+  pager.hidden = totalPages <= 1;
+  pager.innerHTML = totalPages > 1
+    ? Array.from({ length: totalPages }, (_, index) => {
+      const value = index + 1;
+      return `<button type="button" class="${value === page ? "on" : ""}" data-match-page="${value}" ${value === page ? 'aria-current="page"' : ""} aria-label="${value}페이지">${value}</button>`;
+    }).join("")
+    : "";
+  pager.querySelectorAll("[data-match-page]").forEach((button) => {
+    button.onclick = () => onPage?.(Number(button.dataset.matchPage));
   });
 }
 
@@ -417,7 +458,7 @@ function renderAccount() {
   list.querySelectorAll("[data-watch-delete]").forEach((button) => {
     button.onclick = () => deleteWatch(button.dataset.watchDelete);
   });
-  if (CURRENT_MATCHES.length) renderMatches(CURRENT_MATCHES);
+  if (CURRENT_MATCH_RENDER) renderMatches(CURRENT_MATCH_RENDER.groups, CURRENT_MATCH_RENDER.pagination);
 }
 
 async function refreshAccount(successMessage = "") {
