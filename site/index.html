@@ -24,6 +24,14 @@ header { position: sticky; top: 0; z-index: 20; background: var(--color-bg-topba
 button.theme { display: inline-grid; width: 44px; height: 44px; flex: none; place-items: center; padding: 0; border: 0; background: transparent; color: var(--color-text-secondary); cursor: pointer; }
 button.theme:hover, button.theme:focus-visible { color: var(--color-accent-blue); outline: none; }
 button.theme svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+@media (max-width: 720px) {
+  .header-in { flex-wrap: wrap; padding: 8px 12px; gap: 6px 10px; }
+  .brand { font-size: 19px; }
+  .tools { margin-left: auto; }
+  .nav { order: 3; width: 100%; overflow-x: auto; padding-bottom: 2px; scrollbar-width: none; }
+  .nav::-webkit-scrollbar { display: none; }
+  .nav button { flex: none; min-height: 40px; }
+}
 
 /* layout */
 main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid; grid-template-columns: 280px minmax(0, 1fr) 320px; gap: 16px; align-items: start; }
