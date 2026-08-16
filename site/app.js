@@ -167,11 +167,7 @@ async function load() {
         });
       }
       if (selectedSort === "cut") {
-        const groupCut = (group) => {
-          const cuts = [group.h2h, group.totals].map((match) => match?.market?.cutAvg).filter((value) => value != null);
-          return cuts.length ? Math.min(...cuts) : Infinity;
-        };
-        displayGroups.sort((a, b) => groupCut(a) - groupCut(b) || (a.h2h || a.totals).kickoff.localeCompare((b.h2h || b.totals).kickoff));
+        displayGroups.sort((a, b) => (overallCut(a.h2h, a.totals) ?? Infinity) - (overallCut(b.h2h, b.totals) ?? Infinity) || (a.h2h || a.totals).kickoff.localeCompare((b.h2h || b.totals).kickoff));
       }
       const totalPages = Math.max(1, Math.ceil(displayGroups.length / MATCHES_PER_PAGE));
       const page = Math.min(Math.max(1, requestedPage), totalPages);
@@ -280,21 +276,15 @@ function pointCell(point) {
 }
 
 function marketMeta(m) {
-  if (!m) return "";
-  const mk = m.market;
+  if (!m?.market?.marketId) return "";
   const totals = matchMarketType(m) === "totals";
   const watch = watchedFor(m);
-  const cutText = !mk
-    ? `<span class="market-meta-muted">해외 데이터 없음</span>`
-    : mk.cutAvg != null
-    ? (mk.cutAvg >= 0
-      ? `<span class="market-meta-cut" title="${totals ? `기준점 ${mk.point} 언오버` : "승무패"} 삭감률 평균 (컨센서스 ${mk.books}개 북)">삭감 ${(mk.cutAvg * 100).toFixed(1)}%</span>`
-      : `<span class="market-meta-cut edge" title="해외보다 높은 평균 배당 (컨센서스 ${mk.books}개 북)">우대 ${(-mk.cutAvg * 100).toFixed(1)}%</span>`)
-    : `<span class="market-meta-muted">해외 배당 부족</span>`;
-  const watchButton = mk?.marketId
-    ? `<button type="button" class="watch-link ${watch?.enabled ? "on" : ""}" aria-label="${totals ? "언오버" : "승무패"} ${watch?.enabled ? "관측 끄기" : "관측 추가"}" data-watch-key="${esc(watchKey(m))}">${watch?.enabled ? "관측 ON" : "+ 관측"}</button>`
-    : "";
-  return `<div class="market-meta">${cutText}${watchButton}</div>`;
+  return `<div class="market-meta"><button type="button" class="watch-link ${watch?.enabled ? "on" : ""}" aria-label="${totals ? "언오버" : "승무패"} ${watch?.enabled ? "관측 끄기" : "관측 추가"}" data-watch-key="${esc(watchKey(m))}">${watch?.enabled ? "관측 ON" : "+ 관측"}</button></div>`;
+}
+
+function overallCut(h2h, totals) {
+  const cuts = [h2h, totals].map((match) => match?.market?.cutAvg).filter((value) => value != null);
+  return cuts.length ? cuts.reduce((sum, value) => sum + value, 0) / cuts.length : null;
 }
 
 function renderMatches(groups, pagination = {}) {
@@ -313,6 +303,8 @@ function renderMatches(groups, pagination = {}) {
     const totalsMarket = totals?.market;
     const t = (primary.kickoff || "").slice(5, 16).replace("T", " ");
     const point = totalsMarket?.point ?? totals?.totalPoint;
+    const cut = overallCut(h2h, totals);
+    const overallCutLabel = cut == null ? "" : `<span class="match-overall-cut ${cut < 0 ? "edge" : ""}" title="승무패·언오버 해외 컨센서스 대비 평균 삭감률">${cut < 0 ? "우대" : "삭감"} ${Math.abs(cut * 100).toFixed(1)}%</span>`;
     const h2hCells = h2h
       ? [
         oddCell("승", h2h.win, h2hMarket?.consensus?.win, h2hMarket?.cutConsensus?.win),
@@ -340,7 +332,7 @@ function renderMatches(groups, pagination = {}) {
         <div class="m-event">
           <div class="m-teams" title="${esc(primary.home)} vs ${esc(primary.away)}"><span class="m-team home">${esc(primary.home)}</span><span class="vs">vs</span><span class="m-team away">${esc(primary.away)}</span></div>
         </div>
-        <button type="button" class="odds-toggle" data-odds-toggle aria-label="배당정보 펼치기" title="배당정보 펼치기" aria-expanded="false"></button>
+        <div class="match-actions">${overallCutLabel}<button type="button" class="odds-toggle" data-odds-toggle aria-label="배당정보 펼치기" title="배당정보 펼치기" aria-expanded="false"></button></div>
       </div>
       <div class="match-bottom ${h2h && totals ? "" : "single-market"}">
         ${marketBlocks}

@@ -51,20 +51,20 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 
 /* match rows */
 .match-list { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-top: 0; border-radius: 0 0 12px 12px; overflow: hidden; }
-.match-toolbar { display: flex; align-items: end; justify-content: space-between; gap: 12px; margin: 0 0 10px; }
+.match-toolbar { display: flex; align-items: end; justify-content: space-between; gap: 12px; margin: 0; padding: 12px 14px; border-bottom: 1px solid var(--color-border-default); }
 .match-toolbar-filters { display: flex; min-width: 0; gap: 8px; }
 .match-toolbar-field { display: grid; gap: 4px; color: var(--color-text-tertiary); font-size: 11px; font-weight: 800; }
 .match-toolbar-field select { height: 36px; min-width: 96px; border: 1px solid var(--color-border-default); border-radius: 8px; padding: 0 28px 0 10px; background: var(--color-bg-elevated); color: var(--color-text-primary); font: inherit; font-size: 12px; font-weight: 700; }
 .match-toolbar-field select:hover, .match-toolbar-field select:focus-visible { border-color: var(--color-accent-blue); outline: none; }
 .match-toolbar-field:nth-child(2) select { min-width: 160px; }
-.match-toolbar-sort { flex: none; }
+.match-toolbar-sort { flex: none; margin-left: auto; }
 .match-pagination { display: flex; justify-content: center; gap: 6px; margin-top: 14px; }
 .match-pagination button { width: 40px; height: 40px; padding: 0; border: 1px solid var(--color-border-default); border-radius: 8px; background: var(--color-bg-elevated); color: var(--color-text-secondary); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
 .match-pagination button:hover, .match-pagination button:focus-visible { border-color: var(--color-accent-blue); color: var(--color-accent-blue); outline: none; }
 .match-pagination button.on { border-color: var(--color-accent-blue); background: var(--color-accent-blue); color: white; }
 .match { display: grid; grid-template-columns: 1fr; gap: 0; padding: 12px 14px; border-bottom: 1px solid var(--color-border-default); }
 .match:last-child { border-bottom: 0; }
-.match-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) minmax(0, 1fr); align-items: center; gap: 14px; min-width: 0; }
+.match-top { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2fr) auto; align-items: center; gap: 14px; min-width: 0; }
 .match-meta { display: flex; min-width: 0; align-items: baseline; gap: 8px; overflow: hidden; white-space: nowrap; }
 .m-league { font-size: 12px; font-weight: 800; line-height: 1.3; color: var(--color-text-secondary); overflow-wrap: anywhere; }
 .m-time { font-size: 11px; color: var(--color-text-tertiary); }
@@ -74,6 +74,9 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .m-team.home { text-align: right; }
 .m-team.away { text-align: left; }
 .m-teams .vs { font-size: 10px; color: var(--color-text-tertiary); font-weight: 400; margin: 0 6px; }
+.match-actions { display: flex; align-items: center; justify-self: end; gap: 8px; min-width: 0; }
+.match-overall-cut { color: var(--color-status-danger); font-size: 11px; font-weight: 800; white-space: nowrap; }
+.match-overall-cut.edge { color: var(--color-accent-blue); }
 .match-bottom { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 14px; min-width: 0; margin-top: 8px; padding-top: 8px; border-top: 1px solid var(--color-border-default); }
 .market-block { display: flex; min-width: 0; align-items: center; gap: 8px; }
 .m-odds { display: grid; flex: 1; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; width: 100%; min-width: 0; }
@@ -88,9 +91,6 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .cell .c.cut { color: var(--color-status-danger); }
 .cell .c.edge { color: var(--color-accent-blue); }
 .market-meta { display: inline-flex; min-width: 0; flex: 0 0 auto; align-items: center; gap: 5px; color: var(--color-text-tertiary); font-size: 9px; line-height: 1.2; white-space: nowrap; }
-.market-meta-cut { color: var(--color-status-danger); }
-.market-meta-cut.edge { color: var(--color-accent-blue); }
-.market-meta-muted { color: var(--color-text-tertiary); }
 .watch-link { padding: 0; border: 0; background: transparent; color: var(--color-text-secondary); font: inherit; font-size: 9px; font-weight: 800; white-space: nowrap; cursor: pointer; }
 .watch-link:hover, .watch-link:focus-visible, .watch-link.on { color: var(--color-accent-blue); outline: none; }
 .odds-toggle { display: inline-grid; width: 32px; height: 32px; place-items: center; justify-self: end; padding: 0; overflow: hidden; border: 0; border-radius: 50%; background: transparent; color: var(--color-text-secondary); font-size: 0; cursor: pointer; }
@@ -221,8 +221,10 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
         <h2>오늘의 빅매치</h2>
         <span class="link">베트맨 26096회차 · 승부식</span>
       </div>
-      <div class="match-toolbar" id="matchToolbar" aria-label="경기 분류와 정렬"></div>
-      <div class="match-list" id="matchList"></div>
+      <div class="match-list">
+        <div class="match-toolbar" id="matchToolbar" aria-label="경기 분류와 정렬"></div>
+        <div id="matchList"></div>
+      </div>
       <nav class="match-pagination" id="matchPagination" aria-label="경기 목록 페이지" hidden></nav>
 
     </div>
@@ -253,6 +255,6 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
 </main>
 
 <footer>Source: betman.co.kr (프로토 승부식) · 디자인 시스템 <a href="https://www.figma.com/design/OcKhOxsU6zddMeRWlXFyYt">Figma</a> · tokens <a href="https://github.com/coseung2/taengle2/tree/main/design-tokens">design-tokens/</a></footer>
-<script src="app.js?v=20260816-match-toolbar"></script>
+<script src="app.js?v=20260816-match-cut"></script>
 </body>
 </html>
