@@ -55,6 +55,12 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .league-row .league-name { flex: 1; min-width: 0; line-height: 1.35; white-space: normal; overflow-wrap: anywhere; }
 .league-row .cnt { flex: none; padding-top: 2px; font-size: 11px; color: var(--color-text-tertiary); }
 .league-row.on { color: var(--color-accent-blue); background: var(--color-bg-tab); font-weight: 700; }
+.league-tabs { display: flex; gap: 2px; margin: 0 -16px 8px; padding: 0 16px; overflow-x: auto; border-bottom: 1px solid var(--color-border-default); scrollbar-width: none; }
+.league-tabs::-webkit-scrollbar { display: none; }
+.league-tabs button { flex: none; min-height: 34px; padding: 0 8px; border: 0; border-bottom: 2px solid transparent; background: transparent; color: var(--color-text-tertiary); font: inherit; font-size: 11px; font-weight: 800; cursor: pointer; }
+.league-tabs button:hover, .league-tabs button:focus-visible { color: var(--color-accent-blue); outline: none; }
+.league-tabs button.on { border-bottom-color: var(--color-accent-blue); color: var(--color-accent-blue); }
+.league-empty { padding: 8px 10px; }
 #allLeagues { width: 100%; border: 0; background: transparent; text-align: left; font: inherit; font-size: 12px; color: var(--color-text-secondary); padding: 8px 10px; cursor: pointer; }
 
 /* match rows */
@@ -220,6 +226,7 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
     </div>
     <div class="card">
       <h3>톱 리그</h3>
+      <div class="league-tabs" id="leagueTabs" aria-label="톱 리그 종목"></div>
       <div id="leagueList"></div>
       <button type="button" id="allLeagues">모든 리그 ▾</button>
     </div>
@@ -269,6 +276,6 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
 </main>
 
 <footer>Source: betman.co.kr (프로토 승부식) · 디자인 시스템 <a href="https://www.figma.com/design/OcKhOxsU6zddMeRWlXFyYt">Figma</a> · tokens <a href="https://github.com/coseung2/taengle2/tree/main/design-tokens">design-tokens/</a></footer>
-<script src="app.js?v=20260816-more-sports"></script>
+<script src="app.js?v=20260816-league-tabs"></script>
 </body>
 </html>

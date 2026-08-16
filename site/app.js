@@ -144,9 +144,15 @@ async function load() {
 
     renderNav(mode);
     renderHeader(game, viewUpcoming, viewMatched, selectedLeague, mode);
-    renderLeagues(countLeagues(modeUpcoming), selectedLeague, (nextLeague) => {
-      applyView(activeMode, nextLeague);
-    });
+    const leagueTabMode = mode === "ranking" ? "all" : mode;
+    const leagueTabMatches = modeFilter(leagueTabMode, upcoming);
+    renderLeagues(
+      countLeagues(leagueTabMatches),
+      selectedLeague,
+      leagueTabMode,
+      (nextMode) => applyView(nextMode, null, 1, selectedSort),
+      (nextLeague) => applyView(leagueTabMode, nextLeague, 1, selectedSort),
+    );
     renderCutRank(viewMatched);
     renderMetrics(game, viewAll, viewUpcoming, viewMatched);
 
@@ -246,17 +252,24 @@ function renderMatchToolbar(mode, selectedLeague, selectedSort, leagues, onChang
   };
 }
 
-function renderLeagues(leagues, selectedLeague, onSelect) {
+function renderLeagues(leagues, selectedLeague, activeMode, onMode, onSelect) {
+  const tabs = [["all", "전체"], ["soccer", "축구"], ["baseball", "야구"], ["basketball", "농구"], ["volleyball", "배구"], ["hockey", "하키"]];
+  const tabsEl = $("#leagueTabs");
+  tabsEl.innerHTML = tabs.map(([mode, label]) => `<button type="button" class="${mode === activeMode ? "on" : ""}" data-league-mode="${mode}" aria-pressed="${mode === activeMode}">${label}</button>`).join("");
+  tabsEl.querySelectorAll("[data-league-mode]").forEach((button) => {
+    button.onclick = () => onMode(button.dataset.leagueMode || "all");
+  });
   const el = $("#leagueList");
   const expanded = el.dataset.expanded === "true";
   const draw = () => {
     const list = expanded ? leagues : leagues.slice(0, 8);
-    el.innerHTML = list
+    el.innerHTML = list.length ? list
       .map(([lg, cnt]) => `<button type="button" class="league-row ${selectedLeague === lg ? "on" : ""}" aria-pressed="${selectedLeague === lg}" data-league="${esc(lg)}"><span class="league-name">${esc(leagueFullName(lg))}</span><span class="cnt">${cnt}</span></button>`)
-      .join("");
+      .join("") : '<p class="note league-empty">예정된 리그가 없습니다.</p>';
     el.querySelectorAll("[data-league]").forEach((row) => {
       row.onclick = () => onSelect(row.dataset.league);
     });
+    $("#allLeagues").hidden = leagues.length <= 8;
     $("#allLeagues").textContent = expanded ? "접기 ▴" : `모든 리그 ▾ (${leagues.length})`;
   };
   $("#allLeagues").onclick = () => {
