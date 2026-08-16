@@ -94,7 +94,6 @@ def total_point(row: dict, values: list) -> float | None:
         "handicapValue",
         "lineValue",
         "betLine",
-        "gamePoint",
     )
     if point is not None:
         return point

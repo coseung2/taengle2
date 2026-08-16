@@ -26,6 +26,26 @@ const SOCCER_LEAGUES = new Set([
   "K리그1", "K리그2", "EFL챔", "에레디비", "엘리테세", "라리가", "MLS", "J1리그", "J2리그",
   "코파리베", "축ASEA챔", "잉슈퍼컵", "프슈퍼컵", "축클럽친",
 ]);
+const LEAGUE_FULL_NAMES = Object.freeze({
+  "MLB": "메이저 리그 베이스볼 (MLB)",
+  "KBO": "한국 프로야구 (KBO)",
+  "NPB": "일본 프로야구 (NPB)",
+  "K리그1": "대한민국 K리그1",
+  "K리그2": "대한민국 K리그2",
+  "EFL챔": "잉글랜드 EFL 챔피언십",
+  "에레디비": "네덜란드 에레디비시",
+  "엘리테세": "노르웨이 엘리테세리엔",
+  "라리가": "스페인 라리가",
+  "MLS": "미국 메이저리그사커 (MLS)",
+  "J1리그": "일본 J1리그",
+  "J2리그": "일본 J2리그",
+  "코파리베": "코파 리베르타도레스",
+  "축ASEA챔": "ASEAN 클럽 챔피언십",
+  "잉슈퍼컵": "FA 커뮤니티 실드",
+  "프슈퍼컵": "트로페 데 샹피옹",
+  "축클럽친": "클럽 친선경기",
+});
+const leagueFullName = (league) => LEAGUE_FULL_NAMES[league] || league;
 
 let SNAPSHOT = null;
 
@@ -72,12 +92,6 @@ function formatRefreshInterval(minutes) {
   const rest = value % 60;
   return rest ? `${hours}시간 ${rest}분` : `${hours}시간`;
 }
-
-const impliedTotal = (m) => 1 / m.win + (m.draw ? 1 / m.draw : 0) + 1 / m.lose;
-const noVig = (m) => {
-  const b = impliedTotal(m);
-  return { home: 1 / m.win / b, draw: m.draw ? 1 / m.draw / b : 0, away: 1 / m.lose / b };
-};
 
 async function load() {
   const res = await fetch("data/snapshots.json", { cache: "no-store" });
@@ -148,7 +162,6 @@ async function load() {
         if (displayGroups.length >= 8) break;
       }
       renderMatches(displayGroups);
-      renderPredictions(viewUpcoming);
     }
   };
 
@@ -189,7 +202,7 @@ function renderLeagues(leagues, selectedLeague, onSelect) {
   const draw = () => {
     const list = expanded ? leagues : leagues.slice(0, 8);
     el.innerHTML = list
-      .map(([lg, cnt]) => `<button type="button" class="league-row ${selectedLeague === lg ? "on" : ""}" aria-pressed="${selectedLeague === lg}" data-league="${esc(lg)}"><span class="league-name">${esc(lg)}</span><span class="cnt">${cnt}</span></button>`)
+      .map(([lg, cnt]) => `<button type="button" class="league-row ${selectedLeague === lg ? "on" : ""}" aria-pressed="${selectedLeague === lg}" data-league="${esc(lg)}"><span class="league-name">${esc(leagueFullName(lg))}</span><span class="cnt">${cnt}</span></button>`)
       .join("");
     el.querySelectorAll("[data-league]").forEach((row) => {
       row.onclick = () => onSelect(row.dataset.league);
@@ -340,33 +353,6 @@ function renderRankingView(matched) {
       <span style="width:72px;font-size:11px;color:var(--color-text-tertiary);">${esc(m.league)}</span>
       <span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(m.home)} vs ${esc(m.away)}</span>
       <span class="v" style="color:${color}">${label}</span>
-    </div>`;
-  }).join("");
-}
-
-function renderPredictions(upcoming) {
-  const withDraw = upcoming.filter((m) => m.draw);
-  const prio = ["K리그1", "K리그2", "라리가", "EFL챔", "에레디비", "MLS", "잉슈퍼컵", "MLB"];
-  const picks = [...withDraw].sort((a, b) => {
-    const pa = prio.indexOf(a.league), pb = prio.indexOf(b.league);
-    return (pa < 0 ? 99 : pa) - (pb < 0 ? 99 : pb);
-  }).slice(0, 6);
-
-  $("#predGrid").innerHTML = picks.map((m) => {
-    const nv = noVig(m);
-    const pct = (x) => (x * 100).toFixed(1) + "%";
-    const style = (x) => `width:${Math.max(2, x * 100).toFixed(1)}%;`;
-    const t = (m.kickoff || "").slice(0, 10).replace(/-/g, ".");
-    return `<div class="pred">
-      <span class="tag">${esc(m.league)}</span>
-      <div class="title">${t} ${esc(m.home)} vs ${esc(m.away)} 경기 분석</div>
-      <div class="teams">${esc(m.home)}<span class="vs">vs</span>${esc(m.away)}</div>
-      <div class="bar">
-        <span style="${style(nv.home)};background:var(--blue-500)"></span>
-        <span style="${style(nv.draw)};background:var(--amber-500)"></span>
-        <span style="${style(nv.away)};background:var(--red-500)"></span>
-      </div>
-      <div class="pct"><span>홈 ${pct(nv.home)}</span><span>무 ${pct(nv.draw)}</span><span>원정 ${pct(nv.away)}</span></div>
     </div>`;
   }).join("");
 }

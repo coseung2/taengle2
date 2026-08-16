@@ -3,7 +3,7 @@ use taengle_odds_domain::{cut_rate, DecimalOdds, ThreeWayMarket};
 
 const MAIN_CSS: Asset = asset!("/assets/main.css");
 
-#[derive(Clone, Copy)]
+#[derive(Clone, Copy, PartialEq)]
 struct MatchCard {
     league: &'static str,
     time: &'static str,
