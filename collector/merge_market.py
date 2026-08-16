@@ -9,6 +9,7 @@
 삭감률: cut = 1 - 베트맨배당 / 해외배당 (양수면 베트맨이 더 짠 배당)
 
 대상 베팅 유형: 승무패·일반 승패는 해외 h2h, 일반 언더오버는 해외 totals와 비교한다.
+(Betman의 언오버 기준값은 내부 식별값일 수 있어, 언오버는 같은 경기 매칭 후 해외 기준점을 사용한다.)
 (승N패=야구승1패, 핸디캡, 홀짝은 별도 마켓이라 제외)
 
 Usage:
@@ -101,7 +102,7 @@ def main() -> int:
                 continue
             if kind == "totals":
                 totals = best.get("totals")
-                if not totals or abs(float(m["totalPoint"]) - float(totals.get("point"))) > 0.01:
+                if not totals or totals.get("point") is None:
                     continue
                 cons, pin = totals.get("consensus", {}), totals.get("pinnacle", {})
                 cuts_cons = {"over": cut(m.get("over"), cons.get("over")), "under": cut(m.get("under"), cons.get("under"))}
@@ -111,6 +112,7 @@ def main() -> int:
                     "marketId": best.get("id"),
                     "sportKey": best.get("sportKey"),
                     "point": totals.get("point"),
+                    "betmanPoint": m.get("totalPoint"),
                     "books": totals.get("books"),
                     "homeEn": best.get("homeEn"),
                     "awayEn": best.get("awayEn"),

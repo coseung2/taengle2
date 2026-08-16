@@ -16,8 +16,8 @@ const apiRequest = async (path, options = {}) => {
 };
 
 const matchMarketType = (m) => m.marketType || m.market?.marketType || (String(m.betType).includes("언더") ? "totals" : "h2h");
-const watchKey = (m) => [m.market?.marketId || "", matchMarketType(m), m.totalPoint ?? m.market?.point ?? ""].join("|");
-const watchedFor = (m) => ACCOUNT.watches.find((watch) => watch.marketId === m.market?.marketId && (watch.marketType || "h2h") === matchMarketType(m) && (watch.totalPoint == null || Number(watch.totalPoint) === Number(m.totalPoint ?? m.market?.point)));
+const watchKey = (m) => [m.market?.marketId || "", matchMarketType(m), m.market?.point ?? m.totalPoint ?? ""].join("|");
+const watchedFor = (m) => ACCOUNT.watches.find((watch) => watch.marketId === m.market?.marketId && (watch.marketType || "h2h") === matchMarketType(m) && (watch.totalPoint == null || Number(watch.totalPoint) === Number(m.market?.point ?? m.totalPoint)));
 
 // 해외 h2h와 비교 가능한 베트맨 베팅 유형
 const COMPARABLE = new Set(["승무패", "일반 승패"]);
@@ -262,7 +262,7 @@ function renderMatches(groups) {
     const h2hMarket = h2h?.market;
     const totalsMarket = totals?.market;
     const t = (primary.kickoff || "").slice(5, 16).replace("T", " ");
-    const point = totals?.totalPoint ?? totalsMarket?.point;
+    const point = totalsMarket?.point ?? totals?.totalPoint;
     const h2hCells = h2h
       ? [
         oddCell("승", h2h.win, h2hMarket?.consensus?.win, h2hMarket?.cutConsensus?.win),
@@ -475,7 +475,7 @@ async function addWatch(match) {
         marketId: match.market.marketId,
         sportKey: match.market.sportKey,
         marketType: totals ? "totals" : "h2h",
-        totalPoint: totals ? (match.totalPoint ?? match.market.point) : null,
+        totalPoint: totals ? (match.market?.point ?? match.totalPoint) : null,
         league: match.league,
         home: match.home,
         away: match.away,
