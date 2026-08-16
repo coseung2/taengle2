@@ -28,7 +28,7 @@ SNAP = ROOT / "site" / "data" / "snapshots.json"
 MARKET = ROOT / "site" / "data" / "market_odds.json"
 TEAM_MAP = ROOT / "collector" / "team_map.json"
 TOL_SEC = 20 * 60
-COMPARE_BET_TYPES = {"승무패", "일반 승패"}
+COMPARE_BET_TYPES = {"승무패", "승패", "일반 승패"}
 TOTAL_BET_TYPES = {"일반 언더오버", "언더오버"}
 
 

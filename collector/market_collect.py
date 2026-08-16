@@ -13,6 +13,7 @@ from __future__ import annotations
 import datetime as dt
 import json
 import os
+import re
 import sys
 import urllib.error
 import urllib.request
@@ -31,6 +32,14 @@ SPORT_MAP = {
     "라리가": "soccer_spain_la_liga",
     "코파리베": "soccer_conmebol_copa_libertadores",
     "J1리그": "soccer_japan_j_league",
+    "남농NBA": "basketball_nba",
+    "여농WNBA": "basketball_wnba",
+    "남농NCAA": "basketball_ncaab",
+    "여농NCAA": "basketball_wncaab",
+    "남농유로": "basketball_euroleague",
+    "아하NHL": "icehockey_nhl",
+    "아하AHL": "icehockey_ahl",
+    "아하SHL": "icehockey_sweden_hockey_league",
 }
 
 BASE = "https://api.the-odds-api.com/v4/sports"
@@ -41,6 +50,32 @@ SNAPSHOT_PATH = ROOT / "site" / "data" / "snapshots.json"
 OUT_PATH = ROOT / "site" / "data" / "market_odds.json"
 DEFAULT_MAX_SPORTS_PER_RUN = 7
 DEFAULT_REFRESH_INTERVAL_MINUTES = 630
+
+
+def sport_key_for_league(league: str | None) -> str | None:
+    """Resolve Betman league aliases for The Odds API-supported competitions."""
+    if not league:
+        return None
+    if league in SPORT_MAP:
+        return SPORT_MAP[league]
+    compact = re.sub(r"\s+", "", league).upper()
+    for marker, sport_key in (
+        ("WNBA", "basketball_wnba"),
+        ("NBA", "basketball_nba"),
+        ("WNCAAB", "basketball_wncaab"),
+        ("NCAAB", "basketball_ncaab"),
+        ("유로리그", "basketball_euroleague"),
+        ("EUROLEAGUE", "basketball_euroleague"),
+        ("NHL", "icehockey_nhl"),
+        ("AHL", "icehockey_ahl"),
+        ("SHL", "icehockey_sweden_hockey_league"),
+        ("ALLSVENSKAN", "icehockey_sweden_allsvenskan"),
+        ("LIIGA", "icehockey_liiga"),
+        ("MESTIS", "icehockey_mestis"),
+    ):
+        if marker in compact:
+            return sport_key
+    return None
 
 
 def fetch_sport(api_key: str, sport_key: str, regions: str) -> tuple[list, str | None]:
@@ -151,7 +186,7 @@ def active_leagues(now: dt.datetime | None = None) -> list[str]:
         for match in game.get("matches", []):
             league = match.get("league")
             kickoff = match.get("kickoff")
-            if league not in SPORT_MAP or not kickoff:
+            if not sport_key_for_league(league) or not kickoff:
                 continue
             try:
                 kickoff_at = dt.datetime.fromisoformat(kickoff.replace("Z", "+00:00"))
@@ -162,7 +197,8 @@ def active_leagues(now: dt.datetime | None = None) -> list[str]:
             current = earliest.get(league)
             if current is None or kickoff_at < current:
                 earliest[league] = kickoff_at
-    return sorted(earliest, key=lambda league: (earliest[league], list(SPORT_MAP).index(league)))
+    priority = {league: index for index, league in enumerate(SPORT_MAP)}
+    return sorted(earliest, key=lambda league: (earliest[league], priority.get(league, len(priority)), league))
 
 
 def select_leagues(leagues: list[str], maximum: int, now: dt.datetime | None = None) -> list[str]:
@@ -214,7 +250,9 @@ def main() -> int:
     fetched_at = dt.datetime.now(KST).isoformat()
     fetched_leagues: list[str] = []
     for index, league in enumerate(selected):
-        sport_key = SPORT_MAP[league]
+        sport_key = sport_key_for_league(league)
+        if not sport_key:
+            continue
         account_index = (index + account_offset) % len(api_keys)
         api_key = api_keys[account_index]
         account_name = f"account-{account_index + 1}"

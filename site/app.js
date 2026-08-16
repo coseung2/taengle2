@@ -25,6 +25,9 @@ const SOCCER_LEAGUES = new Set([
   "K리그1", "K리그2", "EFL챔", "에레디비", "엘리테세", "라리가", "MLS", "J1리그", "J2리그",
   "코파리베", "축ASEA챔", "잉슈퍼컵", "프슈퍼컵", "축클럽친",
 ]);
+const BASKETBALL_LEAGUE_PATTERN = /농|NBA|WNBA|NCAA|유로리그|KBL|WKBL/i;
+const VOLLEYBALL_LEAGUE_PATTERN = /배구|남배|여배|V[ -]?리그/i;
+const HOCKEY_LEAGUE_PATTERN = /하키|아하|NHL|AHL|SHL|LIIGA|MESTIS/i;
 const LEAGUE_FULL_NAMES = Object.freeze({
   "MLB": "메이저 리그 베이스볼 (MLB)",
   "KBO": "한국 프로야구 (KBO)",
@@ -43,8 +46,18 @@ const LEAGUE_FULL_NAMES = Object.freeze({
   "잉슈퍼컵": "FA 커뮤니티 실드",
   "프슈퍼컵": "트로페 데 샹피옹",
   "축클럽친": "클럽 친선경기",
+  "남농INTL": "남자 농구 국제경기",
+  "여농INTL": "여자 농구 국제경기",
 });
 const leagueFullName = (league) => LEAGUE_FULL_NAMES[league] || league;
+const sportModeForLeague = (league) => {
+  if (SOCCER_LEAGUES.has(league)) return "soccer";
+  if (BASEBALL_LEAGUES.has(league)) return "baseball";
+  if (BASKETBALL_LEAGUE_PATTERN.test(league)) return "basketball";
+  if (VOLLEYBALL_LEAGUE_PATTERN.test(league)) return "volleyball";
+  if (HOCKEY_LEAGUE_PATTERN.test(league)) return "hockey";
+  return "other";
+};
 
 let SNAPSHOT = null;
 let CURRENT_MATCH_RENDER = null;
@@ -116,8 +129,7 @@ async function load() {
   let selectedLeague = null;
   let selectedSort = "time";
   const modeFilter = (mode, matches) => {
-    if (mode === "soccer") return matches.filter((m) => SOCCER_LEAGUES.has(m.league));
-    if (mode === "baseball") return matches.filter((m) => BASEBALL_LEAGUES.has(m.league));
+    if (["soccer", "baseball", "basketball", "volleyball", "hockey"].includes(mode)) return matches.filter((m) => sportModeForLeague(m.league) === mode);
     return matches;
   };
   const applyView = (mode = "all", league = null, requestedPage = 1, sort = selectedSort) => {
@@ -204,7 +216,7 @@ function renderNav(mode) {
 }
 
 function renderHeader(game, upcoming, matched, selectedLeague, mode) {
-  const modeLabel = mode === "soccer" ? "축구" : mode === "baseball" ? "야구" : mode === "ranking" ? "랭킹" : "";
+  const modeLabel = ({ soccer: "축구", baseball: "야구", basketball: "농구", volleyball: "배구", hockey: "하키", ranking: "랭킹" })[mode] || "";
   const context = [modeLabel, selectedLeague].filter(Boolean).join(" · ");
   const fetchedAt = SNAPSHOT.marketFetchedAt || SNAPSHOT.fetchedAt;
   const status = $("#dataStatus");
@@ -216,7 +228,7 @@ function renderHeader(game, upcoming, matched, selectedLeague, mode) {
 function renderMatchToolbar(mode, selectedLeague, selectedSort, leagues, onChange) {
   const el = $("#matchToolbar");
   if (!el) return;
-  const sports = [["all", "전체"], ["soccer", "축구"], ["baseball", "야구"]];
+  const sports = [["all", "전체"], ["soccer", "축구"], ["baseball", "야구"], ["basketball", "농구"], ["volleyball", "배구"], ["hockey", "하키"]];
   const leagueOptions = leagues.map(([league]) => `<option value="${esc(league)}" ${league === selectedLeague ? "selected" : ""}>${esc(leagueFullName(league))}</option>`).join("");
   el.innerHTML = `<div class="match-toolbar-filters">
       <label class="match-toolbar-field">종목<select id="matchSportFilter">${sports.map(([value, label]) => `<option value="${value}" ${value === mode ? "selected" : ""}>${label}</option>`).join("")}</select></label>
