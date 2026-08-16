@@ -13,6 +13,7 @@ import datetime as dt
 import json
 import re
 import sys
+import time
 import urllib.request
 import urllib.error
 from http.cookiejar import CookieJar
@@ -39,6 +40,45 @@ def _opener():
     return urllib.request.build_opener(urllib.request.HTTPCookieProcessor(jar))
 
 
+def open_with_retry(opener, request, attempts: int = 3):
+    """Retry transient Betman connection resets without retrying HTTP errors."""
+    last_error = None
+    for attempt in range(attempts):
+        try:
+            return opener.open(request, timeout=30)
+        except (urllib.error.URLError, ConnectionResetError, TimeoutError) as error:
+            last_error = error
+            if attempt + 1 < attempts:
+                delay = 2**attempt
+                print(
+                    f"[warn] Betman 연결 재시도 {attempt + 1}/{attempts - 1} ({delay}초 대기): {error}",
+                    file=sys.stderr,
+                )
+                time.sleep(delay)
+    raise last_error
+
+
+def establish_session():
+    """Start a fresh cookie session for every retry after a transport failure."""
+    last_error = None
+    for attempt in range(3):
+        opener = _opener()
+        try:
+            with open_with_retry(opener, SLIP_URL, attempts=1) as response:
+                response.read()
+            return opener
+        except (urllib.error.URLError, ConnectionResetError, TimeoutError) as error:
+            last_error = error
+            if attempt < 2:
+                delay = 2**attempt
+                print(
+                    f"[warn] Betman 세션 재시도 {attempt + 1}/2 ({delay}초 대기): {error}",
+                    file=sys.stderr,
+                )
+                time.sleep(delay)
+    raise last_error
+
+
 def post_json(opener, path: str, body: dict) -> dict:
     req = urllib.request.Request(
         API_URL + path,
@@ -46,7 +86,7 @@ def post_json(opener, path: str, body: dict) -> dict:
         headers={**HEADERS, "Content-Type": "application/json; charset=UTF-8"},
         method="POST",
     )
-    with opener.open(req, timeout=30) as resp:
+    with open_with_retry(opener, req) as resp:
         return json.loads(resp.read().decode("utf-8"))
 
 
@@ -151,11 +191,10 @@ def parse_matches(table: dict) -> list[dict]:
 
 
 def main() -> int:
-    opener = _opener()
     # 세션/쿠키 초기화 (페이지 방문)
     try:
-        opener.open(SLIP_URL, timeout=30).read()
-    except urllib.error.URLError as e:
+        opener = establish_session()
+    except (urllib.error.URLError, ConnectionResetError, TimeoutError) as e:
         print(f"[error] gameSlip 접근 실패: {e}", file=sys.stderr)
         return 1
 
