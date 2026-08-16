@@ -5,7 +5,6 @@ const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "
 const API_BASE = window.TAENGLE_API_BASE || "https://taengle-api.mdownloader.workers.dev";
 let ACCOUNT = { user: null, keyConfigured: false, keyLast4: null, watches: [] };
 let AUTH_SIGNUP = false;
-let CURRENT_MATCHES = [];
 
 const apiRequest = async (path, options = {}) => {
   const headers = { ...(options.body ? { "Content-Type": "application/json" } : {}), ...(options.headers || {}) };
@@ -115,16 +114,16 @@ async function load() {
 
   let activeMode = "all";
   let selectedLeague = null;
-  let selectedMatchCategory = "all";
+  let selectedSort = "time";
   const modeFilter = (mode, matches) => {
     if (mode === "soccer") return matches.filter((m) => SOCCER_LEAGUES.has(m.league));
     if (mode === "baseball") return matches.filter((m) => BASEBALL_LEAGUES.has(m.league));
     return matches;
   };
-  const applyView = (mode = "all", league = null, requestedPage = 1, matchCategory = selectedMatchCategory) => {
+  const applyView = (mode = "all", league = null, requestedPage = 1, sort = selectedSort) => {
     activeMode = mode;
     selectedLeague = league;
-    selectedMatchCategory = matchCategory;
+    selectedSort = sort;
     const modeAll = mode === "ranking" ? all : modeFilter(mode, all);
     const modeUpcoming = mode === "ranking" ? upcoming : modeFilter(mode, upcoming);
     const viewAll = league ? modeAll.filter((m) => m.league === league) : modeAll;
@@ -148,10 +147,10 @@ async function load() {
     } else {
       matchesView.hidden = false;
       rankingView.hidden = true;
-      renderMatchCategories(selectedMatchCategory, (nextCategory) => applyView(activeMode, selectedLeague, 1, nextCategory));
-      const sortedMatches = [...viewUpcoming]
-        .filter((match) => selectedMatchCategory === "all" || matchMarketType(match) === selectedMatchCategory)
-        .sort((a, b) => (a.kickoff || "").localeCompare(b.kickoff || ""));
+      renderMatchToolbar(mode, selectedLeague, selectedSort, countLeagues(modeUpcoming), ({ mode: nextMode, league: nextLeague, sort: nextSort }) => {
+        applyView(nextMode, nextLeague, 1, nextSort);
+      });
+      const sortedMatches = [...viewUpcoming].sort((a, b) => (a.kickoff || "").localeCompare(b.kickoff || ""));
       const grouped = new Map();
       for (const match of sortedMatches) {
         const key = [match.league, match.kickoff, match.home, match.away].join("|");
@@ -167,13 +166,20 @@ async function load() {
           totals: group.find((match) => matchMarketType(match) === "totals") || null,
         });
       }
+      if (selectedSort === "cut") {
+        const groupCut = (group) => {
+          const cuts = [group.h2h, group.totals].map((match) => match?.market?.cutAvg).filter((value) => value != null);
+          return cuts.length ? Math.min(...cuts) : Infinity;
+        };
+        displayGroups.sort((a, b) => groupCut(a) - groupCut(b) || (a.h2h || a.totals).kickoff.localeCompare((b.h2h || b.totals).kickoff));
+      }
       const totalPages = Math.max(1, Math.ceil(displayGroups.length / MATCHES_PER_PAGE));
       const page = Math.min(Math.max(1, requestedPage), totalPages);
       const start = (page - 1) * MATCHES_PER_PAGE;
       renderMatches(
         displayGroups.slice(start, start + MATCHES_PER_PAGE),
         { page, totalPages, totalCount: displayGroups.length, onPage: (nextPage) => {
-          applyView(activeMode, selectedLeague, nextPage, selectedMatchCategory);
+          applyView(activeMode, selectedLeague, nextPage, selectedSort);
           $("#matchesView")?.scrollIntoView({ behavior: "smooth", block: "start" });
         } },
       );
@@ -211,16 +217,25 @@ function renderHeader(game, upcoming, matched, selectedLeague, mode) {
   status.parentElement.title = `${game.gameName}${context ? ` · ${context}` : ""} · 예정 ${upcoming.length}경기 · 해외 매칭 ${matched.length}경기 · 30일 균등 갱신 · 최근 ${fetchedAt || "-"}`;
 }
 
-function renderMatchCategories(selectedCategory, onSelect) {
-  const el = $("#matchCategories");
+function renderMatchToolbar(mode, selectedLeague, selectedSort, leagues, onChange) {
+  const el = $("#matchToolbar");
   if (!el) return;
-  const categories = [["all", "전체"], ["h2h", "승무패"], ["totals", "언오버"]];
-  el.innerHTML = `<span class="match-category-label">분류</span>${categories.map(([value, label]) =>
-    `<button type="button" class="${selectedCategory === value ? "on" : ""}" data-match-category="${value}" aria-pressed="${selectedCategory === value}">${label}</button>`,
-  ).join("")}`;
-  el.querySelectorAll("[data-match-category]").forEach((button) => {
-    button.onclick = () => onSelect(button.dataset.matchCategory || "all");
-  });
+  const sports = [["all", "전체"], ["soccer", "축구"], ["baseball", "야구"]];
+  const leagueOptions = leagues.map(([league]) => `<option value="${esc(league)}" ${league === selectedLeague ? "selected" : ""}>${esc(leagueFullName(league))}</option>`).join("");
+  el.innerHTML = `<div class="match-toolbar-filters">
+      <label class="match-toolbar-field">종목<select id="matchSportFilter">${sports.map(([value, label]) => `<option value="${value}" ${value === mode ? "selected" : ""}>${label}</option>`).join("")}</select></label>
+      <label class="match-toolbar-field">리그<select id="matchLeagueFilter"><option value="">전체 리그</option>${leagueOptions}</select></label>
+    </div>
+    <label class="match-toolbar-field match-toolbar-sort">정렬<select id="matchSortFilter"><option value="time" ${selectedSort === "time" ? "selected" : ""}>시간순</option><option value="cut" ${selectedSort === "cut" ? "selected" : ""}>삭감률 순</option></select></label>`;
+  $("#matchSportFilter").onchange = (event) => {
+    onChange({ mode: event.currentTarget.value, league: null, sort: selectedSort });
+  };
+  $("#matchLeagueFilter").onchange = (event) => {
+    onChange({ mode, league: event.currentTarget.value || null, sort: selectedSort });
+  };
+  $("#matchSortFilter").onchange = (event) => {
+    onChange({ mode, league: selectedLeague, sort: event.currentTarget.value });
+  };
 }
 
 function renderLeagues(leagues, selectedLeague, onSelect) {

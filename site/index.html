@@ -51,11 +51,13 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 
 /* match rows */
 .match-list { background: var(--color-bg-elevated); border: 1px solid var(--color-border-default); border-top: 0; border-radius: 0 0 12px 12px; overflow: hidden; }
-.match-categories { display: flex; align-items: center; gap: 4px; margin: 0 0 10px; }
-.match-category-label { margin-right: 4px; color: var(--color-text-tertiary); font-size: 12px; font-weight: 800; }
-.match-categories button { min-width: 44px; height: 32px; padding: 0 10px; border: 0; border-radius: 7px; background: transparent; color: var(--color-text-secondary); font: inherit; font-size: 12px; font-weight: 700; cursor: pointer; }
-.match-categories button:hover, .match-categories button:focus-visible { color: var(--color-accent-blue); background: var(--color-bg-tab); outline: none; }
-.match-categories button.on { color: var(--color-accent-blue); background: var(--color-bg-tab); }
+.match-toolbar { display: flex; align-items: end; justify-content: space-between; gap: 12px; margin: 0 0 10px; }
+.match-toolbar-filters { display: flex; min-width: 0; gap: 8px; }
+.match-toolbar-field { display: grid; gap: 4px; color: var(--color-text-tertiary); font-size: 11px; font-weight: 800; }
+.match-toolbar-field select { height: 36px; min-width: 96px; border: 1px solid var(--color-border-default); border-radius: 8px; padding: 0 28px 0 10px; background: var(--color-bg-elevated); color: var(--color-text-primary); font: inherit; font-size: 12px; font-weight: 700; }
+.match-toolbar-field select:hover, .match-toolbar-field select:focus-visible { border-color: var(--color-accent-blue); outline: none; }
+.match-toolbar-field:nth-child(2) select { min-width: 160px; }
+.match-toolbar-sort { flex: none; }
 .match-pagination { display: flex; justify-content: center; gap: 6px; margin-top: 14px; }
 .match-pagination button { width: 40px; height: 40px; padding: 0; border: 1px solid var(--color-border-default); border-radius: 8px; background: var(--color-bg-elevated); color: var(--color-text-secondary); font: inherit; font-size: 13px; font-weight: 700; cursor: pointer; }
 .match-pagination button:hover, .match-pagination button:focus-visible { border-color: var(--color-accent-blue); color: var(--color-accent-blue); outline: none; }
@@ -98,6 +100,11 @@ main { max-width: 1440px; margin: 0 auto; padding: 20px 24px 28px; display: grid
 .match.odds-collapsed .match-bottom { display: none; }
 .match-bottom.single-market { grid-template-columns: minmax(0, 1fr); }
 @media (max-width: 520px) {
+  .match-toolbar { align-items: end; flex-wrap: wrap; }
+  .match-toolbar-filters { flex: 1; }
+  .match-toolbar-field { min-width: 0; flex: 1; }
+  .match-toolbar-field select, .match-toolbar-field:nth-child(2) select { min-width: 0; width: 100%; }
+  .match-toolbar-sort { flex: 0 0 96px; }
   .match { grid-template-columns: 1fr; gap: 10px; padding: 14px; }
   .match-top { gap: 8px; }
   .match-bottom { grid-template-columns: 1fr; gap: 8px; }
@@ -214,7 +221,7 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
         <h2>오늘의 빅매치</h2>
         <span class="link">베트맨 26096회차 · 승부식</span>
       </div>
-      <div class="match-categories" id="matchCategories" aria-label="배당 유형 분류"></div>
+      <div class="match-toolbar" id="matchToolbar" aria-label="경기 분류와 정렬"></div>
       <div class="match-list" id="matchList"></div>
       <nav class="match-pagination" id="matchPagination" aria-label="경기 목록 페이지" hidden></nav>
 
@@ -246,6 +253,6 @@ footer { max-width: 1440px; margin: 0 auto; padding: 14px 24px 20px; font-size: 
 </main>
 
 <footer>Source: betman.co.kr (프로토 승부식) · 디자인 시스템 <a href="https://www.figma.com/design/OcKhOxsU6zddMeRWlXFyYt">Figma</a> · tokens <a href="https://github.com/coseung2/taengle2/tree/main/design-tokens">design-tokens/</a></footer>
-<script src="app.js?v=20260816-match-pages"></script>
+<script src="app.js?v=20260816-match-toolbar"></script>
 </body>
 </html>
