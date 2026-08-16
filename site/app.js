@@ -242,11 +242,13 @@ function marketMeta(m) {
   const mk = m.market;
   const totals = matchMarketType(m) === "totals";
   const watch = watchedFor(m);
-  const cutText = mk && mk.cutAvg != null
+  const cutText = !mk
+    ? `<span class="market-meta-muted">해외 데이터 없음</span>`
+    : mk.cutAvg != null
     ? (mk.cutAvg >= 0
       ? `<span class="market-meta-cut" title="${totals ? `기준점 ${mk.point} 언오버` : "승무패"} 삭감률 평균 (컨센서스 ${mk.books}개 북)">삭감 ${(mk.cutAvg * 100).toFixed(1)}%</span>`
       : `<span class="market-meta-cut edge" title="해외보다 높은 평균 배당 (컨센서스 ${mk.books}개 북)">우대 ${(-mk.cutAvg * 100).toFixed(1)}%</span>`)
-    : `<span class="market-meta-muted">미매칭</span>`;
+    : `<span class="market-meta-muted">해외 배당 부족</span>`;
   const watchButton = mk?.marketId
     ? `<button type="button" class="watch-link ${watch?.enabled ? "on" : ""}" aria-label="${totals ? "언오버" : "승무패"} ${watch?.enabled ? "관측 끄기" : "관측 추가"}" data-watch-key="${esc(watchKey(m))}">${watch?.enabled ? "관측 ON" : "+ 관측"}</button>`
     : "";
