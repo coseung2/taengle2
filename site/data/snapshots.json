@@ -1,6 +1,6 @@
 {
  "source": "betman.co.kr",
- "fetchedAt": "2026-08-24T17:10:52.996776+09:00",
+ "fetchedAt": "2026-08-25T03:37:33.167185+09:00",
  "games": [
   {
    "gmId": "G101",
@@ -8,852 +8,8 @@
    "gameType": "승부식",
    "gmTs": 260100,
    "saleEnd": 1787666400000,
-   "totalSellAmount": 762637700,
+   "totalSellAmount": 7503125400,
    "matches": [
-    {
-     "kickoff": "2026-08-25T01:30:00+09:00",
-     "league": "세리에A",
-     "home": "볼로냐",
-     "away": "SS라치오",
-     "win": 2.03,
-     "draw": 2.95,
-     "lose": 3.15,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T01:30:00+09:00",
-     "league": "세리에A",
-     "home": "볼로냐",
-     "away": "SS라치오",
-     "win": 4.2,
-     "draw": 3.4,
-     "lose": 1.62,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T01:30:00+09:00",
-     "league": "세리에A",
-     "home": "볼로냐",
-     "away": "SS라치오",
-     "win": 10.5,
-     "draw": 5.9,
-     "lose": 1.13,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T01:30:00+09:00",
-     "league": "세리에A",
-     "home": "볼로냐",
-     "away": "SS라치오",
-     "win": 1.56,
-     "draw": null,
-     "lose": 2.02,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.56,
-     "under": 2.02
-    },
-    {
-     "kickoff": "2026-08-25T01:30:00+09:00",
-     "league": "세리에A",
-     "home": "볼로냐",
-     "away": "SS라치오",
-     "win": 1.81,
-     "draw": null,
-     "lose": 1.79,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T02:30:00+09:00",
-     "league": "라리가",
-     "home": "오사수나",
-     "away": "레반테",
-     "win": 1.66,
-     "draw": 3.3,
-     "lose": 4.35,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "b86f1854fe9f0915d4f9ee47f23a14bf",
-      "sportKey": "soccer_spain_la_liga",
-      "books": 21,
-      "homeEn": "CA Osasuna",
-      "awayEn": "Levante",
-      "consensus": {
-       "win": 1.85,
-       "draw": 3.55,
-       "lose": 4.33
-      },
-      "pinnacle": {
-       "win": 1.9,
-       "draw": 3.61,
-       "lose": 4.42
-      },
-      "cutConsensus": {
-       "win": 0.1027,
-       "draw": 0.0704,
-       "lose": -0.0046
-      },
-      "cutPinnacle": {
-       "win": 0.1263,
-       "draw": 0.0859,
-       "lose": 0.0158
-      },
-      "cutAvg": 0.0562,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
-    },
-    {
-     "kickoff": "2026-08-25T02:30:00+09:00",
-     "league": "라리가",
-     "home": "오사수나",
-     "away": "레반테",
-     "win": 2.95,
-     "draw": 3.2,
-     "lose": 2.01,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T02:30:00+09:00",
-     "league": "라리가",
-     "home": "오사수나",
-     "away": "레반테",
-     "win": 6.2,
-     "draw": 4.7,
-     "lose": 1.29,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T02:30:00+09:00",
-     "league": "라리가",
-     "home": "오사수나",
-     "away": "레반테",
-     "win": 1.73,
-     "draw": null,
-     "lose": 1.83,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.73,
-     "under": 1.83,
-     "market": {
-      "marketType": "totals",
-      "marketId": "b86f1854fe9f0915d4f9ee47f23a14bf",
-      "sportKey": "soccer_spain_la_liga",
-      "point": 2.5,
-      "betmanPoint": 9.0,
-      "books": 12,
-      "homeEn": "CA Osasuna",
-      "awayEn": "Levante",
-      "consensus": {
-       "over": 1.97,
-       "under": 1.805
-      },
-      "pinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutConsensus": {
-       "over": 0.1218,
-       "under": -0.0139
-      },
-      "cutPinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutAvg": 0.054,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
-    },
-    {
-     "kickoff": "2026-08-25T02:30:00+09:00",
-     "league": "라리가",
-     "home": "오사수나",
-     "away": "레반테",
-     "win": 1.81,
-     "draw": null,
-     "lose": 1.79,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T03:45:00+09:00",
-     "league": "세리에A",
-     "home": "AS로마",
-     "away": "ACF피오렌티나",
-     "win": 1.5,
-     "draw": 3.5,
-     "lose": 5.1,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T03:45:00+09:00",
-     "league": "세리에A",
-     "home": "AS로마",
-     "away": "ACF피오렌티나",
-     "win": 2.55,
-     "draw": 3.15,
-     "lose": 2.27,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T03:45:00+09:00",
-     "league": "세리에A",
-     "home": "AS로마",
-     "away": "ACF피오렌티나",
-     "win": 5.0,
-     "draw": 4.25,
-     "lose": 1.4,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T03:45:00+09:00",
-     "league": "세리에A",
-     "home": "AS로마",
-     "away": "ACF피오렌티나",
-     "win": 1.77,
-     "draw": null,
-     "lose": 1.75,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.77,
-     "under": 1.75
-    },
-    {
-     "kickoff": "2026-08-25T03:45:00+09:00",
-     "league": "세리에A",
-     "home": "AS로마",
-     "away": "ACF피오렌티나",
-     "win": 1.81,
-     "draw": null,
-     "lose": 1.79,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T04:00:00+09:00",
-     "league": "EPL",
-     "home": "풀럼",
-     "away": "첼시",
-     "win": 3.5,
-     "draw": 3.55,
-     "lose": 1.8,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T04:00:00+09:00",
-     "league": "EPL",
-     "home": "풀럼",
-     "away": "첼시",
-     "win": 1.86,
-     "draw": 3.55,
-     "lose": 3.15,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T04:00:00+09:00",
-     "league": "EPL",
-     "home": "풀럼",
-     "away": "첼시",
-     "win": 1.27,
-     "draw": 5.2,
-     "lose": 6.4,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T04:00:00+09:00",
-     "league": "EPL",
-     "home": "풀럼",
-     "away": "첼시",
-     "win": 2.13,
-     "draw": null,
-     "lose": 1.53,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 2.13,
-     "under": 1.53
-    },
-    {
-     "kickoff": "2026-08-25T04:00:00+09:00",
-     "league": "EPL",
-     "home": "풀럼",
-     "away": "첼시",
-     "win": 1.8,
-     "draw": null,
-     "lose": 1.8,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T04:30:00+09:00",
-     "league": "라리가",
-     "home": "말라가",
-     "away": "데포르티보 아코루냐",
-     "win": 2.34,
-     "draw": 2.75,
-     "lose": 2.9,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "030285b126b6a2f7e022261006ed770e",
-      "sportKey": "soccer_spain_la_liga",
-      "books": 18,
-      "homeEn": "Málaga",
-      "awayEn": "Deportivo La Coruña",
-      "consensus": {
-       "win": 2.425,
-       "draw": 3.0,
-       "lose": 3.33
-      },
-      "pinnacle": {
-       "win": 2.42,
-       "draw": 3.02,
-       "lose": 3.53
-      },
-      "cutConsensus": {
-       "win": 0.0351,
-       "draw": 0.0833,
-       "lose": 0.1291
-      },
-      "cutPinnacle": {
-       "win": 0.0331,
-       "draw": 0.0894,
-       "lose": 0.1785
-      },
-      "cutAvg": 0.0825,
-      "timeDiffSec": 0,
-      "matchedBy": "time"
-     }
-    },
-    {
-     "kickoff": "2026-08-25T04:30:00+09:00",
-     "league": "라리가",
-     "home": "말라가",
-     "away": "데포르티보 아코루냐",
-     "win": 5.3,
-     "draw": 3.5,
-     "lose": 1.48,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T04:30:00+09:00",
-     "league": "라리가",
-     "home": "말라가",
-     "away": "데포르티보 아코루냐",
-     "win": 15.5,
-     "draw": 7.1,
-     "lose": 1.06,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T04:30:00+09:00",
-     "league": "라리가",
-     "home": "말라가",
-     "away": "데포르티보 아코루냐",
-     "win": 1.39,
-     "draw": null,
-     "lose": 2.47,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.39,
-     "under": 2.47,
-     "market": {
-      "marketType": "totals",
-      "marketId": "030285b126b6a2f7e022261006ed770e",
-      "sportKey": "soccer_spain_la_liga",
-      "point": 2.5,
-      "betmanPoint": 9.0,
-      "books": 6,
-      "homeEn": "Málaga",
-      "awayEn": "Deportivo La Coruña",
-      "consensus": {
-       "over": 2.49,
-       "under": 1.52
-      },
-      "pinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutConsensus": {
-       "over": 0.4418,
-       "under": -0.625
-      },
-      "cutPinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutAvg": -0.0916,
-      "timeDiffSec": 0,
-      "matchedBy": "time"
-     }
-    },
-    {
-     "kickoff": "2026-08-25T04:30:00+09:00",
-     "league": "라리가",
-     "home": "말라가",
-     "away": "데포르티보 아코루냐",
-     "win": 1.83,
-     "draw": null,
-     "lose": 1.77,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T07:40:00+09:00",
-     "league": "MLB",
-     "home": "마이애미 말린스",
-     "away": "보스턴 레드삭스",
-     "win": 2.0,
-     "draw": null,
-     "lose": 1.57,
-     "status": "2",
-     "score": null,
-     "betType": "일반 승패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "4849fd0ae15d275efe31050173d07d4e",
-      "sportKey": "baseball_mlb",
-      "books": 23,
-      "homeEn": "Miami Marlins",
-      "awayEn": "Boston Red Sox",
-      "consensus": {
-       "win": 2.15,
-       "draw": null,
-       "lose": 1.735
-      },
-      "pinnacle": {
-       "win": 2.16,
-       "draw": null,
-       "lose": 1.78
-      },
-      "cutConsensus": {
-       "win": 0.0698,
-       "draw": null,
-       "lose": 0.0951
-      },
-      "cutPinnacle": {
-       "win": 0.0741,
-       "draw": null,
-       "lose": 0.118
-      },
-      "cutAvg": 0.0824,
-      "timeDiffSec": 60,
-      "matchedBy": "name"
-     }
-    },
-    {
-     "kickoff": "2026-08-25T07:40:00+09:00",
-     "league": "MLB",
-     "home": "마이애미 말린스",
-     "away": "보스턴 레드삭스",
-     "win": 3.05,
-     "draw": 3.25,
-     "lose": 1.95,
-     "status": "2",
-     "score": null,
-     "betType": "승N패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T07:40:00+09:00",
-     "league": "MLB",
-     "home": "마이애미 말린스",
-     "away": "보스턴 레드삭스",
-     "win": 1.33,
-     "draw": null,
-     "lose": 2.6,
-     "status": "2",
-     "score": null,
-     "betType": "일반 소수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T07:40:00+09:00",
-     "league": "MLB",
-     "home": "마이애미 말린스",
-     "away": "보스턴 레드삭스",
-     "win": 1.77,
-     "draw": null,
-     "lose": 1.75,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.77,
-     "under": 1.75,
-     "market": {
-      "marketType": "totals",
-      "marketId": "4849fd0ae15d275efe31050173d07d4e",
-      "sportKey": "baseball_mlb",
-      "point": 7.5,
-      "betmanPoint": 9.0,
-      "books": 12,
-      "homeEn": "Miami Marlins",
-      "awayEn": "Boston Red Sox",
-      "consensus": {
-       "over": 1.91,
-       "under": 1.9
-      },
-      "pinnacle": {
-       "over": 1.95,
-       "under": 1.92
-      },
-      "cutConsensus": {
-       "over": 0.0733,
-       "under": 0.0789
-      },
-      "cutPinnacle": {
-       "over": 0.0923,
-       "under": 0.0885
-      },
-      "cutAvg": 0.0761,
-      "timeDiffSec": 60,
-      "matchedBy": "name"
-     }
-    },
-    {
-     "kickoff": "2026-08-25T07:40:00+09:00",
-     "league": "MLB",
-     "home": "마이애미 말린스",
-     "away": "보스턴 레드삭스",
-     "win": 1.58,
-     "draw": null,
-     "lose": 2.09,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T07:40:00+09:00",
-     "league": "MLB",
-     "home": "디트로이트 타이거즈",
-     "away": "탬파베이 레이스",
-     "win": 1.9,
-     "draw": null,
-     "lose": 1.64,
-     "status": "2",
-     "score": null,
-     "betType": "일반 승패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "b5df91df571dbd961d2781f345abe770",
-      "sportKey": "baseball_mlb",
-      "books": 23,
-      "homeEn": "Detroit Tigers",
-      "awayEn": "Tampa Bay Rays",
-      "consensus": {
-       "win": 2.15,
-       "draw": null,
-       "lose": 1.71
-      },
-      "pinnacle": {
-       "win": 2.17,
-       "draw": null,
-       "lose": 1.77
-      },
-      "cutConsensus": {
-       "win": 0.1163,
-       "draw": null,
-       "lose": 0.0409
-      },
-      "cutPinnacle": {
-       "win": 0.1244,
-       "draw": null,
-       "lose": 0.0734
-      },
-      "cutAvg": 0.0786,
-      "timeDiffSec": 60,
-      "matchedBy": "name"
-     }
-    },
-    {
-     "kickoff": "2026-08-25T07:40:00+09:00",
-     "league": "MLB",
-     "home": "디트로이트 타이거즈",
-     "away": "탬파베이 레이스",
-     "win": 2.85,
-     "draw": 3.2,
-     "lose": 2.06,
-     "status": "2",
-     "score": null,
-     "betType": "승N패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T07:40:00+09:00",
-     "league": "MLB",
-     "home": "디트로이트 타이거즈",
-     "away": "탬파베이 레이스",
-     "win": 1.3,
-     "draw": null,
-     "lose": 2.72,
-     "status": "2",
-     "score": null,
-     "betType": "일반 소수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T07:40:00+09:00",
-     "league": "MLB",
-     "home": "디트로이트 타이거즈",
-     "away": "탬파베이 레이스",
-     "win": 1.79,
-     "draw": null,
-     "lose": 1.73,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.79,
-     "under": 1.73,
-     "market": {
-      "marketType": "totals",
-      "marketId": "b5df91df571dbd961d2781f345abe770",
-      "sportKey": "baseball_mlb",
-      "point": 7.5,
-      "betmanPoint": 9.0,
-      "books": 11,
-      "homeEn": "Detroit Tigers",
-      "awayEn": "Tampa Bay Rays",
-      "consensus": {
-       "over": 1.85,
-       "under": 1.96
-      },
-      "pinnacle": {
-       "over": 1.85,
-       "under": 2.02
-      },
-      "cutConsensus": {
-       "over": 0.0324,
-       "under": 0.1173
-      },
-      "cutPinnacle": {
-       "over": 0.0324,
-       "under": 0.1436
-      },
-      "cutAvg": 0.0748,
-      "timeDiffSec": 60,
-      "matchedBy": "name"
-     }
-    },
-    {
-     "kickoff": "2026-08-25T07:40:00+09:00",
-     "league": "MLB",
-     "home": "디트로이트 타이거즈",
-     "away": "탬파베이 레이스",
-     "win": 1.58,
-     "draw": null,
-     "lose": 2.09,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T07:45:00+09:00",
-     "league": "MLB",
-     "home": "워싱턴 내셔널스",
-     "away": "콜로라도 로키스",
-     "win": 1.36,
-     "draw": null,
-     "lose": 2.49,
-     "status": "2",
-     "score": null,
-     "betType": "일반 승패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "e3da176886eb60e63e5b0017a5f213bc",
-      "sportKey": "baseball_mlb",
-      "books": 23,
-      "homeEn": "Washington Nationals",
-      "awayEn": "Colorado Rockies",
-      "consensus": {
-       "win": 1.53,
-       "draw": null,
-       "lose": 2.555
-      },
-      "pinnacle": {
-       "win": 1.54,
-       "draw": null,
-       "lose": 2.66
-      },
-      "cutConsensus": {
-       "win": 0.1111,
-       "draw": null,
-       "lose": 0.0254
-      },
-      "cutPinnacle": {
-       "win": 0.1169,
-       "draw": null,
-       "lose": 0.0639
-      },
-      "cutAvg": 0.0683,
-      "timeDiffSec": 60,
-      "matchedBy": "name"
-     }
-    },
-    {
-     "kickoff": "2026-08-25T07:45:00+09:00",
-     "league": "MLB",
-     "home": "워싱턴 내셔널스",
-     "away": "콜로라도 로키스",
-     "win": 1.8,
-     "draw": 3.45,
-     "lose": 3.3,
-     "status": "2",
-     "score": null,
-     "betType": "승N패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T07:45:00+09:00",
-     "league": "MLB",
-     "home": "워싱턴 내셔널스",
-     "away": "콜로라도 로키스",
-     "win": 2.37,
-     "draw": null,
-     "lose": 1.4,
-     "status": "2",
-     "score": null,
-     "betType": "일반 소수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-08-25T07:45:00+09:00",
-     "league": "MLB",
-     "home": "워싱턴 내셔널스",
-     "away": "콜로라도 로키스",
-     "win": 1.66,
-     "draw": null,
-     "lose": 1.87,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.66,
-     "under": 1.87,
-     "market": {
-      "marketType": "totals",
-      "marketId": "e3da176886eb60e63e5b0017a5f213bc",
-      "sportKey": "baseball_mlb",
-      "point": 8.5,
-      "betmanPoint": 9.0,
-      "books": 11,
-      "homeEn": "Washington Nationals",
-      "awayEn": "Colorado Rockies",
-      "consensus": {
-       "over": 1.97,
-       "under": 1.83
-      },
-      "pinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutConsensus": {
-       "over": 0.1574,
-       "under": -0.0219
-      },
-      "cutPinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutAvg": 0.0678,
-      "timeDiffSec": 60,
-      "matchedBy": "name"
-     }
-    },
-    {
-     "kickoff": "2026-08-25T07:45:00+09:00",
-     "league": "MLB",
-     "home": "워싱턴 내셔널스",
-     "away": "콜로라도 로키스",
-     "win": 1.6,
-     "draw": null,
-     "lose": 2.06,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
     {
      "kickoff": "2026-08-25T08:40:00+09:00",
      "league": "MLB",
@@ -870,30 +26,30 @@
       "marketType": "h2h",
       "marketId": "e22d48c563e1729e04698e0cdbe8c548",
       "sportKey": "baseball_mlb",
-      "books": 22,
+      "books": 23,
       "homeEn": "Chicago White Sox",
       "awayEn": "Texas Rangers",
       "consensus": {
-       "win": 1.76,
+       "win": 1.75,
        "draw": null,
-       "lose": 2.1
+       "lose": 2.11
       },
       "pinnacle": {
-       "win": null,
+       "win": 1.78,
        "draw": null,
-       "lose": null
+       "lose": 2.19
       },
       "cutConsensus": {
-       "win": 0.0682,
+       "win": 0.0629,
        "draw": null,
-       "lose": 0.0952
+       "lose": 0.0995
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.0787,
        "draw": null,
-       "lose": null
+       "lose": 0.1324
       },
-      "cutAvg": 0.0817,
+      "cutAvg": 0.0812,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -945,26 +101,26 @@
       "sportKey": "baseball_mlb",
       "point": 8.5,
       "betmanPoint": 9.0,
-      "books": 9,
+      "books": 8,
       "homeEn": "Chicago White Sox",
       "awayEn": "Texas Rangers",
       "consensus": {
-       "over": 1.94,
-       "under": 1.87
+       "over": 1.975,
+       "under": 1.815
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.1392,
-       "under": 0.0053
+       "over": 0.1544,
+       "under": -0.0248
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0722,
+      "cutAvg": 0.0648,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -1002,26 +158,26 @@
       "homeEn": "Los Angeles Angels",
       "awayEn": "Cleveland Guardians",
       "consensus": {
-       "win": 2.34,
+       "win": 2.395,
        "draw": null,
-       "lose": 1.61
+       "lose": 1.6
       },
       "pinnacle": {
        "win": 2.43,
        "draw": null,
-       "lose": 1.63
+       "lose": 1.65
       },
       "cutConsensus": {
-       "win": 0.0812,
+       "win": 0.1023,
        "draw": null,
-       "lose": 0.0745
+       "lose": 0.0688
       },
       "cutPinnacle": {
        "win": 0.1152,
        "draw": null,
-       "lose": 0.0859
+       "lose": 0.097
       },
-      "cutAvg": 0.0779,
+      "cutAvg": 0.0856,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -1071,28 +227,28 @@
       "marketType": "totals",
       "marketId": "edcd5c7c7dde7d1aa67403952e1dd586",
       "sportKey": "baseball_mlb",
-      "point": 8.0,
+      "point": 7.5,
       "betmanPoint": 9.0,
-      "books": 9,
+      "books": 14,
       "homeEn": "Los Angeles Angels",
       "awayEn": "Cleveland Guardians",
       "consensus": {
-       "over": 1.92,
-       "under": 1.9
+       "over": 1.88,
+       "under": 1.93
       },
       "pinnacle": {
        "over": 1.95,
-       "under": 1.92
+       "under": 1.93
       },
       "cutConsensus": {
-       "over": 0.1354,
-       "under": 0.0158
+       "over": 0.117,
+       "under": 0.0311
       },
       "cutPinnacle": {
        "over": 0.1487,
-       "under": 0.026
+       "under": 0.0311
       },
-      "cutAvg": 0.0756,
+      "cutAvg": 0.0741,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -1130,26 +286,26 @@
       "homeEn": "Seattle Mariners",
       "awayEn": "Philadelphia Phillies",
       "consensus": {
-       "win": 2.0,
+       "win": 1.96,
        "draw": null,
-       "lose": 1.835
+       "lose": 1.875
       },
       "pinnacle": {
-       "win": 2.05,
+       "win": 2.0,
        "draw": null,
-       "lose": 1.86
+       "lose": 1.93
       },
       "cutConsensus": {
-       "win": 0.08,
+       "win": 0.0612,
        "draw": null,
-       "lose": 0.079
+       "lose": 0.0987
       },
       "cutPinnacle": {
-       "win": 0.1024,
+       "win": 0.08,
        "draw": null,
-       "lose": 0.0914
+       "lose": 0.1244
       },
-      "cutAvg": 0.0795,
+      "cutAvg": 0.0799,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -1201,26 +357,26 @@
       "sportKey": "baseball_mlb",
       "point": 6.5,
       "betmanPoint": 9.0,
-      "books": 14,
+      "books": 12,
       "homeEn": "Seattle Mariners",
       "awayEn": "Philadelphia Phillies",
       "consensus": {
-       "over": 1.8,
+       "over": 1.81,
        "under": 2.01
       },
       "pinnacle": {
-       "over": 1.83,
-       "under": 2.05
+       "over": 1.87,
+       "under": 2.03
       },
       "cutConsensus": {
-       "over": 0.0056,
+       "over": 0.011,
        "under": 0.1393
       },
       "cutPinnacle": {
-       "over": 0.0219,
-       "under": 0.1561
+       "over": 0.0428,
+       "under": 0.1478
       },
-      "cutAvg": 0.0725,
+      "cutAvg": 0.0752,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -1254,30 +410,30 @@
       "marketType": "h2h",
       "marketId": "2ab56418bedb6fb0868a59b06da5a155",
       "sportKey": "baseball_mlb",
-      "books": 22,
+      "books": 23,
       "homeEn": "San Diego Padres",
       "awayEn": "Pittsburgh Pirates",
       "consensus": {
-       "win": 1.91,
+       "win": 1.87,
        "draw": null,
-       "lose": 1.9
+       "lose": 1.965
       },
       "pinnacle": {
-       "win": 1.95,
+       "win": 1.9,
        "draw": null,
-       "lose": 1.95
+       "lose": 2.02
       },
       "cutConsensus": {
-       "win": 0.0838,
+       "win": 0.0642,
        "draw": null,
-       "lose": 0.0684
+       "lose": 0.0992
       },
       "cutPinnacle": {
-       "win": 0.1026,
+       "win": 0.0789,
        "draw": null,
-       "lose": 0.0923
+       "lose": 0.1238
       },
-      "cutAvg": 0.0761,
+      "cutAvg": 0.0817,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1329,26 +485,26 @@
       "sportKey": "baseball_mlb",
       "point": 7.5,
       "betmanPoint": 9.0,
-      "books": 13,
+      "books": 14,
       "homeEn": "San Diego Padres",
       "awayEn": "Pittsburgh Pirates",
       "consensus": {
-       "over": 1.91,
-       "under": 1.87
+       "over": 1.955,
+       "under": 1.865
       },
       "pinnacle": {
-       "over": 2.0,
-       "under": 1.87
+       "over": 2.03,
+       "under": 1.86
       },
       "cutConsensus": {
-       "over": 0.0838,
-       "under": 0.0535
+       "over": 0.1049,
+       "under": 0.0509
       },
       "cutPinnacle": {
-       "over": 0.125,
-       "under": 0.0535
+       "over": 0.1379,
+       "under": 0.0484
       },
-      "cutAvg": 0.0687,
+      "cutAvg": 0.0779,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1386,26 +542,26 @@
       "homeEn": "Athletics",
       "awayEn": "Minnesota Twins",
       "consensus": {
-       "win": 2.28,
-       "draw": null,
-       "lose": 1.65
-      },
-      "pinnacle": {
-       "win": 2.36,
+       "win": 2.25,
        "draw": null,
        "lose": 1.66
       },
-      "cutConsensus": {
-       "win": 0.0482,
+      "pinnacle": {
+       "win": 2.33,
        "draw": null,
-       "lose": 0.103
+       "lose": 1.69
       },
-      "cutPinnacle": {
-       "win": 0.0805,
+      "cutConsensus": {
+       "win": 0.0356,
        "draw": null,
        "lose": 0.1084
       },
-      "cutAvg": 0.0756,
+      "cutPinnacle": {
+       "win": 0.0687,
+       "draw": null,
+       "lose": 0.1243
+      },
+      "cutAvg": 0.072,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -1455,28 +611,28 @@
       "marketType": "totals",
       "marketId": "8e1262b8729ca1c5b33dc4667cb1bd1a",
       "sportKey": "baseball_mlb",
-      "point": 10.5,
+      "point": 11.0,
       "betmanPoint": 9.0,
-      "books": 13,
+      "books": 7,
       "homeEn": "Athletics",
       "awayEn": "Minnesota Twins",
       "consensus": {
-       "over": 1.88,
-       "under": 1.93
+       "over": 1.91,
+       "under": 1.91
       },
       "pinnacle": {
-       "over": 1.86,
-       "under": 2.01
+       "over": 1.95,
+       "under": 1.93
       },
       "cutConsensus": {
-       "over": 0.0638,
-       "under": 0.0881
+       "over": 0.0785,
+       "under": 0.0785
       },
       "cutPinnacle": {
-       "over": 0.0538,
-       "under": 0.1244
+       "over": 0.0974,
+       "under": 0.0881
       },
-      "cutAvg": 0.0759,
+      "cutAvg": 0.0785,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -1519,9 +675,9 @@
        "lose": 1.68
       },
       "pinnacle": {
-       "win": 2.19,
+       "win": 2.27,
        "draw": null,
-       "lose": 1.76
+       "lose": 1.72
       },
       "cutConsensus": {
        "win": 0.0727,
@@ -1529,9 +685,9 @@
        "lose": 0.0774
       },
       "cutPinnacle": {
-       "win": 0.0685,
+       "win": 0.1013,
        "draw": null,
-       "lose": 0.1193
+       "lose": 0.0988
       },
       "cutAvg": 0.0751,
       "timeDiffSec": 0,
@@ -1589,22 +745,22 @@
       "homeEn": "Arizona Diamondbacks",
       "awayEn": "Chicago Cubs",
       "consensus": {
-       "over": 1.88,
-       "under": 1.93
+       "over": 1.89,
+       "under": 1.91
       },
       "pinnacle": {
-       "over": 1.9,
-       "under": 1.97
+       "over": 1.95,
+       "under": 1.93
       },
       "cutConsensus": {
-       "over": 0.1223,
-       "under": 0.0207
+       "over": 0.127,
+       "under": 0.0105
       },
       "cutPinnacle": {
-       "over": 0.1316,
-       "under": 0.0406
+       "over": 0.1538,
+       "under": 0.0207
       },
-      "cutAvg": 0.0715,
+      "cutAvg": 0.0688,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1627,9 +783,9 @@
      "league": "MLB",
      "home": "샌프란시스코 자이언츠",
      "away": "신시내티 레즈",
-     "win": 2.11,
+     "win": 2.19,
      "draw": null,
-     "lose": 1.51,
+     "lose": 1.47,
      "status": "2",
      "score": null,
      "betType": "일반 승패",
@@ -1642,26 +798,26 @@
       "homeEn": "San Francisco Giants",
       "awayEn": "Cincinnati Reds",
       "consensus": {
-       "win": 2.28,
+       "win": 2.35,
        "draw": null,
-       "lose": 1.64
+       "lose": 1.615
       },
       "pinnacle": {
-       "win": 2.36,
+       "win": 2.46,
        "draw": null,
-       "lose": 1.66
+       "lose": 1.63
       },
       "cutConsensus": {
-       "win": 0.0746,
+       "win": 0.0681,
        "draw": null,
-       "lose": 0.0793
+       "lose": 0.0898
       },
       "cutPinnacle": {
-       "win": 0.1059,
+       "win": 0.1098,
        "draw": null,
-       "lose": 0.0904
+       "lose": 0.0982
       },
-      "cutAvg": 0.0769,
+      "cutAvg": 0.0789,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1672,8 +828,8 @@
      "home": "샌프란시스코 자이언츠",
      "away": "신시내티 레즈",
      "win": 3.25,
-     "draw": 3.25,
-     "lose": 1.87,
+     "draw": 3.45,
+     "lose": 1.81,
      "status": "2",
      "score": null,
      "betType": "승N패",
@@ -1717,22 +873,22 @@
       "homeEn": "San Francisco Giants",
       "awayEn": "Cincinnati Reds",
       "consensus": {
-       "over": 1.96,
-       "under": 1.84
+       "over": 2.02,
+       "under": 1.76
       },
       "pinnacle": {
-       "over": 1.99,
-       "under": 1.88
+       "over": 2.08,
+       "under": 1.83
       },
       "cutConsensus": {
-       "over": 0.1276,
-       "under": 0.0163
+       "over": 0.1535,
+       "under": -0.0284
       },
       "cutPinnacle": {
-       "over": 0.1407,
-       "under": 0.0372
+       "over": 0.1779,
+       "under": 0.0109
       },
-      "cutAvg": 0.072,
+      "cutAvg": 0.0625,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1770,26 +926,26 @@
       "homeEn": "San Francisco Giants",
       "awayEn": "Cincinnati Reds",
       "consensus": {
-       "win": 2.28,
+       "win": 2.35,
        "draw": null,
-       "lose": 1.64
+       "lose": 1.615
       },
       "pinnacle": {
-       "win": 2.36,
+       "win": 2.46,
        "draw": null,
-       "lose": 1.66
+       "lose": 1.63
       },
       "cutConsensus": {
-       "win": -0.0746,
+       "win": -0.0426,
        "draw": null,
-       "lose": -0.0976
+       "lose": -0.1146
       },
       "cutPinnacle": {
-       "win": -0.0381,
+       "win": 0.0041,
        "draw": null,
-       "lose": -0.0843
+       "lose": -0.1043
       },
-      "cutAvg": -0.0861,
+      "cutAvg": -0.0786,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1832,22 +988,22 @@
       "homeEn": "San Francisco Giants",
       "awayEn": "Cincinnati Reds",
       "consensus": {
-       "over": 1.96,
-       "under": 1.84
+       "over": 2.02,
+       "under": 1.76
       },
       "pinnacle": {
-       "over": 1.99,
-       "under": 1.88
+       "over": 2.08,
+       "under": 1.83
       },
       "cutConsensus": {
-       "over": 0.1939,
-       "under": -0.0815
+       "over": 0.2178,
+       "under": -0.1307
       },
       "cutPinnacle": {
-       "over": 0.206,
-       "under": -0.0585
+       "over": 0.2404,
+       "under": -0.0874
       },
-      "cutAvg": 0.0562,
+      "cutAvg": 0.0435,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1918,7 +1074,38 @@
      "status": "2",
      "score": null,
      "betType": "일반 승패",
-     "marketType": "h2h"
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "2e9b43f74e55ac3c15a8cf9ca9e62a17",
+      "sportKey": "baseball_kbo",
+      "books": 10,
+      "homeEn": "LG Twins",
+      "awayEn": "NC Dinos",
+      "consensus": {
+       "win": 1.6,
+       "draw": null,
+       "lose": 2.35
+      },
+      "pinnacle": {
+       "win": 1.6,
+       "draw": null,
+       "lose": 2.37
+      },
+      "cutConsensus": {
+       "win": 0.0312,
+       "draw": null,
+       "lose": 0.1319
+      },
+      "cutPinnacle": {
+       "win": 0.0312,
+       "draw": null,
+       "lose": 0.1392
+      },
+      "cutAvg": 0.0815,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -1960,7 +1147,36 @@
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.75,
-     "under": 1.77
+     "under": 1.77,
+     "market": {
+      "marketType": "totals",
+      "marketId": "2e9b43f74e55ac3c15a8cf9ca9e62a17",
+      "sportKey": "baseball_kbo",
+      "point": 9.0,
+      "betmanPoint": 9.0,
+      "books": 5,
+      "homeEn": "LG Twins",
+      "awayEn": "NC Dinos",
+      "consensus": {
+       "over": 1.87,
+       "under": 1.9
+      },
+      "pinnacle": {
+       "over": null,
+       "under": null
+      },
+      "cutConsensus": {
+       "over": 0.0642,
+       "under": 0.0684
+      },
+      "cutPinnacle": {
+       "over": null,
+       "under": null
+      },
+      "cutAvg": 0.0663,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -1986,7 +1202,38 @@
      "status": "2",
      "score": null,
      "betType": "승무패",
-     "marketType": "h2h"
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "2e9b43f74e55ac3c15a8cf9ca9e62a17",
+      "sportKey": "baseball_kbo",
+      "books": 10,
+      "homeEn": "LG Twins",
+      "awayEn": "NC Dinos",
+      "consensus": {
+       "win": 1.6,
+       "draw": null,
+       "lose": 2.35
+      },
+      "pinnacle": {
+       "win": 1.6,
+       "draw": null,
+       "lose": 2.37
+      },
+      "cutConsensus": {
+       "win": -0.1438,
+       "draw": null,
+       "lose": 0.0213
+      },
+      "cutPinnacle": {
+       "win": -0.1438,
+       "draw": null,
+       "lose": 0.0295
+      },
+      "cutAvg": -0.0613,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2015,29 +1262,89 @@
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.82,
-     "under": 1.7
+     "under": 1.7,
+     "market": {
+      "marketType": "totals",
+      "marketId": "2e9b43f74e55ac3c15a8cf9ca9e62a17",
+      "sportKey": "baseball_kbo",
+      "point": 9.0,
+      "betmanPoint": 9.0,
+      "books": 5,
+      "homeEn": "LG Twins",
+      "awayEn": "NC Dinos",
+      "consensus": {
+       "over": 1.87,
+       "under": 1.9
+      },
+      "pinnacle": {
+       "over": null,
+       "under": null
+      },
+      "cutConsensus": {
+       "over": 0.0267,
+       "under": 0.1053
+      },
+      "cutPinnacle": {
+       "over": null,
+       "under": null
+      },
+      "cutAvg": 0.066,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
      "league": "KBO",
      "home": "SSG 랜더스",
      "away": "한화 이글스",
-     "win": 1.87,
+     "win": 2.02,
      "draw": null,
-     "lose": 1.66,
+     "lose": 1.56,
      "status": "2",
      "score": null,
      "betType": "일반 승패",
-     "marketType": "h2h"
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "e31163a02d157f87b89ad4779fcc100b",
+      "sportKey": "baseball_kbo",
+      "books": 8,
+      "homeEn": "SSG Landers",
+      "awayEn": "Hanwha Eagles",
+      "consensus": {
+       "win": 2.4,
+       "draw": null,
+       "lose": 1.58
+      },
+      "pinnacle": {
+       "win": 2.34,
+       "draw": null,
+       "lose": 1.58
+      },
+      "cutConsensus": {
+       "win": 0.1583,
+       "draw": null,
+       "lose": 0.0127
+      },
+      "cutPinnacle": {
+       "win": 0.1368,
+       "draw": null,
+       "lose": 0.0127
+      },
+      "cutAvg": 0.0855,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
      "league": "KBO",
      "home": "SSG 랜더스",
      "away": "한화 이글스",
-     "win": 2.65,
-     "draw": 3.4,
-     "lose": 2.09,
+     "win": 2.8,
+     "draw": 3.5,
+     "lose": 1.97,
      "status": "2",
      "score": null,
      "betType": "승N패",
@@ -2048,9 +1355,9 @@
      "league": "KBO",
      "home": "SSG 랜더스",
      "away": "한화 이글스",
-     "win": 1.31,
+     "win": 1.43,
      "draw": null,
-     "lose": 2.68,
+     "lose": 2.29,
      "status": "2",
      "score": null,
      "betType": "일반 소수핸디캡",
@@ -2070,7 +1377,36 @@
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.64,
-     "under": 1.9
+     "under": 1.9,
+     "market": {
+      "marketType": "totals",
+      "marketId": "e31163a02d157f87b89ad4779fcc100b",
+      "sportKey": "baseball_kbo",
+      "point": 10.5,
+      "betmanPoint": 9.0,
+      "books": 3,
+      "homeEn": "SSG Landers",
+      "awayEn": "Hanwha Eagles",
+      "consensus": {
+       "over": 1.78,
+       "under": 1.98
+      },
+      "pinnacle": {
+       "over": 1.67,
+       "under": 2.17
+      },
+      "cutConsensus": {
+       "over": 0.0787,
+       "under": 0.0404
+      },
+      "cutPinnacle": {
+       "over": 0.018,
+       "under": 0.1244
+      },
+      "cutAvg": 0.0596,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2090,22 +1426,53 @@
      "league": "KBO",
      "home": "SSG 랜더스",
      "away": "한화 이글스",
-     "win": 2.15,
+     "win": 2.3,
      "draw": 6.7,
-     "lose": 1.87,
+     "lose": 1.77,
      "status": "2",
      "score": null,
      "betType": "승무패",
-     "marketType": "h2h"
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "e31163a02d157f87b89ad4779fcc100b",
+      "sportKey": "baseball_kbo",
+      "books": 8,
+      "homeEn": "SSG Landers",
+      "awayEn": "Hanwha Eagles",
+      "consensus": {
+       "win": 2.4,
+       "draw": null,
+       "lose": 1.58
+      },
+      "pinnacle": {
+       "win": 2.34,
+       "draw": null,
+       "lose": 1.58
+      },
+      "cutConsensus": {
+       "win": 0.0417,
+       "draw": null,
+       "lose": -0.1203
+      },
+      "cutPinnacle": {
+       "win": 0.0171,
+       "draw": null,
+       "lose": -0.1203
+      },
+      "cutAvg": -0.0393,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
      "league": "KBO",
      "home": "SSG 랜더스",
      "away": "한화 이글스",
-     "win": 1.35,
+     "win": 1.43,
      "draw": null,
-     "lose": 2.53,
+     "lose": 2.29,
      "status": "2",
      "score": null,
      "betType": "일반 소수핸디캡",
@@ -2125,7 +1492,36 @@
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.85,
-     "under": 1.68
+     "under": 1.68,
+     "market": {
+      "marketType": "totals",
+      "marketId": "e31163a02d157f87b89ad4779fcc100b",
+      "sportKey": "baseball_kbo",
+      "point": 10.5,
+      "betmanPoint": 9.0,
+      "books": 3,
+      "homeEn": "SSG Landers",
+      "awayEn": "Hanwha Eagles",
+      "consensus": {
+       "over": 1.78,
+       "under": 1.98
+      },
+      "pinnacle": {
+       "over": 1.67,
+       "under": 2.17
+      },
+      "cutConsensus": {
+       "over": -0.0393,
+       "under": 0.1515
+      },
+      "cutPinnacle": {
+       "over": -0.1078,
+       "under": 0.2258
+      },
+      "cutAvg": 0.0561,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2138,7 +1534,38 @@
      "status": "2",
      "score": null,
      "betType": "일반 승패",
-     "marketType": "h2h"
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "40a9160e5548d654d266a29c70925c27",
+      "sportKey": "baseball_kbo",
+      "books": 10,
+      "homeEn": "Kia Tigers",
+      "awayEn": "Lotte Giants",
+      "consensus": {
+       "win": 1.81,
+       "draw": null,
+       "lose": 1.98
+      },
+      "pinnacle": {
+       "win": 1.84,
+       "draw": null,
+       "lose": 1.98
+      },
+      "cutConsensus": {
+       "win": 0.0442,
+       "draw": null,
+       "lose": 0.096
+      },
+      "cutPinnacle": {
+       "win": 0.0598,
+       "draw": null,
+       "lose": 0.096
+      },
+      "cutAvg": 0.0701,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2180,7 +1607,36 @@
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.75,
-     "under": 1.77
+     "under": 1.77,
+     "market": {
+      "marketType": "totals",
+      "marketId": "40a9160e5548d654d266a29c70925c27",
+      "sportKey": "baseball_kbo",
+      "point": 9.0,
+      "betmanPoint": 9.0,
+      "books": 4,
+      "homeEn": "Kia Tigers",
+      "awayEn": "Lotte Giants",
+      "consensus": {
+       "over": 1.86,
+       "under": 1.905
+      },
+      "pinnacle": {
+       "over": 1.88,
+       "under": 1.93
+      },
+      "cutConsensus": {
+       "over": 0.0591,
+       "under": 0.0709
+      },
+      "cutPinnacle": {
+       "over": 0.0691,
+       "under": 0.0829
+      },
+      "cutAvg": 0.065,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2206,7 +1662,38 @@
      "status": "2",
      "score": null,
      "betType": "승무패",
-     "marketType": "h2h"
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "40a9160e5548d654d266a29c70925c27",
+      "sportKey": "baseball_kbo",
+      "books": 10,
+      "homeEn": "Kia Tigers",
+      "awayEn": "Lotte Giants",
+      "consensus": {
+       "win": 1.81,
+       "draw": null,
+       "lose": 1.98
+      },
+      "pinnacle": {
+       "win": 1.84,
+       "draw": null,
+       "lose": 1.98
+      },
+      "cutConsensus": {
+       "win": -0.0884,
+       "draw": null,
+       "lose": -0.0354
+      },
+      "cutPinnacle": {
+       "win": -0.0707,
+       "draw": null,
+       "lose": -0.0354
+      },
+      "cutAvg": -0.0619,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2235,7 +1722,36 @@
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.67,
-     "under": 1.86
+     "under": 1.86,
+     "market": {
+      "marketType": "totals",
+      "marketId": "40a9160e5548d654d266a29c70925c27",
+      "sportKey": "baseball_kbo",
+      "point": 9.0,
+      "betmanPoint": 9.0,
+      "books": 4,
+      "homeEn": "Kia Tigers",
+      "awayEn": "Lotte Giants",
+      "consensus": {
+       "over": 1.86,
+       "under": 1.905
+      },
+      "pinnacle": {
+       "over": 1.88,
+       "under": 1.93
+      },
+      "cutConsensus": {
+       "over": 0.1022,
+       "under": 0.0236
+      },
+      "cutPinnacle": {
+       "over": 0.1117,
+       "under": 0.0363
+      },
+      "cutAvg": 0.0629,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2248,7 +1764,38 @@
      "status": "2",
      "score": null,
      "betType": "일반 승패",
-     "marketType": "h2h"
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "8603b028b75718abb6e4f8d562c9a91d",
+      "sportKey": "baseball_kbo",
+      "books": 10,
+      "homeEn": "KT Wiz",
+      "awayEn": "Doosan Bears",
+      "consensus": {
+       "win": 1.675,
+       "draw": null,
+       "lose": 2.2
+      },
+      "pinnacle": {
+       "win": 1.67,
+       "draw": null,
+       "lose": 2.22
+      },
+      "cutConsensus": {
+       "win": 0.0746,
+       "draw": null,
+       "lose": 0.0727
+      },
+      "cutPinnacle": {
+       "win": 0.0719,
+       "draw": null,
+       "lose": 0.0811
+      },
+      "cutAvg": 0.0736,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2290,7 +1837,36 @@
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.8,
-     "under": 1.72
+     "under": 1.72,
+     "market": {
+      "marketType": "totals",
+      "marketId": "8603b028b75718abb6e4f8d562c9a91d",
+      "sportKey": "baseball_kbo",
+      "point": 10.0,
+      "betmanPoint": 9.0,
+      "books": 6,
+      "homeEn": "KT Wiz",
+      "awayEn": "Doosan Bears",
+      "consensus": {
+       "over": 1.945,
+       "under": 1.845
+      },
+      "pinnacle": {
+       "over": 1.94,
+       "under": 1.87
+      },
+      "cutConsensus": {
+       "over": 0.0746,
+       "under": 0.0678
+      },
+      "cutPinnacle": {
+       "over": 0.0722,
+       "under": 0.0802
+      },
+      "cutAvg": 0.0712,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2316,16 +1892,47 @@
      "status": "2",
      "score": null,
      "betType": "승무패",
-     "marketType": "h2h"
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "8603b028b75718abb6e4f8d562c9a91d",
+      "sportKey": "baseball_kbo",
+      "books": 10,
+      "homeEn": "KT Wiz",
+      "awayEn": "Doosan Bears",
+      "consensus": {
+       "win": 1.675,
+       "draw": null,
+       "lose": 2.2
+      },
+      "pinnacle": {
+       "win": 1.67,
+       "draw": null,
+       "lose": 2.22
+      },
+      "cutConsensus": {
+       "win": -0.1284,
+       "draw": null,
+       "lose": 0.0
+      },
+      "cutPinnacle": {
+       "win": -0.1317,
+       "draw": null,
+       "lose": 0.009
+      },
+      "cutAvg": -0.0642,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
      "league": "KBO",
      "home": "KT 위즈",
      "away": "두산 베어스",
-     "win": 2.56,
+     "win": 2.43,
      "draw": null,
-     "lose": 1.34,
+     "lose": 1.38,
      "status": "2",
      "score": null,
      "betType": "일반 소수핸디캡",
@@ -2336,16 +1943,45 @@
      "league": "KBO",
      "home": "KT 위즈",
      "away": "두산 베어스",
-     "win": 1.86,
+     "win": 1.71,
      "draw": null,
-     "lose": 1.67,
+     "lose": 1.81,
      "status": "2",
      "score": null,
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
-     "over": 1.86,
-     "under": 1.67
+     "over": 1.71,
+     "under": 1.81,
+     "market": {
+      "marketType": "totals",
+      "marketId": "8603b028b75718abb6e4f8d562c9a91d",
+      "sportKey": "baseball_kbo",
+      "point": 10.0,
+      "betmanPoint": 9.0,
+      "books": 6,
+      "homeEn": "KT Wiz",
+      "awayEn": "Doosan Bears",
+      "consensus": {
+       "over": 1.945,
+       "under": 1.845
+      },
+      "pinnacle": {
+       "over": 1.94,
+       "under": 1.87
+      },
+      "cutConsensus": {
+       "over": 0.1208,
+       "under": 0.019
+      },
+      "cutPinnacle": {
+       "over": 0.1186,
+       "under": 0.0321
+      },
+      "cutAvg": 0.0699,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2358,7 +1994,38 @@
      "status": "2",
      "score": null,
      "betType": "일반 승패",
-     "marketType": "h2h"
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "50be4a22e586c9cf5406bba406ae0bce",
+      "sportKey": "baseball_kbo",
+      "books": 10,
+      "homeEn": "Kiwoom Heroes",
+      "awayEn": "Samsung Lions",
+      "consensus": {
+       "win": 2.3,
+       "draw": null,
+       "lose": 1.62
+      },
+      "pinnacle": {
+       "win": 2.31,
+       "draw": null,
+       "lose": 1.62
+      },
+      "cutConsensus": {
+       "win": 0.0739,
+       "draw": null,
+       "lose": 0.0741
+      },
+      "cutPinnacle": {
+       "win": 0.0779,
+       "draw": null,
+       "lose": 0.0741
+      },
+      "cutAvg": 0.074,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2400,7 +2067,36 @@
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.65,
-     "under": 1.89
+     "under": 1.89,
+     "market": {
+      "marketType": "totals",
+      "marketId": "50be4a22e586c9cf5406bba406ae0bce",
+      "sportKey": "baseball_kbo",
+      "point": 8.0,
+      "betmanPoint": 9.0,
+      "books": 6,
+      "homeEn": "Kiwoom Heroes",
+      "awayEn": "Samsung Lions",
+      "consensus": {
+       "over": 1.855,
+       "under": 1.94
+      },
+      "pinnacle": {
+       "over": 1.86,
+       "under": 1.96
+      },
+      "cutConsensus": {
+       "over": 0.1105,
+       "under": 0.0258
+      },
+      "cutPinnacle": {
+       "over": 0.1129,
+       "under": 0.0357
+      },
+      "cutAvg": 0.0682,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2426,7 +2122,38 @@
      "status": "2",
      "score": null,
      "betType": "승무패",
-     "marketType": "h2h"
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "50be4a22e586c9cf5406bba406ae0bce",
+      "sportKey": "baseball_kbo",
+      "books": 10,
+      "homeEn": "Kiwoom Heroes",
+      "awayEn": "Samsung Lions",
+      "consensus": {
+       "win": 2.3,
+       "draw": null,
+       "lose": 1.62
+      },
+      "pinnacle": {
+       "win": 2.31,
+       "draw": null,
+       "lose": 1.62
+      },
+      "cutConsensus": {
+       "win": -0.0652,
+       "draw": null,
+       "lose": -0.0741
+      },
+      "cutPinnacle": {
+       "win": -0.0606,
+       "draw": null,
+       "lose": -0.0741
+      },
+      "cutAvg": -0.0696,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T18:30:00+09:00",
@@ -2455,7 +2182,36 @@
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.74,
-     "under": 1.78
+     "under": 1.78,
+     "market": {
+      "marketType": "totals",
+      "marketId": "50be4a22e586c9cf5406bba406ae0bce",
+      "sportKey": "baseball_kbo",
+      "point": 8.0,
+      "betmanPoint": 9.0,
+      "books": 6,
+      "homeEn": "Kiwoom Heroes",
+      "awayEn": "Samsung Lions",
+      "consensus": {
+       "over": 1.855,
+       "under": 1.94
+      },
+      "pinnacle": {
+       "over": 1.86,
+       "under": 1.96
+      },
+      "cutConsensus": {
+       "over": 0.062,
+       "under": 0.0825
+      },
+      "cutPinnacle": {
+       "over": 0.0645,
+       "under": 0.0918
+      },
+      "cutAvg": 0.0723,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
     },
     {
      "kickoff": "2026-08-25T19:30:00+09:00",
@@ -2473,30 +2229,30 @@
       "marketType": "h2h",
       "marketId": "d59c12d88d59e5a665b3fd8f626628d5",
       "sportKey": "soccer_korea_kleague1",
-      "books": 18,
+      "books": 19,
       "homeEn": "FC Seoul",
       "awayEn": "Bucheon FC 1995",
       "consensus": {
        "win": 1.5,
-       "draw": 3.965,
+       "draw": 3.98,
        "lose": 5.5
       },
       "pinnacle": {
-       "win": 1.52,
-       "draw": 4.25,
-       "lose": 6.07
+       "win": 1.54,
+       "draw": 4.29,
+       "lose": 6.15
       },
       "cutConsensus": {
        "win": 0.0067,
-       "draw": 0.0794,
+       "draw": 0.0829,
        "lose": -0.0182
       },
       "cutPinnacle": {
-       "win": 0.0197,
-       "draw": 0.1412,
-       "lose": 0.0774
+       "win": 0.0325,
+       "draw": 0.1492,
+       "lose": 0.0894
       },
-      "cutAvg": 0.0226,
+      "cutAvg": 0.0238,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2548,7 +2304,7 @@
       "sportKey": "soccer_korea_kleague1",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 11,
+      "books": 12,
       "homeEn": "FC Seoul",
       "awayEn": "Bucheon FC 1995",
       "consensus": {
@@ -2556,7 +2312,7 @@
        "under": 1.88
       },
       "pinnacle": {
-       "over": 1.84,
+       "over": 1.85,
        "under": 2.02
       },
       "cutConsensus": {
@@ -2564,7 +2320,7 @@
        "under": 0.0745
       },
       "cutPinnacle": {
-       "over": 0.0109,
+       "over": 0.0162,
        "under": 0.1386
       },
       "cutAvg": 0.0372,
@@ -2601,30 +2357,30 @@
       "marketType": "h2h",
       "marketId": "d59c12d88d59e5a665b3fd8f626628d5",
       "sportKey": "soccer_korea_kleague1",
-      "books": 18,
+      "books": 19,
       "homeEn": "FC Seoul",
       "awayEn": "Bucheon FC 1995",
       "consensus": {
        "win": 1.5,
-       "draw": 3.965,
+       "draw": 3.98,
        "lose": 5.5
       },
       "pinnacle": {
-       "win": 1.52,
-       "draw": 4.25,
-       "lose": 6.07
+       "win": 1.54,
+       "draw": 4.29,
+       "lose": 6.15
       },
       "cutConsensus": {
        "win": -0.3267,
-       "draw": 0.4704,
+       "draw": 0.4724,
        "lose": -0.0727
       },
       "cutPinnacle": {
-       "win": -0.3092,
-       "draw": 0.5059,
-       "lose": 0.028
+       "win": -0.2922,
+       "draw": 0.5105,
+       "lose": 0.0407
       },
-      "cutAvg": 0.0237,
+      "cutAvg": 0.0243,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2663,7 +2419,7 @@
       "sportKey": "soccer_korea_kleague1",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 11,
+      "books": 12,
       "homeEn": "FC Seoul",
       "awayEn": "Bucheon FC 1995",
       "consensus": {
@@ -2671,7 +2427,7 @@
        "under": 1.88
       },
       "pinnacle": {
-       "over": 1.84,
+       "over": 1.85,
        "under": 2.02
       },
       "cutConsensus": {
@@ -2679,7 +2435,7 @@
        "under": -0.3085
       },
       "cutPinnacle": {
-       "over": 0.2554,
+       "over": 0.2595,
        "under": -0.2178
       },
       "cutAvg": -0.0306,
@@ -2703,30 +2459,30 @@
       "marketType": "h2h",
       "marketId": "9d3d2d6e8c36c82f72a287bf11d93c63",
       "sportKey": "soccer_korea_kleague1",
-      "books": 18,
+      "books": 19,
       "homeEn": "Sangju Sangmu FC",
       "awayEn": "Jeonbuk Hyundai Motors",
       "consensus": {
-       "win": 3.3,
+       "win": 3.25,
        "draw": 3.25,
-       "lose": 2.025
+       "lose": 2.07
       },
       "pinnacle": {
-       "win": 3.45,
-       "draw": 3.4,
-       "lose": 2.14
+       "win": 3.49,
+       "draw": 3.44,
+       "lose": 2.16
       },
       "cutConsensus": {
-       "win": 0.0455,
+       "win": 0.0308,
        "draw": 0.0,
-       "lose": 0.0074
+       "lose": 0.029
       },
       "cutPinnacle": {
-       "win": 0.087,
-       "draw": 0.0441,
-       "lose": 0.0607
+       "win": 0.0974,
+       "draw": 0.0552,
+       "lose": 0.0694
       },
-      "cutAvg": 0.0176,
+      "cutAvg": 0.0199,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2778,7 +2534,7 @@
       "sportKey": "soccer_korea_kleague1",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 12,
+      "books": 13,
       "homeEn": "Sangju Sangmu FC",
       "awayEn": "Jeonbuk Hyundai Motors",
       "consensus": {
@@ -2786,16 +2542,16 @@
        "under": 1.85
       },
       "pinnacle": {
-       "over": 1.99,
-       "under": 1.86
+       "over": 2.0,
+       "under": 1.88
       },
       "cutConsensus": {
        "over": 0.0479,
        "under": 0.0432
       },
       "cutPinnacle": {
-       "over": 0.1005,
-       "under": 0.0484
+       "over": 0.105,
+       "under": 0.0585
       },
       "cutAvg": 0.0456,
       "timeDiffSec": 0,
@@ -2831,30 +2587,30 @@
       "marketType": "h2h",
       "marketId": "9d3d2d6e8c36c82f72a287bf11d93c63",
       "sportKey": "soccer_korea_kleague1",
-      "books": 18,
+      "books": 19,
       "homeEn": "Sangju Sangmu FC",
       "awayEn": "Jeonbuk Hyundai Motors",
       "consensus": {
-       "win": 3.3,
+       "win": 3.25,
        "draw": 3.25,
-       "lose": 2.025
+       "lose": 2.07
       },
       "pinnacle": {
-       "win": 3.45,
-       "draw": 3.4,
-       "lose": 2.14
+       "win": 3.49,
+       "draw": 3.44,
+       "lose": 2.16
       },
       "cutConsensus": {
-       "win": -0.1515,
+       "win": -0.1692,
        "draw": 0.3877,
-       "lose": -0.284
+       "lose": -0.256
       },
       "cutPinnacle": {
-       "win": -0.1014,
-       "draw": 0.4147,
-       "lose": -0.215
+       "win": -0.0888,
+       "draw": 0.4215,
+       "lose": -0.2037
       },
-      "cutAvg": -0.0159,
+      "cutAvg": -0.0125,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2893,7 +2649,7 @@
       "sportKey": "soccer_korea_kleague1",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 12,
+      "books": 13,
       "homeEn": "Sangju Sangmu FC",
       "awayEn": "Jeonbuk Hyundai Motors",
       "consensus": {
@@ -2901,16 +2657,16 @@
        "under": 1.85
       },
       "pinnacle": {
-       "over": 1.99,
-       "under": 1.86
+       "over": 2.0,
+       "under": 1.88
       },
       "cutConsensus": {
        "over": 0.2766,
        "under": -0.3459
       },
       "cutPinnacle": {
-       "over": 0.3166,
-       "under": -0.3387
+       "over": 0.32,
+       "under": -0.3245
       },
       "cutAvg": -0.0346,
       "timeDiffSec": 0,
@@ -3648,30 +3404,30 @@
       "marketType": "h2h",
       "marketId": "86eee7d1c8e3dfb4e52cb45c875d4c4e",
       "sportKey": "soccer_spain_la_liga",
-      "books": 18,
+      "books": 19,
       "homeEn": "Valencia",
       "awayEn": "Real Betis",
       "consensus": {
-       "win": 2.8,
-       "draw": 3.34,
-       "lose": 2.585
+       "win": 2.82,
+       "draw": 3.32,
+       "lose": 2.55
       },
       "pinnacle": {
-       "win": 2.87,
-       "draw": 3.35,
+       "win": 2.89,
+       "draw": 3.33,
        "lose": 2.59
       },
       "cutConsensus": {
-       "win": 0.1071,
-       "draw": 0.0868,
-       "lose": 0.0522
+       "win": 0.1135,
+       "draw": 0.0813,
+       "lose": 0.0392
       },
       "cutPinnacle": {
-       "win": 0.1289,
-       "draw": 0.0896,
+       "win": 0.1349,
+       "draw": 0.0841,
        "lose": 0.0541
       },
-      "cutAvg": 0.082,
+      "cutAvg": 0.078,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3723,26 +3479,26 @@
       "sportKey": "soccer_spain_la_liga",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 12,
+      "books": 14,
       "homeEn": "Valencia",
       "awayEn": "Real Betis",
       "consensus": {
-       "over": 1.96,
-       "under": 1.83
+       "over": 1.97,
+       "under": 1.82
       },
       "pinnacle": {
-       "over": 2.0,
-       "under": 1.89
+       "over": 2.03,
+       "under": 1.87
       },
       "cutConsensus": {
-       "over": 0.1378,
-       "under": -0.0273
+       "over": 0.1421,
+       "under": -0.033
       },
       "cutPinnacle": {
-       "over": 0.155,
-       "under": 0.0053
+       "over": 0.1675,
+       "under": -0.0053
       },
-      "cutAvg": 0.0553,
+      "cutAvg": 0.0546,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3886,30 +3642,30 @@
       "marketType": "h2h",
       "marketId": "0f90597c1b4cf9b362f3a1055c9b2e88",
       "sportKey": "soccer_conmebol_copa_libertadores",
-      "books": 16,
+      "books": 19,
       "homeEn": "Independiente del Valle",
       "awayEn": "Deportes Tolima",
       "consensus": {
-       "win": 1.56,
-       "draw": 3.765,
-       "lose": 5.99
+       "win": 1.55,
+       "draw": 3.75,
+       "lose": 6.0
       },
       "pinnacle": {
        "win": 1.58,
-       "draw": 3.8,
-       "lose": 5.94
+       "draw": 3.83,
+       "lose": 6.01
       },
       "cutConsensus": {
-       "win": 0.0705,
-       "draw": 0.0969,
-       "lose": -0.0017
+       "win": 0.0645,
+       "draw": 0.0933,
+       "lose": 0.0
       },
       "cutPinnacle": {
        "win": 0.0823,
-       "draw": 0.1053,
-       "lose": -0.0101
+       "draw": 0.1123,
+       "lose": 0.0017
       },
-      "cutAvg": 0.0552,
+      "cutAvg": 0.0526,
       "timeDiffSec": 0,
       "matchedBy": "time"
      }
@@ -3948,26 +3704,26 @@
       "sportKey": "soccer_conmebol_copa_libertadores",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 8,
+      "books": 10,
       "homeEn": "Independiente del Valle",
       "awayEn": "Deportes Tolima",
       "consensus": {
-       "over": 2.2,
-       "under": 1.65
+       "over": 2.19,
+       "under": 1.635
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.3,
-       "under": -0.2424
+       "over": 0.2968,
+       "under": -0.2538
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0288,
+      "cutAvg": 0.0215,
       "timeDiffSec": 0,
       "matchedBy": "time"
      }
@@ -4061,8 +3817,8 @@
       "awayEn": "Incheon United",
       "consensus": {
        "win": 3.1,
-       "draw": 3.025,
-       "lose": 2.25
+       "draw": 3.035,
+       "lose": 2.24
       },
       "pinnacle": {
        "win": 3.3,
@@ -4071,15 +3827,15 @@
       },
       "cutConsensus": {
        "win": -0.0323,
-       "draw": 0.0083,
-       "lose": 0.0711
+       "draw": 0.0115,
+       "lose": 0.067
       },
       "cutPinnacle": {
        "win": 0.0303,
        "draw": 0.0506,
        "lose": 0.0991
       },
-      "cutAvg": 0.0157,
+      "cutAvg": 0.0154,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4189,8 +3945,8 @@
       "awayEn": "Incheon United",
       "consensus": {
        "win": 3.1,
-       "draw": 3.025,
-       "lose": 2.25
+       "draw": 3.035,
+       "lose": 2.24
       },
       "pinnacle": {
        "win": 3.3,
@@ -4199,15 +3955,15 @@
       },
       "cutConsensus": {
        "win": -0.2742,
-       "draw": 0.3851,
-       "lose": -0.2444
+       "draw": 0.3871,
+       "lose": -0.25
       },
       "cutPinnacle": {
        "win": -0.197,
        "draw": 0.4114,
        "lose": -0.2069
       },
-      "cutAvg": -0.0445,
+      "cutAvg": -0.0457,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4406,7 +4162,7 @@
       },
       "pinnacle": {
        "win": 1.51,
-       "draw": 4.07,
+       "draw": 4.09,
        "lose": 6.72
       },
       "cutConsensus": {
@@ -4416,7 +4172,7 @@
       },
       "cutPinnacle": {
        "win": 0.0265,
-       "draw": 0.1278,
+       "draw": 0.132,
        "lose": 0.0774
       },
       "cutAvg": 0.0442,
@@ -4471,11 +4227,11 @@
       "sportKey": "soccer_korea_kleague1",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 10,
+      "books": 11,
       "homeEn": "Gangwon FC",
       "awayEn": "Gwangju FC",
       "consensus": {
-       "over": 2.03,
+       "over": 2.04,
        "under": 1.7
       },
       "pinnacle": {
@@ -4483,14 +4239,14 @@
        "under": null
       },
       "cutConsensus": {
-       "over": 0.202,
+       "over": 0.2059,
        "under": -0.1647
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0186,
+      "cutAvg": 0.0206,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4534,7 +4290,7 @@
       },
       "pinnacle": {
        "win": 1.51,
-       "draw": 4.07,
+       "draw": 4.09,
        "lose": 6.72
       },
       "cutConsensus": {
@@ -4544,7 +4300,7 @@
       },
       "cutPinnacle": {
        "win": -0.3245,
-       "draw": 0.5111,
+       "draw": 0.5134,
        "lose": -0.0119
       },
       "cutAvg": 0.0319,
@@ -4586,11 +4342,11 @@
       "sportKey": "soccer_korea_kleague1",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 10,
+      "books": 11,
       "homeEn": "Gangwon FC",
       "awayEn": "Gwangju FC",
       "consensus": {
-       "over": 2.03,
+       "over": 2.04,
        "under": 1.7
       },
       "pinnacle": {
@@ -4598,14 +4354,14 @@
        "under": null
       },
       "cutConsensus": {
-       "over": 0.3645,
+       "over": 0.3676,
        "under": -0.6294
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": -0.1324,
+      "cutAvg": -0.1309,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4774,13 +4530,797 @@
      "totalPoint": 9.0,
      "over": 1.59,
      "under": 1.97
+    },
+    {
+     "kickoff": "2026-08-25T01:30:00+09:00",
+     "league": "세리에A",
+     "home": "볼로냐",
+     "away": "SS라치오",
+     "win": 2.1,
+     "draw": 2.85,
+     "lose": 3.1,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T01:30:00+09:00",
+     "league": "세리에A",
+     "home": "볼로냐",
+     "away": "SS라치오",
+     "win": 4.2,
+     "draw": 3.4,
+     "lose": 1.62,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T01:30:00+09:00",
+     "league": "세리에A",
+     "home": "볼로냐",
+     "away": "SS라치오",
+     "win": 9.5,
+     "draw": 5.5,
+     "lose": 1.16,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T01:30:00+09:00",
+     "league": "세리에A",
+     "home": "볼로냐",
+     "away": "SS라치오",
+     "win": 1.56,
+     "draw": null,
+     "lose": 2.02,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.56,
+     "under": 2.02
+    },
+    {
+     "kickoff": "2026-08-25T01:30:00+09:00",
+     "league": "세리에A",
+     "home": "볼로냐",
+     "away": "SS라치오",
+     "win": 1.81,
+     "draw": null,
+     "lose": 1.79,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T02:30:00+09:00",
+     "league": "라리가",
+     "home": "오사수나",
+     "away": "레반테",
+     "win": 1.66,
+     "draw": 3.3,
+     "lose": 4.35,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T02:30:00+09:00",
+     "league": "라리가",
+     "home": "오사수나",
+     "away": "레반테",
+     "win": 3.4,
+     "draw": 3.05,
+     "lose": 1.9,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T02:30:00+09:00",
+     "league": "라리가",
+     "home": "오사수나",
+     "away": "레반테",
+     "win": 6.0,
+     "draw": 4.35,
+     "lose": 1.33,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T02:30:00+09:00",
+     "league": "라리가",
+     "home": "오사수나",
+     "away": "레반테",
+     "win": 1.69,
+     "draw": null,
+     "lose": 1.88,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.69,
+     "under": 1.88
+    },
+    {
+     "kickoff": "2026-08-25T02:30:00+09:00",
+     "league": "라리가",
+     "home": "오사수나",
+     "away": "레반테",
+     "win": 1.81,
+     "draw": null,
+     "lose": 1.79,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T03:45:00+09:00",
+     "league": "세리에A",
+     "home": "AS로마",
+     "away": "ACF피오렌티나",
+     "win": 1.47,
+     "draw": 3.75,
+     "lose": 4.95,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T03:45:00+09:00",
+     "league": "세리에A",
+     "home": "AS로마",
+     "away": "ACF피오렌티나",
+     "win": 2.8,
+     "draw": 3.05,
+     "lose": 2.15,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T03:45:00+09:00",
+     "league": "세리에A",
+     "home": "AS로마",
+     "away": "ACF피오렌티나",
+     "win": 5.3,
+     "draw": 4.05,
+     "lose": 1.4,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T03:45:00+09:00",
+     "league": "세리에A",
+     "home": "AS로마",
+     "away": "ACF피오렌티나",
+     "win": 1.82,
+     "draw": null,
+     "lose": 1.7,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.82,
+     "under": 1.7
+    },
+    {
+     "kickoff": "2026-08-25T03:45:00+09:00",
+     "league": "세리에A",
+     "home": "AS로마",
+     "away": "ACF피오렌티나",
+     "win": 1.81,
+     "draw": null,
+     "lose": 1.79,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T04:00:00+09:00",
+     "league": "EPL",
+     "home": "풀럼",
+     "away": "첼시",
+     "win": 3.85,
+     "draw": 3.65,
+     "lose": 1.7,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T04:00:00+09:00",
+     "league": "EPL",
+     "home": "풀럼",
+     "away": "첼시",
+     "win": 1.91,
+     "draw": 3.45,
+     "lose": 3.1,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T04:00:00+09:00",
+     "league": "EPL",
+     "home": "풀럼",
+     "away": "첼시",
+     "win": 1.31,
+     "draw": 4.85,
+     "lose": 6.0,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T04:00:00+09:00",
+     "league": "EPL",
+     "home": "풀럼",
+     "away": "첼시",
+     "win": 2.01,
+     "draw": null,
+     "lose": 1.6,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 2.01,
+     "under": 1.6
+    },
+    {
+     "kickoff": "2026-08-25T04:00:00+09:00",
+     "league": "EPL",
+     "home": "풀럼",
+     "away": "첼시",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T04:30:00+09:00",
+     "league": "라리가",
+     "home": "말라가",
+     "away": "데포르티보 아코루냐",
+     "win": 2.32,
+     "draw": 2.65,
+     "lose": 3.05,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "030285b126b6a2f7e022261006ed770e",
+      "sportKey": "soccer_spain_la_liga",
+      "books": 18,
+      "homeEn": "Málaga",
+      "awayEn": "Deportivo La Coruña",
+      "consensus": {
+       "win": 2.345,
+       "draw": 3.05,
+       "lose": 3.45
+      },
+      "pinnacle": {
+       "win": 2.37,
+       "draw": 3.07,
+       "lose": 3.53
+      },
+      "cutConsensus": {
+       "win": 0.0107,
+       "draw": 0.1311,
+       "lose": 0.1159
+      },
+      "cutPinnacle": {
+       "win": 0.0211,
+       "draw": 0.1368,
+       "lose": 0.136
+      },
+      "cutAvg": 0.0859,
+      "timeDiffSec": 0,
+      "matchedBy": "time"
+     }
+    },
+    {
+     "kickoff": "2026-08-25T04:30:00+09:00",
+     "league": "라리가",
+     "home": "말라가",
+     "away": "데포르티보 아코루냐",
+     "win": 5.1,
+     "draw": 3.4,
+     "lose": 1.52,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T04:30:00+09:00",
+     "league": "라리가",
+     "home": "말라가",
+     "away": "데포르티보 아코루냐",
+     "win": 12.0,
+     "draw": 6.7,
+     "lose": 1.09,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T04:30:00+09:00",
+     "league": "라리가",
+     "home": "말라가",
+     "away": "데포르티보 아코루냐",
+     "win": 1.46,
+     "draw": null,
+     "lose": 2.28,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.46,
+     "under": 2.28,
+     "market": {
+      "marketType": "totals",
+      "marketId": "030285b126b6a2f7e022261006ed770e",
+      "sportKey": "soccer_spain_la_liga",
+      "point": 2.5,
+      "betmanPoint": 9.0,
+      "books": 8,
+      "homeEn": "Málaga",
+      "awayEn": "Deportivo La Coruña",
+      "consensus": {
+       "over": 2.225,
+       "under": 1.63
+      },
+      "pinnacle": {
+       "over": null,
+       "under": null
+      },
+      "cutConsensus": {
+       "over": 0.3438,
+       "under": -0.3988
+      },
+      "cutPinnacle": {
+       "over": null,
+       "under": null
+      },
+      "cutAvg": -0.0275,
+      "timeDiffSec": 0,
+      "matchedBy": "time"
+     }
+    },
+    {
+     "kickoff": "2026-08-25T04:30:00+09:00",
+     "league": "라리가",
+     "home": "말라가",
+     "away": "데포르티보 아코루냐",
+     "win": 1.83,
+     "draw": null,
+     "lose": 1.77,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T07:40:00+09:00",
+     "league": "MLB",
+     "home": "마이애미 말린스",
+     "away": "보스턴 레드삭스",
+     "win": 2.0,
+     "draw": null,
+     "lose": 1.57,
+     "status": "3",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "4849fd0ae15d275efe31050173d07d4e",
+      "sportKey": "baseball_mlb",
+      "books": 23,
+      "homeEn": "Miami Marlins",
+      "awayEn": "Boston Red Sox",
+      "consensus": {
+       "win": 2.095,
+       "draw": null,
+       "lose": 1.77
+      },
+      "pinnacle": {
+       "win": 2.14,
+       "draw": null,
+       "lose": 1.81
+      },
+      "cutConsensus": {
+       "win": 0.0453,
+       "draw": null,
+       "lose": 0.113
+      },
+      "cutPinnacle": {
+       "win": 0.0654,
+       "draw": null,
+       "lose": 0.1326
+      },
+      "cutAvg": 0.0791,
+      "timeDiffSec": 60,
+      "matchedBy": "name"
+     }
+    },
+    {
+     "kickoff": "2026-08-25T07:40:00+09:00",
+     "league": "MLB",
+     "home": "마이애미 말린스",
+     "away": "보스턴 레드삭스",
+     "win": 3.05,
+     "draw": 3.25,
+     "lose": 1.95,
+     "status": "3",
+     "score": null,
+     "betType": "승N패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T07:40:00+09:00",
+     "league": "MLB",
+     "home": "마이애미 말린스",
+     "away": "보스턴 레드삭스",
+     "win": 1.33,
+     "draw": null,
+     "lose": 2.6,
+     "status": "3",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T07:40:00+09:00",
+     "league": "MLB",
+     "home": "마이애미 말린스",
+     "away": "보스턴 레드삭스",
+     "win": 1.77,
+     "draw": null,
+     "lose": 1.75,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.77,
+     "under": 1.75,
+     "market": {
+      "marketType": "totals",
+      "marketId": "4849fd0ae15d275efe31050173d07d4e",
+      "sportKey": "baseball_mlb",
+      "point": 7.5,
+      "betmanPoint": 9.0,
+      "books": 7,
+      "homeEn": "Miami Marlins",
+      "awayEn": "Boston Red Sox",
+      "consensus": {
+       "over": 2.1,
+       "under": 1.76
+      },
+      "pinnacle": {
+       "over": null,
+       "under": null
+      },
+      "cutConsensus": {
+       "over": 0.1571,
+       "under": 0.0057
+      },
+      "cutPinnacle": {
+       "over": null,
+       "under": null
+      },
+      "cutAvg": 0.0814,
+      "timeDiffSec": 60,
+      "matchedBy": "name"
+     }
+    },
+    {
+     "kickoff": "2026-08-25T07:40:00+09:00",
+     "league": "MLB",
+     "home": "마이애미 말린스",
+     "away": "보스턴 레드삭스",
+     "win": 1.58,
+     "draw": null,
+     "lose": 2.09,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T07:40:00+09:00",
+     "league": "MLB",
+     "home": "디트로이트 타이거즈",
+     "away": "탬파베이 레이스",
+     "win": 1.97,
+     "draw": null,
+     "lose": 1.59,
+     "status": "3",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "b5df91df571dbd961d2781f345abe770",
+      "sportKey": "baseball_mlb",
+      "books": 23,
+      "homeEn": "Detroit Tigers",
+      "awayEn": "Tampa Bay Rays",
+      "consensus": {
+       "win": 2.105,
+       "draw": null,
+       "lose": 1.75
+      },
+      "pinnacle": {
+       "win": 2.18,
+       "draw": null,
+       "lose": 1.79
+      },
+      "cutConsensus": {
+       "win": 0.0641,
+       "draw": null,
+       "lose": 0.0914
+      },
+      "cutPinnacle": {
+       "win": 0.0963,
+       "draw": null,
+       "lose": 0.1117
+      },
+      "cutAvg": 0.0777,
+      "timeDiffSec": 60,
+      "matchedBy": "name"
+     }
+    },
+    {
+     "kickoff": "2026-08-25T07:40:00+09:00",
+     "league": "MLB",
+     "home": "디트로이트 타이거즈",
+     "away": "탬파베이 레이스",
+     "win": 2.85,
+     "draw": 3.35,
+     "lose": 2.0,
+     "status": "3",
+     "score": null,
+     "betType": "승N패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T07:40:00+09:00",
+     "league": "MLB",
+     "home": "디트로이트 타이거즈",
+     "away": "탬파베이 레이스",
+     "win": 1.3,
+     "draw": null,
+     "lose": 2.72,
+     "status": "3",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T07:40:00+09:00",
+     "league": "MLB",
+     "home": "디트로이트 타이거즈",
+     "away": "탬파베이 레이스",
+     "win": 1.79,
+     "draw": null,
+     "lose": 1.73,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.79,
+     "under": 1.73,
+     "market": {
+      "marketType": "totals",
+      "marketId": "b5df91df571dbd961d2781f345abe770",
+      "sportKey": "baseball_mlb",
+      "point": 7.5,
+      "betmanPoint": 9.0,
+      "books": 11,
+      "homeEn": "Detroit Tigers",
+      "awayEn": "Tampa Bay Rays",
+      "consensus": {
+       "over": 1.89,
+       "under": 1.95
+      },
+      "pinnacle": {
+       "over": 1.89,
+       "under": 2.0
+      },
+      "cutConsensus": {
+       "over": 0.0529,
+       "under": 0.1128
+      },
+      "cutPinnacle": {
+       "over": 0.0529,
+       "under": 0.135
+      },
+      "cutAvg": 0.0829,
+      "timeDiffSec": 60,
+      "matchedBy": "name"
+     }
+    },
+    {
+     "kickoff": "2026-08-25T07:40:00+09:00",
+     "league": "MLB",
+     "home": "디트로이트 타이거즈",
+     "away": "탬파베이 레이스",
+     "win": 1.58,
+     "draw": null,
+     "lose": 2.09,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T07:45:00+09:00",
+     "league": "MLB",
+     "home": "워싱턴 내셔널스",
+     "away": "콜로라도 로키스",
+     "win": 1.36,
+     "draw": null,
+     "lose": 2.49,
+     "status": "3",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "e3da176886eb60e63e5b0017a5f213bc",
+      "sportKey": "baseball_mlb",
+      "books": 23,
+      "homeEn": "Washington Nationals",
+      "awayEn": "Colorado Rockies",
+      "consensus": {
+       "win": 1.505,
+       "draw": null,
+       "lose": 2.63
+      },
+      "pinnacle": {
+       "win": 1.53,
+       "draw": null,
+       "lose": 2.71
+      },
+      "cutConsensus": {
+       "win": 0.0963,
+       "draw": null,
+       "lose": 0.0532
+      },
+      "cutPinnacle": {
+       "win": 0.1111,
+       "draw": null,
+       "lose": 0.0812
+      },
+      "cutAvg": 0.0747,
+      "timeDiffSec": 60,
+      "matchedBy": "name"
+     }
+    },
+    {
+     "kickoff": "2026-08-25T07:45:00+09:00",
+     "league": "MLB",
+     "home": "워싱턴 내셔널스",
+     "away": "콜로라도 로키스",
+     "win": 1.75,
+     "draw": 3.65,
+     "lose": 3.3,
+     "status": "3",
+     "score": null,
+     "betType": "승N패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T07:45:00+09:00",
+     "league": "MLB",
+     "home": "워싱턴 내셔널스",
+     "away": "콜로라도 로키스",
+     "win": 2.37,
+     "draw": null,
+     "lose": 1.4,
+     "status": "3",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-08-25T07:45:00+09:00",
+     "league": "MLB",
+     "home": "워싱턴 내셔널스",
+     "away": "콜로라도 로키스",
+     "win": 1.66,
+     "draw": null,
+     "lose": 1.87,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.66,
+     "under": 1.87,
+     "market": {
+      "marketType": "totals",
+      "marketId": "e3da176886eb60e63e5b0017a5f213bc",
+      "sportKey": "baseball_mlb",
+      "point": 8.0,
+      "betmanPoint": 9.0,
+      "books": 8,
+      "homeEn": "Washington Nationals",
+      "awayEn": "Colorado Rockies",
+      "consensus": {
+       "over": 1.875,
+       "under": 1.93
+      },
+      "pinnacle": {
+       "over": 1.93,
+       "under": 1.96
+      },
+      "cutConsensus": {
+       "over": 0.1147,
+       "under": 0.0311
+      },
+      "cutPinnacle": {
+       "over": 0.1399,
+       "under": 0.0459
+      },
+      "cutAvg": 0.0729,
+      "timeDiffSec": 60,
+      "matchedBy": "name"
+     }
+    },
+    {
+     "kickoff": "2026-08-25T07:45:00+09:00",
+     "league": "MLB",
+     "home": "워싱턴 내셔널스",
+     "away": "콜로라도 로키스",
+     "win": 1.6,
+     "draw": null,
+     "lose": 2.06,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
     }
    ]
   }
  ],
  "marketSource": "the-odds-api.com",
- "marketFetchedAt": "2026-08-24T17:10:53.002239+09:00",
- "marketCreditsRemaining": 658,
+ "marketFetchedAt": "2026-08-25T03:37:33.172402+09:00",
+ "marketCreditsRemaining": 648,
  "marketRefreshIntervalMinutes": 630,
  "marketEstimatedCreditsPerRun": 10,
  "marketActiveLeagues": [
