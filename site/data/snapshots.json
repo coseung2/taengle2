@@ -1,6 +1,6 @@
 {
  "source": "betman.co.kr",
- "fetchedAt": "2026-09-14T23:19:32.558805+09:00",
+ "fetchedAt": "2026-09-15T06:30:57.239413+09:00",
  "games": [
   {
    "gmId": "G101",
@@ -26,30 +26,30 @@
       "marketType": "h2h",
       "marketId": "b2124bf9ac2a7c068e866541e3d9bebe",
       "sportKey": "baseball_mlb",
-      "books": 21,
+      "books": 23,
       "homeEn": "Toronto Blue Jays",
       "awayEn": "Detroit Tigers",
       "consensus": {
-       "win": 1.745,
+       "win": 1.7,
        "draw": null,
-       "lose": 2.1
+       "lose": 2.2
       },
       "pinnacle": {
-       "win": null,
+       "win": 1.72,
        "draw": null,
-       "lose": null
+       "lose": 2.27
       },
       "cutConsensus": {
-       "win": 0.0888,
+       "win": 0.0647,
        "draw": null,
-       "lose": 0.0619
+       "lose": 0.1045
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.0756,
        "draw": null,
-       "lose": null
+       "lose": 0.1322
       },
-      "cutAvg": 0.0754,
+      "cutAvg": 0.0846,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -101,26 +101,26 @@
       "sportKey": "baseball_mlb",
       "point": 7.5,
       "betmanPoint": 9.0,
-      "books": 12,
+      "books": 14,
       "homeEn": "Toronto Blue Jays",
       "awayEn": "Detroit Tigers",
       "consensus": {
-       "over": 1.9,
-       "under": 1.91
+       "over": 1.93,
+       "under": 1.89
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.97,
+       "under": 1.92
       },
       "cutConsensus": {
-       "over": 0.0947,
-       "under": 0.0576
+       "over": 0.1088,
+       "under": 0.0476
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1269,
+       "under": 0.0625
       },
-      "cutAvg": 0.0761,
+      "cutAvg": 0.0782,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -154,30 +154,30 @@
       "marketType": "h2h",
       "marketId": "6f154c72fa0631ec5a970f84c1492463",
       "sportKey": "baseball_mlb",
-      "books": 21,
+      "books": 23,
       "homeEn": "New York Mets",
       "awayEn": "Baltimore Orioles",
       "consensus": {
-       "win": 1.795,
+       "win": 1.7,
        "draw": null,
-       "lose": 2.03
+       "lose": 2.2
       },
       "pinnacle": {
-       "win": null,
+       "win": 1.72,
        "draw": null,
-       "lose": null
+       "lose": 2.28
       },
       "cutConsensus": {
-       "win": 0.0752,
+       "win": 0.0235,
        "draw": null,
-       "lose": 0.0788
+       "lose": 0.15
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.0349,
        "draw": null,
-       "lose": null
+       "lose": 0.1798
       },
-      "cutAvg": 0.077,
+      "cutAvg": 0.0867,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -227,14 +227,14 @@
       "marketType": "totals",
       "marketId": "6f154c72fa0631ec5a970f84c1492463",
       "sportKey": "baseball_mlb",
-      "point": 8.0,
+      "point": 8.5,
       "betmanPoint": 9.0,
       "books": 7,
       "homeEn": "New York Mets",
       "awayEn": "Baltimore Orioles",
       "consensus": {
        "over": 1.93,
-       "under": 1.87
+       "under": 1.83
       },
       "pinnacle": {
        "over": null,
@@ -242,13 +242,13 @@
       },
       "cutConsensus": {
        "over": 0.0777,
-       "under": 0.0695
+       "under": 0.0492
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0736,
+      "cutAvg": 0.0635,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -282,30 +282,30 @@
       "marketType": "h2h",
       "marketId": "68721959a546157007d97eeca5682379",
       "sportKey": "baseball_mlb",
-      "books": 21,
+      "books": 23,
       "homeEn": "Minnesota Twins",
       "awayEn": "New York Yankees",
       "consensus": {
-       "win": 2.06,
+       "win": 2.075,
        "draw": null,
-       "lose": 1.785
+       "lose": 1.795
       },
       "pinnacle": {
-       "win": null,
+       "win": 2.11,
        "draw": null,
-       "lose": null
+       "lose": 1.83
       },
       "cutConsensus": {
-       "win": 0.034,
+       "win": 0.041,
        "draw": null,
-       "lose": 0.1148
+       "lose": 0.1198
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.0569,
        "draw": null,
-       "lose": null
+       "lose": 0.1366
       },
-      "cutAvg": 0.0744,
+      "cutAvg": 0.0804,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -361,22 +361,22 @@
       "homeEn": "Minnesota Twins",
       "awayEn": "New York Yankees",
       "consensus": {
-       "over": 1.975,
-       "under": 1.81
+       "over": 1.965,
+       "under": 1.83
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.1494,
-       "under": -0.0221
+       "over": 0.145,
+       "under": -0.0109
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0636,
+      "cutAvg": 0.067,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -410,30 +410,30 @@
       "marketType": "h2h",
       "marketId": "99d391c2ac7a5942710858c928ac73f8",
       "sportKey": "baseball_mlb",
-      "books": 21,
+      "books": 23,
       "homeEn": "Chicago Cubs",
       "awayEn": "Atlanta Braves",
       "consensus": {
-       "win": 1.72,
+       "win": 1.765,
        "draw": null,
-       "lose": 2.15
+       "lose": 2.1
       },
       "pinnacle": {
-       "win": null,
+       "win": 1.81,
        "draw": null,
-       "lose": null
+       "lose": 2.14
       },
       "cutConsensus": {
-       "win": 0.0814,
+       "win": 0.1048,
        "draw": null,
-       "lose": 0.0744
+       "lose": 0.0524
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.1271,
        "draw": null,
-       "lose": null
+       "lose": 0.0701
       },
-      "cutAvg": 0.0779,
+      "cutAvg": 0.0786,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -485,26 +485,26 @@
       "sportKey": "baseball_mlb",
       "point": 9.5,
       "betmanPoint": 9.0,
-      "books": 12,
+      "books": 13,
       "homeEn": "Chicago Cubs",
       "awayEn": "Atlanta Braves",
       "consensus": {
-       "over": 1.93,
-       "under": 1.865
+       "over": 1.91,
+       "under": 1.91
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.97,
+       "under": 1.92
       },
       "cutConsensus": {
-       "over": 0.1088,
-       "under": 0.0349
+       "over": 0.0995,
+       "under": 0.0576
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1269,
+       "under": 0.0625
       },
-      "cutAvg": 0.0718,
+      "cutAvg": 0.0786,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -538,30 +538,30 @@
       "marketType": "h2h",
       "marketId": "0df8abb4425b8b10d8e3a0599974813f",
       "sportKey": "baseball_mlb",
-      "books": 21,
+      "books": 23,
       "homeEn": "St. Louis Cardinals",
       "awayEn": "San Francisco Giants",
       "consensus": {
-       "win": 1.695,
+       "win": 1.675,
        "draw": null,
-       "lose": 2.2
+       "lose": 2.24
       },
       "pinnacle": {
-       "win": null,
+       "win": 1.71,
        "draw": null,
-       "lose": null
+       "lose": 2.3
       },
       "cutConsensus": {
-       "win": 0.056,
+       "win": 0.0448,
        "draw": null,
-       "lose": 0.1091
+       "lose": 0.125
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.0643,
        "draw": null,
-       "lose": null
+       "lose": 0.1478
       },
-      "cutAvg": 0.0825,
+      "cutAvg": 0.0849,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -613,26 +613,26 @@
       "sportKey": "baseball_mlb",
       "point": 7.5,
       "betmanPoint": 9.0,
-      "books": 10,
+      "books": 9,
       "homeEn": "St. Louis Cardinals",
       "awayEn": "San Francisco Giants",
       "consensus": {
-       "over": 1.845,
-       "under": 1.975
+       "over": 1.83,
+       "under": 2.0
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.0352,
-       "under": 0.119
+       "over": 0.0273,
+       "under": 0.13
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0771,
+      "cutAvg": 0.0786,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -666,30 +666,30 @@
       "marketType": "h2h",
       "marketId": "20dfbbb1031896904e98bed3182f9fc4",
       "sportKey": "baseball_mlb",
-      "books": 21,
+      "books": 23,
       "homeEn": "Colorado Rockies",
       "awayEn": "San Diego Padres",
       "consensus": {
-       "win": 2.63,
+       "win": 2.69,
        "draw": null,
-       "lose": 1.5
+       "lose": 1.495
       },
       "pinnacle": {
-       "win": null,
+       "win": 2.85,
        "draw": null,
-       "lose": null
+       "lose": 1.49
       },
       "cutConsensus": {
-       "win": 0.0875,
+       "win": 0.1078,
        "draw": null,
-       "lose": 0.0733
+       "lose": 0.0702
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.1579,
        "draw": null,
-       "lose": null
+       "lose": 0.0671
       },
-      "cutAvg": 0.0804,
+      "cutAvg": 0.089,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -741,26 +741,26 @@
       "sportKey": "baseball_mlb",
       "point": 11.0,
       "betmanPoint": 9.0,
-      "books": 7,
+      "books": 9,
       "homeEn": "Colorado Rockies",
       "awayEn": "San Diego Padres",
       "consensus": {
-       "over": 1.93,
-       "under": 1.87
+       "over": 1.87,
+       "under": 1.95
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.88,
+       "under": 2.01
       },
       "cutConsensus": {
-       "over": 0.171,
-       "under": -0.0481
+       "over": 0.1444,
+       "under": -0.0051
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1489,
+       "under": 0.0249
       },
-      "cutAvg": 0.0615,
+      "cutAvg": 0.0697,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -794,30 +794,30 @@
       "marketType": "h2h",
       "marketId": "9c0b5b3f819915fa2cd982a14186b77d",
       "sportKey": "baseball_mlb",
-      "books": 21,
+      "books": 23,
       "homeEn": "Los Angeles Angels",
       "awayEn": "Seattle Mariners",
       "consensus": {
-       "win": 1.955,
+       "win": 1.93,
        "draw": null,
-       "lose": 1.88
+       "lose": 1.885
       },
       "pinnacle": {
-       "win": null,
+       "win": 1.97,
        "draw": null,
-       "lose": null
+       "lose": 1.95
       },
       "cutConsensus": {
-       "win": 0.0793,
+       "win": 0.0674,
        "draw": null,
-       "lose": 0.0851
+       "lose": 0.0875
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.0863,
        "draw": null,
-       "lose": null
+       "lose": 0.1179
       },
-      "cutAvg": 0.0822,
+      "cutAvg": 0.0774,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -869,26 +869,26 @@
       "sportKey": "baseball_mlb",
       "point": 7.5,
       "betmanPoint": 9.0,
-      "books": 11,
+      "books": 14,
       "homeEn": "Los Angeles Angels",
       "awayEn": "Seattle Mariners",
       "consensus": {
-       "over": 1.92,
-       "under": 1.91
+       "over": 1.95,
+       "under": 1.865
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.99,
+       "under": 1.9
       },
       "cutConsensus": {
-       "over": 0.0729,
-       "under": 0.089
+       "over": 0.0872,
+       "under": 0.067
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1055,
+       "under": 0.0842
       },
-      "cutAvg": 0.0809,
+      "cutAvg": 0.0771,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -922,30 +922,30 @@
       "marketType": "h2h",
       "marketId": "d468d51c641b469172b3c59500fa2d49",
       "sportKey": "baseball_mlb",
-      "books": 21,
+      "books": 23,
       "homeEn": "Arizona Diamondbacks",
       "awayEn": "Miami Marlins",
       "consensus": {
        "win": 1.76,
        "draw": null,
-       "lose": 2.085
+       "lose": 2.1
       },
       "pinnacle": {
-       "win": null,
+       "win": 1.79,
        "draw": null,
-       "lose": null
+       "lose": 2.16
       },
       "cutConsensus": {
        "win": 0.108,
        "draw": null,
-       "lose": 0.0408
+       "lose": 0.0476
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.1229,
        "draw": null,
-       "lose": null
+       "lose": 0.0741
       },
-      "cutAvg": 0.0744,
+      "cutAvg": 0.0778,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -995,28 +995,28 @@
       "marketType": "totals",
       "marketId": "d468d51c641b469172b3c59500fa2d49",
       "sportKey": "baseball_mlb",
-      "point": 8.0,
+      "point": 8.5,
       "betmanPoint": 9.0,
-      "books": 7,
+      "books": 14,
       "homeEn": "Arizona Diamondbacks",
       "awayEn": "Miami Marlins",
       "consensus": {
        "over": 1.93,
-       "under": 1.89
+       "under": 1.88
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 2.01,
+       "under": 1.88
       },
       "cutConsensus": {
        "over": 0.0207,
-       "under": 0.127
+       "under": 0.1223
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.0597,
+       "under": 0.1223
       },
-      "cutAvg": 0.0738,
+      "cutAvg": 0.0715,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -1050,30 +1050,30 @@
       "marketType": "h2h",
       "marketId": "d468d51c641b469172b3c59500fa2d49",
       "sportKey": "baseball_mlb",
-      "books": 21,
+      "books": 23,
       "homeEn": "Arizona Diamondbacks",
       "awayEn": "Miami Marlins",
       "consensus": {
        "win": 1.76,
        "draw": null,
-       "lose": 2.085
+       "lose": 2.1
       },
       "pinnacle": {
-       "win": null,
+       "win": 1.79,
        "draw": null,
-       "lose": null
+       "lose": 2.16
       },
       "cutConsensus": {
        "win": -0.0852,
        "draw": null,
-       "lose": -0.0791
+       "lose": -0.0714
       },
       "cutPinnacle": {
-       "win": null,
+       "win": -0.067,
        "draw": null,
-       "lose": null
+       "lose": -0.0417
       },
-      "cutAvg": -0.0822,
+      "cutAvg": -0.0783,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -1110,28 +1110,28 @@
       "marketType": "totals",
       "marketId": "d468d51c641b469172b3c59500fa2d49",
       "sportKey": "baseball_mlb",
-      "point": 8.0,
+      "point": 8.5,
       "betmanPoint": 9.0,
-      "books": 7,
+      "books": 14,
       "homeEn": "Arizona Diamondbacks",
       "awayEn": "Miami Marlins",
       "consensus": {
        "over": 1.93,
-       "under": 1.89
+       "under": 1.88
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 2.01,
+       "under": 1.88
       },
       "cutConsensus": {
        "over": 0.1503,
-       "under": -0.0053
+       "under": -0.0106
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1841,
+       "under": -0.0106
       },
-      "cutAvg": 0.0725,
+      "cutAvg": 0.0698,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -1288,30 +1288,30 @@
       "marketType": "h2h",
       "marketId": "6d6b9c7357236c6b5cded3da3a1334f5",
       "sportKey": "baseball_kbo",
-      "books": 7,
+      "books": 11,
       "homeEn": "Samsung Lions",
       "awayEn": "Lotte Giants",
       "consensus": {
        "win": 1.41,
        "draw": null,
-       "lose": 2.8
+       "lose": 2.85
       },
       "pinnacle": {
-       "win": null,
+       "win": 1.44,
        "draw": null,
-       "lose": null
+       "lose": 2.81
       },
       "cutConsensus": {
        "win": 0.0284,
        "draw": null,
-       "lose": 0.1214
+       "lose": 0.1368
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.0486,
        "draw": null,
-       "lose": null
+       "lose": 0.1246
       },
-      "cutAvg": 0.0749,
+      "cutAvg": 0.0826,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1361,28 +1361,28 @@
       "marketType": "totals",
       "marketId": "6d6b9c7357236c6b5cded3da3a1334f5",
       "sportKey": "baseball_kbo",
-      "point": 10.5,
+      "point": 10.0,
       "betmanPoint": 9.0,
-      "books": 5,
+      "books": 4,
       "homeEn": "Samsung Lions",
       "awayEn": "Lotte Giants",
       "consensus": {
-       "over": 1.92,
-       "under": 1.83
+       "over": 1.85,
+       "under": 1.905
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.85,
+       "under": 1.97
       },
       "cutConsensus": {
-       "over": 0.0312,
-       "under": 0.0874
+       "over": -0.0054,
+       "under": 0.1234
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": -0.0054,
+       "under": 0.1523
       },
-      "cutAvg": 0.0593,
+      "cutAvg": 0.059,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1416,30 +1416,30 @@
       "marketType": "h2h",
       "marketId": "6d6b9c7357236c6b5cded3da3a1334f5",
       "sportKey": "baseball_kbo",
-      "books": 7,
+      "books": 11,
       "homeEn": "Samsung Lions",
       "awayEn": "Lotte Giants",
       "consensus": {
        "win": 1.41,
        "draw": null,
-       "lose": 2.8
+       "lose": 2.85
       },
       "pinnacle": {
-       "win": null,
+       "win": 1.44,
        "draw": null,
-       "lose": null
+       "lose": 2.81
       },
       "cutConsensus": {
        "win": -0.0922,
        "draw": null,
-       "lose": 0.0179
+       "lose": 0.0351
       },
       "cutPinnacle": {
-       "win": null,
+       "win": -0.0694,
        "draw": null,
-       "lose": null
+       "lose": 0.0214
       },
-      "cutAvg": -0.0372,
+      "cutAvg": -0.0286,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1476,28 +1476,28 @@
       "marketType": "totals",
       "marketId": "6d6b9c7357236c6b5cded3da3a1334f5",
       "sportKey": "baseball_kbo",
-      "point": 10.5,
+      "point": 10.0,
       "betmanPoint": 9.0,
-      "books": 5,
+      "books": 4,
       "homeEn": "Samsung Lions",
       "awayEn": "Lotte Giants",
       "consensus": {
-       "over": 1.92,
-       "under": 1.83
+       "over": 1.85,
+       "under": 1.905
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.85,
+       "under": 1.97
       },
       "cutConsensus": {
-       "over": 0.1354,
-       "under": -0.0219
+       "over": 0.1027,
+       "under": 0.0184
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1027,
+       "under": 0.0508
       },
-      "cutAvg": 0.0567,
+      "cutAvg": 0.0605,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1518,30 +1518,30 @@
       "marketType": "h2h",
       "marketId": "6c50d77dfe43f06e12cf12463f193c4f",
       "sportKey": "baseball_kbo",
-      "books": 7,
+      "books": 11,
       "homeEn": "SSG Landers",
       "awayEn": "Kia Tigers",
       "consensus": {
-       "win": 2.09,
+       "win": 2.0,
        "draw": null,
-       "lose": 1.75
+       "lose": 1.8
       },
       "pinnacle": {
-       "win": null,
+       "win": 2.01,
        "draw": null,
-       "lose": null
+       "lose": 1.82
       },
       "cutConsensus": {
-       "win": 0.0957,
+       "win": 0.055,
        "draw": null,
-       "lose": 0.0571
+       "lose": 0.0833
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.0597,
        "draw": null,
-       "lose": null
+       "lose": 0.0934
       },
-      "cutAvg": 0.0764,
+      "cutAvg": 0.0692,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1593,26 +1593,26 @@
       "sportKey": "baseball_kbo",
       "point": 11.5,
       "betmanPoint": 9.0,
-      "books": 3,
+      "books": 5,
       "homeEn": "SSG Landers",
       "awayEn": "Kia Tigers",
       "consensus": {
        "over": 1.95,
-       "under": 1.83
+       "under": 1.85
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.96,
+       "under": 1.85
       },
       "cutConsensus": {
        "over": 0.1641,
-       "under": -0.0437
+       "under": -0.0324
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1684,
+       "under": -0.0324
       },
-      "cutAvg": 0.0602,
+      "cutAvg": 0.0658,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1646,30 +1646,30 @@
       "marketType": "h2h",
       "marketId": "6c50d77dfe43f06e12cf12463f193c4f",
       "sportKey": "baseball_kbo",
-      "books": 7,
+      "books": 11,
       "homeEn": "SSG Landers",
       "awayEn": "Kia Tigers",
       "consensus": {
-       "win": 2.09,
+       "win": 2.0,
        "draw": null,
-       "lose": 1.75
+       "lose": 1.8
       },
       "pinnacle": {
-       "win": null,
+       "win": 2.01,
        "draw": null,
-       "lose": null
+       "lose": 1.82
       },
       "cutConsensus": {
-       "win": -0.0526,
+       "win": -0.1,
        "draw": null,
-       "lose": -0.04
+       "lose": -0.0111
       },
       "cutPinnacle": {
-       "win": null,
+       "win": -0.0945,
        "draw": null,
-       "lose": null
+       "lose": 0.0
       },
-      "cutAvg": -0.0463,
+      "cutAvg": -0.0556,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1708,26 +1708,26 @@
       "sportKey": "baseball_kbo",
       "point": 11.5,
       "betmanPoint": 9.0,
-      "books": 3,
+      "books": 5,
       "homeEn": "SSG Landers",
       "awayEn": "Kia Tigers",
       "consensus": {
        "over": 1.95,
-       "under": 1.83
+       "under": 1.85
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.96,
+       "under": 1.85
       },
       "cutConsensus": {
        "over": 0.1846,
-       "under": -0.0765
+       "under": -0.0649
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1888,
+       "under": -0.0649
       },
-      "cutAvg": 0.054,
+      "cutAvg": 0.0598,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1748,30 +1748,30 @@
       "marketType": "h2h",
       "marketId": "71f8e74adaba379eb2248dc77f5484f9",
       "sportKey": "baseball_kbo",
-      "books": 7,
+      "books": 11,
       "homeEn": "NC Dinos",
       "awayEn": "LG Twins",
       "consensus": {
-       "win": 2.29,
+       "win": 2.3,
        "draw": null,
        "lose": 1.61
       },
       "pinnacle": {
-       "win": null,
+       "win": 2.32,
        "draw": null,
-       "lose": null
+       "lose": 1.62
       },
       "cutConsensus": {
-       "win": 0.0218,
+       "win": 0.0261,
        "draw": null,
        "lose": 0.0994
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.0345,
        "draw": null,
-       "lose": null
+       "lose": 0.1049
       },
-      "cutAvg": 0.0606,
+      "cutAvg": 0.0628,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1823,26 +1823,26 @@
       "sportKey": "baseball_kbo",
       "point": 10.0,
       "betmanPoint": 9.0,
-      "books": 3,
+      "books": 5,
       "homeEn": "NC Dinos",
       "awayEn": "LG Twins",
       "consensus": {
-       "over": 1.88,
-       "under": 1.85
+       "over": 1.87,
+       "under": 1.88
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.88,
+       "under": 1.94
       },
       "cutConsensus": {
-       "over": -0.0053,
-       "under": 0.1081
+       "over": -0.0107,
+       "under": 0.1223
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": -0.0053,
+       "under": 0.1495
       },
-      "cutAvg": 0.0514,
+      "cutAvg": 0.0558,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1876,30 +1876,30 @@
       "marketType": "h2h",
       "marketId": "71f8e74adaba379eb2248dc77f5484f9",
       "sportKey": "baseball_kbo",
-      "books": 7,
+      "books": 11,
       "homeEn": "NC Dinos",
       "awayEn": "LG Twins",
       "consensus": {
-       "win": 2.29,
+       "win": 2.3,
        "draw": null,
        "lose": 1.61
       },
       "pinnacle": {
-       "win": null,
+       "win": 2.32,
        "draw": null,
-       "lose": null
+       "lose": 1.62
       },
       "cutConsensus": {
-       "win": -0.0699,
+       "win": -0.0652,
        "draw": null,
        "lose": -0.0497
       },
       "cutPinnacle": {
-       "win": null,
+       "win": -0.056,
        "draw": null,
-       "lose": null
+       "lose": -0.0432
       },
-      "cutAvg": -0.0598,
+      "cutAvg": -0.0575,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1938,26 +1938,26 @@
       "sportKey": "baseball_kbo",
       "point": 10.0,
       "betmanPoint": 9.0,
-      "books": 3,
+      "books": 5,
       "homeEn": "NC Dinos",
       "awayEn": "LG Twins",
       "consensus": {
-       "over": 1.88,
-       "under": 1.85
+       "over": 1.87,
+       "under": 1.88
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.88,
+       "under": 1.94
       },
       "cutConsensus": {
-       "over": 0.1011,
-       "under": 0.0054
+       "over": 0.0963,
+       "under": 0.0213
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1011,
+       "under": 0.0515
       },
-      "cutAvg": 0.0532,
+      "cutAvg": 0.0588,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1978,30 +1978,30 @@
       "marketType": "h2h",
       "marketId": "c46ca2549dd0f759baabeb355ae60390",
       "sportKey": "baseball_kbo",
-      "books": 7,
+      "books": 11,
       "homeEn": "Hanwha Eagles",
       "awayEn": "KT Wiz",
       "consensus": {
-       "win": 2.19,
+       "win": 2.2,
        "draw": null,
        "lose": 1.66
       },
       "pinnacle": {
-       "win": null,
+       "win": 2.24,
        "draw": null,
-       "lose": null
+       "lose": 1.66
       },
       "cutConsensus": {
-       "win": 0.1187,
+       "win": 0.1227,
        "draw": null,
        "lose": 0.0241
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.1384,
        "draw": null,
-       "lose": null
+       "lose": 0.0241
       },
-      "cutAvg": 0.0714,
+      "cutAvg": 0.0734,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2051,28 +2051,28 @@
       "marketType": "totals",
       "marketId": "c46ca2549dd0f759baabeb355ae60390",
       "sportKey": "baseball_kbo",
-      "point": 9.5,
+      "point": 10.0,
       "betmanPoint": 9.0,
-      "books": 3,
+      "books": 4,
       "homeEn": "Hanwha Eagles",
       "awayEn": "KT Wiz",
       "consensus": {
-       "over": 1.83,
-       "under": 1.95
+       "over": 1.93,
+       "under": 1.845
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.94,
+       "under": 1.88
       },
       "cutConsensus": {
-       "over": 0.0874,
-       "under": 0.0462
+       "over": 0.1347,
+       "under": -0.0081
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1392,
+       "under": 0.0106
       },
-      "cutAvg": 0.0668,
+      "cutAvg": 0.0633,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2106,30 +2106,30 @@
       "marketType": "h2h",
       "marketId": "c46ca2549dd0f759baabeb355ae60390",
       "sportKey": "baseball_kbo",
-      "books": 7,
+      "books": 11,
       "homeEn": "Hanwha Eagles",
       "awayEn": "KT Wiz",
       "consensus": {
-       "win": 2.19,
+       "win": 2.2,
        "draw": null,
        "lose": 1.66
       },
       "pinnacle": {
-       "win": null,
+       "win": 2.24,
        "draw": null,
-       "lose": null
+       "lose": 1.66
       },
       "cutConsensus": {
-       "win": 0.0183,
+       "win": 0.0227,
        "draw": null,
        "lose": -0.1506
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.0402,
        "draw": null,
-       "lose": null
+       "lose": -0.1506
       },
-      "cutAvg": -0.0662,
+      "cutAvg": -0.064,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2166,28 +2166,28 @@
       "marketType": "totals",
       "marketId": "c46ca2549dd0f759baabeb355ae60390",
       "sportKey": "baseball_kbo",
-      "point": 9.5,
+      "point": 10.0,
       "betmanPoint": 9.0,
-      "books": 3,
+      "books": 4,
       "homeEn": "Hanwha Eagles",
       "awayEn": "KT Wiz",
       "consensus": {
-       "over": 1.83,
-       "under": 1.95
+       "over": 1.93,
+       "under": 1.845
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.94,
+       "under": 1.88
       },
       "cutConsensus": {
-       "over": 0.1093,
-       "under": 0.0205
+       "over": 0.1554,
+       "under": -0.0352
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1598,
+       "under": -0.016
       },
-      "cutAvg": 0.0649,
+      "cutAvg": 0.0601,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2771,30 +2771,30 @@
       "marketType": "h2h",
       "marketId": "b9a6e597fd597637efa24b92d51dda62",
       "sportKey": "soccer_spain_la_liga",
-      "books": 18,
+      "books": 19,
       "homeEn": "Rayo Vallecano",
       "awayEn": "Espanyol",
       "consensus": {
-       "win": 2.165,
+       "win": 2.2,
        "draw": 3.4,
-       "lose": 3.325
+       "lose": 3.25
       },
       "pinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 2.28,
+       "draw": 3.51,
+       "lose": 3.23
       },
       "cutConsensus": {
-       "win": 0.0577,
+       "win": 0.0727,
        "draw": 0.0735,
-       "lose": 0.0827
+       "lose": 0.0615
       },
       "cutPinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 0.1053,
+       "draw": 0.1026,
+       "lose": 0.0557
       },
-      "cutAvg": 0.0713,
+      "cutAvg": 0.0692,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2846,26 +2846,26 @@
       "sportKey": "soccer_spain_la_liga",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 12,
+      "books": 13,
       "homeEn": "Rayo Vallecano",
       "awayEn": "Espanyol",
       "consensus": {
-       "over": 1.94,
-       "under": 1.83
+       "over": 1.93,
+       "under": 1.85
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.95,
+       "under": 1.93
       },
       "cutConsensus": {
-       "over": 0.0979,
-       "under": 0.0109
+       "over": 0.0933,
+       "under": 0.0216
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1026,
+       "under": 0.0622
       },
-      "cutAvg": 0.0544,
+      "cutAvg": 0.0575,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2899,30 +2899,30 @@
       "marketType": "h2h",
       "marketId": "d6474326396cdd0e300afd0193c7c93d",
       "sportKey": "soccer_spain_la_liga",
-      "books": 18,
+      "books": 19,
       "homeEn": "Alavés",
       "awayEn": "Valencia",
       "consensus": {
-       "win": 1.85,
-       "draw": 3.325,
-       "lose": 4.675
+       "win": 1.83,
+       "draw": 3.35,
+       "lose": 4.8
       },
       "pinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 1.85,
+       "draw": 3.33,
+       "lose": 5.15
       },
       "cutConsensus": {
-       "win": 0.0324,
-       "draw": 0.0677,
-       "lose": 0.1658
+       "win": 0.0219,
+       "draw": 0.0746,
+       "lose": 0.1875
       },
       "cutPinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 0.0324,
+       "draw": 0.0691,
+       "lose": 0.2427
       },
-      "cutAvg": 0.0886,
+      "cutAvg": 0.0947,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2978,22 +2978,22 @@
       "homeEn": "Alavés",
       "awayEn": "Valencia",
       "consensus": {
-       "over": 2.145,
-       "under": 1.66
+       "over": 2.125,
+       "under": 1.675
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.2727,
-       "under": -0.247
+       "over": 0.2659,
+       "under": -0.2358
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0129,
+      "cutAvg": 0.0151,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3027,30 +3027,30 @@
       "marketType": "h2h",
       "marketId": "a11acb6f75593503cc0cf748c2f530c6",
       "sportKey": "soccer_netherlands_eredivisie",
-      "books": 19,
+      "books": 21,
       "homeEn": "Ajax",
       "awayEn": "Willem II",
       "consensus": {
-       "win": 1.13,
-       "draw": 8.3,
-       "lose": 15.0
+       "win": 1.11,
+       "draw": 9.0,
+       "lose": 16.0
       },
       "pinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 1.13,
+       "draw": 10.53,
+       "lose": 16.08
       },
       "cutConsensus": {
-       "win": 0.0265,
-       "draw": 0.1928,
-       "lose": 0.2667
+       "win": 0.009,
+       "draw": 0.2556,
+       "lose": 0.3125
       },
       "cutPinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 0.0265,
+       "draw": 0.3637,
+       "lose": 0.3159
       },
-      "cutAvg": 0.162,
+      "cutAvg": 0.1924,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3113,28 +3113,28 @@
       "marketType": "totals",
       "marketId": "a11acb6f75593503cc0cf748c2f530c6",
       "sportKey": "soccer_netherlands_eredivisie",
-      "point": 3.5,
+      "point": 4.5,
       "betmanPoint": 9.0,
-      "books": 5,
+      "books": 4,
       "homeEn": "Ajax",
       "awayEn": "Willem II",
       "consensus": {
-       "over": 1.56,
-       "under": 2.25
+       "over": 2.215,
+       "under": 1.64
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.0192,
-       "under": 0.08
+       "over": 0.3093,
+       "under": -0.2622
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0496,
+      "cutAvg": 0.0236,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3223,30 +3223,30 @@
       "marketType": "h2h",
       "marketId": "21d88940bcffa4f27418eaa338d9ed53",
       "sportKey": "soccer_efl_champ",
-      "books": 18,
+      "books": 19,
       "homeEn": "Bristol City",
       "awayEn": "Lincoln City",
       "consensus": {
-       "win": 1.985,
+       "win": 1.97,
        "draw": 3.5,
-       "lose": 3.56
+       "lose": 3.6
       },
       "pinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 2.0,
+       "draw": 3.62,
+       "lose": 3.79
       },
       "cutConsensus": {
-       "win": 0.0579,
+       "win": 0.0508,
        "draw": 0.0714,
-       "lose": 0.0871
+       "lose": 0.0972
       },
       "cutPinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 0.065,
+       "draw": 0.1022,
+       "lose": 0.1425
       },
-      "cutAvg": 0.0721,
+      "cutAvg": 0.0731,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3285,26 +3285,26 @@
       "sportKey": "soccer_efl_champ",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 11,
+      "books": 12,
       "homeEn": "Bristol City",
       "awayEn": "Lincoln City",
       "consensus": {
-       "over": 1.77,
-       "under": 1.94
+       "over": 1.81,
+       "under": 1.935
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.92,
+       "under": 1.95
       },
       "cutConsensus": {
-       "over": -0.0395,
-       "under": 0.1289
+       "over": -0.0166,
+       "under": 0.1266
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.0417,
+       "under": 0.1333
       },
-      "cutAvg": 0.0447,
+      "cutAvg": 0.055,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3338,30 +3338,30 @@
       "marketType": "h2h",
       "marketId": "bf9470f21ec6041779e159c45f581465",
       "sportKey": "soccer_efl_champ",
-      "books": 20,
+      "books": 21,
       "homeEn": "Middlesbrough",
       "awayEn": "Millwall",
       "consensus": {
-       "win": 1.6,
-       "draw": 4.11,
-       "lose": 4.915
+       "win": 1.56,
+       "draw": 4.2,
+       "lose": 5.15
       },
       "pinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 1.56,
+       "draw": 4.58,
+       "lose": 5.49
       },
       "cutConsensus": {
-       "win": 0.0625,
-       "draw": 0.0998,
-       "lose": 0.0437
+       "win": 0.0385,
+       "draw": 0.119,
+       "lose": 0.0874
       },
       "cutPinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 0.0385,
+       "draw": 0.1921,
+       "lose": 0.1439
       },
-      "cutAvg": 0.0687,
+      "cutAvg": 0.0816,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3405,7 +3405,7 @@
       "awayEn": "Millwall",
       "consensus": {
        "over": 1.6,
-       "under": 2.25
+       "under": 2.23
       },
       "pinnacle": {
        "over": null,
@@ -3413,13 +3413,13 @@
       },
       "cutConsensus": {
        "over": -0.3062,
-       "under": 0.3244
+       "under": 0.3184
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0091,
+      "cutAvg": 0.0061,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3644,30 +3644,30 @@
       "marketType": "h2h",
       "marketId": "0b57607f4a514ee24df31b0c2db9ddc5",
       "sportKey": "soccer_spain_la_liga",
-      "books": 18,
+      "books": 19,
       "homeEn": "Elche CF",
       "awayEn": "Real Madrid",
       "consensus": {
        "win": 11.0,
-       "draw": 6.75,
-       "lose": 1.24
+       "draw": 7.0,
+       "lose": 1.23
       },
       "pinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 10.93,
+       "draw": 7.19,
+       "lose": 1.23
       },
       "cutConsensus": {
        "win": 0.2909,
-       "draw": 0.2148,
-       "lose": 0.0161
+       "draw": 0.2429,
+       "lose": 0.0081
       },
       "cutPinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 0.2864,
+       "draw": 0.2629,
+       "lose": 0.0081
       },
-      "cutAvg": 0.1739,
+      "cutAvg": 0.1806,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3736,7 +3736,7 @@
       "homeEn": "Elche CF",
       "awayEn": "Real Madrid",
       "consensus": {
-       "over": 1.79,
+       "over": 1.78,
        "under": 2.0
       },
       "pinnacle": {
@@ -3744,14 +3744,14 @@
        "under": null
       },
       "cutConsensus": {
-       "over": 0.0112,
+       "over": 0.0056,
        "under": 0.105
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0581,
+      "cutAvg": 0.0553,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3785,30 +3785,30 @@
       "marketType": "h2h",
       "marketId": "a7766516991dd7352d0048c35da87265",
       "sportKey": "soccer_conmebol_copa_libertadores",
-      "books": 17,
+      "books": 18,
       "homeEn": "Platense",
       "awayEn": "Fluminense-RJ",
       "consensus": {
-       "win": 2.6,
-       "draw": 3.05,
-       "lose": 2.74
+       "win": 2.615,
+       "draw": 3.025,
+       "lose": 2.7
       },
       "pinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 2.74,
+       "draw": 2.99,
+       "lose": 2.82
       },
       "cutConsensus": {
-       "win": 0.05,
-       "draw": 0.0492,
-       "lose": 0.0876
+       "win": 0.0554,
+       "draw": 0.0413,
+       "lose": 0.0741
       },
       "cutPinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
+       "win": 0.0985,
+       "draw": 0.0301,
+       "lose": 0.1135
       },
-      "cutAvg": 0.0623,
+      "cutAvg": 0.0569,
       "timeDiffSec": 0,
       "matchedBy": "time"
      }
@@ -3852,7 +3852,7 @@
       "awayEn": "Fluminense-RJ",
       "consensus": {
        "over": 2.25,
-       "under": 1.595
+       "under": 1.59
       },
       "pinnacle": {
        "over": null,
@@ -3860,13 +3860,13 @@
       },
       "cutConsensus": {
        "over": 0.3244,
-       "under": -0.3103
+       "under": -0.3145
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0071,
+      "cutAvg": 0.005,
       "timeDiffSec": 0,
       "matchedBy": "time"
      }
@@ -5436,38 +5436,7 @@
      "status": "3",
      "score": null,
      "betType": "승무패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "aa0e2541144928205ab6d870953d42c2",
-      "sportKey": "soccer_spain_la_liga",
-      "books": 18,
-      "homeEn": "Villarreal",
-      "awayEn": "Real Betis",
-      "consensus": {
-       "win": 1.975,
-       "draw": 3.935,
-       "lose": 3.475
-      },
-      "pinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
-      },
-      "cutConsensus": {
-       "win": 0.0684,
-       "draw": 0.1105,
-       "lose": 0.0647
-      },
-      "cutPinnacle": {
-       "win": null,
-       "draw": null,
-       "lose": null
-      },
-      "cutAvg": 0.0812,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "marketType": "h2h"
     },
     {
      "kickoff": "2026-09-15T04:00:00+09:00",
@@ -5509,36 +5478,7 @@
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 2.33,
-     "under": 1.44,
-     "market": {
-      "marketType": "totals",
-      "marketId": "aa0e2541144928205ab6d870953d42c2",
-      "sportKey": "soccer_spain_la_liga",
-      "point": 2.5,
-      "betmanPoint": 9.0,
-      "books": 7,
-      "homeEn": "Villarreal",
-      "awayEn": "Real Betis",
-      "consensus": {
-       "over": 1.53,
-       "under": 2.35
-      },
-      "pinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutConsensus": {
-       "over": -0.5229,
-       "under": 0.3872
-      },
-      "cutPinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutAvg": -0.0679,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "under": 1.44
     },
     {
      "kickoff": "2026-09-15T04:00:00+09:00",
@@ -5569,30 +5509,30 @@
       "marketType": "h2h",
       "marketId": "2a828119814add28306d706ccb802ac3",
       "sportKey": "baseball_mlb",
-      "books": 21,
+      "books": 23,
       "homeEn": "Cleveland Guardians",
       "awayEn": "Chicago White Sox",
       "consensus": {
-       "win": 1.665,
+       "win": 1.63,
        "draw": null,
-       "lose": 2.25
+       "lose": 2.36
       },
       "pinnacle": {
-       "win": null,
+       "win": 1.63,
        "draw": null,
-       "lose": null
+       "lose": 2.46
       },
       "cutConsensus": {
-       "win": 0.0811,
+       "win": 0.0613,
        "draw": null,
-       "lose": 0.08
+       "lose": 0.1229
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.0613,
        "draw": null,
-       "lose": null
+       "lose": 0.1585
       },
-      "cutAvg": 0.0806,
+      "cutAvg": 0.0921,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -5648,22 +5588,22 @@
       "homeEn": "Cleveland Guardians",
       "awayEn": "Chicago White Sox",
       "consensus": {
-       "over": 1.97,
+       "over": 2.0,
        "under": 1.83
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 2.0,
+       "under": 1.88
       },
       "cutConsensus": {
-       "over": 0.1929,
+       "over": 0.205,
        "under": -0.0765
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.205,
+       "under": -0.0479
       },
-      "cutAvg": 0.0582,
+      "cutAvg": 0.0643,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -5697,30 +5637,30 @@
       "marketType": "h2h",
       "marketId": "fd0c792d70a4325cb16c03c7af9a089a",
       "sportKey": "baseball_mlb",
-      "books": 21,
+      "books": 22,
       "homeEn": "Cincinnati Reds",
       "awayEn": "Los Angeles Dodgers",
       "consensus": {
        "win": 2.8,
        "draw": null,
-       "lose": 1.465
+       "lose": 1.45
       },
       "pinnacle": {
-       "win": null,
+       "win": 2.87,
        "draw": null,
-       "lose": null
+       "lose": 1.49
       },
       "cutConsensus": {
        "win": 0.0714,
        "draw": null,
-       "lose": 0.0922
+       "lose": 0.0828
       },
       "cutPinnacle": {
-       "win": null,
+       "win": 0.0941,
        "draw": null,
-       "lose": null
+       "lose": 0.1074
       },
-      "cutAvg": 0.0818,
+      "cutAvg": 0.0771,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -5772,26 +5712,26 @@
       "sportKey": "baseball_mlb",
       "point": 7.5,
       "betmanPoint": 9.0,
-      "books": 12,
+      "books": 13,
       "homeEn": "Cincinnati Reds",
       "awayEn": "Los Angeles Dodgers",
       "consensus": {
        "over": 1.91,
-       "under": 1.875
+       "under": 1.9
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.97,
+       "under": 1.92
       },
       "cutConsensus": {
        "over": 0.0314,
-       "under": 0.104
+       "under": 0.1158
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.0609,
+       "under": 0.125
       },
-      "cutAvg": 0.0677,
+      "cutAvg": 0.0736,
       "timeDiffSec": 60,
       "matchedBy": "name"
      }
@@ -5813,22 +5753,22 @@
   }
  ],
  "marketSource": "the-odds-api.com",
- "marketFetchedAt": "2026-09-14T23:19:32.565101+09:00",
- "marketCreditsRemaining": 720,
+ "marketFetchedAt": "2026-09-15T06:30:57.245428+09:00",
+ "marketCreditsRemaining": 708,
  "marketRefreshIntervalMinutes": 630,
  "marketEstimatedCreditsPerRun": 12,
  "marketActiveLeagues": [
-  "라리가",
   "MLB",
   "KBO",
+  "라리가",
   "에레디비",
   "EFL챔",
   "코파리베"
  ],
  "marketFetchedLeagues": [
-  "라리가",
   "MLB",
   "KBO",
+  "라리가",
   "에레디비",
   "EFL챔",
   "코파리베"
