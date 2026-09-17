@@ -1,167 +1,311 @@
 {
  "source": "the-odds-api.com",
  "regions": "eu",
- "fetchedAt": "2026-09-17T00:52:58.911530+09:00",
+ "fetchedAt": "2026-09-17T09:47:45.688167+09:00",
  "accounts": 2,
  "accountOffset": 0,
- "creditsRemaining": 682,
+ "creditsRemaining": 672,
  "creditsByAccount": {
-  "account-1": 338,
-  "account-2": 344
+  "account-1": 332,
+  "account-2": 340
  },
  "refreshIntervalMinutes": 630,
  "maxSportsPerRun": 7,
- "estimatedCreditsPerRun": 6,
+ "estimatedCreditsPerRun": 10,
  "activeLeagues": [
-  "라리가",
   "MLB",
+  "NPB",
+  "KBO",
+  "라리가",
   "코파리베"
  ],
  "fetchedLeagues": [
-  "라리가",
   "MLB",
+  "NPB",
+  "KBO",
+  "라리가",
   "코파리베"
  ],
  "leagueFetchedAt": {
-  "라리가": "2026-09-17T00:52:58.911530+09:00",
-  "MLB": "2026-09-17T00:52:58.911530+09:00",
-  "코파리베": "2026-09-17T00:52:58.911530+09:00"
+  "라리가": "2026-09-17T09:47:45.688167+09:00",
+  "MLB": "2026-09-17T09:47:45.688167+09:00",
+  "코파리베": "2026-09-17T09:47:45.688167+09:00",
+  "NPB": "2026-09-17T09:47:45.688167+09:00",
+  "KBO": "2026-09-17T09:47:45.688167+09:00"
  },
  "leagues": {
-  "라리가": [
+  "MLB": [
    {
-    "id": "32e9c1d63aed0abb71f90e02f91f4e10",
-    "sportKey": "soccer_spain_la_liga",
-    "commenceUtc": "2026-09-16T17:00:00Z",
-    "homeEn": "Atlético Madrid",
-    "awayEn": "CA Osasuna",
+    "id": "c89612459b7a3827c4eefbe1f5627635",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-09-17T01:39:00Z",
+    "homeEn": "Los Angeles Angels",
+    "awayEn": "Seattle Mariners",
+    "books": 23,
+    "consensus": {
+     "home": 2.1,
+     "away": 1.775
+    },
+    "pinnacle": {
+     "home": 2.15,
+     "away": 1.81
+    },
+    "totals": {
+     "point": 8.0,
+     "consensus": {
+      "over": 1.94,
+      "under": 1.87
+     },
+     "pinnacle": {
+      "over": 1.96,
+      "under": 1.93
+     },
+     "books": 7
+    }
+   },
+   {
+    "id": "920a4bddf80a6d6579d31ead408e06d0",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-09-17T01:41:00Z",
+    "homeEn": "Arizona Diamondbacks",
+    "awayEn": "Miami Marlins",
+    "books": 23,
+    "consensus": {
+     "home": 1.72,
+     "away": 2.175
+    },
+    "pinnacle": {
+     "home": 1.74,
+     "away": 2.26
+    },
+    "totals": {
+     "point": 8.5,
+     "consensus": {
+      "over": 1.8,
+      "under": 2.05
+     },
+     "pinnacle": {},
+     "books": 9
+    }
+   },
+   {
+    "id": "72854b76ef219e56254f54563177c407",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-09-17T16:36:00Z",
+    "homeEn": "Pittsburgh Pirates",
+    "awayEn": "Milwaukee Brewers",
+    "books": 10,
+    "consensus": {
+     "home": 2.09,
+     "away": 1.735
+    },
+    "pinnacle": {},
+    "totals": {
+     "point": 9.5,
+     "consensus": {
+      "over": 2.1,
+      "under": 1.75
+     },
+     "pinnacle": {},
+     "books": 3
+    }
+   },
+   {
+    "id": "0d06cbc7e9e97876c9db1d264ac9c762",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-09-17T16:41:00Z",
+    "homeEn": "Cincinnati Reds",
+    "awayEn": "Los Angeles Dodgers",
+    "books": 10,
+    "consensus": {
+     "home": 2.375,
+     "away": 1.575
+    },
+    "pinnacle": {},
+    "totals": {
+     "point": 9.5,
+     "consensus": {
+      "over": 1.83,
+      "under": 2.0
+     },
+     "pinnacle": {},
+     "books": 5
+    }
+   },
+   {
+    "id": "a62a35a880cc2c7bc487947c5d3afe74",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-09-17T17:10:00Z",
+    "homeEn": "Tampa Bay Rays",
+    "awayEn": "Athletics",
     "books": 18,
     "consensus": {
      "home": 1.36,
-     "draw": 5.0,
-     "away": 9.25
+     "away": 3.2
     },
     "pinnacle": {
-     "home": 1.36,
-     "away": 9.9,
-     "draw": 5.04
+     "away": 3.35,
+     "home": 1.37
     },
     "totals": {
-     "point": 2.5,
+     "point": 7.5,
      "consensus": {
-      "over": 1.7,
-      "under": 2.12
+      "over": 1.87,
+      "under": 1.95
      },
-     "pinnacle": {},
-     "books": 11
+     "pinnacle": {
+      "over": 1.89,
+      "under": 1.98
+     },
+     "books": 10
     }
    },
    {
-    "id": "e8d1b34cb3e1f52f67538ad554811b56",
-    "sportKey": "soccer_spain_la_liga",
-    "commenceUtc": "2026-09-16T17:00:00Z",
-    "homeEn": "Deportivo La Coruña",
-    "awayEn": "Sevilla",
-    "books": 19,
+    "id": "0e8da1c4233051485aceb65b1a5c417a",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-09-17T19:10:00Z",
+    "homeEn": "Colorado Rockies",
+    "awayEn": "San Diego Padres",
+    "books": 16,
     "consensus": {
-     "home": 2.65,
-     "draw": 3.02,
-     "away": 2.9
+     "home": 2.35,
+     "away": 1.61
     },
     "pinnacle": {
-     "home": 2.71,
-     "away": 3.0,
-     "draw": 3.08
+     "home": 2.43,
+     "away": 1.62
     },
     "totals": {
-     "point": 2.5,
+     "point": 10.5,
      "consensus": {
-      "over": 2.2,
-      "under": 1.66
+      "over": 1.805,
+      "under": 2.04
      },
      "pinnacle": {},
-     "books": 11
+     "books": 4
     }
    },
    {
-    "id": "4ef67376b662c2859f73bde7f7210388",
-    "sportKey": "soccer_spain_la_liga",
-    "commenceUtc": "2026-09-16T19:30:00Z",
-    "homeEn": "Levante",
-    "awayEn": "Athletic Bilbao",
-    "books": 19,
+    "id": "b9c3b50472005c67c30de323cd8a5396",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-09-17T23:16:00Z",
+    "homeEn": "Houston Astros",
+    "awayEn": "Kansas City Royals",
+    "books": 8,
     "consensus": {
-     "home": 3.4,
-     "draw": 3.5,
+     "home": 1.66,
+     "away": 2.2
+    },
+    "pinnacle": {},
+    "totals": {
+     "point": 8.5,
+     "consensus": {
+      "over": 1.76,
+      "under": 2.13
+     },
+     "pinnacle": {},
+     "books": 2
+    }
+   },
+   {
+    "id": "86a852d517d266c4d6c74e570caffa06",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-09-17T23:16:00Z",
+    "homeEn": "New York Mets",
+    "awayEn": "Philadelphia Phillies",
+    "books": 9,
+    "consensus": {
+     "home": 1.68,
      "away": 2.16
     },
     "pinnacle": {
-     "away": 2.17,
-     "home": 3.5,
-     "draw": 3.56
+     "home": 1.76,
+     "away": 2.19
     },
     "totals": {
-     "point": 2.5,
+     "point": 8.5,
      "consensus": {
-      "over": 1.79,
-      "under": 2.06
+      "over": 2.055,
+      "under": 1.82
      },
-     "pinnacle": {
-      "over": 1.79,
-      "under": 2.14
-     },
-     "books": 12
+     "pinnacle": {},
+     "books": 2
     }
    },
    {
-    "id": "4a3400b0763bcc367171537f40b27a4f",
-    "sportKey": "soccer_spain_la_liga",
-    "commenceUtc": "2026-09-16T19:30:00Z",
-    "homeEn": "Barcelona",
-    "awayEn": "Real Racing Club de Santander",
-    "books": 19,
+    "id": "da77890c919d4d7e049b450184fffb24",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-09-17T23:41:00Z",
+    "homeEn": "Chicago White Sox",
+    "awayEn": "Detroit Tigers",
+    "books": 9,
     "consensus": {
-     "home": 1.08,
-     "draw": 13.75,
-     "away": 18.5
+     "home": 1.74,
+     "away": 2.08
     },
     "pinnacle": {
-     "home": 1.08,
-     "away": 23.04,
-     "draw": 13.27
+     "home": 1.79,
+     "away": 2.15
     },
     "totals": {
-     "point": 4.5,
+     "point": 8.5,
      "consensus": {
-      "over": 1.71,
-      "under": 2.11
+      "over": 1.96,
+      "under": 1.9
      },
-     "pinnacle": {},
-     "books": 8
+     "pinnacle": {
+      "over": 1.99,
+      "under": 1.88
+     },
+     "books": 5
     }
    },
+   {
+    "id": "7147180b37c36caf2b4003b82c2d1afa",
+    "sportKey": "baseball_mlb",
+    "commenceUtc": "2026-09-18T01:39:00Z",
+    "homeEn": "Los Angeles Angels",
+    "awayEn": "Minnesota Twins",
+    "books": 8,
+    "consensus": {
+     "home": 2.1,
+     "away": 1.72
+    },
+    "pinnacle": {},
+    "totals": {
+     "point": 8.5,
+     "consensus": {
+      "over": 1.99,
+      "under": 1.83
+     },
+     "pinnacle": {},
+     "books": 4
+    }
+   }
+  ],
+  "라리가": [
    {
     "id": "7f644eca099054612d9a7e7e5d8787da",
     "sportKey": "soccer_spain_la_liga",
     "commenceUtc": "2026-09-17T17:00:00Z",
     "homeEn": "Real Betis",
     "awayEn": "Getafe",
-    "books": 19,
+    "books": 20,
     "consensus": {
-     "home": 1.67,
+     "home": 1.655,
      "draw": 3.75,
-     "away": 5.5
+     "away": 5.575
     },
     "pinnacle": {
      "away": 5.69,
      "home": 1.68,
-     "draw": 3.77
+     "draw": 3.76
     },
     "totals": {
      "point": 2.5,
      "consensus": {
       "over": 2.12,
-      "under": 1.7
+      "under": 1.71
      },
      "pinnacle": {},
      "books": 11
@@ -173,22 +317,22 @@
     "commenceUtc": "2026-09-17T19:30:00Z",
     "homeEn": "Málaga",
     "awayEn": "Villarreal",
-    "books": 19,
+    "books": 20,
     "consensus": {
-     "home": 3.55,
-     "draw": 3.75,
-     "away": 1.98
+     "home": 3.62,
+     "draw": 3.775,
+     "away": 1.955
     },
     "pinnacle": {
-     "home": 3.57,
-     "away": 1.99,
+     "home": 3.59,
+     "away": 1.98,
      "draw": 3.96
     },
     "totals": {
      "point": 2.5,
      "consensus": {
       "over": 1.61,
-      "under": 2.25
+      "under": 2.28
      },
      "pinnacle": {},
      "books": 9
@@ -200,26 +344,26 @@
     "commenceUtc": "2026-09-18T19:00:00Z",
     "homeEn": "Espanyol",
     "awayEn": "Elche CF",
-    "books": 18,
+    "books": 20,
     "consensus": {
-     "home": 1.85,
-     "draw": 3.45,
-     "away": 4.43
+     "home": 1.825,
+     "draw": 3.5,
+     "away": 4.4
     },
     "pinnacle": {
-     "away": 4.66,
-     "home": 1.83,
-     "draw": 3.4
+     "away": 4.65,
+     "home": 1.81,
+     "draw": 3.48
     },
     "totals": {
      "point": 2.5,
      "consensus": {
-      "over": 1.89,
-      "under": 1.895
+      "over": 1.845,
+      "under": 1.945
      },
      "pinnacle": {
-      "over": 1.92,
-      "under": 1.92
+      "over": 1.84,
+      "under": 2.0
      },
      "books": 12
     }
@@ -230,25 +374,25 @@
     "commenceUtc": "2026-09-19T12:00:00Z",
     "homeEn": "CA Osasuna",
     "awayEn": "Rayo Vallecano",
-    "books": 17,
+    "books": 19,
     "consensus": {
-     "home": 2.25,
+     "home": 2.28,
      "draw": 3.3,
-     "away": 3.23
+     "away": 3.1
     },
     "pinnacle": {
-     "home": 2.26,
-     "away": 3.23,
-     "draw": 3.35
+     "home": 2.34,
+     "away": 3.1,
+     "draw": 3.33
     },
     "totals": {
      "point": 2.5,
      "consensus": {
-      "over": 2.045,
+      "over": 2.05,
       "under": 1.75
      },
      "pinnacle": {},
-     "books": 10
+     "books": 11
     }
    },
    {
@@ -257,28 +401,28 @@
     "commenceUtc": "2026-09-19T14:15:00Z",
     "homeEn": "Athletic Bilbao",
     "awayEn": "Alavés",
-    "books": 17,
+    "books": 19,
     "consensus": {
      "home": 1.64,
-     "draw": 3.85,
+     "draw": 3.94,
      "away": 5.2
     },
     "pinnacle": {
-     "away": 5.34,
-     "home": 1.62,
-     "draw": 3.97
+     "away": 5.43,
+     "home": 1.61,
+     "draw": 3.98
     },
     "totals": {
      "point": 2.5,
      "consensus": {
-      "over": 1.95,
+      "over": 1.965,
       "under": 1.83
      },
      "pinnacle": {
       "over": 2.02,
       "under": 1.83
      },
-     "books": 11
+     "books": 12
     }
    },
    {
@@ -287,25 +431,25 @@
     "commenceUtc": "2026-09-19T16:30:00Z",
     "homeEn": "Celta Vigo",
     "awayEn": "Real Racing Club de Santander",
-    "books": 17,
+    "books": 18,
     "consensus": {
-     "home": 1.79,
-     "draw": 3.9,
-     "away": 4.06
+     "home": 1.795,
+     "draw": 3.915,
+     "away": 4.0
     },
     "pinnacle": {
-     "home": 1.79,
-     "away": 4.05,
-     "draw": 4.02
+     "home": 1.82,
+     "away": 3.94,
+     "draw": 4.01
     },
     "totals": {
      "point": 2.5,
      "consensus": {
-      "over": 1.65,
+      "over": 1.645,
       "under": 2.2
      },
      "pinnacle": {},
-     "books": 9
+     "books": 8
     }
    },
    {
@@ -314,28 +458,25 @@
     "commenceUtc": "2026-09-19T19:00:00Z",
     "homeEn": "Sevilla",
     "awayEn": "Barcelona",
-    "books": 17,
+    "books": 18,
     "consensus": {
-     "home": 12.0,
-     "draw": 6.56,
-     "away": 1.22
+     "home": 12.75,
+     "draw": 7.05,
+     "away": 1.19
     },
     "pinnacle": {
-     "away": 1.21,
-     "home": 12.29,
-     "draw": 6.56
+     "away": 1.18,
+     "home": 13.89,
+     "draw": 7.25
     },
     "totals": {
      "point": 3.5,
      "consensus": {
-      "over": 1.82,
-      "under": 1.95
+      "over": 1.74,
+      "under": 2.06
      },
-     "pinnacle": {
-      "over": 1.87,
-      "under": 1.95
-     },
-     "books": 9
+     "pinnacle": {},
+     "books": 7
     }
    },
    {
@@ -344,11 +485,11 @@
     "commenceUtc": "2026-09-20T12:00:00Z",
     "homeEn": "Getafe",
     "awayEn": "Málaga",
-    "books": 17,
+    "books": 18,
     "consensus": {
-     "home": 2.12,
+     "home": 2.11,
      "draw": 3.0,
-     "away": 3.92
+     "away": 3.895
     },
     "pinnacle": {
      "home": 2.13,
@@ -358,7 +499,7 @@
     "totals": {
      "point": 1.5,
      "consensus": {
-      "over": 1.49,
+      "over": 1.5,
       "under": 2.54
      },
      "pinnacle": {},
@@ -371,25 +512,25 @@
     "commenceUtc": "2026-09-20T14:15:00Z",
     "homeEn": "Atlético Madrid",
     "awayEn": "Real Madrid",
-    "books": 17,
+    "books": 18,
     "consensus": {
-     "home": 4.05,
-     "draw": 3.85,
-     "away": 1.83
+     "home": 3.725,
+     "draw": 3.78,
+     "away": 1.905
     },
     "pinnacle": {
-     "home": 4.22,
-     "away": 1.81,
-     "draw": 3.81
+     "home": 3.66,
+     "away": 1.95,
+     "draw": 3.76
     },
     "totals": {
      "point": 3.5,
      "consensus": {
-      "over": 2.075,
+      "over": 2.07,
       "under": 1.72
      },
      "pinnacle": {},
-     "books": 8
+     "books": 7
     }
    },
    {
@@ -400,24 +541,24 @@
     "awayEn": "Real Betis",
     "books": 17,
     "consensus": {
-     "home": 2.84,
+     "home": 2.88,
      "draw": 3.4,
-     "away": 2.45
+     "away": 2.38
     },
     "pinnacle": {
-     "home": 2.84,
-     "away": 2.46,
-     "draw": 3.44
+     "home": 2.92,
+     "away": 2.38,
+     "draw": 3.48
     },
     "totals": {
      "point": 2.5,
      "consensus": {
-      "over": 1.93,
+      "over": 1.92,
       "under": 1.88
      },
      "pinnacle": {
-      "over": 1.92,
-      "under": 1.92
+      "over": 1.91,
+      "under": 1.93
      },
      "books": 11
     }
@@ -428,11 +569,11 @@
     "commenceUtc": "2026-09-20T16:30:00Z",
     "homeEn": "Villarreal",
     "awayEn": "Levante",
-    "books": 17,
+    "books": 18,
     "consensus": {
      "home": 1.56,
      "draw": 4.35,
-     "away": 5.32
+     "away": 5.28
     },
     "pinnacle": {
      "away": 5.24,
@@ -455,9 +596,9 @@
     "commenceUtc": "2026-09-20T19:00:00Z",
     "homeEn": "Valencia",
     "awayEn": "Real Sociedad",
-    "books": 17,
+    "books": 18,
     "consensus": {
-     "home": 2.77,
+     "home": 2.76,
      "draw": 3.36,
      "away": 2.5
     },
@@ -480,477 +621,7 @@
     }
    }
   ],
-  "MLB": [
-   {
-    "id": "97eacfe4e498d0be4c1fb28f0dccad61",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-16T17:11:00Z",
-    "homeEn": "Cleveland Guardians",
-    "awayEn": "Chicago White Sox",
-    "books": 23,
-    "consensus": {
-     "home": 1.635,
-     "away": 2.33
-    },
-    "pinnacle": {
-     "away": 2.42,
-     "home": 1.65
-    },
-    "totals": {
-     "point": 7.0,
-     "consensus": {
-      "over": 1.91,
-      "under": 1.91
-     },
-     "pinnacle": {
-      "over": 1.93,
-      "under": 1.96
-     },
-     "books": 9
-    }
-   },
-   {
-    "id": "6e2eb2cc19ebcdb2b0405dff792ab529",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-16T17:16:00Z",
-    "homeEn": "St. Louis Cardinals",
-    "awayEn": "San Francisco Giants",
-    "books": 23,
-    "consensus": {
-     "home": 1.635,
-     "away": 2.335
-    },
-    "pinnacle": {
-     "away": 2.38,
-     "home": 1.67
-    },
-    "totals": {
-     "point": 8.0,
-     "consensus": {
-      "over": 1.87,
-      "under": 1.95
-     },
-     "pinnacle": {
-      "over": 1.9,
-      "under": 1.99
-     },
-     "books": 8
-    }
-   },
-   {
-    "id": "d2d5b9cc47ff975b91780b6cb7753dae",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-16T17:41:00Z",
-    "homeEn": "Minnesota Twins",
-    "awayEn": "New York Yankees",
-    "books": 23,
-    "consensus": {
-     "home": 2.29,
-     "away": 1.655
-    },
-    "pinnacle": {
-     "home": 2.38,
-     "away": 1.66
-    },
-    "totals": {
-     "point": 8.0,
-     "consensus": {
-      "over": 1.91,
-      "under": 1.91
-     },
-     "pinnacle": {
-      "over": 1.93,
-      "under": 1.96
-     },
-     "books": 9
-    }
-   },
-   {
-    "id": "fa74757372f1d4cb43bd1510e5ed1213",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-16T19:08:00Z",
-    "homeEn": "Toronto Blue Jays",
-    "awayEn": "Detroit Tigers",
-    "books": 23,
-    "consensus": {
-     "home": 1.76,
-     "away": 2.1
-    },
-    "pinnacle": {
-     "away": 2.19,
-     "home": 1.78
-    },
-    "totals": {
-     "point": 8.5,
-     "consensus": {
-      "over": 1.95,
-      "under": 1.87
-     },
-     "pinnacle": {
-      "over": 2.0,
-      "under": 1.89
-     },
-     "books": 14
-    }
-   },
-   {
-    "id": "4ca666086b60718790a98a4f826b262b",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-16T22:41:00Z",
-    "homeEn": "Tampa Bay Rays",
-    "awayEn": "Athletics",
-    "books": 23,
-    "consensus": {
-     "home": 1.555,
-     "away": 2.51
-    },
-    "pinnacle": {
-     "away": 2.58,
-     "home": 1.58
-    },
-    "totals": {
-     "point": 8.0,
-     "consensus": {
-      "over": 1.95,
-      "under": 1.87
-     },
-     "pinnacle": {
-      "over": 1.97,
-      "under": 1.92
-     },
-     "books": 9
-    }
-   },
-   {
-    "id": "c7ac677f643c3e4fb40bee1678ce2808",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-16T22:41:00Z",
-    "homeEn": "Cincinnati Reds",
-    "awayEn": "Los Angeles Dodgers",
-    "books": 22,
-    "consensus": {
-     "home": 2.75,
-     "away": 1.47
-    },
-    "pinnacle": {
-     "home": 2.85,
-     "away": 1.49
-    },
-    "totals": {
-     "point": 8.5,
-     "consensus": {
-      "over": 1.955,
-      "under": 1.85
-     },
-     "pinnacle": {},
-     "books": 12
-    }
-   },
-   {
-    "id": "6f257402794ae4eb6946433978963890",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-16T22:41:00Z",
-    "homeEn": "Pittsburgh Pirates",
-    "awayEn": "Milwaukee Brewers",
-    "books": 23,
-    "consensus": {
-     "home": 2.08,
-     "away": 1.77
-    },
-    "pinnacle": {
-     "away": 1.85,
-     "home": 2.09
-    },
-    "totals": {
-     "point": 7.5,
-     "consensus": {
-      "over": 2.0,
-      "under": 1.835
-     },
-     "pinnacle": {
-      "over": 2.04,
-      "under": 1.85
-     },
-     "books": 14
-    }
-   },
-   {
-    "id": "f915c125897694acec2531632a1231ff",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-16T22:46:00Z",
-    "homeEn": "Washington Nationals",
-    "awayEn": "Philadelphia Phillies",
-    "books": 23,
-    "consensus": {
-     "home": 2.6,
-     "away": 1.51
-    },
-    "pinnacle": {
-     "away": 1.53,
-     "home": 2.72
-    },
-    "totals": {
-     "point": 9.0,
-     "consensus": {
-      "over": 1.95,
-      "under": 1.87
-     },
-     "pinnacle": {
-      "over": 2.0,
-      "under": 1.89
-     },
-     "books": 9
-    }
-   },
-   {
-    "id": "6fe8bf504f0d29cb49e7ff60165d23c0",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-16T23:11:00Z",
-    "homeEn": "New York Mets",
-    "awayEn": "Baltimore Orioles",
-    "books": 23,
-    "consensus": {
-     "home": 1.76,
-     "away": 2.12
-    },
-    "pinnacle": {
-     "away": 2.19,
-     "home": 1.78
-    },
-    "totals": {
-     "point": 9.0,
-     "consensus": {
-      "over": 1.95,
-      "under": 1.85
-     },
-     "pinnacle": {
-      "over": 2.04,
-      "under": 1.85
-     },
-     "books": 9
-    }
-   },
-   {
-    "id": "217d4f8030b8b23eb31ba36602522199",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-16T23:41:00Z",
-    "homeEn": "Chicago Cubs",
-    "awayEn": "Atlanta Braves",
-    "books": 23,
-    "consensus": {
-     "home": 1.65,
-     "away": 2.28
-    },
-    "pinnacle": {
-     "away": 2.4,
-     "home": 1.65
-    },
-    "totals": {
-     "point": 7.5,
-     "consensus": {
-      "over": 1.91,
-      "under": 1.91
-     },
-     "pinnacle": {
-      "over": 1.99,
-      "under": 1.9
-     },
-     "books": 14
-    }
-   },
-   {
-    "id": "080879497a1aa1cc2674f615e55cc797",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-17T00:05:00Z",
-    "homeEn": "Texas Rangers",
-    "awayEn": "Boston Red Sox",
-    "books": 23,
-    "consensus": {
-     "home": 1.91,
-     "away": 1.92
-    },
-    "pinnacle": {
-     "away": 1.95,
-     "home": 1.97
-    },
-    "totals": {
-     "point": 8.0,
-     "consensus": {
-      "over": 1.93,
-      "under": 1.89
-     },
-     "pinnacle": {
-      "over": 1.94,
-      "under": 1.94
-     },
-     "books": 9
-    }
-   },
-   {
-    "id": "2b04077cb9adae8feab7069d48087511",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-17T00:11:00Z",
-    "homeEn": "Houston Astros",
-    "awayEn": "Kansas City Royals",
-    "books": 23,
-    "consensus": {
-     "home": 1.615,
-     "away": 2.375
-    },
-    "pinnacle": {
-     "home": 1.63,
-     "away": 2.45
-    },
-    "totals": {
-     "point": 9.0,
-     "consensus": {
-      "over": 1.95,
-      "under": 1.87
-     },
-     "pinnacle": {
-      "over": 1.99,
-      "under": 1.9
-     },
-     "books": 9
-    }
-   },
-   {
-    "id": "2a23efa19ee00d93f95ffa8a0d655216",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-17T00:41:00Z",
-    "homeEn": "Colorado Rockies",
-    "awayEn": "San Diego Padres",
-    "books": 23,
-    "consensus": {
-     "home": 2.4,
-     "away": 1.605
-    },
-    "pinnacle": {
-     "home": 2.49,
-     "away": 1.61
-    },
-    "totals": {
-     "point": 11.0,
-     "consensus": {
-      "over": 1.835,
-      "under": 1.99
-     },
-     "pinnacle": {
-      "over": 1.88,
-      "under": 2.01
-     },
-     "books": 8
-    }
-   },
-   {
-    "id": "c89612459b7a3827c4eefbe1f5627635",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-17T01:39:00Z",
-    "homeEn": "Los Angeles Angels",
-    "awayEn": "Seattle Mariners",
-    "books": 23,
-    "consensus": {
-     "home": 2.125,
-     "away": 1.75
-    },
-    "pinnacle": {
-     "home": 2.2,
-     "away": 1.77
-    },
-    "totals": {
-     "point": 7.5,
-     "consensus": {
-      "over": 1.87,
-      "under": 2.0
-     },
-     "pinnacle": {
-      "over": 1.88,
-      "under": 2.01
-     },
-     "books": 10
-    }
-   },
-   {
-    "id": "920a4bddf80a6d6579d31ead408e06d0",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-09-17T01:41:00Z",
-    "homeEn": "Arizona Diamondbacks",
-    "awayEn": "Miami Marlins",
-    "books": 22,
-    "consensus": {
-     "home": 1.76,
-     "away": 2.12
-    },
-    "pinnacle": {
-     "home": 1.76,
-     "away": 2.21
-    },
-    "totals": {
-     "point": 9.0,
-     "consensus": {
-      "over": 1.95,
-      "under": 1.86
-     },
-     "pinnacle": {},
-     "books": 8
-    }
-   }
-  ],
   "코파리베": [
-   {
-    "id": "67fcd115325de142c97e0d4999005a13",
-    "sportKey": "soccer_conmebol_copa_libertadores",
-    "commenceUtc": "2026-09-16T22:00:00Z",
-    "homeEn": "LDU Quito",
-    "awayEn": "Palmeiras-SP",
-    "books": 20,
-    "consensus": {
-     "home": 2.53,
-     "draw": 2.935,
-     "away": 2.9
-    },
-    "pinnacle": {
-     "home": 2.69,
-     "away": 3.0,
-     "draw": 3.0
-    },
-    "totals": {
-     "point": 2.5,
-     "consensus": {
-      "over": 2.45,
-      "under": 1.515
-     },
-     "pinnacle": {},
-     "books": 8
-    }
-   },
-   {
-    "id": "d808e576d838e0739ba2dc69bd02a4b4",
-    "sportKey": "soccer_conmebol_copa_libertadores",
-    "commenceUtc": "2026-09-17T00:30:00Z",
-    "homeEn": "Corinthians-SP",
-    "awayEn": "Estudiantes La Plata",
-    "books": 20,
-    "consensus": {
-     "home": 2.005,
-     "draw": 2.9,
-     "away": 4.25
-    },
-    "pinnacle": {
-     "home": 2.12,
-     "away": 4.48,
-     "draw": 2.9
-    },
-    "totals": {
-     "point": 1.5,
-     "consensus": {
-      "over": 1.69,
-      "under": 2.13
-     },
-     "pinnacle": {},
-     "books": 9
-    }
-   },
    {
     "id": "9f51bed6dc9cb798333ea483c49ec233",
     "sportKey": "soccer_conmebol_copa_libertadores",
@@ -959,23 +630,214 @@
     "awayEn": "Independiente del Valle",
     "books": 18,
     "consensus": {
-     "home": 1.35,
-     "draw": 4.8,
+     "home": 1.355,
+     "draw": 4.85,
      "away": 7.675
     },
     "pinnacle": {
-     "home": 1.34,
-     "away": 8.14,
-     "draw": 5.09
+     "home": 1.36,
+     "away": 8.33,
+     "draw": 5.17
     },
     "totals": {
      "point": 2.5,
      "consensus": {
-      "over": 1.68,
+      "over": 1.67,
       "under": 2.11
      },
      "pinnacle": {},
      "books": 9
+    }
+   }
+  ],
+  "NPB": [
+   {
+    "id": "56a38f64f18d6f5894608a34a117ae3a",
+    "sportKey": "baseball_npb",
+    "commenceUtc": "2026-09-17T09:00:00Z",
+    "homeEn": "Chiba Lotte Marines",
+    "awayEn": "Tohoku Rakuten Golden Eagles",
+    "books": 13,
+    "consensus": {
+     "home": 2.05,
+     "away": 1.77
+    },
+    "pinnacle": {
+     "home": 2.12,
+     "away": 1.79
+    },
+    "totals": {
+     "point": 8.0,
+     "consensus": {
+      "over": 1.9,
+      "under": 1.885
+     },
+     "pinnacle": {},
+     "books": 4
+    }
+   },
+   {
+    "id": "13ee0c18ab7840be48efe2cd61c2d482",
+    "sportKey": "baseball_npb",
+    "commenceUtc": "2026-09-17T09:00:00Z",
+    "homeEn": "Orix Buffaloes",
+    "awayEn": "Fukuoka SoftBank Hawks",
+    "books": 13,
+    "consensus": {
+     "home": 2.25,
+     "away": 1.62
+    },
+    "pinnacle": {
+     "away": 1.65,
+     "home": 2.37
+    },
+    "totals": {
+     "point": 7.0,
+     "consensus": {
+      "over": 1.83,
+      "under": 2.0
+     },
+     "pinnacle": {
+      "over": 1.86,
+      "under": 2.0
+     },
+     "books": 5
+    }
+   },
+   {
+    "id": "d7641d21a6d968577ce108bd5dfe3a07",
+    "sportKey": "baseball_npb",
+    "commenceUtc": "2026-09-17T09:00:00Z",
+    "homeEn": "Hanshin Tigers",
+    "awayEn": "Hiroshima Toyo Carp",
+    "books": 13,
+    "consensus": {
+     "home": 1.38,
+     "away": 3.0
+    },
+    "pinnacle": {
+     "home": 1.42,
+     "away": 3.03
+    },
+    "totals": {
+     "point": 5.5,
+     "consensus": {
+      "over": 2.0,
+      "under": 1.8
+     },
+     "pinnacle": {
+      "over": 2.05,
+      "under": 1.81
+     },
+     "books": 7
+    }
+   },
+   {
+    "id": "f655048f250678d45f560a1973db4ac7",
+    "sportKey": "baseball_npb",
+    "commenceUtc": "2026-09-17T09:00:00Z",
+    "homeEn": "Hokkaido Nippon-Ham Fighters",
+    "awayEn": "Saitama Seibu Lions",
+    "books": 13,
+    "consensus": {
+     "home": 1.45,
+     "away": 2.69
+    },
+    "pinnacle": {
+     "home": 1.5,
+     "away": 2.74
+    },
+    "totals": {
+     "point": 7.5,
+     "consensus": {
+      "over": 1.825,
+      "under": 1.94
+     },
+     "pinnacle": {},
+     "books": 6
+    }
+   },
+   {
+    "id": "36e3e1dc56101d3e3cf0d66bd7215594",
+    "sportKey": "baseball_npb",
+    "commenceUtc": "2026-09-17T09:00:00Z",
+    "homeEn": "Tokyo Yakult Swallows",
+    "awayEn": "Yokohama DeNA BayStars",
+    "books": 13,
+    "consensus": {
+     "home": 2.3,
+     "away": 1.62
+    },
+    "pinnacle": {
+     "home": 2.34,
+     "away": 1.66
+    },
+    "totals": {
+     "point": 7.0,
+     "consensus": {
+      "over": 1.83,
+      "under": 2.0
+     },
+     "pinnacle": {
+      "over": 1.85,
+      "under": 2.0
+     },
+     "books": 5
+    }
+   }
+  ],
+  "KBO": [
+   {
+    "id": "dead2b773d555dfe1488cba99ced0c0d",
+    "sportKey": "baseball_kbo",
+    "commenceUtc": "2026-09-17T09:30:00Z",
+    "homeEn": "Kia Tigers",
+    "awayEn": "Kiwoom Heroes",
+    "books": 11,
+    "consensus": {
+     "home": 1.55,
+     "away": 2.42
+    },
+    "pinnacle": {
+     "home": 1.57,
+     "away": 2.43
+    },
+    "totals": {
+     "point": 8.0,
+     "consensus": {
+      "over": 1.86,
+      "under": 1.92
+     },
+     "pinnacle": {
+      "over": 1.86,
+      "under": 1.95
+     },
+     "books": 5
+    }
+   },
+   {
+    "id": "c490ad8f1209fbd4d52a35e4d7ecfba2",
+    "sportKey": "baseball_kbo",
+    "commenceUtc": "2026-09-17T09:30:00Z",
+    "homeEn": "NC Dinos",
+    "awayEn": "SSG Landers",
+    "books": 11,
+    "consensus": {
+     "home": 1.43,
+     "away": 2.79
+    },
+    "pinnacle": {
+     "home": 1.45,
+     "away": 2.79
+    },
+    "totals": {
+     "point": 9.0,
+     "consensus": {
+      "over": 1.88,
+      "under": 1.9
+     },
+     "pinnacle": {},
+     "books": 4
     }
    }
   ]
