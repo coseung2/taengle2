@@ -1,170 +1,28 @@
 {
  "source": "the-odds-api.com",
  "regions": "eu",
- "fetchedAt": "2026-10-03T17:56:44.343159+09:00",
+ "fetchedAt": "2026-10-04T02:29:15.330356+09:00",
  "accounts": 2,
- "accountOffset": 0,
- "creditsRemaining": 978,
+ "accountOffset": 1,
+ "creditsRemaining": 976,
  "creditsByAccount": {
   "account-1": 490,
-  "account-2": 488
+  "account-2": 486
  },
  "refreshIntervalMinutes": 630,
  "maxSportsPerRun": 7,
- "estimatedCreditsPerRun": 4,
+ "estimatedCreditsPerRun": 2,
  "activeLeagues": [
-  "NPB",
   "MLB"
  ],
  "fetchedLeagues": [
-  "NPB",
   "MLB"
  ],
  "leagueFetchedAt": {
-  "NPB": "2026-10-03T17:56:44.343159+09:00",
-  "MLB": "2026-10-03T17:56:44.343159+09:00"
+  "MLB": "2026-10-04T02:29:15.330356+09:00"
  },
  "leagues": {
-  "NPB": [
-   {
-    "id": "3795ab1be1f17c0b9674e8a787c4fb3f",
-    "sportKey": "baseball_npb",
-    "commenceUtc": "2026-10-03T09:00:00Z",
-    "homeEn": "Chiba Lotte Marines",
-    "awayEn": "Fukuoka SoftBank Hawks",
-    "books": 14,
-    "consensus": {
-     "home": 2.6,
-     "away": 1.49
-    },
-    "pinnacle": {
-     "home": 2.65,
-     "away": 1.53
-    },
-    "totals": {
-     "point": 8.0,
-     "consensus": {
-      "over": 1.86,
-      "under": 1.925
-     },
-     "pinnacle": {
-      "over": 1.92,
-      "under": 1.93
-     },
-     "books": 6
-    }
-   },
-   {
-    "id": "6cac8c9a9d758453771485f455ad1f92",
-    "sportKey": "baseball_npb",
-    "commenceUtc": "2026-10-03T09:00:00Z",
-    "homeEn": "Tokyo Yakult Swallows",
-    "awayEn": "Chunichi Dragons",
-    "books": 14,
-    "consensus": {
-     "home": 2.09,
-     "away": 1.75
-    },
-    "pinnacle": {
-     "away": 1.7,
-     "home": 2.25
-    },
-    "totals": {
-     "point": 6.5,
-     "consensus": {
-      "over": 1.86,
-      "under": 1.915
-     },
-     "pinnacle": {},
-     "books": 8
-    }
-   },
-   {
-    "id": "9f0c97c9822228a12b07356fb9ef2432",
-    "sportKey": "baseball_npb",
-    "commenceUtc": "2026-10-03T09:00:00Z",
-    "homeEn": "Tohoku Rakuten Golden Eagles",
-    "awayEn": "Orix Buffaloes",
-    "books": 14,
-    "consensus": {
-     "home": 1.82,
-     "away": 1.96
-    },
-    "pinnacle": {
-     "away": 2.04,
-     "home": 1.85
-    },
-    "totals": {
-     "point": 6.5,
-     "consensus": {
-      "over": 1.83,
-      "under": 2.0
-     },
-     "pinnacle": {
-      "over": 1.78,
-      "under": 2.09
-     },
-     "books": 6
-    }
-   },
-   {
-    "id": "46b7a3abe594b7eb4aefdeaf726fbfea",
-    "sportKey": "baseball_npb",
-    "commenceUtc": "2026-10-03T09:00:00Z",
-    "homeEn": "Yomiuri Giants",
-    "awayEn": "Yokohama DeNA BayStars",
-    "books": 14,
-    "consensus": {
-     "home": 1.68,
-     "away": 2.2
-    },
-    "pinnacle": {
-     "away": 2.27,
-     "home": 1.69
-    },
-    "totals": {
-     "point": 6.5,
-     "consensus": {
-      "over": 1.92,
-      "under": 1.88
-     },
-     "pinnacle": {
-      "over": 1.93,
-      "under": 1.93
-     },
-     "books": 8
-    }
-   }
-  ],
   "MLB": [
-   {
-    "id": "5d13b613a334039f0694d8c95af28728",
-    "sportKey": "baseball_mlb",
-    "commenceUtc": "2026-10-03T17:01:00Z",
-    "homeEn": "Cleveland Guardians",
-    "awayEn": "Chicago White Sox",
-    "books": 24,
-    "consensus": {
-     "home": 1.63,
-     "away": 2.31
-    },
-    "pinnacle": {
-     "away": 2.31,
-     "home": 1.69
-    },
-    "totals": {
-     "point": 7.0,
-     "consensus": {
-      "over": 2.0,
-      "under": 1.83
-     },
-     "pinnacle": {
-      "over": 2.02,
-      "under": 1.85
-     },
-     "books": 9
-    }
-   },
    {
     "id": "1632ced04d65127cf6172d3a2c2e2d16",
     "sportKey": "baseball_mlb",
@@ -173,12 +31,12 @@
     "awayEn": "Atlanta Braves",
     "books": 24,
     "consensus": {
-     "home": 1.46,
-     "away": 2.8
+     "home": 1.44,
+     "away": 2.85
     },
     "pinnacle": {
-     "away": 2.88,
-     "home": 1.47
+     "away": 2.96,
+     "home": 1.46
     },
     "totals": {
      "point": 8.5,
@@ -186,11 +44,8 @@
       "over": 1.95,
       "under": 1.87
      },
-     "pinnacle": {
-      "over": 1.98,
-      "under": 1.89
-     },
-     "books": 13
+     "pinnacle": {},
+     "books": 11
     }
    },
    {
@@ -201,22 +56,22 @@
     "awayEn": "New York Yankees",
     "books": 24,
     "consensus": {
-     "home": 1.76,
-     "away": 2.1
+     "home": 1.75,
+     "away": 2.12
     },
     "pinnacle": {
-     "away": 2.15,
-     "home": 1.79
+     "away": 2.18,
+     "home": 1.78
     },
     "totals": {
      "point": 7.0,
      "consensus": {
-      "over": 1.945,
+      "over": 1.95,
       "under": 1.87
      },
      "pinnacle": {
-      "over": 1.93,
-      "under": 1.93
+      "over": 1.97,
+      "under": 1.92
      },
      "books": 10
     }
@@ -229,22 +84,22 @@
     "awayEn": "San Diego Padres",
     "books": 24,
     "consensus": {
-     "home": 1.5,
-     "away": 2.67
+     "home": 1.47,
+     "away": 2.75
     },
     "pinnacle": {
-     "home": 1.52,
-     "away": 2.71
+     "home": 1.5,
+     "away": 2.83
     },
     "totals": {
      "point": 7.0,
      "consensus": {
-      "over": 1.91,
-      "under": 1.91
+      "over": 1.93,
+      "under": 1.885
      },
      "pinnacle": {
-      "over": 1.9,
-      "under": 1.97
+      "over": 2.01,
+      "under": 1.88
      },
      "books": 10
     }
