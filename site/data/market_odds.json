@@ -1,12 +1,12 @@
 {
  "source": "the-odds-api.com",
  "regions": "eu",
- "fetchedAt": "2026-11-14T07:05:37.467795+09:00",
+ "fetchedAt": "2026-11-14T18:54:08.623233+09:00",
  "accounts": 2,
  "accountOffset": 0,
- "creditsRemaining": 854,
+ "creditsRemaining": 852,
  "creditsByAccount": {
-  "account-1": 428,
+  "account-1": 426,
   "account-2": 426
  },
  "refreshIntervalMinutes": 630,
@@ -19,239 +19,139 @@
   "NBA"
  ],
  "leagueFetchedAt": {
-  "NBA": "2026-11-14T07:05:37.467795+09:00"
+  "NBA": "2026-11-14T18:54:08.623233+09:00"
  },
  "leagues": {
   "NBA": [
    {
-    "id": "6669b911691463c669a5c10574742e8e",
+    "id": "6cb4c8feeadd57aa6ab46ebdee60818a",
     "sportKey": "basketball_nba",
-    "commenceUtc": "2026-11-14T00:10:00Z",
-    "homeEn": "Indiana Pacers",
-    "awayEn": "New York Knicks",
+    "commenceUtc": "2026-11-15T00:10:00Z",
+    "homeEn": "New Orleans Pelicans",
+    "awayEn": "Denver Nuggets",
     "books": 23,
     "consensus": {
-     "home": 3.6,
-     "away": 1.29
+     "home": 5.22,
+     "away": 1.16
     },
     "pinnacle": {
-     "home": 3.72,
-     "away": 1.33
+     "away": 1.16,
+     "home": 5.57
     },
     "totals": {
-     "point": 219.5,
+     "point": 234.5,
      "consensus": {
       "over": 1.9,
-      "under": 1.9
-     },
-     "pinnacle": {
-      "over": 1.96,
-      "under": 1.93
-     },
-     "books": 16
-    }
-   },
-   {
-    "id": "76416359b5453c01968e94702a375f16",
-    "sportKey": "basketball_nba",
-    "commenceUtc": "2026-11-14T00:10:00Z",
-    "homeEn": "Orlando Magic",
-    "awayEn": "Milwaukee Bucks",
-    "books": 23,
-    "consensus": {
-     "home": 1.25,
-     "away": 4.0
-    },
-    "pinnacle": {
-     "away": 4.18,
-     "home": 1.27
-    },
-    "totals": {
-     "point": 223.5,
-     "consensus": {
-      "over": 1.87,
-      "under": 1.9
-     },
-     "pinnacle": {},
-     "books": 13
-    }
-   },
-   {
-    "id": "80ffc963f864f3d4fcefa82fd02b7d7b",
-    "sportKey": "basketball_nba",
-    "commenceUtc": "2026-11-14T01:10:00Z",
-    "homeEn": "Chicago Bulls",
-    "awayEn": "Atlanta Hawks",
-    "books": 23,
-    "consensus": {
-     "home": 3.2,
-     "away": 1.35
-    },
-    "pinnacle": {
-     "away": 1.38,
-     "home": 3.25
-    },
-    "totals": {
-     "point": 245.5,
-     "consensus": {
-      "over": 1.91,
-      "under": 1.91
-     },
-     "pinnacle": {},
-     "books": 8
-    }
-   },
-   {
-    "id": "58b860d500be69ebf853926aa1ac8271",
-    "sportKey": "basketball_nba",
-    "commenceUtc": "2026-11-14T01:10:00Z",
-    "homeEn": "Miami Heat",
-    "awayEn": "Cleveland Cavaliers",
-    "books": 23,
-    "consensus": {
-     "home": 1.72,
-     "away": 2.15
-    },
-    "pinnacle": {
-     "away": 2.21,
-     "home": 1.76
-    },
-    "totals": {
-     "point": 236.5,
-     "consensus": {
-      "over": 1.9,
-      "under": 1.88
+      "under": 1.86
      },
      "pinnacle": {},
      "books": 11
     }
    },
    {
-    "id": "8a40b260e8fa0d67c1f2bc2b39a24982",
+    "id": "2cc2c254049b0bd0a6219f70cbb0b69a",
     "sportKey": "basketball_nba",
-    "commenceUtc": "2026-11-14T01:10:00Z",
-    "homeEn": "New Orleans Pelicans",
-    "awayEn": "Memphis Grizzlies",
+    "commenceUtc": "2026-11-15T00:40:00Z",
+    "homeEn": "Cleveland Cavaliers",
+    "awayEn": "Dallas Mavericks",
     "books": 23,
     "consensus": {
-     "home": 2.33,
-     "away": 1.62
+     "home": 1.74,
+     "away": 2.1
     },
     "pinnacle": {
-     "away": 1.65,
-     "home": 2.4
+     "home": 1.83,
+     "away": 2.07
+    },
+    "totals": {
+     "point": 231.5,
+     "consensus": {
+      "over": 1.905,
+      "under": 1.91
+     },
+     "pinnacle": {
+      "over": 1.93,
+      "under": 1.93
+     },
+     "books": 12
+    }
+   },
+   {
+    "id": "a7cb6062530bd69eb6caee84a015abd0",
+    "sportKey": "basketball_nba",
+    "commenceUtc": "2026-11-15T01:10:00Z",
+    "homeEn": "Memphis Grizzlies",
+    "awayEn": "Brooklyn Nets",
+    "books": 23,
+    "consensus": {
+     "home": 1.5,
+     "away": 2.6
+    },
+    "pinnacle": {
+     "away": 2.65,
+     "home": 1.53
+    },
+    "totals": {
+     "point": 226.5,
+     "consensus": {
+      "over": 1.885,
+      "under": 1.89
+     },
+     "pinnacle": {},
+     "books": 10
+    }
+   },
+   {
+    "id": "5773e80d52d3fba36b11be38ded62790",
+    "sportKey": "basketball_nba",
+    "commenceUtc": "2026-11-15T01:10:00Z",
+    "homeEn": "Minnesota Timberwolves",
+    "awayEn": "Chicago Bulls",
+    "books": 23,
+    "consensus": {
+     "home": 1.11,
+     "away": 6.86
+    },
+    "pinnacle": {
+     "away": 7.04,
+     "home": 1.12
     },
     "totals": {
      "point": 235.5,
      "consensus": {
-      "over": 1.895,
-      "under": 1.885
+      "over": 1.875,
+      "under": 1.92
      },
-     "pinnacle": {},
+     "pinnacle": {
+      "over": 1.93,
+      "under": 1.93
+     },
      "books": 10
     }
    },
    {
-    "id": "d04acca7f0f369fc53bf04cd3357cb0d",
+    "id": "cb06267ae037a883ae6f71078d6e2aaa",
     "sportKey": "basketball_nba",
-    "commenceUtc": "2026-11-14T01:40:00Z",
-    "homeEn": "Houston Rockets",
-    "awayEn": "Utah Jazz",
+    "commenceUtc": "2026-11-15T01:10:00Z",
+    "homeEn": "Miami Heat",
+    "awayEn": "Detroit Pistons",
     "books": 23,
     "consensus": {
-     "home": 1.08,
-     "away": 8.0
+     "home": 2.6,
+     "away": 1.5
     },
     "pinnacle": {
-     "home": 1.09,
-     "away": 8.73
-    },
-    "totals": {
-     "point": 220.5,
-     "consensus": {
-      "over": 1.86,
-      "under": 1.9
-     },
-     "pinnacle": {},
-     "books": 6
-    }
-   },
-   {
-    "id": "1fae7f34ec6035dffa74feb148ee26c7",
-    "sportKey": "basketball_nba",
-    "commenceUtc": "2026-11-14T02:40:00Z",
-    "homeEn": "San Antonio Spurs",
-    "awayEn": "Golden State Warriors",
-    "books": 23,
-    "consensus": {
-     "home": 1.15,
-     "away": 5.4
-    },
-    "pinnacle": {
-     "away": 5.72,
-     "home": 1.16
-    },
-    "totals": {
-     "point": 217.5,
-     "consensus": {
-      "over": 1.91,
-      "under": 1.91
-     },
-     "pinnacle": {},
-     "books": 11
-    }
-   },
-   {
-    "id": "a51c350318d7570c2b74af08eedb9fcd",
-    "sportKey": "basketball_nba",
-    "commenceUtc": "2026-11-14T03:10:00Z",
-    "homeEn": "Sacramento Kings",
-    "awayEn": "Portland Trail Blazers",
-    "books": 23,
-    "consensus": {
-     "home": 4.5,
-     "away": 1.21
-    },
-    "pinnacle": {
-     "away": 1.23,
-     "home": 4.64
+     "away": 1.54,
+     "home": 2.63
     },
     "totals": {
      "point": 229.5,
      "consensus": {
-      "over": 1.885,
-      "under": 1.905
+      "over": 1.9,
+      "under": 1.86
      },
      "pinnacle": {},
-     "books": 10
-    }
-   },
-   {
-    "id": "5344669fd560d317ffaee0a1d16be7c8",
-    "sportKey": "basketball_nba",
-    "commenceUtc": "2026-11-14T03:40:00Z",
-    "homeEn": "Los Angeles Clippers",
-    "awayEn": "Oklahoma City Thunder",
-    "books": 23,
-    "consensus": {
-     "home": 3.26,
-     "away": 1.36
-    },
-    "pinnacle": {
-     "home": 3.38,
-     "away": 1.36
-    },
-    "totals": {
-     "point": 222.5,
-     "consensus": {
-      "over": 1.91,
-      "under": 1.91
-     },
-     "pinnacle": {
-      "over": 1.98,
-      "under": 1.91
-     },
-     "books": 13
+     "books": 9
     }
    }
   ]
