@@ -1,13 +1,13 @@
 {
  "source": "the-odds-api.com",
  "regions": "eu",
- "fetchedAt": "2026-11-14T18:54:08.623233+09:00",
+ "fetchedAt": "2026-11-15T03:47:25.276968+09:00",
  "accounts": 2,
- "accountOffset": 0,
- "creditsRemaining": 852,
+ "accountOffset": 1,
+ "creditsRemaining": 850,
  "creditsByAccount": {
   "account-1": 426,
-  "account-2": 426
+  "account-2": 424
  },
  "refreshIntervalMinutes": 630,
  "maxSportsPerRun": 7,
@@ -19,7 +19,7 @@
   "NBA"
  ],
  "leagueFetchedAt": {
-  "NBA": "2026-11-14T18:54:08.623233+09:00"
+  "NBA": "2026-11-15T03:47:25.276968+09:00"
  },
  "leagues": {
   "NBA": [
@@ -29,22 +29,25 @@
     "commenceUtc": "2026-11-15T00:10:00Z",
     "homeEn": "New Orleans Pelicans",
     "awayEn": "Denver Nuggets",
-    "books": 23,
+    "books": 25,
     "consensus": {
-     "home": 5.22,
-     "away": 1.16
+     "home": 5.6,
+     "away": 1.15
     },
     "pinnacle": {
-     "away": 1.16,
+     "away": 1.17,
      "home": 5.57
     },
     "totals": {
-     "point": 234.5,
+     "point": 235.5,
      "consensus": {
-      "over": 1.9,
-      "under": 1.86
+      "over": 1.91,
+      "under": 1.91
      },
-     "pinnacle": {},
+     "pinnacle": {
+      "over": 1.95,
+      "under": 1.93
+     },
      "books": 11
     }
    },
@@ -54,26 +57,26 @@
     "commenceUtc": "2026-11-15T00:40:00Z",
     "homeEn": "Cleveland Cavaliers",
     "awayEn": "Dallas Mavericks",
-    "books": 23,
+    "books": 25,
     "consensus": {
-     "home": 1.74,
-     "away": 2.1
+     "home": 2.53,
+     "away": 1.53
     },
     "pinnacle": {
-     "home": 1.83,
-     "away": 2.07
+     "home": 2.59,
+     "away": 1.55
     },
     "totals": {
-     "point": 231.5,
+     "point": 228.5,
      "consensus": {
-      "over": 1.905,
-      "under": 1.91
+      "over": 1.88,
+      "under": 1.9
      },
      "pinnacle": {
-      "over": 1.93,
-      "under": 1.93
+      "over": 1.97,
+      "under": 1.9
      },
-     "books": 12
+     "books": 9
     }
    },
    {
@@ -82,23 +85,23 @@
     "commenceUtc": "2026-11-15T01:10:00Z",
     "homeEn": "Memphis Grizzlies",
     "awayEn": "Brooklyn Nets",
-    "books": 23,
+    "books": 25,
     "consensus": {
-     "home": 1.5,
-     "away": 2.6
+     "home": 1.68,
+     "away": 2.2
     },
     "pinnacle": {
-     "away": 2.65,
-     "home": 1.53
+     "away": 2.28,
+     "home": 1.7
     },
     "totals": {
-     "point": 226.5,
+     "point": 228.5,
      "consensus": {
-      "over": 1.885,
-      "under": 1.89
+      "over": 1.92,
+      "under": 1.88
      },
      "pinnacle": {},
-     "books": 10
+     "books": 9
     }
    },
    {
@@ -107,26 +110,23 @@
     "commenceUtc": "2026-11-15T01:10:00Z",
     "homeEn": "Minnesota Timberwolves",
     "awayEn": "Chicago Bulls",
-    "books": 23,
+    "books": 25,
     "consensus": {
-     "home": 1.11,
-     "away": 6.86
+     "home": 1.1,
+     "away": 7.5
     },
     "pinnacle": {
-     "away": 7.04,
-     "home": 1.12
+     "away": 7.96,
+     "home": 1.1
     },
     "totals": {
-     "point": 235.5,
+     "point": 234.5,
      "consensus": {
-      "over": 1.875,
-      "under": 1.92
+      "over": 1.83,
+      "under": 1.91
      },
-     "pinnacle": {
-      "over": 1.93,
-      "under": 1.93
-     },
-     "books": 10
+     "pinnacle": {},
+     "books": 7
     }
    },
    {
@@ -135,23 +135,23 @@
     "commenceUtc": "2026-11-15T01:10:00Z",
     "homeEn": "Miami Heat",
     "awayEn": "Detroit Pistons",
-    "books": 23,
+    "books": 25,
     "consensus": {
-     "home": 2.6,
-     "away": 1.5
+     "home": 2.45,
+     "away": 1.56
     },
     "pinnacle": {
-     "away": 1.54,
-     "home": 2.63
+     "away": 1.59,
+     "home": 2.48
     },
     "totals": {
      "point": 229.5,
      "consensus": {
-      "over": 1.9,
-      "under": 1.86
+      "over": 1.905,
+      "under": 1.87
      },
      "pinnacle": {},
-     "books": 9
+     "books": 8
     }
    }
   ]
