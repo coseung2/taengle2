@@ -1,6 +1,6 @@
 {
  "source": "betman.co.kr",
- "fetchedAt": "2026-11-22T05:11:22.421364+09:00",
+ "fetchedAt": "2026-11-22T13:50:02.086264+09:00",
  "games": [
   {
    "gmId": "G101",
@@ -8,453 +8,58 @@
    "gameType": "승부식",
    "gmTs": 260138,
    "saleEnd": 1795356000000,
-   "totalSellAmount": 34159646800,
+   "totalSellAmount": 39509561700,
    "matches": [
     {
-     "kickoff": "2026-11-22T09:30:00+09:00",
-     "league": "NBA",
-     "home": "뉴욕 닉스",
-     "away": "포틀랜드 트레일블레이저스",
-     "win": 1.34,
-     "draw": null,
-     "lose": 2.48,
-     "status": "2",
-     "score": null,
-     "betType": "일반 승패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "232f705eea406644ff14ad17bcf9aea6",
-      "sportKey": "basketball_nba",
-      "books": 25,
-      "homeEn": "New York Knicks",
-      "awayEn": "Portland Trail Blazers",
-      "consensus": {
-       "win": 1.62,
-       "draw": null,
-       "lose": 2.31
-      },
-      "pinnacle": {
-       "win": 1.68,
-       "draw": null,
-       "lose": 2.3
-      },
-      "cutConsensus": {
-       "win": 0.1728,
-       "draw": null,
-       "lose": -0.0736
-      },
-      "cutPinnacle": {
-       "win": 0.2024,
-       "draw": null,
-       "lose": -0.0783
-      },
-      "cutAvg": 0.0496,
-      "timeDiffSec": 600,
-      "matchedBy": "time"
-     }
-    },
-    {
-     "kickoff": "2026-11-22T09:30:00+09:00",
-     "league": "NBA",
-     "home": "뉴욕 닉스",
-     "away": "포틀랜드 트레일블레이저스",
-     "win": 1.78,
-     "draw": null,
-     "lose": 1.7,
-     "status": "2",
-     "score": null,
-     "betType": "일반 소수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T09:30:00+09:00",
-     "league": "NBA",
-     "home": "뉴욕 닉스",
-     "away": "포틀랜드 트레일블레이저스",
-     "win": 1.73,
-     "draw": null,
-     "lose": 1.75,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.73,
-     "under": 1.75,
-     "market": {
-      "marketType": "totals",
-      "marketId": "232f705eea406644ff14ad17bcf9aea6",
-      "sportKey": "basketball_nba",
-      "point": 215.5,
-      "betmanPoint": 9.0,
-      "books": 14,
-      "homeEn": "New York Knicks",
-      "awayEn": "Portland Trail Blazers",
-      "consensus": {
-       "over": 1.91,
-       "under": 1.91
-      },
-      "pinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutConsensus": {
-       "over": 0.0942,
-       "under": 0.0838
-      },
-      "cutPinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutAvg": 0.089,
-      "timeDiffSec": 600,
-      "matchedBy": "time"
-     }
-    },
-    {
-     "kickoff": "2026-11-22T09:30:00+09:00",
-     "league": "NBA",
-     "home": "뉴욕 닉스",
-     "away": "포틀랜드 트레일블레이저스",
-     "win": 1.8,
-     "draw": null,
-     "lose": 1.8,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T10:00:00+09:00",
-     "league": "NBA",
-     "home": "댈러스 매버릭스",
-     "away": "LA 클리퍼스",
-     "win": 1.33,
-     "draw": null,
-     "lose": 2.52,
-     "status": "2",
-     "score": null,
-     "betType": "일반 승패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T10:00:00+09:00",
-     "league": "NBA",
-     "home": "댈러스 매버릭스",
-     "away": "LA 클리퍼스",
-     "win": 1.76,
-     "draw": null,
-     "lose": 1.72,
-     "status": "2",
-     "score": null,
-     "betType": "일반 소수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T10:00:00+09:00",
-     "league": "NBA",
-     "home": "댈러스 매버릭스",
-     "away": "LA 클리퍼스",
-     "win": 1.72,
-     "draw": null,
-     "lose": 1.76,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.72,
-     "under": 1.76
-    },
-    {
-     "kickoff": "2026-11-22T10:00:00+09:00",
-     "league": "NBA",
-     "home": "댈러스 매버릭스",
-     "away": "LA 클리퍼스",
-     "win": 1.8,
-     "draw": null,
-     "lose": 1.8,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T10:00:00+09:00",
-     "league": "NBA",
-     "home": "미네소타 팀버울브스",
-     "away": "멤피스 그리즐리스",
-     "win": 1.31,
-     "draw": null,
-     "lose": 2.59,
-     "status": "2",
-     "score": null,
-     "betType": "일반 승패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T10:00:00+09:00",
-     "league": "NBA",
-     "home": "미네소타 팀버울브스",
-     "away": "멤피스 그리즐리스",
-     "win": 1.74,
-     "draw": null,
-     "lose": 1.74,
-     "status": "2",
-     "score": null,
-     "betType": "일반 소수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T10:00:00+09:00",
-     "league": "NBA",
-     "home": "미네소타 팀버울브스",
-     "away": "멤피스 그리즐리스",
-     "win": 1.71,
-     "draw": null,
-     "lose": 1.77,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.71,
-     "under": 1.77
-    },
-    {
-     "kickoff": "2026-11-22T10:00:00+09:00",
-     "league": "NBA",
-     "home": "미네소타 팀버울브스",
-     "away": "멤피스 그리즐리스",
-     "win": 1.8,
-     "draw": null,
-     "lose": 1.8,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T10:00:00+09:00",
-     "league": "NBA",
-     "home": "샌안토니오 스퍼스",
-     "away": "뉴올리언스 펠리컨스",
-     "win": 1.01,
-     "draw": null,
-     "lose": 6.28,
-     "status": "2",
-     "score": null,
-     "betType": "일반 승패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T10:00:00+09:00",
-     "league": "NBA",
-     "home": "샌안토니오 스퍼스",
-     "away": "뉴올리언스 펠리컨스",
-     "win": 1.78,
-     "draw": null,
-     "lose": 1.7,
-     "status": "2",
-     "score": null,
-     "betType": "일반 소수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T10:00:00+09:00",
-     "league": "NBA",
-     "home": "샌안토니오 스퍼스",
-     "away": "뉴올리언스 펠리컨스",
-     "win": 1.71,
-     "draw": null,
-     "lose": 1.77,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.71,
-     "under": 1.77
-    },
-    {
-     "kickoff": "2026-11-22T10:00:00+09:00",
-     "league": "NBA",
-     "home": "샌안토니오 스퍼스",
-     "away": "뉴올리언스 펠리컨스",
-     "win": 1.8,
-     "draw": null,
-     "lose": 1.8,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T11:00:00+09:00",
-     "league": "A리그",
-     "home": "웰링턴 피닉스",
-     "away": "맥아서FC",
-     "win": 1.68,
-     "draw": 3.5,
-     "lose": 3.55,
+     "kickoff": "2026-11-22T14:00:00+09:00",
+     "league": "J2리그",
+     "home": "도쿠시마 보르티스",
+     "away": "쇼난 벨마레",
+     "win": 2.34,
+     "draw": 3.05,
+     "lose": 2.45,
      "status": "2",
      "score": null,
      "betType": "승무패",
      "marketType": "h2h"
     },
     {
-     "kickoff": "2026-11-22T11:00:00+09:00",
-     "league": "A리그",
-     "home": "웰링턴 피닉스",
-     "away": "맥아서FC",
-     "win": 3.0,
-     "draw": 3.35,
-     "lose": 1.88,
+     "kickoff": "2026-11-22T14:00:00+09:00",
+     "league": "J2리그",
+     "home": "도쿠시마 보르티스",
+     "away": "쇼난 벨마레",
+     "win": 4.9,
+     "draw": 3.85,
+     "lose": 1.43,
      "status": "2",
      "score": null,
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
     {
-     "kickoff": "2026-11-22T11:00:00+09:00",
-     "league": "A리그",
-     "home": "웰링턴 피닉스",
-     "away": "맥아서FC",
-     "win": 1.94,
-     "draw": null,
-     "lose": 1.58,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.94,
-     "under": 1.58
-    },
-    {
-     "kickoff": "2026-11-22T11:00:00+09:00",
-     "league": "A리그",
-     "home": "웰링턴 피닉스",
-     "away": "맥아서FC",
-     "win": 1.81,
-     "draw": null,
-     "lose": 1.79,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T12:00:00+09:00",
-     "league": "NBA",
-     "home": "새크라멘토 킹스",
-     "away": "보스턴 셀틱스",
-     "win": 5.6,
-     "draw": null,
-     "lose": 1.03,
-     "status": "2",
-     "score": null,
-     "betType": "일반 승패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "b754a1bf84af81d45d4a3a16398daa44",
-      "sportKey": "basketball_nba",
-      "books": 25,
-      "homeEn": "Sacramento Kings",
-      "awayEn": "Boston Celtics",
-      "consensus": {
-       "win": 6.3,
-       "draw": null,
-       "lose": 1.12
-      },
-      "pinnacle": {
-       "win": 6.61,
-       "draw": null,
-       "lose": 1.12
-      },
-      "cutConsensus": {
-       "win": 0.1111,
-       "draw": null,
-       "lose": 0.0804
-      },
-      "cutPinnacle": {
-       "win": 0.1528,
-       "draw": null,
-       "lose": 0.0804
-      },
-      "cutAvg": 0.0958,
-      "timeDiffSec": 600,
-      "matchedBy": "time"
-     }
-    },
-    {
-     "kickoff": "2026-11-22T12:00:00+09:00",
-     "league": "NBA",
-     "home": "새크라멘토 킹스",
-     "away": "보스턴 셀틱스",
+     "kickoff": "2026-11-22T14:00:00+09:00",
+     "league": "J2리그",
+     "home": "도쿠시마 보르티스",
+     "away": "쇼난 벨마레",
      "win": 1.71,
      "draw": null,
      "lose": 1.77,
      "status": "2",
      "score": null,
-     "betType": "일반 소수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-22T12:00:00+09:00",
-     "league": "NBA",
-     "home": "새크라멘토 킹스",
-     "away": "보스턴 셀틱스",
-     "win": 1.76,
-     "draw": null,
-     "lose": 1.72,
-     "status": "2",
-     "score": null,
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
-     "over": 1.76,
-     "under": 1.72,
-     "market": {
-      "marketType": "totals",
-      "marketId": "b754a1bf84af81d45d4a3a16398daa44",
-      "sportKey": "basketball_nba",
-      "point": 217.5,
-      "betmanPoint": 9.0,
-      "books": 7,
-      "homeEn": "Sacramento Kings",
-      "awayEn": "Boston Celtics",
-      "consensus": {
-       "over": 1.86,
-       "under": 1.92
-      },
-      "pinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutConsensus": {
-       "over": 0.0538,
-       "under": 0.1042
-      },
-      "cutPinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutAvg": 0.079,
-      "timeDiffSec": 600,
-      "matchedBy": "time"
-     }
+     "over": 1.71,
+     "under": 1.77
     },
     {
-     "kickoff": "2026-11-22T12:00:00+09:00",
-     "league": "NBA",
-     "home": "새크라멘토 킹스",
-     "away": "보스턴 셀틱스",
-     "win": 1.8,
+     "kickoff": "2026-11-22T14:00:00+09:00",
+     "league": "J2리그",
+     "home": "도쿠시마 보르티스",
+     "away": "쇼난 벨마레",
+     "win": 1.81,
      "draw": null,
-     "lose": 1.8,
+     "lose": 1.79,
      "status": "2",
      "score": null,
      "betType": "일반 홀짝",
@@ -465,9 +70,9 @@
      "league": "K리그1",
      "home": "김천상무 프로축구단",
      "away": "제주 SKFC",
-     "win": 2.31,
-     "draw": 3.2,
-     "lose": 2.4,
+     "win": 2.37,
+     "draw": 3.0,
+     "lose": 2.45,
      "status": "2",
      "score": null,
      "betType": "승무패",
@@ -575,9 +180,9 @@
      "league": "K리그1",
      "home": "광주FC",
      "away": "부천FC 1995",
-     "win": 2.13,
-     "draw": 3.25,
-     "lose": 2.6,
+     "win": 2.11,
+     "draw": 3.15,
+     "lose": 2.7,
      "status": "2",
      "score": null,
      "betType": "승무패",
@@ -590,26 +195,26 @@
       "homeEn": "Gwangju FC",
       "awayEn": "Bucheon FC 1995",
       "consensus": {
-       "win": 2.325,
-       "draw": 3.285,
-       "lose": 2.775
+       "win": 2.33,
+       "draw": 3.2,
+       "lose": 2.75
       },
       "pinnacle": {
-       "win": 2.48,
-       "draw": 3.55,
-       "lose": 2.9
+       "win": 2.51,
+       "draw": 3.47,
+       "lose": 2.91
       },
       "cutConsensus": {
-       "win": 0.0839,
-       "draw": 0.0107,
-       "lose": 0.0631
+       "win": 0.0944,
+       "draw": 0.0156,
+       "lose": 0.0182
       },
       "cutPinnacle": {
-       "win": 0.1411,
-       "draw": 0.0845,
-       "lose": 0.1034
+       "win": 0.1594,
+       "draw": 0.0922,
+       "lose": 0.0722
       },
-      "cutAvg": 0.0526,
+      "cutAvg": 0.0427,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -632,9 +237,9 @@
      "league": "K리그1",
      "home": "광주FC",
      "away": "부천FC 1995",
-     "win": 10.5,
-     "draw": 6.3,
-     "lose": 1.1,
+     "win": 9.5,
+     "draw": 5.8,
+     "lose": 1.13,
      "status": "2",
      "score": null,
      "betType": "일반 정수핸디캡",
@@ -665,22 +270,22 @@
       "homeEn": "Gwangju FC",
       "awayEn": "Bucheon FC 1995",
       "consensus": {
-       "over": 1.85,
+       "over": 1.86,
        "under": 1.9
       },
       "pinnacle": {
        "over": 1.91,
-       "under": 1.97
+       "under": 1.98
       },
       "cutConsensus": {
-       "over": 0.027,
+       "over": 0.0323,
        "under": 0.1158
       },
       "cutPinnacle": {
        "over": 0.0576,
-       "under": 0.1472
+       "under": 0.1515
       },
-      "cutAvg": 0.0714,
+      "cutAvg": 0.0741,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -718,26 +323,26 @@
       "homeEn": "Gwangju FC",
       "awayEn": "Bucheon FC 1995",
       "consensus": {
-       "win": 2.325,
-       "draw": 3.285,
-       "lose": 2.775
+       "win": 2.33,
+       "draw": 3.2,
+       "lose": 2.75
       },
       "pinnacle": {
-       "win": 2.48,
-       "draw": 3.55,
-       "lose": 2.9
+       "win": 2.51,
+       "draw": 3.47,
+       "lose": 2.91
       },
       "cutConsensus": {
-       "win": -0.2043,
-       "draw": 0.3881,
-       "lose": -0.1712
+       "win": -0.2017,
+       "draw": 0.3719,
+       "lose": -0.1818
       },
       "cutPinnacle": {
-       "win": -0.129,
-       "draw": 0.4338,
-       "lose": -0.1207
+       "win": -0.1155,
+       "draw": 0.4207,
+       "lose": -0.1168
       },
-      "cutAvg": 0.0042,
+      "cutAvg": -0.0039,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -747,9 +352,9 @@
      "league": "K리그1",
      "home": "광주FC",
      "away": "부천FC 1995",
-     "win": 8.2,
-     "draw": 3.85,
-     "lose": 1.28,
+     "win": 7.4,
+     "draw": 3.7,
+     "lose": 1.32,
      "status": "2",
      "score": null,
      "betType": "일반 정수핸디캡",
@@ -780,22 +385,22 @@
       "homeEn": "Gwangju FC",
       "awayEn": "Bucheon FC 1995",
       "consensus": {
-       "over": 1.85,
+       "over": 1.86,
        "under": 1.9
       },
       "pinnacle": {
        "over": 1.91,
-       "under": 1.97
+       "under": 1.98
       },
       "cutConsensus": {
-       "over": 0.2541,
+       "over": 0.2581,
        "under": -0.2368
       },
       "cutPinnacle": {
        "over": 0.2775,
-       "under": -0.1929
+       "under": -0.1869
       },
-      "cutAvg": 0.0086,
+      "cutAvg": 0.0106,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -911,12 +516,190 @@
      "marketType": "h2h"
     },
     {
+     "kickoff": "2026-11-22T14:00:00+09:00",
+     "league": "KOVO남",
+     "home": "우리카드 우리WON",
+     "away": "KB손해보험 스타즈",
+     "win": 1.54,
+     "draw": null,
+     "lose": 2.0,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T14:00:00+09:00",
+     "league": "KOVO남",
+     "home": "우리카드 우리WON",
+     "away": "KB손해보험 스타즈",
+     "win": 2.15,
+     "draw": null,
+     "lose": 1.46,
+     "status": "2",
+     "score": null,
+     "betType": "일반 세트핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T14:00:00+09:00",
+     "league": "KOVO남",
+     "home": "우리카드 우리WON",
+     "away": "KB손해보험 스타즈",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.74,
+     "under": 1.74
+    },
+    {
+     "kickoff": "2026-11-22T14:00:00+09:00",
+     "league": "KOVO남",
+     "home": "우리카드 우리WON",
+     "away": "KB손해보험 스타즈",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T14:00:00+09:00",
+     "league": "KOVO여",
+     "home": "현대건설 힐스테이트",
+     "away": "흥국생명 핑크스파이더스",
+     "win": 2.55,
+     "draw": null,
+     "lose": 1.32,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T14:00:00+09:00",
+     "league": "KOVO여",
+     "home": "현대건설 힐스테이트",
+     "away": "흥국생명 핑크스파이더스",
+     "win": 1.91,
+     "draw": null,
+     "lose": 1.6,
+     "status": "2",
+     "score": null,
+     "betType": "일반 세트핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T14:00:00+09:00",
+     "league": "KOVO여",
+     "home": "현대건설 힐스테이트",
+     "away": "흥국생명 핑크스파이더스",
+     "win": 1.92,
+     "draw": null,
+     "lose": 1.59,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.92,
+     "under": 1.59
+    },
+    {
+     "kickoff": "2026-11-22T14:00:00+09:00",
+     "league": "KOVO여",
+     "home": "현대건설 힐스테이트",
+     "away": "흥국생명 핑크스파이더스",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T16:00:00+09:00",
+     "league": "WKBL",
+     "home": "KB 스타즈",
+     "away": "삼성생명 블루밍스",
+     "win": 1.73,
+     "draw": null,
+     "lose": 1.75,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T16:00:00+09:00",
+     "league": "WKBL",
+     "home": "KB 스타즈",
+     "away": "삼성생명 블루밍스",
+     "win": 2.5,
+     "draw": 2.5,
+     "lose": 2.75,
+     "status": "2",
+     "score": null,
+     "betType": "승N패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T16:00:00+09:00",
+     "league": "WKBL",
+     "home": "KB 스타즈",
+     "away": "삼성생명 블루밍스",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.68,
+     "status": "2",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T16:00:00+09:00",
+     "league": "WKBL",
+     "home": "KB 스타즈",
+     "away": "삼성생명 블루밍스",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.74,
+     "under": 1.74
+    },
+    {
+     "kickoff": "2026-11-22T16:00:00+09:00",
+     "league": "WKBL",
+     "home": "KB 스타즈",
+     "away": "삼성생명 블루밍스",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
      "kickoff": "2026-11-22T16:30:00+09:00",
      "league": "K리그2",
      "home": "파주 프런티어",
      "away": "천안 시티FC",
-     "win": 2.55,
-     "draw": 3.2,
+     "win": 2.7,
+     "draw": 3.0,
      "lose": 2.18,
      "status": "2",
      "score": null,
@@ -1041,25 +824,25 @@
       "awayEn": "Willem II",
       "consensus": {
        "win": 1.06,
-       "draw": 12.0,
+       "draw": 12.375,
        "lose": 17.375
       },
       "pinnacle": {
        "win": 1.08,
-       "draw": 14.54,
-       "lose": 20.08
+       "draw": 14.7,
+       "lose": 20.05
       },
       "cutConsensus": {
        "win": 0.0377,
-       "draw": 0.3167,
+       "draw": 0.3374,
        "lose": 0.0504
       },
       "cutPinnacle": {
        "win": 0.0556,
-       "draw": 0.436,
-       "lose": 0.1783
+       "draw": 0.4422,
+       "lose": 0.1771
       },
-      "cutAvg": 0.1349,
+      "cutAvg": 0.1418,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1124,12 +907,12 @@
       "sportKey": "soccer_netherlands_eredivisie",
       "point": 3.5,
       "betmanPoint": 9.0,
-      "books": 6,
+      "books": 5,
       "homeEn": "FC Twente Enschede",
       "awayEn": "Willem II",
       "consensus": {
        "over": 1.57,
-       "under": 2.3
+       "under": 2.32
       },
       "pinnacle": {
        "over": null,
@@ -1137,13 +920,13 @@
       },
       "cutConsensus": {
        "over": 0.0446,
-       "under": 0.1
+       "under": 0.1078
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0723,
+      "cutAvg": 0.0762,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1262,26 +1045,26 @@
       "homeEn": "Burnley",
       "awayEn": "Blackburn Rovers",
       "consensus": {
-       "win": 1.88,
-       "draw": 3.65,
-       "lose": 3.775
+       "win": 1.85,
+       "draw": 3.61,
+       "lose": 3.835
       },
       "pinnacle": {
-       "win": 1.92,
-       "draw": 3.78,
-       "lose": 3.96
+       "win": 1.93,
+       "draw": 3.76,
+       "lose": 4.01
       },
       "cutConsensus": {
-       "win": 0.0745,
-       "draw": 0.0548,
-       "lose": 0.1126
+       "win": 0.0595,
+       "draw": 0.0443,
+       "lose": 0.1265
       },
       "cutPinnacle": {
-       "win": 0.0938,
-       "draw": 0.0873,
-       "lose": 0.154
+       "win": 0.0984,
+       "draw": 0.0824,
+       "lose": 0.1646
       },
-      "cutAvg": 0.0806,
+      "cutAvg": 0.0768,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1320,7 +1103,7 @@
       "sportKey": "soccer_efl_champ",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 14,
+      "books": 15,
       "homeEn": "Burnley",
       "awayEn": "Blackburn Rovers",
       "consensus": {
@@ -1328,7 +1111,7 @@
        "under": 2.0
       },
       "pinnacle": {
-       "over": 1.83,
+       "over": 1.85,
        "under": 2.05
       },
       "cutConsensus": {
@@ -1336,7 +1119,7 @@
        "under": 0.22
       },
       "cutPinnacle": {
-       "over": -0.0765,
+       "over": -0.0649,
        "under": 0.239
       },
       "cutAvg": 0.0407,
@@ -1377,26 +1160,26 @@
       "homeEn": "Barcelona",
       "awayEn": "Villarreal",
       "consensus": {
-       "win": 1.195,
-       "draw": 7.45,
-       "lose": 12.0
+       "win": 1.18,
+       "draw": 7.57,
+       "lose": 12.25
       },
       "pinnacle": {
-       "win": 1.21,
-       "draw": 7.37,
-       "lose": 13.28
+       "win": 1.2,
+       "draw": 7.54,
+       "lose": 13.75
       },
       "cutConsensus": {
-       "win": 0.0544,
-       "draw": 0.1544,
-       "lose": 0.3
+       "win": 0.0424,
+       "draw": 0.1678,
+       "lose": 0.3143
       },
       "cutPinnacle": {
-       "win": 0.0661,
-       "draw": 0.1452,
-       "lose": 0.3675
+       "win": 0.0583,
+       "draw": 0.1645,
+       "lose": 0.3891
       },
-      "cutAvg": 0.1696,
+      "cutAvg": 0.1748,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1465,22 +1248,22 @@
       "homeEn": "Barcelona",
       "awayEn": "Villarreal",
       "consensus": {
-       "over": 2.06,
-       "under": 1.75
+       "over": 1.97,
+       "under": 1.81
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.2087,
-       "under": -0.0686
+       "over": 0.1726,
+       "under": -0.0331
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0701,
+      "cutAvg": 0.0698,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1519,25 +1302,25 @@
       "awayEn": "ADO Den Haag",
       "consensus": {
        "win": 1.15,
-       "draw": 8.05,
-       "lose": 14.015
+       "draw": 8.0,
+       "lose": 13.5
       },
       "pinnacle": {
        "win": 1.16,
-       "draw": 8.96,
-       "lose": 14.23
+       "draw": 9.13,
+       "lose": 14.75
       },
       "cutConsensus": {
        "win": 0.0348,
-       "draw": 0.2298,
-       "lose": 0.2936
+       "draw": 0.225,
+       "lose": 0.2667
       },
       "cutPinnacle": {
        "win": 0.0431,
-       "draw": 0.308,
-       "lose": 0.3043
+       "draw": 0.3209,
+       "lose": 0.3288
       },
-      "cutAvg": 0.1861,
+      "cutAvg": 0.1755,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1602,26 +1385,26 @@
       "sportKey": "soccer_netherlands_eredivisie",
       "point": 3.5,
       "betmanPoint": 9.0,
-      "books": 11,
+      "books": 9,
       "homeEn": "Ajax",
       "awayEn": "ADO Den Haag",
       "consensus": {
-       "over": 1.62,
-       "under": 2.22
+       "over": 1.66,
+       "under": 2.12
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": -0.179,
-       "under": 0.2793
+       "over": -0.1506,
+       "under": 0.2453
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0502,
+      "cutAvg": 0.0473,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1659,26 +1442,26 @@
       "homeEn": "Sparta Rotterdam",
       "awayEn": "AZ Alkmaar",
       "consensus": {
-       "win": 4.15,
-       "draw": 4.03,
-       "lose": 1.725
+       "win": 4.3,
+       "draw": 4.12,
+       "lose": 1.685
       },
       "pinnacle": {
-       "win": 4.38,
-       "draw": 4.27,
+       "win": 4.42,
+       "draw": 4.3,
        "lose": 1.74
       },
       "cutConsensus": {
-       "win": 0.1205,
-       "draw": 0.0323,
-       "lose": 0.0841
+       "win": 0.1512,
+       "draw": 0.0534,
+       "lose": 0.0623
       },
       "cutPinnacle": {
-       "win": 0.1667,
-       "draw": 0.0867,
+       "win": 0.1742,
+       "draw": 0.093,
        "lose": 0.092
       },
-      "cutAvg": 0.079,
+      "cutAvg": 0.089,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1721,22 +1504,22 @@
       "homeEn": "Sparta Rotterdam",
       "awayEn": "AZ Alkmaar",
       "consensus": {
-       "over": 2.1,
-       "under": 1.7
+       "over": 2.065,
+       "under": 1.72
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.2381,
-       "under": -0.1235
+       "over": 0.2252,
+       "under": -0.1105
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0573,
+      "cutAvg": 0.0574,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2101,26 +1884,26 @@
       "homeEn": "Real Racing Club de Santander",
       "awayEn": "Real Sociedad",
       "consensus": {
-       "win": 3.22,
+       "win": 3.25,
        "draw": 4.1,
-       "lose": 2.02
+       "lose": 2.015
       },
       "pinnacle": {
-       "win": 3.31,
-       "draw": 4.27,
-       "lose": 2.02
+       "win": 3.32,
+       "draw": 4.15,
+       "lose": 2.04
       },
       "cutConsensus": {
-       "win": 0.1149,
+       "win": 0.1231,
        "draw": 0.0488,
-       "lose": 0.1089
+       "lose": 0.1067
       },
       "cutPinnacle": {
-       "win": 0.139,
-       "draw": 0.0867,
-       "lose": 0.1089
+       "win": 0.1416,
+       "draw": 0.0602,
+       "lose": 0.1176
       },
-      "cutAvg": 0.0909,
+      "cutAvg": 0.0929,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2159,26 +1942,26 @@
       "sportKey": "soccer_spain_la_liga",
       "point": 3.5,
       "betmanPoint": 9.0,
-      "books": 11,
+      "books": 12,
       "homeEn": "Real Racing Club de Santander",
       "awayEn": "Real Sociedad",
       "consensus": {
-       "over": 1.9,
-       "under": 1.91
+       "over": 1.925,
+       "under": 1.85
       },
       "pinnacle": {
-       "over": 1.87,
-       "under": 2.03
+       "over": 1.97,
+       "under": 1.92
       },
       "cutConsensus": {
-       "over": 0.0684,
-       "under": 0.1047
+       "over": 0.0805,
+       "under": 0.0757
       },
       "cutPinnacle": {
-       "over": 0.0535,
-       "under": 0.1576
+       "over": 0.1015,
+       "under": 0.1094
       },
-      "cutAvg": 0.0866,
+      "cutAvg": 0.0781,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2216,26 +1999,26 @@
       "homeEn": "Go Ahead Eagles",
       "awayEn": "Fortuna Sittard",
       "consensus": {
-       "win": 1.675,
-       "draw": 4.03,
-       "lose": 4.375
+       "win": 1.7,
+       "draw": 3.95,
+       "lose": 4.4
       },
       "pinnacle": {
-       "win": 1.72,
-       "draw": 4.19,
-       "lose": 4.53
+       "win": 1.76,
+       "draw": 4.08,
+       "lose": 4.55
       },
       "cutConsensus": {
-       "win": 0.0985,
-       "draw": 0.0199,
-       "lose": 0.0743
+       "win": 0.1118,
+       "draw": 0.0,
+       "lose": 0.0795
       },
       "cutPinnacle": {
-       "win": 0.1221,
-       "draw": 0.0573,
-       "lose": 0.106
+       "win": 0.142,
+       "draw": 0.0319,
+       "lose": 0.1099
       },
-      "cutAvg": 0.0642,
+      "cutAvg": 0.0638,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2245,9 +2028,9 @@
      "league": "에레디비",
      "home": "고어헤드 이글스",
      "away": "포르튀나 시타르트",
-     "win": 2.4,
+     "win": 2.5,
      "draw": 3.5,
-     "lose": 2.17,
+     "lose": 2.1,
      "status": "2",
      "score": null,
      "betType": "일반 정수핸디캡",
@@ -2274,26 +2057,26 @@
       "sportKey": "soccer_netherlands_eredivisie",
       "point": 3.5,
       "betmanPoint": 9.0,
-      "books": 9,
+      "books": 8,
       "homeEn": "Go Ahead Eagles",
       "awayEn": "Fortuna Sittard",
       "consensus": {
-       "over": 2.23,
-       "under": 1.62
+       "over": 2.21,
+       "under": 1.57
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.296,
-       "under": -0.2037
+       "over": 0.2896,
+       "under": -0.242
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0461,
+      "cutAvg": 0.0238,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2579,7 +2362,7 @@
       "consensus": {
        "win": 1.8,
        "draw": 3.6,
-       "lose": 4.495
+       "lose": 4.46
       },
       "pinnacle": {
        "win": 1.85,
@@ -2589,14 +2372,14 @@
       "cutConsensus": {
        "win": 0.0611,
        "draw": 0.0833,
-       "lose": 0.1657
+       "lose": 0.1592
       },
       "cutPinnacle": {
        "win": 0.0865,
        "draw": 0.0984,
        "lose": 0.1758
       },
-      "cutAvg": 0.1034,
+      "cutAvg": 0.1012,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2828,26 +2611,26 @@
       "homeEn": "Getafe",
       "awayEn": "Atlético Madrid",
       "consensus": {
-       "win": 6.3,
+       "win": 6.7,
        "draw": 4.1,
        "lose": 1.54
       },
       "pinnacle": {
-       "win": 6.51,
-       "draw": 4.1,
-       "lose": 1.57
+       "win": 6.67,
+       "draw": 4.15,
+       "lose": 1.55
       },
       "cutConsensus": {
-       "win": 0.1429,
+       "win": 0.194,
        "draw": 0.1098,
        "lose": 0.0779
       },
       "cutPinnacle": {
-       "win": 0.1705,
-       "draw": 0.1098,
-       "lose": 0.0955
+       "win": 0.1904,
+       "draw": 0.1205,
+       "lose": 0.0839
       },
-      "cutAvg": 0.1102,
+      "cutAvg": 0.1272,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2890,22 +2673,22 @@
       "homeEn": "Getafe",
       "awayEn": "Atlético Madrid",
       "consensus": {
-       "over": 2.02,
-       "under": 1.775
+       "over": 2.035,
+       "under": 1.78
       },
       "pinnacle": {
-       "over": 2.11,
-       "under": 1.8
+       "over": 2.1,
+       "under": 1.81
       },
       "cutConsensus": {
-       "over": 0.1683,
-       "under": -0.0141
+       "over": 0.1744,
+       "under": -0.0112
       },
       "cutPinnacle": {
-       "over": 0.2038,
-       "under": 0.0
+       "over": 0.2,
+       "under": 0.0055
       },
-      "cutAvg": 0.0771,
+      "cutAvg": 0.0816,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2943,26 +2726,26 @@
       "homeEn": "Nashville SC",
       "awayEn": "FC Cincinnati",
       "consensus": {
-       "win": 1.485,
+       "win": 1.49,
        "draw": 4.6,
-       "lose": 5.55
+       "lose": 5.575
       },
       "pinnacle": {
-       "win": 1.5,
+       "win": 1.52,
        "draw": 4.65,
-       "lose": 5.81
+       "lose": 5.96
       },
       "cutConsensus": {
-       "win": 0.064,
+       "win": 0.0671,
        "draw": 0.0652,
-       "lose": 0.1441
+       "lose": 0.148
       },
       "cutPinnacle": {
-       "win": 0.0733,
+       "win": 0.0855,
        "draw": 0.0753,
-       "lose": 0.1824
+       "lose": 0.203
       },
-      "cutAvg": 0.0911,
+      "cutAvg": 0.0934,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3005,22 +2788,22 @@
       "homeEn": "Nashville SC",
       "awayEn": "FC Cincinnati",
       "consensus": {
-       "over": 1.935,
-       "under": 1.825
+       "over": 2.005,
+       "under": 1.77
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.1421,
-       "under": -0.0027
+       "over": 0.1721,
+       "under": -0.0339
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0697,
+      "cutAvg": 0.0691,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3058,26 +2841,26 @@
       "homeEn": "Chicago Fire",
       "awayEn": "Charlotte FC",
       "consensus": {
-       "win": 1.61,
-       "draw": 4.4,
-       "lose": 4.4
+       "win": 1.62,
+       "draw": 4.5,
+       "lose": 4.58
       },
       "pinnacle": {
-       "win": 1.61,
-       "draw": 4.5,
-       "lose": 4.75
+       "win": 1.63,
+       "draw": 4.53,
+       "lose": 4.82
       },
       "cutConsensus": {
-       "win": 0.0435,
-       "draw": 0.0682,
-       "lose": 0.1591
+       "win": 0.0494,
+       "draw": 0.0889,
+       "lose": 0.1921
       },
       "cutPinnacle": {
-       "win": 0.0435,
-       "draw": 0.0889,
-       "lose": 0.2211
+       "win": 0.0552,
+       "draw": 0.0949,
+       "lose": 0.2324
       },
-      "cutAvg": 0.0903,
+      "cutAvg": 0.1101,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3116,26 +2899,26 @@
       "sportKey": "soccer_usa_mls",
       "point": 3.5,
       "betmanPoint": 9.0,
-      "books": 13,
+      "books": 14,
       "homeEn": "Chicago Fire",
       "awayEn": "Charlotte FC",
       "consensus": {
-       "over": 1.8,
+       "over": 1.815,
        "under": 1.95
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.85,
+       "under": 2.03
       },
       "cutConsensus": {
-       "over": -0.0111,
+       "over": -0.0028,
        "under": 0.1436
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.0162,
+       "under": 0.1773
       },
-      "cutAvg": 0.0663,
+      "cutAvg": 0.0704,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3175,24 +2958,24 @@
       "consensus": {
        "win": 1.48,
        "draw": 4.6,
-       "lose": 5.51
+       "lose": 5.5
       },
       "pinnacle": {
-       "win": 1.5,
-       "draw": 4.88,
-       "lose": 5.52
+       "win": 1.51,
+       "draw": 4.95,
+       "lose": 5.62
       },
       "cutConsensus": {
        "win": 0.0473,
        "draw": 0.087,
-       "lose": 0.1561
+       "lose": 0.1545
       },
       "cutPinnacle": {
-       "win": 0.06,
-       "draw": 0.1393,
-       "lose": 0.1576
+       "win": 0.0662,
+       "draw": 0.1515,
+       "lose": 0.1726
       },
-      "cutAvg": 0.0968,
+      "cutAvg": 0.0963,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3235,7 +3018,7 @@
       "homeEn": "Vancouver Whitecaps FC",
       "awayEn": "Real Salt Lake",
       "consensus": {
-       "over": 1.995,
+       "over": 2.0,
        "under": 1.78
       },
       "pinnacle": {
@@ -3243,14 +3026,14 @@
        "under": null
       },
       "cutConsensus": {
-       "over": 0.183,
+       "over": 0.185,
        "under": -0.0506
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0662,
+      "cutAvg": 0.0672,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -7049,8 +6832,8 @@
      "win": 1.21,
      "draw": 4.85,
      "lose": 7.7,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7062,8 +6845,8 @@
      "win": 1.73,
      "draw": 3.45,
      "lose": 3.4,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7075,8 +6858,8 @@
      "win": 2.75,
      "draw": 3.7,
      "lose": 1.89,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7088,8 +6871,8 @@
      "win": 4.85,
      "draw": null,
      "lose": 1.06,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1.5:0",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -7101,8 +6884,8 @@
      "win": 1.51,
      "draw": null,
      "lose": 2.05,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7117,8 +6900,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7130,8 +6913,8 @@
      "win": 1.28,
      "draw": 4.4,
      "lose": 6.5,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7143,8 +6926,8 @@
      "win": 1.94,
      "draw": 3.9,
      "lose": 2.55,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7156,8 +6939,8 @@
      "win": 3.9,
      "draw": 3.95,
      "lose": 1.53,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7169,8 +6952,8 @@
      "win": 5.32,
      "draw": null,
      "lose": 1.04,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-0.5:0",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -7182,8 +6965,8 @@
      "win": 2.15,
      "draw": null,
      "lose": 1.46,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7198,8 +6981,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7211,8 +6994,8 @@
      "win": 1.21,
      "draw": 5.1,
      "lose": 7.1,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7224,8 +7007,8 @@
      "win": 1.69,
      "draw": 3.65,
      "lose": 3.35,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7237,8 +7020,8 @@
      "win": 2.6,
      "draw": 3.8,
      "lose": 1.94,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7250,8 +7033,8 @@
      "win": 4.31,
      "draw": null,
      "lose": 1.09,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0.5:0",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -7263,8 +7046,8 @@
      "win": 1.87,
      "draw": null,
      "lose": 1.63,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7279,8 +7062,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7292,8 +7075,8 @@
      "win": 2.14,
      "draw": 3.85,
      "lose": 2.3,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7305,8 +7088,8 @@
      "win": 3.85,
      "draw": 4.15,
      "lose": 1.51,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7318,8 +7101,8 @@
      "win": 7.9,
      "draw": 6.3,
      "lose": 1.14,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7331,8 +7114,8 @@
      "win": 1.83,
      "draw": null,
      "lose": 1.66,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7347,8 +7130,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7360,8 +7143,8 @@
      "win": 4.6,
      "draw": 4.15,
      "lose": 1.42,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:5",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7373,8 +7156,8 @@
      "win": 2.4,
      "draw": 3.45,
      "lose": 2.19,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:5",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7386,8 +7169,8 @@
      "win": 1.51,
      "draw": 4.2,
      "lose": 3.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:5",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7399,8 +7182,8 @@
      "win": 1.58,
      "draw": null,
      "lose": 1.94,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "6:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7415,8 +7198,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "6:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7428,8 +7211,8 @@
      "win": 4.55,
      "draw": 4.1,
      "lose": 1.43,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7441,8 +7224,8 @@
      "win": 2.21,
      "draw": 3.5,
      "lose": 2.35,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7454,8 +7237,8 @@
      "win": 1.49,
      "draw": 4.25,
      "lose": 3.9,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7467,8 +7250,8 @@
      "win": 1.56,
      "draw": null,
      "lose": 1.97,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7483,8 +7266,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7496,8 +7279,8 @@
      "win": 2.95,
      "draw": 3.55,
      "lose": 1.84,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7509,8 +7292,8 @@
      "win": 1.72,
      "draw": 3.6,
      "lose": 3.3,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7522,8 +7305,8 @@
      "win": 1.2,
      "draw": 5.4,
      "lose": 6.9,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7535,8 +7318,8 @@
      "win": 2.2,
      "draw": null,
      "lose": 1.44,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7551,8 +7334,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7564,8 +7347,8 @@
      "win": 2.5,
      "draw": 3.25,
      "lose": 2.2,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7577,8 +7360,8 @@
      "win": 1.48,
      "draw": 3.75,
      "lose": 4.55,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7590,8 +7373,8 @@
      "win": 1.82,
      "draw": null,
      "lose": 1.67,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7606,8 +7389,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7619,8 +7402,8 @@
      "win": 2.45,
      "draw": 2.95,
      "lose": 2.41,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7632,8 +7415,8 @@
      "win": 1.42,
      "draw": 3.75,
      "lose": 5.2,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7645,8 +7428,8 @@
      "win": 1.62,
      "draw": null,
      "lose": 1.88,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7661,8 +7444,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7674,8 +7457,8 @@
      "win": 1.3,
      "draw": 4.4,
      "lose": 6.0,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7687,8 +7470,8 @@
      "win": 1.93,
      "draw": 3.4,
      "lose": 2.85,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7700,8 +7483,8 @@
      "win": 3.25,
      "draw": 3.9,
      "lose": 1.67,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7713,8 +7496,8 @@
      "win": 5.92,
      "draw": null,
      "lose": 1.02,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1.5:0",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -7726,8 +7509,8 @@
      "win": 1.51,
      "draw": null,
      "lose": 2.05,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7742,8 +7525,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7755,8 +7538,8 @@
      "win": 1.51,
      "draw": 3.65,
      "lose": 4.4,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7768,8 +7551,8 @@
      "win": 2.55,
      "draw": 3.25,
      "lose": 2.16,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7781,8 +7564,8 @@
      "win": 1.89,
      "draw": null,
      "lose": 1.61,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7797,8 +7580,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7810,8 +7593,8 @@
      "win": 2.65,
      "draw": 2.95,
      "lose": 2.24,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7823,8 +7606,8 @@
      "win": 1.5,
      "draw": 3.6,
      "lose": 4.6,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7836,8 +7619,8 @@
      "win": 1.62,
      "draw": null,
      "lose": 1.88,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7852,8 +7635,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7865,8 +7648,8 @@
      "win": 2.35,
      "draw": 2.9,
      "lose": 2.55,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:2",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7878,8 +7661,8 @@
      "win": 4.85,
      "draw": 3.75,
      "lose": 1.45,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:2",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7891,8 +7674,8 @@
      "win": 1.68,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7907,8 +7690,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -7920,8 +7703,8 @@
      "win": 1.15,
      "draw": 5.8,
      "lose": 8.3,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -7933,8 +7716,8 @@
      "win": 1.55,
      "draw": 4.0,
      "lose": 3.75,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7946,8 +7729,8 @@
      "win": 2.5,
      "draw": 3.6,
      "lose": 2.06,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -7959,8 +7742,8 @@
      "win": 3.57,
      "draw": null,
      "lose": 1.15,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-2.5:1",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -7972,8 +7755,8 @@
      "win": 1.65,
      "draw": null,
      "lose": 1.84,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -7988,8 +7771,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8001,8 +7784,8 @@
      "win": 1.25,
      "draw": 4.55,
      "lose": 7.0,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8014,8 +7797,8 @@
      "win": 1.85,
      "draw": 3.35,
      "lose": 3.1,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8027,8 +7810,8 @@
      "win": 3.05,
      "draw": 3.75,
      "lose": 1.76,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8040,8 +7823,8 @@
      "win": 5.6,
      "draw": null,
      "lose": 1.03,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1.5:1",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -8053,8 +7836,8 @@
      "win": 1.45,
      "draw": null,
      "lose": 2.18,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8069,8 +7852,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8082,8 +7865,8 @@
      "win": 1.61,
      "draw": 3.55,
      "lose": 3.85,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8095,8 +7878,8 @@
      "win": 2.85,
      "draw": 3.2,
      "lose": 2.0,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8108,8 +7891,8 @@
      "win": 6.0,
      "draw": 4.8,
      "lose": 1.27,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-2:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8121,8 +7904,8 @@
      "win": 1.88,
      "draw": null,
      "lose": 1.62,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8137,8 +7920,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8150,8 +7933,8 @@
      "win": 1.7,
      "draw": 3.4,
      "lose": 3.55,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8163,8 +7946,8 @@
      "win": 3.1,
      "draw": 3.3,
      "lose": 1.86,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8176,8 +7959,8 @@
      "win": 6.4,
      "draw": 4.7,
      "lose": 1.26,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8189,8 +7972,8 @@
      "win": 1.7,
      "draw": null,
      "lose": 1.78,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8205,8 +7988,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8218,8 +8001,8 @@
      "win": 1.67,
      "draw": 3.5,
      "lose": 3.6,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:4",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8231,8 +8014,8 @@
      "win": 3.05,
      "draw": 3.8,
      "lose": 1.75,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:4",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8244,8 +8027,8 @@
      "win": 6.2,
      "draw": 4.95,
      "lose": 1.25,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1:4",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8257,8 +8040,8 @@
      "win": 1.83,
      "draw": null,
      "lose": 1.66,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8273,8 +8056,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8286,8 +8069,8 @@
      "win": 2.23,
      "draw": 3.1,
      "lose": 2.55,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:2",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8299,8 +8082,8 @@
      "win": 4.25,
      "draw": 3.85,
      "lose": 1.5,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:2",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8312,8 +8095,8 @@
      "win": 9.8,
      "draw": 6.6,
      "lose": 1.1,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:2",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8325,8 +8108,8 @@
      "win": 1.95,
      "draw": null,
      "lose": 1.57,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8341,8 +8124,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8354,8 +8137,8 @@
      "win": 1.43,
      "draw": 4.0,
      "lose": 4.7,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8367,8 +8150,8 @@
      "win": 2.28,
      "draw": 3.35,
      "lose": 2.35,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8380,8 +8163,8 @@
      "win": 4.05,
      "draw": 4.25,
      "lose": 1.47,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8393,8 +8176,8 @@
      "win": 1.45,
      "draw": null,
      "lose": 2.18,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8409,8 +8192,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8422,8 +8205,8 @@
      "win": 1.81,
      "draw": 3.05,
      "lose": 3.55,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8435,8 +8218,8 @@
      "win": 3.35,
      "draw": 3.3,
      "lose": 1.78,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8448,8 +8231,8 @@
      "win": 1.68,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8464,8 +8247,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8477,8 +8260,8 @@
      "win": 3.45,
      "draw": 4.15,
      "lose": 1.58,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:4",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8490,8 +8273,8 @@
      "win": 2.03,
      "draw": 3.8,
      "lose": 2.45,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:4",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8503,8 +8286,8 @@
      "win": 1.94,
      "draw": null,
      "lose": 1.58,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8519,8 +8302,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8532,8 +8315,8 @@
      "win": 5.3,
      "draw": 4.5,
      "lose": 1.33,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:3",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8545,8 +8328,8 @@
      "win": 2.65,
      "draw": 3.6,
      "lose": 1.97,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:3",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8558,8 +8341,8 @@
      "win": 1.65,
      "draw": 4.0,
      "lose": 3.25,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:3",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8571,8 +8354,8 @@
      "win": 1.02,
      "draw": null,
      "lose": 5.92,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5.5:3",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -8584,8 +8367,8 @@
      "win": 1.7,
      "draw": null,
      "lose": 1.78,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8600,8 +8383,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8613,8 +8396,8 @@
      "win": 8.2,
      "draw": 5.0,
      "lose": 1.19,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:5",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8626,8 +8409,8 @@
      "win": 3.7,
      "draw": 3.75,
      "lose": 1.6,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:5",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8639,8 +8422,8 @@
      "win": 2.08,
      "draw": 3.55,
      "lose": 2.5,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:5",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8652,8 +8435,8 @@
      "win": 1.11,
      "draw": null,
      "lose": 4.02,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4.5:5",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -8665,8 +8448,8 @@
      "win": 1.58,
      "draw": null,
      "lose": 1.94,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "6:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8681,8 +8464,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "6:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8694,8 +8477,8 @@
      "win": 5.0,
      "draw": 3.95,
      "lose": 1.41,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:2",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8707,8 +8490,8 @@
      "win": 2.31,
      "draw": 3.1,
      "lose": 2.45,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:2",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8720,8 +8503,8 @@
      "win": 1.43,
      "draw": 4.2,
      "lose": 4.45,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:2",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8733,8 +8516,8 @@
      "win": 2.0,
      "draw": null,
      "lose": 1.54,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8749,8 +8532,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8762,8 +8545,8 @@
      "win": 2.6,
      "draw": 3.1,
      "lose": 2.2,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8775,8 +8558,8 @@
      "win": 1.54,
      "draw": 3.7,
      "lose": 4.1,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8788,8 +8571,8 @@
      "win": 1.87,
      "draw": null,
      "lose": 1.63,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8804,8 +8587,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8817,8 +8600,8 @@
      "win": 3.3,
      "draw": 3.75,
      "lose": 1.69,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8830,8 +8613,8 @@
      "win": 1.87,
      "draw": 3.6,
      "lose": 2.85,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8843,8 +8626,8 @@
      "win": 1.29,
      "draw": 4.95,
      "lose": 5.4,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8856,8 +8639,8 @@
      "win": 1.54,
      "draw": null,
      "lose": 2.0,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8872,8 +8655,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8885,8 +8668,8 @@
      "win": 1.11,
      "draw": 6.2,
      "lose": 9.9,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:3",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8898,8 +8681,8 @@
      "win": 1.47,
      "draw": 3.9,
      "lose": 4.4,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:3",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8911,8 +8694,8 @@
      "win": 2.1,
      "draw": 3.7,
      "lose": 2.4,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:3",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8924,8 +8707,8 @@
      "win": 3.24,
      "draw": null,
      "lose": 1.19,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1.5:3",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -8937,8 +8720,8 @@
      "win": 1.84,
      "draw": null,
      "lose": 1.65,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -8953,8 +8736,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -8966,8 +8749,8 @@
      "win": 1.78,
      "draw": 3.8,
      "lose": 2.95,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:3",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -8979,8 +8762,8 @@
      "win": 3.05,
      "draw": 3.75,
      "lose": 1.76,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:3",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -8992,8 +8775,8 @@
      "win": 1.64,
      "draw": null,
      "lose": 1.85,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -9008,8 +8791,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -9021,8 +8804,8 @@
      "win": 1.05,
      "draw": null,
      "lose": 5.08,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "132:129",
      "betType": "일반 승패",
      "marketType": "h2h"
     },
@@ -9034,8 +8817,8 @@
      "win": 1.76,
      "draw": null,
      "lose": 1.72,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "120.5:129",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -9047,8 +8830,8 @@
      "win": 1.71,
      "draw": null,
      "lose": 1.77,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "261:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -9063,8 +8846,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "261:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -9076,8 +8859,8 @@
      "win": 2.65,
      "draw": 3.55,
      "lose": 1.99,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -9089,8 +8872,8 @@
      "win": 1.6,
      "draw": 3.8,
      "lose": 3.65,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9102,8 +8885,8 @@
      "win": 1.49,
      "draw": null,
      "lose": 2.09,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -9118,8 +8901,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -9131,8 +8914,8 @@
      "win": 1.36,
      "draw": 4.05,
      "lose": 5.5,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -9144,8 +8927,8 @@
      "win": 2.14,
      "draw": 3.3,
      "lose": 2.55,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9157,8 +8940,8 @@
      "win": 3.8,
      "draw": 4.0,
      "lose": 1.54,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9170,8 +8953,8 @@
      "win": 6.28,
      "draw": null,
      "lose": 1.01,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-2.5:0",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -9183,8 +8966,8 @@
      "win": 2.05,
      "draw": null,
      "lose": 1.51,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -9199,8 +8982,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -9212,8 +8995,8 @@
      "win": 1.9,
      "draw": 3.35,
      "lose": 2.95,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -9225,8 +9008,8 @@
      "win": 3.5,
      "draw": 3.6,
      "lose": 1.67,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9238,8 +9021,8 @@
      "win": 1.92,
      "draw": null,
      "lose": 1.59,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -9254,8 +9037,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -9267,8 +9050,8 @@
      "win": 2.08,
      "draw": 3.15,
      "lose": 2.75,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -9280,8 +9063,8 @@
      "win": 4.25,
      "draw": 3.55,
      "lose": 1.55,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9293,8 +9076,8 @@
      "win": 1.66,
      "draw": null,
      "lose": 1.83,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -9309,8 +9092,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -9322,8 +9105,8 @@
      "win": 1.32,
      "draw": 4.4,
      "lose": 5.6,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -9335,8 +9118,8 @@
      "win": 1.98,
      "draw": 3.4,
      "lose": 2.75,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9348,8 +9131,8 @@
      "win": 3.3,
      "draw": 4.0,
      "lose": 1.64,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9361,8 +9144,8 @@
      "win": 6.28,
      "draw": null,
      "lose": 1.01,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-2.5:1",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -9374,8 +9157,8 @@
      "win": 1.46,
      "draw": null,
      "lose": 2.15,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -9390,8 +9173,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -9403,8 +9186,8 @@
      "win": 2.04,
      "draw": 3.4,
      "lose": 2.65,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -9416,8 +9199,8 @@
      "win": 3.9,
      "draw": 3.7,
      "lose": 1.57,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9429,8 +9212,8 @@
      "win": 1.89,
      "draw": null,
      "lose": 1.61,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -9445,8 +9228,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -9458,8 +9241,8 @@
      "win": 1.1,
      "draw": 6.1,
      "lose": 11.0,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:1",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -9471,8 +9254,8 @@
      "win": 1.45,
      "draw": 3.85,
      "lose": 4.7,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9484,8 +9267,8 @@
      "win": 2.1,
      "draw": 3.6,
      "lose": 2.45,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9497,8 +9280,8 @@
      "win": 3.24,
      "draw": null,
      "lose": 1.19,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1.5:1",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -9510,8 +9293,8 @@
      "win": 1.73,
      "draw": null,
      "lose": 1.75,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -9526,8 +9309,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -9539,8 +9322,8 @@
      "win": 1.88,
      "draw": 3.5,
      "lose": 2.9,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:3",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -9552,8 +9335,8 @@
      "win": 3.45,
      "draw": 3.6,
      "lose": 1.68,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:3",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9565,8 +9348,8 @@
      "win": 2.07,
      "draw": null,
      "lose": 1.5,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -9581,8 +9364,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -9594,8 +9377,8 @@
      "win": 2.21,
      "draw": 3.75,
      "lose": 2.25,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:3",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -9607,8 +9390,8 @@
      "win": 4.15,
      "draw": 4.15,
      "lose": 1.47,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:3",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9620,8 +9403,8 @@
      "win": 1.68,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -9636,8 +9419,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -9649,41 +9432,10 @@
      "win": 1.79,
      "draw": 3.75,
      "lose": 2.95,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "승무패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "bf8af317c7aa01cea284024991d994f7",
-      "sportKey": "soccer_usa_mls",
-      "books": 23,
-      "homeEn": "FC Dallas",
-      "awayEn": "Portland Timbers",
-      "consensus": {
-       "win": 1.86,
-       "draw": 3.94,
-       "lose": 3.7
-      },
-      "pinnacle": {
-       "win": 1.88,
-       "draw": 4.08,
-       "lose": 3.92
-      },
-      "cutConsensus": {
-       "win": 0.0376,
-       "draw": 0.0482,
-       "lose": 0.2027
-      },
-      "cutPinnacle": {
-       "win": 0.0479,
-       "draw": 0.0809,
-       "lose": 0.2474
-      },
-      "cutAvg": 0.0962,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "marketType": "h2h"
     },
     {
      "kickoff": "2026-11-22T06:00:00+09:00",
@@ -9693,8 +9445,8 @@
      "win": 3.05,
      "draw": 3.75,
      "lose": 1.76,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9706,42 +9458,13 @@
      "win": 1.6,
      "draw": null,
      "lose": 1.91,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.6,
-     "under": 1.91,
-     "market": {
-      "marketType": "totals",
-      "marketId": "bf8af317c7aa01cea284024991d994f7",
-      "sportKey": "soccer_usa_mls",
-      "point": 3.5,
-      "betmanPoint": 9.0,
-      "books": 10,
-      "homeEn": "FC Dallas",
-      "awayEn": "Portland Timbers",
-      "consensus": {
-       "over": 2.13,
-       "under": 1.71
-      },
-      "pinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutConsensus": {
-       "over": 0.2488,
-       "under": -0.117
-      },
-      "cutPinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutAvg": 0.0659,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "under": 1.91
     },
     {
      "kickoff": "2026-11-22T06:00:00+09:00",
@@ -9751,8 +9474,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -9764,41 +9487,10 @@
      "win": 1.44,
      "draw": 4.25,
      "lose": 4.25,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:3",
      "betType": "승무패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "8db79202651f4f3fa2b1cdc0c3467e0f",
-      "sportKey": "soccer_usa_mls",
-      "books": 23,
-      "homeEn": "Inter Miami CF",
-      "awayEn": "Columbus Crew SC",
-      "consensus": {
-       "win": 1.61,
-       "draw": 4.5,
-       "lose": 4.6
-      },
-      "pinnacle": {
-       "win": 1.65,
-       "draw": 4.7,
-       "lose": 4.67
-      },
-      "cutConsensus": {
-       "win": 0.1056,
-       "draw": 0.0556,
-       "lose": 0.0761
-      },
-      "cutPinnacle": {
-       "win": 0.1273,
-       "draw": 0.0957,
-       "lose": 0.0899
-      },
-      "cutAvg": 0.0791,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "marketType": "h2h"
     },
     {
      "kickoff": "2026-11-22T08:00:00+09:00",
@@ -9808,8 +9500,8 @@
      "win": 2.2,
      "draw": 3.65,
      "lose": 2.3,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1:3",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -9821,48 +9513,349 @@
      "win": 1.75,
      "draw": null,
      "lose": 1.73,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.75,
-     "under": 1.73,
-     "market": {
-      "marketType": "totals",
-      "marketId": "8db79202651f4f3fa2b1cdc0c3467e0f",
-      "sportKey": "soccer_usa_mls",
-      "point": 3.5,
-      "betmanPoint": 9.0,
-      "books": 14,
-      "homeEn": "Inter Miami CF",
-      "awayEn": "Columbus Crew SC",
-      "consensus": {
-       "over": 1.925,
-       "under": 1.86
-      },
-      "pinnacle": {
-       "over": 2.04,
-       "under": 1.85
-      },
-      "cutConsensus": {
-       "over": 0.0909,
-       "under": 0.0699
-      },
-      "cutPinnacle": {
-       "over": 0.1422,
-       "under": 0.0649
-      },
-      "cutAvg": 0.0804,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "under": 1.73
     },
     {
      "kickoff": "2026-11-22T08:00:00+09:00",
      "league": "MLS",
      "home": "인터 마이애미CF",
      "away": "콜럼버스 크루",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "4",
+     "score": "3:0",
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T09:30:00+09:00",
+     "league": "NBA",
+     "home": "뉴욕 닉스",
+     "away": "포틀랜드 트레일블레이저스",
+     "win": 1.78,
+     "draw": null,
+     "lose": 1.7,
+     "status": "4",
+     "score": "97:96",
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T09:30:00+09:00",
+     "league": "NBA",
+     "home": "뉴욕 닉스",
+     "away": "포틀랜드 트레일블레이저스",
+     "win": 1.67,
+     "draw": null,
+     "lose": 1.82,
+     "status": "4",
+     "score": "98.5:96",
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T09:30:00+09:00",
+     "league": "NBA",
+     "home": "뉴욕 닉스",
+     "away": "포틀랜드 트레일블레이저스",
+     "win": 1.73,
+     "draw": null,
+     "lose": 1.75,
+     "status": "4",
+     "score": "193:0",
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.73,
+     "under": 1.75
+    },
+    {
+     "kickoff": "2026-11-22T09:30:00+09:00",
+     "league": "NBA",
+     "home": "뉴욕 닉스",
+     "away": "포틀랜드 트레일블레이저스",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "4",
+     "score": "193:0",
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T10:00:00+09:00",
+     "league": "NBA",
+     "home": "댈러스 매버릭스",
+     "away": "LA 클리퍼스",
+     "win": 1.33,
+     "draw": null,
+     "lose": 2.52,
+     "status": "4",
+     "score": "110:100",
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T10:00:00+09:00",
+     "league": "NBA",
+     "home": "댈러스 매버릭스",
+     "away": "LA 클리퍼스",
+     "win": 1.76,
+     "draw": null,
+     "lose": 1.72,
+     "status": "4",
+     "score": "104.5:100",
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T10:00:00+09:00",
+     "league": "NBA",
+     "home": "댈러스 매버릭스",
+     "away": "LA 클리퍼스",
+     "win": 1.72,
+     "draw": null,
+     "lose": 1.76,
+     "status": "4",
+     "score": "210:0",
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.72,
+     "under": 1.76
+    },
+    {
+     "kickoff": "2026-11-22T10:00:00+09:00",
+     "league": "NBA",
+     "home": "댈러스 매버릭스",
+     "away": "LA 클리퍼스",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "4",
+     "score": "210:0",
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T10:00:00+09:00",
+     "league": "NBA",
+     "home": "미네소타 팀버울브스",
+     "away": "멤피스 그리즐리스",
+     "win": 1.31,
+     "draw": null,
+     "lose": 2.59,
+     "status": "4",
+     "score": "104:95",
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T10:00:00+09:00",
+     "league": "NBA",
+     "home": "미네소타 팀버울브스",
+     "away": "멤피스 그리즐리스",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "4",
+     "score": "98.5:95",
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T10:00:00+09:00",
+     "league": "NBA",
+     "home": "미네소타 팀버울브스",
+     "away": "멤피스 그리즐리스",
+     "win": 1.71,
+     "draw": null,
+     "lose": 1.77,
+     "status": "4",
+     "score": "199:0",
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.71,
+     "under": 1.77
+    },
+    {
+     "kickoff": "2026-11-22T10:00:00+09:00",
+     "league": "NBA",
+     "home": "미네소타 팀버울브스",
+     "away": "멤피스 그리즐리스",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "4",
+     "score": "199:0",
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T10:00:00+09:00",
+     "league": "NBA",
+     "home": "샌안토니오 스퍼스",
+     "away": "뉴올리언스 펠리컨스",
+     "win": 1.01,
+     "draw": null,
+     "lose": 6.28,
+     "status": "4",
+     "score": "114:91",
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T10:00:00+09:00",
+     "league": "NBA",
+     "home": "샌안토니오 스퍼스",
+     "away": "뉴올리언스 펠리컨스",
+     "win": 1.78,
+     "draw": null,
+     "lose": 1.7,
+     "status": "4",
+     "score": "95.5:91",
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T10:00:00+09:00",
+     "league": "NBA",
+     "home": "샌안토니오 스퍼스",
+     "away": "뉴올리언스 펠리컨스",
+     "win": 1.71,
+     "draw": null,
+     "lose": 1.77,
+     "status": "4",
+     "score": "205:0",
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.71,
+     "under": 1.77
+    },
+    {
+     "kickoff": "2026-11-22T10:00:00+09:00",
+     "league": "NBA",
+     "home": "샌안토니오 스퍼스",
+     "away": "뉴올리언스 펠리컨스",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "4",
+     "score": "205:0",
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T11:00:00+09:00",
+     "league": "A리그",
+     "home": "웰링턴 피닉스",
+     "away": "맥아서FC",
+     "win": 1.68,
+     "draw": 3.5,
+     "lose": 3.55,
+     "status": "4",
+     "score": "1:2",
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T11:00:00+09:00",
+     "league": "A리그",
+     "home": "웰링턴 피닉스",
+     "away": "맥아서FC",
+     "win": 3.0,
+     "draw": 3.35,
+     "lose": 1.88,
+     "status": "4",
+     "score": "0:2",
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T11:00:00+09:00",
+     "league": "A리그",
+     "home": "웰링턴 피닉스",
+     "away": "맥아서FC",
+     "win": 1.94,
+     "draw": null,
+     "lose": 1.58,
+     "status": "4",
+     "score": "3:0",
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.94,
+     "under": 1.58
+    },
+    {
+     "kickoff": "2026-11-22T11:00:00+09:00",
+     "league": "A리그",
+     "home": "웰링턴 피닉스",
+     "away": "맥아서FC",
+     "win": 1.81,
+     "draw": null,
+     "lose": 1.79,
+     "status": "4",
+     "score": "3:0",
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T12:00:00+09:00",
+     "league": "NBA",
+     "home": "새크라멘토 킹스",
+     "away": "보스턴 셀틱스",
+     "win": 4.31,
+     "draw": null,
+     "lose": 1.09,
+     "status": "3",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T12:00:00+09:00",
+     "league": "NBA",
+     "home": "새크라멘토 킹스",
+     "away": "보스턴 셀틱스",
+     "win": 1.71,
+     "draw": null,
+     "lose": 1.77,
+     "status": "3",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-22T12:00:00+09:00",
+     "league": "NBA",
+     "home": "새크라멘토 킹스",
+     "away": "보스턴 셀틱스",
+     "win": 1.76,
+     "draw": null,
+     "lose": 1.72,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.76,
+     "under": 1.72
+    },
+    {
+     "kickoff": "2026-11-22T12:00:00+09:00",
+     "league": "NBA",
+     "home": "새크라멘토 킹스",
+     "away": "보스턴 셀틱스",
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
@@ -9875,24 +9868,22 @@
   }
  ],
  "marketSource": "the-odds-api.com",
- "marketFetchedAt": "2026-11-22T05:11:22.432907+09:00",
- "marketCreditsRemaining": 764,
+ "marketFetchedAt": "2026-11-22T13:50:02.094794+09:00",
+ "marketCreditsRemaining": 754,
  "marketRefreshIntervalMinutes": 630,
- "marketEstimatedCreditsPerRun": 12,
+ "marketEstimatedCreditsPerRun": 10,
  "marketActiveLeagues": [
-  "MLS",
-  "NBA",
   "K리그1",
   "에레디비",
   "EFL챔",
-  "라리가"
+  "라리가",
+  "MLS"
  ],
  "marketFetchedLeagues": [
-  "MLS",
-  "NBA",
   "K리그1",
   "에레디비",
   "EFL챔",
-  "라리가"
+  "라리가",
+  "MLS"
  ]
 }
