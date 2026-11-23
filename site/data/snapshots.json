@@ -1,6 +1,6 @@
 {
  "source": "betman.co.kr",
- "fetchedAt": "2026-11-23T10:22:07.607124+09:00",
+ "fetchedAt": "2026-11-24T04:24:17.752491+09:00",
  "games": [
   {
    "gmId": "G101",
@@ -8,282 +8,39 @@
    "gameType": "승부식",
    "gmTs": 260139,
    "saleEnd": 1795528800000,
-   "totalSellAmount": 1176567800,
+   "totalSellAmount": 9088397000,
    "matches": [
     {
-     "kickoff": "2026-11-23T10:30:00+09:00",
-     "league": "MLS",
-     "home": "밴쿠버 화이트캡스FC",
-     "away": "레알 솔트레이크",
-     "win": 1.37,
-     "draw": 4.2,
-     "lose": 5.1,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "78c0145b05f2691b49576d6d5b8a0eb3",
-      "sportKey": "soccer_usa_mls",
-      "books": 22,
-      "homeEn": "Vancouver Whitecaps FC",
-      "awayEn": "Real Salt Lake",
-      "consensus": {
-       "win": 1.45,
-       "draw": 4.83,
-       "lose": 5.9
-      },
-      "pinnacle": {
-       "win": 1.45,
-       "draw": 5.16,
-       "lose": 6.57
-      },
-      "cutConsensus": {
-       "win": 0.0552,
-       "draw": 0.1304,
-       "lose": 0.1356
-      },
-      "cutPinnacle": {
-       "win": 0.0552,
-       "draw": 0.186,
-       "lose": 0.2237
-      },
-      "cutAvg": 0.1071,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
-    },
-    {
-     "kickoff": "2026-11-23T10:30:00+09:00",
-     "league": "MLS",
-     "home": "밴쿠버 화이트캡스FC",
-     "away": "레알 솔트레이크",
-     "win": 2.05,
-     "draw": 3.55,
-     "lose": 2.55,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-23T10:30:00+09:00",
-     "league": "MLS",
-     "home": "밴쿠버 화이트캡스FC",
-     "away": "레알 솔트레이크",
-     "win": 1.69,
-     "draw": null,
-     "lose": 1.79,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.69,
-     "under": 1.79,
-     "market": {
-      "marketType": "totals",
-      "marketId": "78c0145b05f2691b49576d6d5b8a0eb3",
-      "sportKey": "soccer_usa_mls",
-      "point": 3.5,
-      "betmanPoint": 9.0,
-      "books": 12,
-      "homeEn": "Vancouver Whitecaps FC",
-      "awayEn": "Real Salt Lake",
-      "consensus": {
-       "over": 1.98,
-       "under": 1.78
-      },
-      "pinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutConsensus": {
-       "over": 0.1465,
-       "under": -0.0056
-      },
-      "cutPinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutAvg": 0.0704,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
-    },
-    {
-     "kickoff": "2026-11-23T10:30:00+09:00",
-     "league": "MLS",
-     "home": "밴쿠버 화이트캡스FC",
-     "away": "레알 솔트레이크",
-     "win": 1.8,
-     "draw": null,
-     "lose": 1.8,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-23T10:30:00+09:00",
+     "kickoff": "2026-11-24T09:00:00+09:00",
      "league": "NBA",
-     "home": "골든스테이트 워리어스",
-     "away": "보스턴 셀틱스",
-     "win": 3.39,
+     "home": "샬럿 호네츠",
+     "away": "멤피스 그리즐리스",
+     "win": 2.15,
      "draw": null,
-     "lose": 1.17,
-     "status": "2",
-     "score": null,
-     "betType": "일반 승패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "b8c5bdb50209c7d050400c7d28c32e30",
-      "sportKey": "basketball_nba",
-      "books": 25,
-      "homeEn": "Golden State Warriors",
-      "awayEn": "Boston Celtics",
-      "consensus": {
-       "win": 3.55,
-       "draw": null,
-       "lose": 1.3
-      },
-      "pinnacle": {
-       "win": 3.82,
-       "draw": null,
-       "lose": 1.31
-      },
-      "cutConsensus": {
-       "win": 0.0451,
-       "draw": null,
-       "lose": 0.1
-      },
-      "cutPinnacle": {
-       "win": 0.1126,
-       "draw": null,
-       "lose": 0.1069
-      },
-      "cutAvg": 0.0726,
-      "timeDiffSec": 600,
-      "matchedBy": "time"
-     }
-    },
-    {
-     "kickoff": "2026-11-23T10:30:00+09:00",
-     "league": "NBA",
-     "home": "골든스테이트 워리어스",
-     "away": "보스턴 셀틱스",
-     "win": 1.74,
-     "draw": null,
-     "lose": 1.74,
-     "status": "2",
-     "score": null,
-     "betType": "일반 소수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-23T10:30:00+09:00",
-     "league": "NBA",
-     "home": "골든스테이트 워리어스",
-     "away": "보스턴 셀틱스",
-     "win": 1.73,
-     "draw": null,
-     "lose": 1.75,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.73,
-     "under": 1.75,
-     "market": {
-      "marketType": "totals",
-      "marketId": "b8c5bdb50209c7d050400c7d28c32e30",
-      "sportKey": "basketball_nba",
-      "point": 211.5,
-      "betmanPoint": 9.0,
-      "books": 10,
-      "homeEn": "Golden State Warriors",
-      "awayEn": "Boston Celtics",
-      "consensus": {
-       "over": 1.91,
-       "under": 1.91
-      },
-      "pinnacle": {
-       "over": 1.92,
-       "under": 1.97
-      },
-      "cutConsensus": {
-       "over": 0.0942,
-       "under": 0.0838
-      },
-      "cutPinnacle": {
-       "over": 0.099,
-       "under": 0.1117
-      },
-      "cutAvg": 0.089,
-      "timeDiffSec": 600,
-      "matchedBy": "time"
-     }
-    },
-    {
-     "kickoff": "2026-11-23T10:30:00+09:00",
-     "league": "NBA",
-     "home": "골든스테이트 워리어스",
-     "away": "보스턴 셀틱스",
-     "win": 1.8,
-     "draw": null,
-     "lose": 1.8,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-23T19:00:00+09:00",
-     "league": "WKBL",
-     "home": "신한은행 에스버드",
-     "away": "하나은행",
-     "win": 1.17,
-     "draw": null,
-     "lose": 3.39,
+     "lose": 1.46,
      "status": "2",
      "score": null,
      "betType": "일반 승패",
      "marketType": "h2h"
     },
     {
-     "kickoff": "2026-11-23T19:00:00+09:00",
-     "league": "WKBL",
-     "home": "신한은행 에스버드",
-     "away": "하나은행",
-     "win": 1.51,
-     "draw": 2.9,
-     "lose": 6.4,
-     "status": "2",
-     "score": null,
-     "betType": "승N패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-23T19:00:00+09:00",
-     "league": "WKBL",
-     "home": "신한은행 에스버드",
-     "away": "하나은행",
-     "win": 1.75,
+     "kickoff": "2026-11-24T09:00:00+09:00",
+     "league": "NBA",
+     "home": "샬럿 호네츠",
+     "away": "멤피스 그리즐리스",
+     "win": 1.79,
      "draw": null,
-     "lose": 1.73,
+     "lose": 1.69,
      "status": "2",
      "score": null,
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
     {
-     "kickoff": "2026-11-23T19:00:00+09:00",
-     "league": "WKBL",
-     "home": "신한은행 에스버드",
-     "away": "하나은행",
+     "kickoff": "2026-11-24T09:00:00+09:00",
+     "league": "NBA",
+     "home": "샬럿 호네츠",
+     "away": "멤피스 그리즐리스",
      "win": 1.74,
      "draw": null,
      "lose": 1.74,
@@ -296,10 +53,10 @@
      "under": 1.74
     },
     {
-     "kickoff": "2026-11-23T19:00:00+09:00",
-     "league": "WKBL",
-     "home": "신한은행 에스버드",
-     "away": "하나은행",
+     "kickoff": "2026-11-24T09:00:00+09:00",
+     "league": "NBA",
+     "home": "샬럿 호네츠",
+     "away": "멤피스 그리즐리스",
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
@@ -309,327 +66,52 @@
      "marketType": "h2h"
     },
     {
-     "kickoff": "2026-11-23T22:45:00+09:00",
-     "league": "ACLE",
-     "home": "네프치 페르가나",
-     "away": "알힐랄SFC",
-     "win": 7.0,
-     "draw": 4.4,
-     "lose": 1.26,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-23T22:45:00+09:00",
-     "league": "ACLE",
-     "home": "네프치 페르가나",
-     "away": "알힐랄SFC",
-     "win": 3.05,
-     "draw": 3.4,
-     "lose": 1.85,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-23T22:45:00+09:00",
-     "league": "ACLE",
-     "home": "네프치 페르가나",
-     "away": "알힐랄SFC",
-     "win": 1.5,
-     "draw": null,
-     "lose": 2.07,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.5,
-     "under": 2.07
-    },
-    {
-     "kickoff": "2026-11-23T22:45:00+09:00",
-     "league": "ACLE",
-     "home": "네프치 페르가나",
-     "away": "알힐랄SFC",
-     "win": 1.8,
-     "draw": null,
-     "lose": 1.8,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T01:00:00+09:00",
-     "league": "ACLE",
-     "home": "알샤말SC",
-     "away": "알아흘리 사우디",
-     "win": 3.45,
-     "draw": 3.65,
-     "lose": 1.67,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T01:00:00+09:00",
-     "league": "ACLE",
-     "home": "알샤말SC",
-     "away": "알아흘리 사우디",
-     "win": 1.9,
-     "draw": 3.5,
-     "lose": 2.85,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T01:00:00+09:00",
-     "league": "ACLE",
-     "home": "알샤말SC",
-     "away": "알아흘리 사우디",
+     "kickoff": "2026-11-24T09:00:00+09:00",
+     "league": "NBA",
+     "home": "필라델피아 76s",
+     "away": "포틀랜드 트레일블레이저스",
      "win": 1.46,
      "draw": null,
      "lose": 2.15,
      "status": "2",
      "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.46,
-     "under": 2.15
-    },
-    {
-     "kickoff": "2026-11-24T01:00:00+09:00",
-     "league": "ACLE",
-     "home": "알샤말SC",
-     "away": "알아흘리 사우디",
-     "win": 1.8,
-     "draw": null,
-     "lose": 1.8,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
+     "betType": "일반 승패",
      "marketType": "h2h"
     },
     {
-     "kickoff": "2026-11-24T01:00:00+09:00",
-     "league": "ACLE",
-     "home": "트락토르",
-     "away": "알와슬",
-     "win": 3.2,
-     "draw": 3.2,
-     "lose": 1.86,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T01:00:00+09:00",
-     "league": "ACLE",
-     "home": "트락토르",
-     "away": "알와슬",
+     "kickoff": "2026-11-24T09:00:00+09:00",
+     "league": "NBA",
+     "home": "필라델피아 76s",
+     "away": "포틀랜드 트레일블레이저스",
      "win": 1.69,
-     "draw": 3.35,
-     "lose": 3.65,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T01:00:00+09:00",
-     "league": "ACLE",
-     "home": "트락토르",
-     "away": "알와슬",
-     "win": 1.64,
-     "draw": null,
-     "lose": 1.85,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.64,
-     "under": 1.85
-    },
-    {
-     "kickoff": "2026-11-24T01:00:00+09:00",
-     "league": "ACLE",
-     "home": "트락토르",
-     "away": "알와슬",
-     "win": 1.81,
      "draw": null,
      "lose": 1.79,
      "status": "2",
      "score": null,
-     "betType": "일반 홀짝",
+     "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
     {
-     "kickoff": "2026-11-24T01:00:00+09:00",
-     "league": "ACLE",
-     "home": "알아인",
-     "away": "에스테그랄 테헤란",
-     "win": 1.45,
-     "draw": 3.7,
-     "lose": 4.95,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T01:00:00+09:00",
-     "league": "ACLE",
-     "home": "알아인",
-     "away": "에스테그랄 테헤란",
-     "win": 2.4,
-     "draw": 3.2,
-     "lose": 2.31,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T01:00:00+09:00",
-     "league": "ACLE",
-     "home": "알아인",
-     "away": "에스테그랄 테헤란",
-     "win": 1.85,
+     "kickoff": "2026-11-24T09:00:00+09:00",
+     "league": "NBA",
+     "home": "필라델피아 76s",
+     "away": "포틀랜드 트레일블레이저스",
+     "win": 1.77,
      "draw": null,
-     "lose": 1.64,
+     "lose": 1.71,
      "status": "2",
      "score": null,
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
-     "over": 1.85,
-     "under": 1.64
+     "over": 1.77,
+     "under": 1.71
     },
     {
-     "kickoff": "2026-11-24T01:00:00+09:00",
-     "league": "ACLE",
-     "home": "알아인",
-     "away": "에스테그랄 테헤란",
-     "win": 1.81,
-     "draw": null,
-     "lose": 1.79,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T03:15:00+09:00",
-     "league": "ACLE",
-     "home": "에어포스 알쿠와알자위야",
-     "away": "알가라파SC",
-     "win": 2.02,
-     "draw": 3.3,
-     "lose": 2.75,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T03:15:00+09:00",
-     "league": "ACLE",
-     "home": "에어포스 알쿠와알자위야",
-     "away": "알가라파SC",
-     "win": 3.9,
-     "draw": 3.6,
-     "lose": 1.59,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T03:15:00+09:00",
-     "league": "ACLE",
-     "home": "에어포스 알쿠와알자위야",
-     "away": "알가라파SC",
-     "win": 1.84,
-     "draw": null,
-     "lose": 1.65,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.84,
-     "under": 1.65
-    },
-    {
-     "kickoff": "2026-11-24T03:15:00+09:00",
-     "league": "ACLE",
-     "home": "에어포스 알쿠와알자위야",
-     "away": "알가라파SC",
-     "win": 1.81,
-     "draw": null,
-     "lose": 1.79,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T03:15:00+09:00",
-     "league": "ACLE",
-     "home": "S알이티하드",
-     "away": "파흐타코르",
-     "win": 1.26,
-     "draw": 4.7,
-     "lose": 6.4,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T03:15:00+09:00",
-     "league": "ACLE",
-     "home": "S알이티하드",
-     "away": "파흐타코르",
-     "win": 1.82,
-     "draw": 3.5,
-     "lose": 3.05,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T03:15:00+09:00",
-     "league": "ACLE",
-     "home": "S알이티하드",
-     "away": "파흐타코르",
-     "win": 1.6,
-     "draw": null,
-     "lose": 1.91,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.6,
-     "under": 1.91
-    },
-    {
-     "kickoff": "2026-11-24T03:15:00+09:00",
-     "league": "ACLE",
-     "home": "S알이티하드",
-     "away": "파흐타코르",
+     "kickoff": "2026-11-24T09:00:00+09:00",
+     "league": "NBA",
+     "home": "필라델피아 76s",
+     "away": "포틀랜드 트레일블레이저스",
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
@@ -639,65 +121,52 @@
      "marketType": "h2h"
     },
     {
-     "kickoff": "2026-11-24T04:45:00+09:00",
-     "league": "세리에A",
-     "home": "AC몬차",
-     "away": "ACF피오렌티나",
-     "win": 3.15,
-     "draw": 3.65,
-     "lose": 1.75,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T04:45:00+09:00",
-     "league": "세리에A",
-     "home": "AC몬차",
-     "away": "ACF피오렌티나",
-     "win": 1.79,
-     "draw": 3.6,
-     "lose": 3.05,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T04:45:00+09:00",
-     "league": "세리에A",
-     "home": "AC몬차",
-     "away": "ACF피오렌티나",
-     "win": 1.24,
-     "draw": 5.2,
-     "lose": 6.1,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T04:45:00+09:00",
-     "league": "세리에A",
-     "home": "AC몬차",
-     "away": "ACF피오렌티나",
-     "win": 1.48,
+     "kickoff": "2026-11-24T09:30:00+09:00",
+     "league": "NBA",
+     "home": "인디애나 페이서스",
+     "away": "오클라호마시티 썬더",
+     "win": 2.63,
      "draw": null,
-     "lose": 2.11,
+     "lose": 1.3,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T09:30:00+09:00",
+     "league": "NBA",
+     "home": "인디애나 페이서스",
+     "away": "오클라호마시티 썬더",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "2",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T09:30:00+09:00",
+     "league": "NBA",
+     "home": "인디애나 페이서스",
+     "away": "오클라호마시티 썬더",
+     "win": 1.72,
+     "draw": null,
+     "lose": 1.76,
      "status": "2",
      "score": null,
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
-     "over": 1.48,
-     "under": 2.11
+     "over": 1.72,
+     "under": 1.76
     },
     {
-     "kickoff": "2026-11-24T04:45:00+09:00",
-     "league": "세리에A",
-     "home": "AC몬차",
-     "away": "ACF피오렌티나",
+     "kickoff": "2026-11-24T09:30:00+09:00",
+     "league": "NBA",
+     "home": "인디애나 페이서스",
+     "away": "오클라호마시티 썬더",
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
@@ -707,196 +176,110 @@
      "marketType": "h2h"
     },
     {
-     "kickoff": "2026-11-24T05:00:00+09:00",
-     "league": "EPL",
-     "home": "브렌트퍼드",
-     "away": "에버턴",
-     "win": 2.1,
-     "draw": 3.3,
-     "lose": 2.6,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T05:00:00+09:00",
-     "league": "EPL",
-     "home": "브렌트퍼드",
-     "away": "에버턴",
-     "win": 4.1,
-     "draw": 3.7,
-     "lose": 1.54,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T05:00:00+09:00",
-     "league": "EPL",
-     "home": "브렌트퍼드",
-     "away": "에버턴",
-     "win": 9.7,
-     "draw": 6.3,
-     "lose": 1.11,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T05:00:00+09:00",
-     "league": "EPL",
-     "home": "브렌트퍼드",
-     "away": "에버턴",
-     "win": 1.87,
+     "kickoff": "2026-11-24T09:30:00+09:00",
+     "league": "NBA",
+     "home": "토론토 랩터스",
+     "away": "밀워키 벅스",
+     "win": 1.08,
      "draw": null,
-     "lose": 1.63,
+     "lose": 4.47,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T09:30:00+09:00",
+     "league": "NBA",
+     "home": "토론토 랩터스",
+     "away": "밀워키 벅스",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "2",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T09:30:00+09:00",
+     "league": "NBA",
+     "home": "토론토 랩터스",
+     "away": "밀워키 벅스",
+     "win": 1.71,
+     "draw": null,
+     "lose": 1.77,
      "status": "2",
      "score": null,
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
-     "over": 1.87,
-     "under": 1.63
+     "over": 1.71,
+     "under": 1.77
     },
     {
-     "kickoff": "2026-11-24T05:00:00+09:00",
-     "league": "EPL",
-     "home": "브렌트퍼드",
-     "away": "에버턴",
-     "win": 1.81,
+     "kickoff": "2026-11-24T09:30:00+09:00",
+     "league": "NBA",
+     "home": "토론토 랩터스",
+     "away": "밀워키 벅스",
+     "win": 1.8,
      "draw": null,
-     "lose": 1.79,
+     "lose": 1.8,
      "status": "2",
      "score": null,
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
     {
-     "kickoff": "2026-11-24T05:00:00+09:00",
-     "league": "라리가",
-     "home": "레반테",
-     "away": "엘체",
-     "win": 1.98,
-     "draw": 3.4,
-     "lose": 2.75,
-     "status": "2",
-     "score": null,
-     "betType": "승무패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "afae1c9d986e4ab2200dc9bd44b6b6c4",
-      "sportKey": "soccer_spain_la_liga",
-      "books": 20,
-      "homeEn": "Levante",
-      "awayEn": "Elche CF",
-      "consensus": {
-       "win": 2.15,
-       "draw": 3.575,
-       "lose": 3.205
-      },
-      "pinnacle": {
-       "win": 2.18,
-       "draw": 3.64,
-       "lose": 3.37
-      },
-      "cutConsensus": {
-       "win": 0.0791,
-       "draw": 0.049,
-       "lose": 0.142
-      },
-      "cutPinnacle": {
-       "win": 0.0917,
-       "draw": 0.0659,
-       "lose": 0.184
-      },
-      "cutAvg": 0.09,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
-    },
-    {
-     "kickoff": "2026-11-24T05:00:00+09:00",
-     "league": "라리가",
-     "home": "레반테",
-     "away": "엘체",
-     "win": 3.75,
-     "draw": 3.65,
-     "lose": 1.61,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T05:00:00+09:00",
-     "league": "라리가",
-     "home": "레반테",
-     "away": "엘체",
-     "win": 8.3,
-     "draw": 5.8,
-     "lose": 1.15,
-     "status": "2",
-     "score": null,
-     "betType": "일반 정수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-24T05:00:00+09:00",
-     "league": "라리가",
-     "home": "레반테",
-     "away": "엘체",
-     "win": 2.0,
+     "kickoff": "2026-11-24T09:30:00+09:00",
+     "league": "NBA",
+     "home": "미네소타 팀버울브스",
+     "away": "브루클린 네츠",
+     "win": 1.03,
      "draw": null,
-     "lose": 1.54,
+     "lose": 5.6,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T09:30:00+09:00",
+     "league": "NBA",
+     "home": "미네소타 팀버울브스",
+     "away": "브루클린 네츠",
+     "win": 1.76,
+     "draw": null,
+     "lose": 1.72,
+     "status": "2",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T09:30:00+09:00",
+     "league": "NBA",
+     "home": "미네소타 팀버울브스",
+     "away": "브루클린 네츠",
+     "win": 1.75,
+     "draw": null,
+     "lose": 1.73,
      "status": "2",
      "score": null,
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
-     "over": 2.0,
-     "under": 1.54,
-     "market": {
-      "marketType": "totals",
-      "marketId": "afae1c9d986e4ab2200dc9bd44b6b6c4",
-      "sportKey": "soccer_spain_la_liga",
-      "point": 2.5,
-      "betmanPoint": 9.0,
-      "books": 11,
-      "homeEn": "Levante",
-      "awayEn": "Elche CF",
-      "consensus": {
-       "over": 1.68,
-       "under": 2.15
-      },
-      "pinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutConsensus": {
-       "over": -0.1905,
-       "under": 0.2837
-      },
-      "cutPinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutAvg": 0.0466,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "over": 1.75,
+     "under": 1.73
     },
     {
-     "kickoff": "2026-11-24T05:00:00+09:00",
-     "league": "라리가",
-     "home": "레반테",
-     "away": "엘체",
-     "win": 1.81,
+     "kickoff": "2026-11-24T09:30:00+09:00",
+     "league": "NBA",
+     "home": "미네소타 팀버울브스",
+     "away": "브루클린 네츠",
+     "win": 1.8,
      "draw": null,
-     "lose": 1.79,
+     "lose": 1.8,
      "status": "2",
      "score": null,
      "betType": "일반 홀짝",
@@ -922,26 +305,26 @@
       "homeEn": "St. Louis City SC",
       "awayEn": "Los Angeles FC",
       "consensus": {
-       "win": 2.35,
-       "draw": 3.6,
-       "lose": 2.8
+       "win": 2.65,
+       "draw": 3.5,
+       "lose": 2.49
       },
       "pinnacle": {
-       "win": 2.38,
-       "draw": 3.68,
-       "lose": 2.9
+       "win": 2.82,
+       "draw": 3.5,
+       "lose": 2.57
       },
       "cutConsensus": {
-       "win": 0.1149,
-       "draw": 0.0139,
-       "lose": 0.1071
+       "win": 0.2151,
+       "draw": -0.0143,
+       "lose": -0.004
       },
       "cutPinnacle": {
-       "win": 0.1261,
-       "draw": 0.0353,
-       "lose": 0.1379
+       "win": 0.2624,
+       "draw": -0.0143,
+       "lose": 0.0272
       },
-      "cutAvg": 0.0786,
+      "cutAvg": 0.0656,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -951,9 +334,9 @@
      "league": "MLS",
      "home": "세인트루이스 시티SC",
      "away": "LAFC",
-     "win": 3.95,
+     "win": 4.5,
      "draw": 3.85,
-     "lose": 1.54,
+     "lose": 1.47,
      "status": "2",
      "score": null,
      "betType": "일반 정수핸디캡",
@@ -977,16 +360,16 @@
      "league": "MLS",
      "home": "세인트루이스 시티SC",
      "away": "LAFC",
-     "win": 1.48,
+     "win": 1.4,
      "draw": null,
-     "lose": 2.11,
+     "lose": 2.3,
      "status": "2",
      "score": null,
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
-     "over": 1.48,
-     "under": 2.11,
+     "over": 1.4,
+     "under": 2.3,
      "market": {
       "marketType": "totals",
       "marketId": "2d37be0044ea6b01ba17464efd59a99e",
@@ -997,22 +380,22 @@
       "homeEn": "St. Louis City SC",
       "awayEn": "Los Angeles FC",
       "consensus": {
-       "over": 1.6,
-       "under": 2.27
+       "over": 1.62,
+       "under": 2.23
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.075,
-       "under": 0.0705
+       "over": 0.1358,
+       "under": -0.0314
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0727,
+      "cutAvg": 0.0522,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1022,6 +405,281 @@
      "league": "MLS",
      "home": "세인트루이스 시티SC",
      "away": "LAFC",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T10:00:00+09:00",
+     "league": "NBA",
+     "home": "시카고 불스",
+     "away": "클리블랜드 캐벌리어스",
+     "win": 3.67,
+     "draw": null,
+     "lose": 1.14,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T10:00:00+09:00",
+     "league": "NBA",
+     "home": "시카고 불스",
+     "away": "클리블랜드 캐벌리어스",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "2",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T10:00:00+09:00",
+     "league": "NBA",
+     "home": "시카고 불스",
+     "away": "클리블랜드 캐벌리어스",
+     "win": 1.75,
+     "draw": null,
+     "lose": 1.73,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.75,
+     "under": 1.73
+    },
+    {
+     "kickoff": "2026-11-24T10:00:00+09:00",
+     "league": "NBA",
+     "home": "시카고 불스",
+     "away": "클리블랜드 캐벌리어스",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T10:00:00+09:00",
+     "league": "NBA",
+     "home": "뉴올리언스 펠리컨스",
+     "away": "피닉스 선즈",
+     "win": 2.15,
+     "draw": null,
+     "lose": 1.46,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T10:00:00+09:00",
+     "league": "NBA",
+     "home": "뉴올리언스 펠리컨스",
+     "away": "피닉스 선즈",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "2",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T10:00:00+09:00",
+     "league": "NBA",
+     "home": "뉴올리언스 펠리컨스",
+     "away": "피닉스 선즈",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.74,
+     "under": 1.74
+    },
+    {
+     "kickoff": "2026-11-24T10:00:00+09:00",
+     "league": "NBA",
+     "home": "뉴올리언스 펠리컨스",
+     "away": "피닉스 선즈",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T10:30:00+09:00",
+     "league": "NBA",
+     "home": "휴스턴 로케츠",
+     "away": "LA 클리퍼스",
+     "win": 1.02,
+     "draw": null,
+     "lose": 5.92,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T10:30:00+09:00",
+     "league": "NBA",
+     "home": "휴스턴 로케츠",
+     "away": "LA 클리퍼스",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "2",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T10:30:00+09:00",
+     "league": "NBA",
+     "home": "휴스턴 로케츠",
+     "away": "LA 클리퍼스",
+     "win": 1.72,
+     "draw": null,
+     "lose": 1.76,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.72,
+     "under": 1.76
+    },
+    {
+     "kickoff": "2026-11-24T10:30:00+09:00",
+     "league": "NBA",
+     "home": "휴스턴 로케츠",
+     "away": "LA 클리퍼스",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T12:00:00+09:00",
+     "league": "NBA",
+     "home": "LA 레이커스",
+     "away": "유타 재즈",
+     "win": 1.02,
+     "draw": null,
+     "lose": 5.92,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T12:00:00+09:00",
+     "league": "NBA",
+     "home": "LA 레이커스",
+     "away": "유타 재즈",
+     "win": 1.72,
+     "draw": null,
+     "lose": 1.76,
+     "status": "2",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T12:00:00+09:00",
+     "league": "NBA",
+     "home": "LA 레이커스",
+     "away": "유타 재즈",
+     "win": 1.73,
+     "draw": null,
+     "lose": 1.75,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.73,
+     "under": 1.75
+    },
+    {
+     "kickoff": "2026-11-24T12:00:00+09:00",
+     "league": "NBA",
+     "home": "LA 레이커스",
+     "away": "유타 재즈",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T12:00:00+09:00",
+     "league": "NBA",
+     "home": "새크라멘토 킹스",
+     "away": "샌안토니오 스퍼스",
+     "win": 4.47,
+     "draw": null,
+     "lose": 1.08,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T12:00:00+09:00",
+     "league": "NBA",
+     "home": "새크라멘토 킹스",
+     "away": "샌안토니오 스퍼스",
+     "win": 1.75,
+     "draw": null,
+     "lose": 1.73,
+     "status": "2",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T12:00:00+09:00",
+     "league": "NBA",
+     "home": "새크라멘토 킹스",
+     "away": "샌안토니오 스퍼스",
+     "win": 1.72,
+     "draw": null,
+     "lose": 1.76,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.72,
+     "under": 1.76
+    },
+    {
+     "kickoff": "2026-11-24T12:00:00+09:00",
+     "league": "NBA",
+     "home": "새크라멘토 킹스",
+     "away": "샌안토니오 스퍼스",
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
@@ -1710,26 +1368,26 @@
       "homeEn": "Bristol City",
       "awayEn": "Wrexham AFC",
       "consensus": {
-       "win": 2.44,
-       "draw": 3.27,
-       "lose": 2.85
+       "win": 2.37,
+       "draw": 3.275,
+       "lose": 2.92
       },
       "pinnacle": {
-       "win": 2.5,
-       "draw": 3.37,
-       "lose": 2.85
+       "win": 2.39,
+       "draw": 3.33,
+       "lose": 3.04
       },
       "cutConsensus": {
-       "win": 0.0615,
-       "draw": 0.0367,
-       "lose": 0.1404
+       "win": 0.0338,
+       "draw": 0.0382,
+       "lose": 0.161
       },
       "cutPinnacle": {
-       "win": 0.084,
-       "draw": 0.0653,
-       "lose": 0.1404
+       "win": 0.0418,
+       "draw": 0.0541,
+       "lose": 0.1941
       },
-      "cutAvg": 0.0795,
+      "cutAvg": 0.0777,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1885,9 +1543,9 @@
        "lose": 2.635
       },
       "pinnacle": {
-       "win": 2.77,
-       "draw": 3.25,
-       "lose": 2.65
+       "win": 2.76,
+       "draw": 3.24,
+       "lose": 2.67
       },
       "cutConsensus": {
        "win": 0.0702,
@@ -1895,9 +1553,9 @@
        "lose": 0.1233
       },
       "cutPinnacle": {
-       "win": 0.1155,
-       "draw": 0.0462,
-       "lose": 0.1283
+       "win": 0.1123,
+       "draw": 0.0432,
+       "lose": 0.1348
       },
       "cutAvg": 0.0754,
       "timeDiffSec": 0,
@@ -1946,16 +1604,16 @@
        "under": 1.78
       },
       "pinnacle": {
-       "over": 2.02,
-       "under": 1.83
+       "over": 2.05,
+       "under": 1.82
       },
       "cutConsensus": {
        "over": 0.1679,
        "under": -0.0281
       },
       "cutPinnacle": {
-       "over": 0.1782,
-       "under": 0.0
+       "over": 0.1902,
+       "under": -0.0055
       },
       "cutAvg": 0.0699,
       "timeDiffSec": 0,
@@ -1996,25 +1654,25 @@
       "awayEn": "Swansea City",
       "consensus": {
        "win": 1.44,
-       "draw": 4.65,
+       "draw": 4.675,
        "lose": 6.205
       },
       "pinnacle": {
        "win": 1.45,
-       "draw": 4.85,
-       "lose": 6.4
+       "draw": 4.87,
+       "lose": 6.35
       },
       "cutConsensus": {
        "win": 0.0625,
-       "draw": 0.0753,
+       "draw": 0.0802,
        "lose": 0.1459
       },
       "cutPinnacle": {
        "win": 0.069,
-       "draw": 0.1134,
-       "lose": 0.1719
+       "draw": 0.117,
+       "lose": 0.1654
       },
-      "cutAvg": 0.0946,
+      "cutAvg": 0.0962,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2051,28 +1709,28 @@
       "marketType": "totals",
       "marketId": "e239a6d57b2cf15091f673c2448fbf4f",
       "sportKey": "soccer_efl_champ",
-      "point": 2.5,
+      "point": 3.5,
       "betmanPoint": 9.0,
-      "books": 7,
+      "books": 10,
       "homeEn": "Middlesbrough",
       "awayEn": "Swansea City",
       "consensus": {
-       "over": 1.51,
-       "under": 2.4
+       "over": 2.32,
+       "under": 1.57
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.0132,
-       "under": 0.1292
+       "over": 0.3578,
+       "under": -0.3312
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0712,
+      "cutAvg": 0.0133,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2112,24 +1770,24 @@
       "consensus": {
        "win": 1.96,
        "draw": 3.65,
-       "lose": 3.435
+       "lose": 3.5
       },
       "pinnacle": {
        "win": 1.99,
-       "draw": 3.76,
-       "lose": 3.58
+       "draw": 3.74,
+       "lose": 3.61
       },
       "cutConsensus": {
        "win": 0.0561,
        "draw": 0.0548,
-       "lose": 0.1266
+       "lose": 0.1429
       },
       "cutPinnacle": {
        "win": 0.0704,
-       "draw": 0.0824,
-       "lose": 0.162
+       "draw": 0.0775,
+       "lose": 0.169
       },
-      "cutAvg": 0.0792,
+      "cutAvg": 0.0846,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2225,26 +1883,26 @@
       "homeEn": "Portsmouth",
       "awayEn": "West Ham United",
       "consensus": {
-       "win": 3.91,
+       "win": 3.935,
        "draw": 3.65,
-       "lose": 1.85
+       "lose": 1.83
       },
       "pinnacle": {
-       "win": 4.0,
+       "win": 4.06,
        "draw": 3.88,
-       "lose": 1.85
+       "lose": 1.83
       },
       "cutConsensus": {
-       "win": 0.1176,
+       "win": 0.1233,
        "draw": 0.0548,
-       "lose": 0.0703
+       "lose": 0.0601
       },
       "cutPinnacle": {
-       "win": 0.1375,
+       "win": 0.1502,
        "draw": 0.1108,
-       "lose": 0.0703
+       "lose": 0.0601
       },
-      "cutAvg": 0.0809,
+      "cutAvg": 0.0794,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2288,7 +1946,7 @@
       "awayEn": "West Ham United",
       "consensus": {
        "over": 1.72,
-       "under": 2.04
+       "under": 2.03
       },
       "pinnacle": {
        "over": null,
@@ -2296,13 +1954,13 @@
       },
       "cutConsensus": {
        "over": -0.0988,
-       "under": 0.2108
+       "under": 0.2069
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.056,
+      "cutAvg": 0.0541,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2340,26 +1998,26 @@
       "homeEn": "Sheffield United",
       "awayEn": "Southampton",
       "consensus": {
-       "win": 2.49,
-       "draw": 3.525,
-       "lose": 2.6
+       "win": 2.5,
+       "draw": 3.5,
+       "lose": 2.56
       },
       "pinnacle": {
-       "win": 2.5,
-       "draw": 3.72,
-       "lose": 2.65
+       "win": 2.57,
+       "draw": 3.67,
+       "lose": 2.59
       },
       "cutConsensus": {
-       "win": 0.0924,
-       "draw": 0.0355,
-       "lose": 0.0962
+       "win": 0.096,
+       "draw": 0.0286,
+       "lose": 0.082
       },
       "cutPinnacle": {
-       "win": 0.096,
-       "draw": 0.086,
-       "lose": 0.1132
+       "win": 0.1206,
+       "draw": 0.0736,
+       "lose": 0.0927
       },
-      "cutAvg": 0.0747,
+      "cutAvg": 0.0689,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2398,7 +2056,7 @@
       "sportKey": "soccer_efl_champ",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 14,
+      "books": 13,
       "homeEn": "Sheffield United",
       "awayEn": "Southampton",
       "consensus": {
@@ -2455,26 +2113,26 @@
       "homeEn": "Wolverhampton Wanderers",
       "awayEn": "Derby County",
       "consensus": {
-       "win": 1.3,
-       "draw": 5.23,
-       "lose": 8.95
+       "win": 1.31,
+       "draw": 5.29,
+       "lose": 8.73
       },
       "pinnacle": {
-       "win": 1.31,
-       "draw": 5.58,
-       "lose": 8.81
+       "win": 1.32,
+       "draw": 5.48,
+       "lose": 8.71
       },
       "cutConsensus": {
-       "win": 0.0538,
-       "draw": 0.1013,
-       "lose": 0.1844
+       "win": 0.0611,
+       "draw": 0.1115,
+       "lose": 0.1638
       },
       "cutPinnacle": {
-       "win": 0.0611,
-       "draw": 0.1577,
-       "lose": 0.1714
+       "win": 0.0682,
+       "draw": 0.1423,
+       "lose": 0.1619
       },
-      "cutAvg": 0.1132,
+      "cutAvg": 0.1121,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2543,7 +2201,7 @@
       "homeEn": "Wolverhampton Wanderers",
       "awayEn": "Derby County",
       "consensus": {
-       "over": 1.54,
+       "over": 1.53,
        "under": 2.35
       },
       "pinnacle": {
@@ -2551,14 +2209,14 @@
        "under": null
       },
       "cutConsensus": {
-       "over": 0.039,
+       "over": 0.0327,
        "under": 0.1021
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0706,
+      "cutAvg": 0.0674,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3440,12 +3098,12 @@
       "marketType": "h2h",
       "marketId": "8149dd94fc35019447c45a6a00b246f0",
       "sportKey": "soccer_usa_mls",
-      "books": 22,
+      "books": 23,
       "homeEn": "San Jose Earthquakes",
       "awayEn": "Houston Dynamo",
       "consensus": {
        "win": 2.15,
-       "draw": 3.51,
+       "draw": 3.54,
        "lose": 3.15
       },
       "pinnacle": {
@@ -3455,7 +3113,7 @@
       },
       "cutConsensus": {
        "win": 0.0698,
-       "draw": 0.0456,
+       "draw": 0.0537,
        "lose": 0.127
       },
       "cutPinnacle": {
@@ -3463,7 +3121,7 @@
        "draw": 0.0669,
        "lose": 0.159
       },
-      "cutAvg": 0.0808,
+      "cutAvg": 0.0835,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3502,12 +3160,12 @@
       "sportKey": "soccer_usa_mls",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 13,
+      "books": 14,
       "homeEn": "San Jose Earthquakes",
       "awayEn": "Houston Dynamo",
       "consensus": {
        "over": 1.67,
-       "under": 2.14
+       "under": 2.145
       },
       "pinnacle": {
        "over": null,
@@ -3515,13 +3173,13 @@
       },
       "cutConsensus": {
        "over": -0.1677,
-       "under": 0.2664
+       "under": 0.2681
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0494,
+      "cutAvg": 0.0502,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3786,24 +3444,24 @@
       "consensus": {
        "win": 3.1,
        "draw": 3.45,
-       "lose": 2.05
+       "lose": 2.1
       },
       "pinnacle": {
-       "win": 3.32,
-       "draw": 3.72,
-       "lose": 2.09
+       "win": 3.29,
+       "draw": 3.59,
+       "lose": 2.15
       },
       "cutConsensus": {
        "win": 0.0806,
        "draw": 0.0145,
-       "lose": 0.0585
+       "lose": 0.081
       },
       "cutPinnacle": {
-       "win": 0.1416,
-       "draw": 0.086,
-       "lose": 0.0766
+       "win": 0.1337,
+       "draw": 0.0529,
+       "lose": 0.1023
       },
-      "cutAvg": 0.0512,
+      "cutAvg": 0.0587,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3842,26 +3500,26 @@
       "sportKey": "soccer_japan_j_league",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 11,
+      "books": 13,
       "homeEn": "JEF United Chiba",
       "awayEn": "Nagoya Grampus",
       "consensus": {
-       "over": 1.68,
-       "under": 2.08
+       "over": 1.75,
+       "under": 1.98
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 1.85,
+       "under": 1.98
       },
       "cutConsensus": {
-       "over": -0.1786,
-       "under": 0.2548
+       "over": -0.1314,
+       "under": 0.2172
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": -0.0703,
+       "under": 0.2172
       },
-      "cutAvg": 0.0381,
+      "cutAvg": 0.0429,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3900,7 +3558,7 @@
       "awayEn": "Hiroshima Sanfrecce FC",
       "consensus": {
        "win": 2.4,
-       "draw": 3.38,
+       "draw": 3.4,
        "lose": 2.7
       },
       "pinnacle": {
@@ -3910,7 +3568,7 @@
       },
       "cutConsensus": {
        "win": 0.0708,
-       "draw": 0.0089,
+       "draw": 0.0147,
        "lose": 0.1111
       },
       "cutPinnacle": {
@@ -3918,7 +3576,7 @@
        "draw": 0.0262,
        "lose": 0.1638
       },
-      "cutAvg": 0.0636,
+      "cutAvg": 0.0655,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3962,7 +3620,7 @@
       "awayEn": "Hiroshima Sanfrecce FC",
       "consensus": {
        "over": 1.65,
-       "under": 2.14
+       "under": 2.15
       },
       "pinnacle": {
        "over": null,
@@ -3970,13 +3628,13 @@
       },
       "cutConsensus": {
        "over": -0.1939,
-       "under": 0.271
+       "under": 0.2744
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0386,
+      "cutAvg": 0.0402,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4076,7 +3734,7 @@
       "homeEn": "Fagiano Okayama",
       "awayEn": "Shimizu S Pulse",
       "consensus": {
-       "over": 2.05,
+       "over": 2.03,
        "under": 1.7
       },
       "pinnacle": {
@@ -4084,14 +3742,14 @@
        "under": null
       },
       "cutConsensus": {
-       "over": 0.2146,
+       "over": 0.2069,
        "under": -0.1118
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0514,
+      "cutAvg": 0.0476,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4129,26 +3787,26 @@
       "homeEn": "Avispa Fukuoka",
       "awayEn": "Yokohama F Marinos",
       "consensus": {
-       "win": 2.62,
-       "draw": 3.2,
-       "lose": 2.52
+       "win": 2.75,
+       "draw": 3.25,
+       "lose": 2.41
       },
       "pinnacle": {
-       "win": 2.75,
-       "draw": 3.42,
-       "lose": 2.56
+       "win": 2.89,
+       "draw": 3.43,
+       "lose": 2.44
       },
       "cutConsensus": {
-       "win": 0.084,
-       "draw": 0.0156,
-       "lose": 0.0754
+       "win": 0.1273,
+       "draw": 0.0308,
+       "lose": 0.0332
       },
       "cutPinnacle": {
-       "win": 0.1273,
-       "draw": 0.0789,
-       "lose": 0.0898
+       "win": 0.1696,
+       "draw": 0.0816,
+       "lose": 0.0451
       },
-      "cutAvg": 0.0583,
+      "cutAvg": 0.0638,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4191,22 +3849,22 @@
       "homeEn": "Avispa Fukuoka",
       "awayEn": "Yokohama F Marinos",
       "consensus": {
-       "over": 1.92,
-       "under": 1.8
+       "over": 1.93,
+       "under": 1.81
       },
       "pinnacle": {
        "over": 1.94,
        "under": 1.89
       },
       "cutConsensus": {
-       "over": 0.1094,
-       "under": 0.0167
+       "over": 0.114,
+       "under": 0.0221
       },
       "cutPinnacle": {
        "over": 0.1186,
        "under": 0.0635
       },
-      "cutAvg": 0.063,
+      "cutAvg": 0.068,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4244,26 +3902,26 @@
       "homeEn": "V-Varen Nagasaki",
       "awayEn": "Kawasaki Frontale",
       "consensus": {
-       "win": 3.45,
-       "draw": 3.75,
-       "lose": 1.91
+       "win": 3.64,
+       "draw": 3.8,
+       "lose": 1.84
       },
       "pinnacle": {
-       "win": 3.51,
-       "draw": 4.04,
-       "lose": 1.93
+       "win": 3.73,
+       "draw": 4.13,
+       "lose": 1.85
       },
       "cutConsensus": {
-       "win": 0.1159,
-       "draw": 0.0267,
-       "lose": 0.0681
+       "win": 0.1621,
+       "draw": 0.0395,
+       "lose": 0.0326
       },
       "cutPinnacle": {
-       "win": 0.1311,
-       "draw": 0.0965,
-       "lose": 0.0777
+       "win": 0.1823,
+       "draw": 0.1162,
+       "lose": 0.0378
       },
-      "cutAvg": 0.0702,
+      "cutAvg": 0.0781,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4302,12 +3960,12 @@
       "sportKey": "soccer_japan_j_league",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 10,
+      "books": 9,
       "homeEn": "V-Varen Nagasaki",
       "awayEn": "Kawasaki Frontale",
       "consensus": {
        "over": 1.53,
-       "under": 2.34
+       "under": 2.35
       },
       "pinnacle": {
        "over": null,
@@ -4315,13 +3973,13 @@
       },
       "cutConsensus": {
        "over": 0.0327,
-       "under": 0.0983
+       "under": 0.1021
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0655,
+      "cutAvg": 0.0674,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4361,7 +4019,7 @@
       "consensus": {
        "win": 1.82,
        "draw": 3.7,
-       "lose": 3.6
+       "lose": 3.65
       },
       "pinnacle": {
        "win": 1.82,
@@ -4371,14 +4029,14 @@
       "cutConsensus": {
        "win": 0.0659,
        "draw": 0.0,
-       "lose": 0.0833
+       "lose": 0.0959
       },
       "cutPinnacle": {
        "win": 0.0659,
        "draw": 0.0864,
        "lose": 0.1603
       },
-      "cutAvg": 0.0497,
+      "cutAvg": 0.0539,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4462,8 +4120,8 @@
      "win": 1.43,
      "draw": 4.05,
      "lose": 4.6,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:2",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -4475,8 +4133,8 @@
      "win": 2.16,
      "draw": 3.65,
      "lose": 2.35,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:2",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -4488,8 +4146,8 @@
      "win": 1.74,
      "draw": null,
      "lose": 1.74,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -4504,8 +4162,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -4517,8 +4175,8 @@
      "win": 2.52,
      "draw": null,
      "lose": 1.33,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "116:96",
      "betType": "일반 승패",
      "marketType": "h2h"
     },
@@ -4530,8 +4188,8 @@
      "win": 1.71,
      "draw": null,
      "lose": 1.77,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "121.5:96",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -4543,8 +4201,8 @@
      "win": 1.74,
      "draw": null,
      "lose": 1.74,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "212:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -4559,8 +4217,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "212:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -4572,8 +4230,8 @@
      "win": 3.67,
      "draw": null,
      "lose": 1.14,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "145:151",
      "betType": "일반 승패",
      "marketType": "h2h"
     },
@@ -4585,8 +4243,8 @@
      "win": 1.69,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "154.5:151",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -4598,8 +4256,8 @@
      "win": 1.73,
      "draw": null,
      "lose": 1.75,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "296:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -4614,8 +4272,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "296:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -4627,8 +4285,8 @@
      "win": 1.85,
      "draw": null,
      "lose": 1.64,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "114:116",
      "betType": "일반 승패",
      "marketType": "h2h"
     },
@@ -4640,8 +4298,8 @@
      "win": 1.74,
      "draw": null,
      "lose": 1.74,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "115.5:116",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -4653,8 +4311,8 @@
      "win": 1.71,
      "draw": null,
      "lose": 1.77,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "230:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -4669,8 +4327,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "230:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -4682,8 +4340,8 @@
      "win": 1.21,
      "draw": null,
      "lose": 3.1,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "113:106",
      "betType": "일반 승패",
      "marketType": "h2h"
     },
@@ -4695,8 +4353,8 @@
      "win": 1.74,
      "draw": null,
      "lose": 1.74,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "105.5:106",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -4708,8 +4366,8 @@
      "win": 1.77,
      "draw": null,
      "lose": 1.71,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "219:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -4724,6 +4382,778 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
+     "status": "4",
+     "score": "219:0",
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T10:30:00+09:00",
+     "league": "MLS",
+     "home": "밴쿠버 화이트캡스FC",
+     "away": "레알 솔트레이크",
+     "win": 1.37,
+     "draw": 4.2,
+     "lose": 5.1,
+     "status": "4",
+     "score": "2:0",
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T10:30:00+09:00",
+     "league": "MLS",
+     "home": "밴쿠버 화이트캡스FC",
+     "away": "레알 솔트레이크",
+     "win": 2.05,
+     "draw": 3.55,
+     "lose": 2.55,
+     "status": "4",
+     "score": "1:0",
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T10:30:00+09:00",
+     "league": "MLS",
+     "home": "밴쿠버 화이트캡스FC",
+     "away": "레알 솔트레이크",
+     "win": 1.69,
+     "draw": null,
+     "lose": 1.79,
+     "status": "4",
+     "score": "2:0",
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.69,
+     "under": 1.79
+    },
+    {
+     "kickoff": "2026-11-23T10:30:00+09:00",
+     "league": "MLS",
+     "home": "밴쿠버 화이트캡스FC",
+     "away": "레알 솔트레이크",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "4",
+     "score": "2:0",
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T10:30:00+09:00",
+     "league": "NBA",
+     "home": "골든스테이트 워리어스",
+     "away": "보스턴 셀틱스",
+     "win": 3.39,
+     "draw": null,
+     "lose": 1.17,
+     "status": "4",
+     "score": "88:87",
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T10:30:00+09:00",
+     "league": "NBA",
+     "home": "골든스테이트 워리어스",
+     "away": "보스턴 셀틱스",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "4",
+     "score": "96.5:87",
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T10:30:00+09:00",
+     "league": "NBA",
+     "home": "골든스테이트 워리어스",
+     "away": "보스턴 셀틱스",
+     "win": 1.73,
+     "draw": null,
+     "lose": 1.75,
+     "status": "4",
+     "score": "175:0",
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.73,
+     "under": 1.75
+    },
+    {
+     "kickoff": "2026-11-23T10:30:00+09:00",
+     "league": "NBA",
+     "home": "골든스테이트 워리어스",
+     "away": "보스턴 셀틱스",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "4",
+     "score": "175:0",
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T19:00:00+09:00",
+     "league": "WKBL",
+     "home": "신한은행 에스버드",
+     "away": "하나은행",
+     "win": 1.24,
+     "draw": null,
+     "lose": 2.92,
+     "status": "4",
+     "score": "63:59",
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T19:00:00+09:00",
+     "league": "WKBL",
+     "home": "신한은행 에스버드",
+     "away": "하나은행",
+     "win": 1.57,
+     "draw": 3.15,
+     "lose": 4.8,
+     "status": "4",
+     "score": "63:59",
+     "betType": "승N패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T19:00:00+09:00",
+     "league": "WKBL",
+     "home": "신한은행 에스버드",
+     "away": "하나은행",
+     "win": 1.75,
+     "draw": null,
+     "lose": 1.73,
+     "status": "4",
+     "score": "55.5:59",
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T19:00:00+09:00",
+     "league": "WKBL",
+     "home": "신한은행 에스버드",
+     "away": "하나은행",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "4",
+     "score": "122:0",
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.74,
+     "under": 1.74
+    },
+    {
+     "kickoff": "2026-11-23T19:00:00+09:00",
+     "league": "WKBL",
+     "home": "신한은행 에스버드",
+     "away": "하나은행",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "4",
+     "score": "122:0",
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T22:45:00+09:00",
+     "league": "ACLE",
+     "home": "네프치 페르가나",
+     "away": "알힐랄SFC",
+     "win": 9.0,
+     "draw": 5.3,
+     "lose": 1.16,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T22:45:00+09:00",
+     "league": "ACLE",
+     "home": "네프치 페르가나",
+     "away": "알힐랄SFC",
+     "win": 4.15,
+     "draw": 3.9,
+     "lose": 1.5,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-23T22:45:00+09:00",
+     "league": "ACLE",
+     "home": "네프치 페르가나",
+     "away": "알힐랄SFC",
+     "win": 1.67,
+     "draw": null,
+     "lose": 1.82,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.67,
+     "under": 1.82
+    },
+    {
+     "kickoff": "2026-11-23T22:45:00+09:00",
+     "league": "ACLE",
+     "home": "네프치 페르가나",
+     "away": "알힐랄SFC",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T01:00:00+09:00",
+     "league": "ACLE",
+     "home": "알샤말SC",
+     "away": "알아흘리 사우디",
+     "win": 3.6,
+     "draw": 3.9,
+     "lose": 1.59,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T01:00:00+09:00",
+     "league": "ACLE",
+     "home": "알샤말SC",
+     "away": "알아흘리 사우디",
+     "win": 2.1,
+     "draw": 3.4,
+     "lose": 2.55,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T01:00:00+09:00",
+     "league": "ACLE",
+     "home": "알샤말SC",
+     "away": "알아흘리 사우디",
+     "win": 1.46,
+     "draw": null,
+     "lose": 2.15,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.46,
+     "under": 2.15
+    },
+    {
+     "kickoff": "2026-11-24T01:00:00+09:00",
+     "league": "ACLE",
+     "home": "알샤말SC",
+     "away": "알아흘리 사우디",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T01:00:00+09:00",
+     "league": "ACLE",
+     "home": "트락토르",
+     "away": "알와슬",
+     "win": 3.3,
+     "draw": 3.05,
+     "lose": 1.88,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T01:00:00+09:00",
+     "league": "ACLE",
+     "home": "트락토르",
+     "away": "알와슬",
+     "win": 1.69,
+     "draw": 3.35,
+     "lose": 3.65,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T01:00:00+09:00",
+     "league": "ACLE",
+     "home": "트락토르",
+     "away": "알와슬",
+     "win": 1.64,
+     "draw": null,
+     "lose": 1.85,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.64,
+     "under": 1.85
+    },
+    {
+     "kickoff": "2026-11-24T01:00:00+09:00",
+     "league": "ACLE",
+     "home": "트락토르",
+     "away": "알와슬",
+     "win": 1.81,
+     "draw": null,
+     "lose": 1.79,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T01:00:00+09:00",
+     "league": "ACLE",
+     "home": "알아인",
+     "away": "에스테그랄 테헤란",
+     "win": 1.45,
+     "draw": 3.7,
+     "lose": 4.95,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T01:00:00+09:00",
+     "league": "ACLE",
+     "home": "알아인",
+     "away": "에스테그랄 테헤란",
+     "win": 2.4,
+     "draw": 3.1,
+     "lose": 2.36,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T01:00:00+09:00",
+     "league": "ACLE",
+     "home": "알아인",
+     "away": "에스테그랄 테헤란",
+     "win": 1.85,
+     "draw": null,
+     "lose": 1.64,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.85,
+     "under": 1.64
+    },
+    {
+     "kickoff": "2026-11-24T01:00:00+09:00",
+     "league": "ACLE",
+     "home": "알아인",
+     "away": "에스테그랄 테헤란",
+     "win": 1.81,
+     "draw": null,
+     "lose": 1.79,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T03:15:00+09:00",
+     "league": "ACLE",
+     "home": "에어포스 알쿠와알자위야",
+     "away": "알가라파SC",
+     "win": 2.02,
+     "draw": 3.3,
+     "lose": 2.75,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T03:15:00+09:00",
+     "league": "ACLE",
+     "home": "에어포스 알쿠와알자위야",
+     "away": "알가라파SC",
+     "win": 4.4,
+     "draw": 3.6,
+     "lose": 1.52,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T03:15:00+09:00",
+     "league": "ACLE",
+     "home": "에어포스 알쿠와알자위야",
+     "away": "알가라파SC",
+     "win": 1.84,
+     "draw": null,
+     "lose": 1.65,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.84,
+     "under": 1.65
+    },
+    {
+     "kickoff": "2026-11-24T03:15:00+09:00",
+     "league": "ACLE",
+     "home": "에어포스 알쿠와알자위야",
+     "away": "알가라파SC",
+     "win": 1.81,
+     "draw": null,
+     "lose": 1.79,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T03:15:00+09:00",
+     "league": "ACLE",
+     "home": "S알이티하드",
+     "away": "파흐타코르",
+     "win": 1.22,
+     "draw": 5.0,
+     "lose": 7.0,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T03:15:00+09:00",
+     "league": "ACLE",
+     "home": "S알이티하드",
+     "away": "파흐타코르",
+     "win": 1.77,
+     "draw": 3.65,
+     "lose": 3.1,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T03:15:00+09:00",
+     "league": "ACLE",
+     "home": "S알이티하드",
+     "away": "파흐타코르",
+     "win": 1.6,
+     "draw": null,
+     "lose": 1.91,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.6,
+     "under": 1.91
+    },
+    {
+     "kickoff": "2026-11-24T03:15:00+09:00",
+     "league": "ACLE",
+     "home": "S알이티하드",
+     "away": "파흐타코르",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T04:45:00+09:00",
+     "league": "세리에A",
+     "home": "AC몬차",
+     "away": "ACF피오렌티나",
+     "win": 3.15,
+     "draw": 3.5,
+     "lose": 1.79,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T04:45:00+09:00",
+     "league": "세리에A",
+     "home": "AC몬차",
+     "away": "ACF피오렌티나",
+     "win": 1.81,
+     "draw": 3.25,
+     "lose": 3.3,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T04:45:00+09:00",
+     "league": "세리에A",
+     "home": "AC몬차",
+     "away": "ACF피오렌티나",
+     "win": 1.27,
+     "draw": 4.85,
+     "lose": 5.9,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T04:45:00+09:00",
+     "league": "세리에A",
+     "home": "AC몬차",
+     "away": "ACF피오렌티나",
+     "win": 1.51,
+     "draw": null,
+     "lose": 2.05,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.51,
+     "under": 2.05
+    },
+    {
+     "kickoff": "2026-11-24T04:45:00+09:00",
+     "league": "세리에A",
+     "home": "AC몬차",
+     "away": "ACF피오렌티나",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T05:00:00+09:00",
+     "league": "EPL",
+     "home": "브렌트퍼드",
+     "away": "에버턴",
+     "win": 2.18,
+     "draw": 2.95,
+     "lose": 2.75,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T05:00:00+09:00",
+     "league": "EPL",
+     "home": "브렌트퍼드",
+     "away": "에버턴",
+     "win": 4.1,
+     "draw": 3.7,
+     "lose": 1.54,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T05:00:00+09:00",
+     "league": "EPL",
+     "home": "브렌트퍼드",
+     "away": "에버턴",
+     "win": 9.7,
+     "draw": 6.3,
+     "lose": 1.11,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T05:00:00+09:00",
+     "league": "EPL",
+     "home": "브렌트퍼드",
+     "away": "에버턴",
+     "win": 1.92,
+     "draw": null,
+     "lose": 1.59,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.92,
+     "under": 1.59
+    },
+    {
+     "kickoff": "2026-11-24T05:00:00+09:00",
+     "league": "EPL",
+     "home": "브렌트퍼드",
+     "away": "에버턴",
+     "win": 1.81,
+     "draw": null,
+     "lose": 1.79,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T05:00:00+09:00",
+     "league": "라리가",
+     "home": "레반테",
+     "away": "엘체",
+     "win": 2.07,
+     "draw": 3.1,
+     "lose": 2.8,
+     "status": "3",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "afae1c9d986e4ab2200dc9bd44b6b6c4",
+      "sportKey": "soccer_spain_la_liga",
+      "books": 20,
+      "homeEn": "Levante",
+      "awayEn": "Elche CF",
+      "consensus": {
+       "win": 2.105,
+       "draw": 3.54,
+       "lose": 3.4
+      },
+      "pinnacle": {
+       "win": 2.12,
+       "draw": 3.63,
+       "lose": 3.6
+      },
+      "cutConsensus": {
+       "win": 0.0166,
+       "draw": 0.1243,
+       "lose": 0.1765
+      },
+      "cutPinnacle": {
+       "win": 0.0236,
+       "draw": 0.146,
+       "lose": 0.2222
+      },
+      "cutAvg": 0.1058,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
+    },
+    {
+     "kickoff": "2026-11-24T05:00:00+09:00",
+     "league": "라리가",
+     "home": "레반테",
+     "away": "엘체",
+     "win": 3.85,
+     "draw": 3.4,
+     "lose": 1.64,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T05:00:00+09:00",
+     "league": "라리가",
+     "home": "레반테",
+     "away": "엘체",
+     "win": 7.7,
+     "draw": 5.2,
+     "lose": 1.19,
+     "status": "3",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-24T05:00:00+09:00",
+     "league": "라리가",
+     "home": "레반테",
+     "away": "엘체",
+     "win": 2.0,
+     "draw": null,
+     "lose": 1.54,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 2.0,
+     "under": 1.54,
+     "market": {
+      "marketType": "totals",
+      "marketId": "afae1c9d986e4ab2200dc9bd44b6b6c4",
+      "sportKey": "soccer_spain_la_liga",
+      "point": 2.5,
+      "betmanPoint": 9.0,
+      "books": 13,
+      "homeEn": "Levante",
+      "awayEn": "Elche CF",
+      "consensus": {
+       "over": 1.67,
+       "under": 2.17
+      },
+      "pinnacle": {
+       "over": null,
+       "under": null
+      },
+      "cutConsensus": {
+       "over": -0.1976,
+       "under": 0.2903
+      },
+      "cutPinnacle": {
+       "over": null,
+       "under": null
+      },
+      "cutAvg": 0.0464,
+      "timeDiffSec": 0,
+      "matchedBy": "name"
+     }
+    },
+    {
+     "kickoff": "2026-11-24T05:00:00+09:00",
+     "league": "라리가",
+     "home": "레반테",
+     "away": "엘체",
+     "win": 1.81,
+     "draw": null,
+     "lose": 1.79,
      "status": "3",
      "score": null,
      "betType": "일반 홀짝",
@@ -4733,21 +5163,21 @@
   }
  ],
  "marketSource": "the-odds-api.com",
- "marketFetchedAt": "2026-11-23T10:22:07.612177+09:00",
- "marketCreditsRemaining": 744,
+ "marketFetchedAt": "2026-11-24T04:24:17.757859+09:00",
+ "marketCreditsRemaining": 734,
  "marketRefreshIntervalMinutes": 630,
  "marketEstimatedCreditsPerRun": 10,
  "marketActiveLeagues": [
-  "MLS",
-  "NBA",
   "라리가",
+  "NBA",
+  "MLS",
   "EFL챔",
   "J1리그"
  ],
  "marketFetchedLeagues": [
-  "MLS",
-  "NBA",
   "라리가",
+  "NBA",
+  "MLS",
   "EFL챔",
   "J1리그"
  ]
