@@ -1,6 +1,6 @@
 {
  "source": "betman.co.kr",
- "fetchedAt": "2026-11-28T00:51:06.652874+09:00",
+ "fetchedAt": "2026-11-28T09:10:49.036303+09:00",
  "games": [
   {
    "gmId": "G101",
@@ -8,186 +8,16 @@
    "gameType": "승부식",
    "gmTs": 260141,
    "saleEnd": 1795960800000,
-   "totalSellAmount": 13040956500,
+   "totalSellAmount": 14368872700,
    "matches": [
-    {
-     "kickoff": "2026-11-28T08:10:00+09:00",
-     "league": "남농월예",
-     "home": "브라질_남자",
-     "away": "미국_남자",
-     "win": 1.91,
-     "draw": null,
-     "lose": 1.6,
-     "status": "2",
-     "score": null,
-     "betType": "일반 승패",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-28T08:10:00+09:00",
-     "league": "남농월예",
-     "home": "브라질_남자",
-     "away": "미국_남자",
-     "win": 1.78,
-     "draw": null,
-     "lose": 1.7,
-     "status": "2",
-     "score": null,
-     "betType": "일반 소수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-28T08:10:00+09:00",
-     "league": "남농월예",
-     "home": "브라질_남자",
-     "away": "미국_남자",
-     "win": 1.74,
-     "draw": null,
-     "lose": 1.74,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.74,
-     "under": 1.74
-    },
-    {
-     "kickoff": "2026-11-28T08:10:00+09:00",
-     "league": "남농월예",
-     "home": "브라질_남자",
-     "away": "미국_남자",
-     "win": 1.8,
-     "draw": null,
-     "lose": 1.8,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-28T09:00:00+09:00",
-     "league": "NBA",
-     "home": "뉴욕 닉스",
-     "away": "마이애미 히트",
-     "win": 1.45,
-     "draw": null,
-     "lose": 2.18,
-     "status": "2",
-     "score": null,
-     "betType": "일반 승패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "3c522e32c3035d7dc3e1734903b84654",
-      "sportKey": "basketball_nba",
-      "books": 23,
-      "homeEn": "New York Knicks",
-      "awayEn": "Miami Heat",
-      "consensus": {
-       "win": 1.55,
-       "draw": null,
-       "lose": 2.5
-      },
-      "pinnacle": {
-       "win": 1.57,
-       "draw": null,
-       "lose": 2.56
-      },
-      "cutConsensus": {
-       "win": 0.0645,
-       "draw": null,
-       "lose": 0.128
-      },
-      "cutPinnacle": {
-       "win": 0.0764,
-       "draw": null,
-       "lose": 0.1484
-      },
-      "cutAvg": 0.0963,
-      "timeDiffSec": 600,
-      "matchedBy": "time"
-     }
-    },
-    {
-     "kickoff": "2026-11-28T09:00:00+09:00",
-     "league": "NBA",
-     "home": "뉴욕 닉스",
-     "away": "마이애미 히트",
-     "win": 1.74,
-     "draw": null,
-     "lose": 1.74,
-     "status": "2",
-     "score": null,
-     "betType": "일반 소수핸디캡",
-     "marketType": "h2h"
-    },
-    {
-     "kickoff": "2026-11-28T09:00:00+09:00",
-     "league": "NBA",
-     "home": "뉴욕 닉스",
-     "away": "마이애미 히트",
-     "win": 1.75,
-     "draw": null,
-     "lose": 1.73,
-     "status": "2",
-     "score": null,
-     "betType": "일반 언더오버",
-     "marketType": "totals",
-     "totalPoint": 9.0,
-     "over": 1.75,
-     "under": 1.73,
-     "market": {
-      "marketType": "totals",
-      "marketId": "3c522e32c3035d7dc3e1734903b84654",
-      "sportKey": "basketball_nba",
-      "point": 222.5,
-      "betmanPoint": 9.0,
-      "books": 14,
-      "homeEn": "New York Knicks",
-      "awayEn": "Miami Heat",
-      "consensus": {
-       "over": 1.91,
-       "under": 1.91
-      },
-      "pinnacle": {
-       "over": 1.93,
-       "under": 1.96
-      },
-      "cutConsensus": {
-       "over": 0.0838,
-       "under": 0.0942
-      },
-      "cutPinnacle": {
-       "over": 0.0933,
-       "under": 0.1173
-      },
-      "cutAvg": 0.089,
-      "timeDiffSec": 600,
-      "matchedBy": "time"
-     }
-    },
-    {
-     "kickoff": "2026-11-28T09:00:00+09:00",
-     "league": "NBA",
-     "home": "뉴욕 닉스",
-     "away": "마이애미 히트",
-     "win": 1.8,
-     "draw": null,
-     "lose": 1.8,
-     "status": "2",
-     "score": null,
-     "betType": "일반 홀짝",
-     "marketType": "h2h"
-    },
     {
      "kickoff": "2026-11-28T09:30:00+09:00",
      "league": "NBA",
      "home": "디트로이트 피스톤스",
      "away": "밀워키 벅스",
-     "win": 1.14,
+     "win": 1.11,
      "draw": null,
-     "lose": 3.67,
+     "lose": 4.02,
      "status": "2",
      "score": null,
      "betType": "일반 승패",
@@ -240,9 +70,9 @@
      "league": "NBA",
      "home": "인디애나 페이서스",
      "away": "필라델피아 76s",
-     "win": 1.97,
+     "win": 2.05,
      "draw": null,
-     "lose": 1.56,
+     "lose": 1.51,
      "status": "2",
      "score": null,
      "betType": "일반 승패",
@@ -253,9 +83,9 @@
      "league": "NBA",
      "home": "인디애나 페이서스",
      "away": "필라델피아 76s",
-     "win": 1.73,
+     "win": 1.78,
      "draw": null,
-     "lose": 1.75,
+     "lose": 1.7,
      "status": "2",
      "score": null,
      "betType": "일반 소수핸디캡",
@@ -350,9 +180,9 @@
      "league": "MLS",
      "home": "콜럼버스 크루",
      "away": "인터 마이애미CF",
-     "win": 2.3,
-     "draw": 3.5,
-     "lose": 2.26,
+     "win": 2.35,
+     "draw": 3.55,
+     "lose": 2.2,
      "status": "2",
      "score": null,
      "betType": "승무패",
@@ -365,26 +195,26 @@
       "homeEn": "Columbus Crew SC",
       "awayEn": "Inter Miami CF",
       "consensus": {
-       "win": 2.53,
-       "draw": 3.9,
-       "lose": 2.4
+       "win": 2.38,
+       "draw": 3.98,
+       "lose": 2.5
       },
       "pinnacle": {
-       "win": 2.58,
-       "draw": 4.1,
-       "lose": 2.47
+       "win": 2.67,
+       "draw": 4.29,
+       "lose": 2.36
       },
       "cutConsensus": {
-       "win": 0.0909,
-       "draw": 0.1026,
-       "lose": 0.0583
+       "win": 0.0126,
+       "draw": 0.108,
+       "lose": 0.12
       },
       "cutPinnacle": {
-       "win": 0.1085,
-       "draw": 0.1463,
-       "lose": 0.085
+       "win": 0.1199,
+       "draw": 0.1725,
+       "lose": 0.0678
       },
-      "cutAvg": 0.0839,
+      "cutAvg": 0.0802,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -394,9 +224,9 @@
      "league": "MLS",
      "home": "콜럼버스 크루",
      "away": "인터 마이애미CF",
-     "win": 1.46,
-     "draw": 4.15,
-     "lose": 4.2,
+     "win": 1.5,
+     "draw": 4.05,
+     "lose": 4.0,
      "status": "2",
      "score": null,
      "betType": "일반 정수핸디캡",
@@ -407,16 +237,16 @@
      "league": "MLS",
      "home": "콜럼버스 크루",
      "away": "인터 마이애미CF",
-     "win": 1.64,
+     "win": 1.69,
      "draw": null,
-     "lose": 1.85,
+     "lose": 1.79,
      "status": "2",
      "score": null,
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
-     "over": 1.64,
-     "under": 1.85,
+     "over": 1.69,
+     "under": 1.79,
      "market": {
       "marketType": "totals",
       "marketId": "d4043fc3300abf156c6ace6e58e0cef7",
@@ -427,22 +257,22 @@
       "homeEn": "Columbus Crew SC",
       "awayEn": "Inter Miami CF",
       "consensus": {
-       "over": 1.815,
-       "under": 1.96
+       "over": 1.975,
+       "under": 1.82
       },
       "pinnacle": {
-       "over": 1.85,
-       "under": 2.02
+       "over": 2.0,
+       "under": 1.89
       },
       "cutConsensus": {
-       "over": 0.0964,
-       "under": 0.0561
+       "over": 0.1443,
+       "under": 0.0165
       },
       "cutPinnacle": {
-       "over": 0.1135,
-       "under": 0.0842
+       "over": 0.155,
+       "under": 0.0529
       },
-      "cutAvg": 0.0762,
+      "cutAvg": 0.0804,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -465,9 +295,9 @@
      "league": "NBA",
      "home": "보스턴 셀틱스",
      "away": "애틀랜타 호크스",
-     "win": 1.11,
+     "win": 1.18,
      "draw": null,
-     "lose": 4.02,
+     "lose": 3.31,
      "status": "2",
      "score": null,
      "betType": "일반 승패",
@@ -782,9 +612,9 @@
      "league": "NBA",
      "home": "LA 클리퍼스",
      "away": "뉴올리언스 펠리컨스",
-     "win": 1.46,
+     "win": 1.5,
      "draw": null,
-     "lose": 2.15,
+     "lose": 2.07,
      "status": "2",
      "score": null,
      "betType": "일반 승패",
@@ -907,26 +737,26 @@
       "homeEn": "Real Salt Lake",
       "awayEn": "Vancouver Whitecaps FC",
       "consensus": {
-       "win": 2.72,
-       "draw": 3.68,
-       "lose": 2.38
+       "win": 2.8,
+       "draw": 3.55,
+       "lose": 2.35
       },
       "pinnacle": {
-       "win": 2.73,
-       "draw": 3.72,
-       "lose": 2.43
+       "win": 3.07,
+       "draw": 3.55,
+       "lose": 2.37
       },
       "cutConsensus": {
-       "win": 0.1176,
-       "draw": 0.0082,
-       "lose": 0.1092
+       "win": 0.1429,
+       "draw": -0.0282,
+       "lose": 0.0979
       },
       "cutPinnacle": {
-       "win": 0.1209,
-       "draw": 0.0188,
-       "lose": 0.1276
+       "win": 0.2182,
+       "draw": -0.0282,
+       "lose": 0.1055
       },
-      "cutAvg": 0.0783,
+      "cutAvg": 0.0709,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -963,28 +793,28 @@
       "marketType": "totals",
       "marketId": "72191f41ab50634823aaf7225bc9655d",
       "sportKey": "soccer_usa_mls",
-      "point": 3.5,
+      "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 10,
+      "books": 8,
       "homeEn": "Real Salt Lake",
       "awayEn": "Vancouver Whitecaps FC",
       "consensus": {
-       "over": 2.15,
-       "under": 1.655
+       "over": 1.64,
+       "under": 2.22
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.3209,
-       "under": -0.2991
+       "over": 0.1098,
+       "under": 0.0315
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0109,
+      "cutAvg": 0.0706,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -1227,6 +1057,61 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "J2리그",
+     "home": "RB오미야 아르디자",
+     "away": "FC이마바리",
+     "win": 1.5,
+     "draw": 3.9,
+     "lose": 4.15,
+     "status": "2",
+     "score": null,
+     "betType": "승무패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "J2리그",
+     "home": "RB오미야 아르디자",
+     "away": "FC이마바리",
+     "win": 2.4,
+     "draw": 3.45,
+     "lose": 2.19,
+     "status": "2",
+     "score": null,
+     "betType": "일반 정수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "J2리그",
+     "home": "RB오미야 아르디자",
+     "away": "FC이마바리",
+     "win": 1.49,
+     "draw": null,
+     "lose": 2.09,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.49,
+     "under": 2.09
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "J2리그",
+     "home": "RB오미야 아르디자",
+     "away": "FC이마바리",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
      "status": "2",
      "score": null,
      "betType": "일반 홀짝",
@@ -1557,6 +1442,129 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "WKBL",
+     "home": "BNK 썸",
+     "away": "KB 스타즈",
+     "win": 1.88,
+     "draw": null,
+     "lose": 1.62,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "WKBL",
+     "home": "BNK 썸",
+     "away": "KB 스타즈",
+     "win": 2.95,
+     "draw": 2.5,
+     "lose": 2.36,
+     "status": "2",
+     "score": null,
+     "betType": "승N패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "WKBL",
+     "home": "BNK 썸",
+     "away": "KB 스타즈",
+     "win": 1.75,
+     "draw": null,
+     "lose": 1.73,
+     "status": "2",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "WKBL",
+     "home": "BNK 썸",
+     "away": "KB 스타즈",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.74,
+     "under": 1.74
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "WKBL",
+     "home": "BNK 썸",
+     "away": "KB 스타즈",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "KOVO남",
+     "home": "OK저축은행 읏맨",
+     "away": "한국전력 빅스톰",
+     "win": 2.0,
+     "draw": null,
+     "lose": 1.54,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "KOVO남",
+     "home": "OK저축은행 읏맨",
+     "away": "한국전력 빅스톰",
+     "win": 1.46,
+     "draw": null,
+     "lose": 2.15,
+     "status": "2",
+     "score": null,
+     "betType": "일반 세트핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "KOVO남",
+     "home": "OK저축은행 읏맨",
+     "away": "한국전력 빅스톰",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.74,
+     "under": 1.74
+    },
+    {
+     "kickoff": "2026-11-28T14:00:00+09:00",
+     "league": "KOVO남",
+     "home": "OK저축은행 읏맨",
+     "away": "한국전력 빅스톰",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
      "status": "2",
      "score": null,
      "betType": "일반 홀짝",
@@ -1908,6 +1916,129 @@
      "marketType": "h2h"
     },
     {
+     "kickoff": "2026-11-28T16:00:00+09:00",
+     "league": "WKBL",
+     "home": "우리은행 우리WON",
+     "away": "하나은행",
+     "win": 1.34,
+     "draw": null,
+     "lose": 2.48,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T16:00:00+09:00",
+     "league": "WKBL",
+     "home": "우리은행 우리WON",
+     "away": "하나은행",
+     "win": 1.85,
+     "draw": 2.55,
+     "lose": 4.35,
+     "status": "2",
+     "score": null,
+     "betType": "승N패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T16:00:00+09:00",
+     "league": "WKBL",
+     "home": "우리은행 우리WON",
+     "away": "하나은행",
+     "win": 1.73,
+     "draw": null,
+     "lose": 1.75,
+     "status": "2",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T16:00:00+09:00",
+     "league": "WKBL",
+     "home": "우리은행 우리WON",
+     "away": "하나은행",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.74,
+     "under": 1.74
+    },
+    {
+     "kickoff": "2026-11-28T16:00:00+09:00",
+     "league": "WKBL",
+     "home": "우리은행 우리WON",
+     "away": "하나은행",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T16:00:00+09:00",
+     "league": "KOVO여",
+     "home": "정관장 레드스파크스",
+     "away": "IBK기업은행 알토스",
+     "win": 2.92,
+     "draw": null,
+     "lose": 1.24,
+     "status": "2",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T16:00:00+09:00",
+     "league": "KOVO여",
+     "home": "정관장 레드스파크스",
+     "away": "IBK기업은행 알토스",
+     "win": 1.95,
+     "draw": null,
+     "lose": 1.57,
+     "status": "2",
+     "score": null,
+     "betType": "일반 세트핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T16:00:00+09:00",
+     "league": "KOVO여",
+     "home": "정관장 레드스파크스",
+     "away": "IBK기업은행 알토스",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "2",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.74,
+     "under": 1.74
+    },
+    {
+     "kickoff": "2026-11-28T16:00:00+09:00",
+     "league": "KOVO여",
+     "home": "정관장 레드스파크스",
+     "away": "IBK기업은행 알토스",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "2",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
      "kickoff": "2026-11-28T16:30:00+09:00",
      "league": "K리그1",
      "home": "포항 스틸러스",
@@ -1927,26 +2058,26 @@
       "homeEn": "Pohang Steelers",
       "awayEn": "Gwangju FC",
       "consensus": {
-       "win": 1.92,
-       "draw": 3.3,
-       "lose": 3.695
+       "win": 1.885,
+       "draw": 3.35,
+       "lose": 3.845
       },
       "pinnacle": {
-       "win": 1.94,
-       "draw": 3.76,
-       "lose": 3.87
+       "win": 1.91,
+       "draw": 3.87,
+       "lose": 4.0
       },
       "cutConsensus": {
-       "win": 0.0573,
-       "draw": 0.0,
-       "lose": 0.1204
+       "win": 0.0398,
+       "draw": 0.0149,
+       "lose": 0.1547
       },
       "cutPinnacle": {
-       "win": 0.067,
-       "draw": 0.1223,
-       "lose": 0.1602
+       "win": 0.0524,
+       "draw": 0.1473,
+       "lose": 0.1875
       },
-      "cutAvg": 0.0592,
+      "cutAvg": 0.0698,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2002,22 +2133,22 @@
       "homeEn": "Pohang Steelers",
       "awayEn": "Gwangju FC",
       "consensus": {
-       "over": 1.9,
-       "under": 1.85
+       "over": 1.91,
+       "under": 1.86
       },
       "pinnacle": {
        "over": 1.95,
-       "under": 1.92
+       "under": 1.93
       },
       "cutConsensus": {
-       "over": 0.0789,
-       "under": 0.0649
+       "over": 0.0838,
+       "under": 0.0699
       },
       "cutPinnacle": {
        "over": 0.1026,
-       "under": 0.099
+       "under": 0.1036
       },
-      "cutAvg": 0.0719,
+      "cutAvg": 0.0769,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2055,26 +2186,26 @@
       "homeEn": "Pohang Steelers",
       "awayEn": "Gwangju FC",
       "consensus": {
-       "win": 1.92,
-       "draw": 3.3,
-       "lose": 3.695
+       "win": 1.885,
+       "draw": 3.35,
+       "lose": 3.845
       },
       "pinnacle": {
-       "win": 1.94,
-       "draw": 3.76,
-       "lose": 3.87
+       "win": 1.91,
+       "draw": 3.87,
+       "lose": 4.0
       },
       "cutConsensus": {
-       "win": -0.25,
-       "draw": 0.3939,
-       "lose": -0.0961
+       "win": -0.2732,
+       "draw": 0.403,
+       "lose": -0.0533
       },
       "cutPinnacle": {
-       "win": -0.2371,
-       "draw": 0.4681,
-       "lose": -0.0465
+       "win": -0.2565,
+       "draw": 0.4832,
+       "lose": -0.0125
       },
-      "cutAvg": 0.0159,
+      "cutAvg": 0.0255,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2117,22 +2248,22 @@
       "homeEn": "Pohang Steelers",
       "awayEn": "Gwangju FC",
       "consensus": {
-       "over": 1.9,
-       "under": 1.85
+       "over": 1.91,
+       "under": 1.86
       },
       "pinnacle": {
        "over": 1.95,
-       "under": 1.92
+       "under": 1.93
       },
       "cutConsensus": {
-       "over": 0.2842,
-       "under": -0.3027
+       "over": 0.288,
+       "under": -0.2957
       },
       "cutPinnacle": {
        "over": 0.3026,
-       "under": -0.2552
+       "under": -0.2487
       },
-      "cutAvg": -0.0093,
+      "cutAvg": -0.0039,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2157,26 +2288,26 @@
       "homeEn": "Bucheon FC 1995",
       "awayEn": "Sangju Sangmu FC",
       "consensus": {
-       "win": 2.775,
+       "win": 2.8,
        "draw": 3.2,
-       "lose": 2.33
+       "lose": 2.325
       },
       "pinnacle": {
-       "win": 2.89,
-       "draw": 3.51,
-       "lose": 2.47
+       "win": 2.96,
+       "draw": 3.57,
+       "lose": 2.43
       },
       "cutConsensus": {
-       "win": 0.0631,
+       "win": 0.0714,
        "draw": -0.0156,
-       "lose": 0.0858
+       "lose": 0.0839
       },
       "cutPinnacle": {
-       "win": 0.1003,
-       "draw": 0.0741,
-       "lose": 0.1377
+       "win": 0.1216,
+       "draw": 0.0896,
+       "lose": 0.1235
       },
-      "cutAvg": 0.0444,
+      "cutAvg": 0.0466,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2236,16 +2367,16 @@
        "under": 1.92
       },
       "pinnacle": {
-       "over": 1.85,
-       "under": 2.02
+       "over": 1.86,
+       "under": 2.04
       },
       "cutConsensus": {
        "over": 0.0164,
        "under": 0.125
       },
       "cutPinnacle": {
-       "over": 0.027,
-       "under": 0.1683
+       "over": 0.0323,
+       "under": 0.1765
       },
       "cutAvg": 0.0707,
       "timeDiffSec": 0,
@@ -2285,26 +2416,26 @@
       "homeEn": "Bucheon FC 1995",
       "awayEn": "Sangju Sangmu FC",
       "consensus": {
-       "win": 2.775,
+       "win": 2.8,
        "draw": 3.2,
-       "lose": 2.33
+       "lose": 2.325
       },
       "pinnacle": {
-       "win": 2.89,
-       "draw": 3.51,
-       "lose": 2.47
+       "win": 2.96,
+       "draw": 3.57,
+       "lose": 2.43
       },
       "cutConsensus": {
-       "win": -0.1712,
+       "win": -0.1607,
        "draw": 0.3719,
-       "lose": -0.2017
+       "lose": -0.2043
       },
       "cutPinnacle": {
-       "win": -0.1246,
-       "draw": 0.4274,
-       "lose": -0.1336
+       "win": -0.098,
+       "draw": 0.437,
+       "lose": -0.1523
       },
-      "cutAvg": -0.0003,
+      "cutAvg": 0.0023,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2351,16 +2482,16 @@
        "under": 1.92
       },
       "pinnacle": {
-       "over": 1.85,
-       "under": 2.02
+       "over": 1.86,
+       "under": 2.04
       },
       "cutConsensus": {
        "over": 0.2459,
        "under": -0.224
       },
       "cutPinnacle": {
-       "over": 0.2541,
-       "under": -0.1634
+       "over": 0.2581,
+       "under": -0.152
       },
       "cutAvg": 0.011,
       "timeDiffSec": 0,
@@ -2442,26 +2573,26 @@
       "homeEn": "Blackburn Rovers",
       "awayEn": "Charlton Athletic",
       "consensus": {
-       "win": 1.975,
+       "win": 1.965,
        "draw": 3.455,
        "lose": 3.665
       },
       "pinnacle": {
-       "win": 2.0,
-       "draw": 3.67,
-       "lose": 3.77
+       "win": 2.02,
+       "draw": 3.65,
+       "lose": 3.74
       },
       "cutConsensus": {
-       "win": 0.0481,
+       "win": 0.0433,
        "draw": 0.0593,
        "lose": 0.1542
       },
       "cutPinnacle": {
-       "win": 0.06,
-       "draw": 0.1144,
-       "lose": 0.1777
+       "win": 0.0693,
+       "draw": 0.1096,
+       "lose": 0.1711
       },
-      "cutAvg": 0.0872,
+      "cutAvg": 0.0856,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2558,25 +2689,25 @@
       "awayEn": "Wolverhampton Wanderers",
       "consensus": {
        "win": 5.695,
-       "draw": 4.025,
+       "draw": 4.0,
        "lose": 1.55
       },
       "pinnacle": {
-       "win": 6.04,
-       "draw": 4.21,
-       "lose": 1.57
+       "win": 6.0,
+       "draw": 4.14,
+       "lose": 1.58
       },
       "cutConsensus": {
        "win": 0.1747,
-       "draw": 0.0807,
+       "draw": 0.075,
        "lose": 0.0516
       },
       "cutPinnacle": {
-       "win": 0.2219,
-       "draw": 0.1211,
-       "lose": 0.0637
+       "win": 0.2167,
+       "draw": 0.1063,
+       "lose": 0.0696
       },
-      "cutAvg": 0.1023,
+      "cutAvg": 0.1004,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2620,21 +2751,21 @@
       "awayEn": "Wolverhampton Wanderers",
       "consensus": {
        "over": 1.795,
-       "under": 1.97
+       "under": 1.94
       },
       "pinnacle": {
-       "over": 1.89,
-       "under": 1.98
+       "over": 1.92,
+       "under": 1.95
       },
       "cutConsensus": {
        "over": -0.0251,
-       "under": 0.1624
+       "under": 0.1495
       },
       "cutPinnacle": {
-       "over": 0.0265,
-       "under": 0.1667
+       "over": 0.0417,
+       "under": 0.1538
       },
-      "cutAvg": 0.0686,
+      "cutAvg": 0.0622,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2672,26 +2803,26 @@
       "homeEn": "Preston North End",
       "awayEn": "Norwich City",
       "consensus": {
-       "win": 4.375,
-       "draw": 3.975,
-       "lose": 1.7
+       "win": 4.255,
+       "draw": 3.9,
+       "lose": 1.72
       },
       "pinnacle": {
-       "win": 4.69,
-       "draw": 4.22,
-       "lose": 1.7
+       "win": 4.24,
+       "draw": 3.96,
+       "lose": 1.82
       },
       "cutConsensus": {
-       "win": 0.1314,
-       "draw": 0.044,
-       "lose": 0.0765
+       "win": 0.1069,
+       "draw": 0.0256,
+       "lose": 0.0872
       },
       "cutPinnacle": {
-       "win": 0.1898,
-       "draw": 0.0995,
-       "lose": 0.0765
+       "win": 0.1038,
+       "draw": 0.0404,
+       "lose": 0.1374
       },
-      "cutAvg": 0.084,
+      "cutAvg": 0.0732,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2789,24 +2920,24 @@
       "consensus": {
        "win": 1.58,
        "draw": 4.3,
-       "lose": 5.28
+       "lose": 5.25
       },
       "pinnacle": {
-       "win": 1.62,
-       "draw": 4.38,
-       "lose": 5.28
+       "win": 1.63,
+       "draw": 4.35,
+       "lose": 5.22
       },
       "cutConsensus": {
        "win": 0.0633,
        "draw": 0.0814,
-       "lose": 0.1856
+       "lose": 0.181
       },
       "cutPinnacle": {
-       "win": 0.0864,
-       "draw": 0.0982,
-       "lose": 0.1856
+       "win": 0.092,
+       "draw": 0.092,
+       "lose": 0.1762
       },
-      "cutAvg": 0.1101,
+      "cutAvg": 0.1086,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -2849,22 +2980,22 @@
       "homeEn": "Real Betis",
       "awayEn": "Rayo Vallecano",
       "consensus": {
-       "over": 1.545,
-       "under": 2.435
+       "over": 1.55,
+       "under": 2.43
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.0421,
-       "under": 0.1335
+       "over": 0.0452,
+       "under": 0.1317
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0878,
+      "cutAvg": 0.0885,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3268,26 +3399,26 @@
       "homeEn": "Birmingham City",
       "awayEn": "Bolton Wanderers",
       "consensus": {
-       "win": 1.49,
+       "win": 1.47,
        "draw": 4.5,
-       "lose": 5.835
+       "lose": 5.96
       },
       "pinnacle": {
-       "win": 1.49,
-       "draw": 4.79,
-       "lose": 6.18
+       "win": 1.48,
+       "draw": 4.86,
+       "lose": 6.3
       },
       "cutConsensus": {
-       "win": 0.0336,
+       "win": 0.0204,
        "draw": 0.1222,
-       "lose": 0.2031
+       "lose": 0.2198
       },
       "cutPinnacle": {
-       "win": 0.0336,
-       "draw": 0.1754,
-       "lose": 0.2476
+       "win": 0.027,
+       "draw": 0.1872,
+       "lose": 0.2619
       },
-      "cutAvg": 0.1196,
+      "cutAvg": 0.1208,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3356,7 +3487,7 @@
       "homeEn": "Birmingham City",
       "awayEn": "Bolton Wanderers",
       "consensus": {
-       "over": 1.56,
+       "over": 1.55,
        "under": 2.3
       },
       "pinnacle": {
@@ -3364,14 +3495,14 @@
        "under": null
       },
       "cutConsensus": {
-       "over": 0.0641,
+       "over": 0.0581,
        "under": 0.0652
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0646,
+      "cutAvg": 0.0616,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3410,25 +3541,25 @@
       "awayEn": "Watford",
       "consensus": {
        "win": 2.2,
-       "draw": 3.3,
+       "draw": 3.31,
        "lose": 3.2
       },
       "pinnacle": {
-       "win": 2.28,
-       "draw": 3.42,
+       "win": 2.3,
+       "draw": 3.39,
        "lose": 3.28
       },
       "cutConsensus": {
        "win": 0.0818,
-       "draw": 0.0455,
+       "draw": 0.0483,
        "lose": 0.1094
       },
       "cutPinnacle": {
-       "win": 0.114,
-       "draw": 0.0789,
+       "win": 0.1217,
+       "draw": 0.0708,
        "lose": 0.1311
       },
-      "cutAvg": 0.0789,
+      "cutAvg": 0.0798,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3476,7 +3607,7 @@
       },
       "pinnacle": {
        "over": 2.0,
-       "under": 1.88
+       "under": 1.87
       },
       "cutConsensus": {
        "over": 0.1302,
@@ -3484,7 +3615,7 @@
       },
       "cutPinnacle": {
        "over": 0.165,
-       "under": 0.0319
+       "under": 0.0267
       },
       "cutAvg": 0.0679,
       "timeDiffSec": 0,
@@ -3529,9 +3660,9 @@
        "lose": 3.2
       },
       "pinnacle": {
-       "win": 2.2,
-       "draw": 3.69,
-       "lose": 3.2
+       "win": 2.16,
+       "draw": 3.71,
+       "lose": 3.29
       },
       "cutConsensus": {
        "win": 0.081,
@@ -3539,9 +3670,9 @@
        "lose": 0.1094
       },
       "cutPinnacle": {
-       "win": 0.1227,
-       "draw": 0.0786,
-       "lose": 0.1094
+       "win": 0.1065,
+       "draw": 0.0836,
+       "lose": 0.1337
       },
       "cutAvg": 0.073,
       "timeDiffSec": 0,
@@ -3639,26 +3770,26 @@
       "homeEn": "Queens Park Rangers",
       "awayEn": "Sheffield United",
       "consensus": {
-       "win": 2.0,
+       "win": 1.98,
        "draw": 3.525,
-       "lose": 3.5
+       "lose": 3.455
       },
       "pinnacle": {
-       "win": 2.02,
-       "draw": 3.66,
-       "lose": 3.72
+       "win": 1.98,
+       "draw": 3.71,
+       "lose": 3.81
       },
       "cutConsensus": {
-       "win": 0.075,
+       "win": 0.0657,
        "draw": 0.0496,
-       "lose": 0.1143
+       "lose": 0.1027
       },
       "cutPinnacle": {
-       "win": 0.0842,
-       "draw": 0.0847,
-       "lose": 0.1667
+       "win": 0.0657,
+       "draw": 0.097,
+       "lose": 0.1864
       },
-      "cutAvg": 0.0796,
+      "cutAvg": 0.0727,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3705,16 +3836,16 @@
        "under": 1.99
       },
       "pinnacle": {
-       "over": 1.86,
-       "under": 2.01
+       "over": 1.85,
+       "under": 2.02
       },
       "cutConsensus": {
        "over": -0.0625,
        "under": 0.1809
       },
       "cutPinnacle": {
-       "over": -0.0054,
-       "under": 0.1891
+       "over": -0.0108,
+       "under": 0.1931
       },
       "cutAvg": 0.0592,
       "timeDiffSec": 0,
@@ -3754,26 +3885,26 @@
       "homeEn": "West Bromwich Albion",
       "awayEn": "Bristol City",
       "consensus": {
-       "win": 1.68,
+       "win": 1.685,
        "draw": 3.75,
-       "lose": 4.8
+       "lose": 4.735
       },
       "pinnacle": {
-       "win": 1.73,
+       "win": 1.72,
        "draw": 3.85,
        "lose": 4.97
       },
       "cutConsensus": {
-       "win": 0.0536,
+       "win": 0.0564,
        "draw": 0.08,
-       "lose": 0.1458
+       "lose": 0.1341
       },
       "cutPinnacle": {
-       "win": 0.0809,
+       "win": 0.0756,
        "draw": 0.1039,
        "lose": 0.1751
       },
-      "cutAvg": 0.0931,
+      "cutAvg": 0.0902,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3869,26 +4000,26 @@
       "homeEn": "West Ham United",
       "awayEn": "Stoke City",
       "consensus": {
-       "win": 1.645,
-       "draw": 4.025,
-       "lose": 4.675
+       "win": 1.63,
+       "draw": 4.125,
+       "lose": 4.745
       },
       "pinnacle": {
-       "win": 1.68,
-       "draw": 4.41,
-       "lose": 4.62
+       "win": 1.66,
+       "draw": 4.38,
+       "lose": 4.79
       },
       "cutConsensus": {
-       "win": 0.0638,
-       "draw": 0.0683,
-       "lose": 0.1337
+       "win": 0.0552,
+       "draw": 0.0909,
+       "lose": 0.1465
       },
       "cutPinnacle": {
-       "win": 0.0833,
-       "draw": 0.1497,
-       "lose": 0.1234
+       "win": 0.0723,
+       "draw": 0.1438,
+       "lose": 0.1545
       },
-      "cutAvg": 0.0886,
+      "cutAvg": 0.0975,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3931,22 +4062,22 @@
       "homeEn": "West Ham United",
       "awayEn": "Stoke City",
       "consensus": {
-       "over": 1.68,
-       "under": 2.1
+       "over": 1.7,
+       "under": 2.05
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": -0.2321,
-       "under": 0.2857
+       "over": -0.2176,
+       "under": 0.2683
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0268,
+      "cutAvg": 0.0253,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -3984,26 +4115,26 @@
       "homeEn": "Wrexham AFC",
       "awayEn": "Portsmouth",
       "consensus": {
-       "win": 2.17,
-       "draw": 3.17,
+       "win": 2.175,
+       "draw": 3.15,
        "lose": 3.4
       },
       "pinnacle": {
-       "win": 2.23,
+       "win": 2.24,
        "draw": 3.27,
-       "lose": 3.54
+       "lose": 3.53
       },
       "cutConsensus": {
-       "win": 0.1106,
-       "draw": 0.0379,
+       "win": 0.1126,
+       "draw": 0.0317,
        "lose": 0.0735
       },
       "cutPinnacle": {
-       "win": 0.1345,
+       "win": 0.1384,
        "draw": 0.0673,
-       "lose": 0.1102
+       "lose": 0.1076
       },
-      "cutAvg": 0.074,
+      "cutAvg": 0.0726,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4236,25 +4367,25 @@
       "awayEn": "Athletic Bilbao",
       "consensus": {
        "win": 4.9,
-       "draw": 3.8,
-       "lose": 1.73
+       "draw": 3.85,
+       "lose": 1.72
       },
       "pinnacle": {
-       "win": 4.92,
-       "draw": 3.91,
+       "win": 4.94,
+       "draw": 3.93,
        "lose": 1.74
       },
       "cutConsensus": {
        "win": 0.1531,
-       "draw": 0.0658,
-       "lose": 0.0983
+       "draw": 0.0779,
+       "lose": 0.093
       },
       "cutPinnacle": {
-       "win": 0.1565,
-       "draw": 0.0921,
+       "win": 0.1599,
+       "draw": 0.0967,
        "lose": 0.1034
       },
-      "cutAvg": 0.1057,
+      "cutAvg": 0.108,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4297,22 +4428,22 @@
       "homeEn": "Málaga",
       "awayEn": "Athletic Bilbao",
       "consensus": {
-       "over": 1.86,
-       "under": 1.96
+       "over": 1.85,
+       "under": 1.99
       },
       "pinnacle": {
-       "over": 1.88,
-       "under": 2.01
+       "over": 1.87,
+       "under": 2.02
       },
       "cutConsensus": {
-       "over": 0.0215,
-       "under": 0.148
+       "over": 0.0162,
+       "under": 0.1608
       },
       "cutPinnacle": {
-       "over": 0.0319,
-       "under": 0.1692
+       "over": 0.0267,
+       "under": 0.1733
       },
-      "cutAvg": 0.0847,
+      "cutAvg": 0.0885,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4352,24 +4483,24 @@
       "consensus": {
        "win": 2.0,
        "draw": 3.5,
-       "lose": 3.51
+       "lose": 3.535
       },
       "pinnacle": {
-       "win": 2.06,
-       "draw": 3.65,
+       "win": 2.05,
+       "draw": 3.68,
        "lose": 3.6
       },
       "cutConsensus": {
        "win": 0.1,
        "draw": 0.0,
-       "lose": 0.1168
+       "lose": 0.1231
       },
       "cutPinnacle": {
-       "win": 0.1262,
-       "draw": 0.0411,
+       "win": 0.122,
+       "draw": 0.0489,
        "lose": 0.1389
       },
-      "cutAvg": 0.0723,
+      "cutAvg": 0.0744,
       "timeDiffSec": 0,
       "matchedBy": "time"
      }
@@ -4644,25 +4775,25 @@
       "awayEn": "Chicago Fire",
       "consensus": {
        "win": 2.63,
-       "draw": 3.75,
-       "lose": 2.38
+       "draw": 3.76,
+       "lose": 2.39
       },
       "pinnacle": {
-       "win": 2.68,
-       "draw": 3.78,
-       "lose": 2.44
+       "win": 2.71,
+       "draw": 3.83,
+       "lose": 2.47
       },
       "cutConsensus": {
        "win": 0.1255,
-       "draw": -0.0133,
-       "lose": 0.0966
+       "draw": -0.0106,
+       "lose": 0.1004
       },
       "cutPinnacle": {
-       "win": 0.1418,
-       "draw": -0.0053,
-       "lose": 0.1189
+       "win": 0.1513,
+       "draw": 0.0078,
+       "lose": 0.1296
       },
-      "cutAvg": 0.0696,
+      "cutAvg": 0.0718,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4705,22 +4836,22 @@
       "homeEn": "Charlotte FC",
       "awayEn": "Chicago Fire",
       "consensus": {
-       "over": 1.905,
+       "over": 1.91,
        "under": 1.865
       },
       "pinnacle": {
-       "over": 1.94,
-       "under": 1.89
+       "over": 1.96,
+       "under": 1.91
       },
       "cutConsensus": {
-       "over": 0.0814,
+       "over": 0.0838,
        "under": 0.0724
       },
       "cutPinnacle": {
-       "over": 0.0979,
-       "under": 0.0847
+       "over": 0.1071,
+       "under": 0.0942
       },
-      "cutAvg": 0.0769,
+      "cutAvg": 0.0781,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4758,26 +4889,26 @@
       "homeEn": "Elche CF",
       "awayEn": "Atlético Madrid",
       "consensus": {
-       "win": 6.495,
-       "draw": 4.7,
+       "win": 6.5,
+       "draw": 4.725,
        "lose": 1.45
       },
       "pinnacle": {
-       "win": 6.49,
-       "draw": 4.81,
-       "lose": 1.49
+       "win": 6.74,
+       "draw": 4.79,
+       "lose": 1.48
       },
       "cutConsensus": {
-       "win": 0.184,
-       "draw": 0.1064,
+       "win": 0.1846,
+       "draw": 0.1111,
        "lose": 0.0621
       },
       "cutPinnacle": {
-       "win": 0.1834,
-       "draw": 0.1268,
-       "lose": 0.0872
+       "win": 0.2136,
+       "draw": 0.1232,
+       "lose": 0.0811
       },
-      "cutAvg": 0.1175,
+      "cutAvg": 0.1193,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4820,22 +4951,22 @@
       "homeEn": "Elche CF",
       "awayEn": "Atlético Madrid",
       "consensus": {
-       "over": 1.565,
-       "under": 2.41
+       "over": 1.58,
+       "under": 2.37
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.0607,
-       "under": 0.1162
+       "over": 0.0696,
+       "under": 0.1013
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0885,
+      "cutAvg": 0.0854,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -4937,30 +5068,30 @@
       "marketType": "h2h",
       "marketId": "8031222f3f3e8384a69c0ca5e1166458",
       "sportKey": "soccer_netherlands_eredivisie",
-      "books": 21,
+      "books": 22,
       "homeEn": "PSV Eindhoven",
       "awayEn": "Go Ahead Eagles",
       "consensus": {
-       "win": 1.21,
-       "draw": 7.24,
-       "lose": 9.5
+       "win": 1.205,
+       "draw": 7.455,
+       "lose": 10.01
       },
       "pinnacle": {
        "win": 1.22,
-       "draw": 7.52,
-       "lose": 9.32
+       "draw": 7.98,
+       "lose": 10.02
       },
       "cutConsensus": {
-       "win": 0.0579,
-       "draw": 0.1436,
-       "lose": 0.1579
+       "win": 0.0539,
+       "draw": 0.1683,
+       "lose": 0.2008
       },
       "cutPinnacle": {
        "win": 0.0656,
-       "draw": 0.1755,
-       "lose": 0.1416
+       "draw": 0.2231,
+       "lose": 0.2016
       },
-      "cutAvg": 0.1198,
+      "cutAvg": 0.141,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -5025,26 +5156,26 @@
       "sportKey": "soccer_netherlands_eredivisie",
       "point": 4.5,
       "betmanPoint": 9.0,
-      "books": 8,
+      "books": 10,
       "homeEn": "PSV Eindhoven",
       "awayEn": "Go Ahead Eagles",
       "consensus": {
-       "over": 2.1,
-       "under": 1.67
+       "over": 2.085,
+       "under": 1.7
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.2476,
-       "under": -0.1617
+       "over": 0.2422,
+       "under": -0.1412
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0429,
+      "cutAvg": 0.0505,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -5082,26 +5213,26 @@
       "homeEn": "Houston Dynamo",
       "awayEn": "San Jose Earthquakes",
       "consensus": {
-       "win": 1.96,
+       "win": 2.0,
        "draw": 3.68,
        "lose": 3.45
       },
       "pinnacle": {
-       "win": 2.0,
-       "draw": 3.76,
-       "lose": 3.53
+       "win": 2.03,
+       "draw": 3.75,
+       "lose": 3.59
       },
       "cutConsensus": {
-       "win": 0.0306,
+       "win": 0.05,
        "draw": 0.0489,
        "lose": 0.1739
       },
       "cutPinnacle": {
-       "win": 0.05,
-       "draw": 0.0691,
-       "lose": 0.1926
+       "win": 0.064,
+       "draw": 0.0667,
+       "lose": 0.2061
       },
-      "cutAvg": 0.0845,
+      "cutAvg": 0.0909,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -5145,7 +5276,7 @@
       "awayEn": "San Jose Earthquakes",
       "consensus": {
        "over": 1.57,
-       "under": 2.3
+       "under": 2.28
       },
       "pinnacle": {
        "over": null,
@@ -5153,13 +5284,13 @@
       },
       "cutConsensus": {
        "over": -0.3439,
-       "under": 0.3565
+       "under": 0.3509
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0063,
+      "cutAvg": 0.0035,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -5524,26 +5655,26 @@
       "homeEn": "Real Madrid",
       "awayEn": "Alavés",
       "consensus": {
-       "win": 1.12,
-       "draw": 9.7,
+       "win": 1.11,
+       "draw": 9.5,
        "lose": 17.0
       },
       "pinnacle": {
        "win": 1.12,
-       "draw": 11.03,
-       "lose": 20.68
+       "draw": 10.94,
+       "lose": 20.54
       },
       "cutConsensus": {
-       "win": 0.0625,
-       "draw": 0.2577,
+       "win": 0.0541,
+       "draw": 0.2421,
        "lose": 0.1765
       },
       "cutPinnacle": {
        "win": 0.0625,
-       "draw": 0.3472,
-       "lose": 0.323
+       "draw": 0.3419,
+       "lose": 0.3184
       },
-      "cutAvg": 0.1656,
+      "cutAvg": 0.1576,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -5612,22 +5743,22 @@
       "homeEn": "Real Madrid",
       "awayEn": "Alavés",
       "consensus": {
-       "over": 1.81,
+       "over": 1.79,
        "under": 2.02
       },
       "pinnacle": {
-       "over": 1.81,
-       "under": 2.08
+       "over": 1.8,
+       "under": 2.09
       },
       "cutConsensus": {
-       "over": -0.0221,
+       "over": -0.0335,
        "under": 0.1881
       },
       "cutPinnacle": {
-       "over": -0.0221,
-       "under": 0.2115
+       "over": -0.0278,
+       "under": 0.2153
       },
-      "cutAvg": 0.083,
+      "cutAvg": 0.0773,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -5661,30 +5792,30 @@
       "marketType": "h2h",
       "marketId": "708641646f92ec14288beaaf1154e996",
       "sportKey": "soccer_netherlands_eredivisie",
-      "books": 21,
+      "books": 22,
       "homeEn": "SC Cambuur",
       "awayEn": "Sparta Rotterdam",
       "consensus": {
        "win": 2.12,
-       "draw": 3.8,
+       "draw": 3.805,
        "lose": 3.0
       },
       "pinnacle": {
-       "win": 2.11,
-       "draw": 3.96,
-       "lose": 3.11
+       "win": 2.13,
+       "draw": 4.01,
+       "lose": 3.15
       },
       "cutConsensus": {
        "win": 0.0425,
-       "draw": 0.0263,
+       "draw": 0.0276,
        "lose": 0.1667
       },
       "cutPinnacle": {
-       "win": 0.0379,
-       "draw": 0.0657,
-       "lose": 0.1961
+       "win": 0.0469,
+       "draw": 0.0773,
+       "lose": 0.2063
       },
-      "cutAvg": 0.0785,
+      "cutAvg": 0.0789,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -5723,26 +5854,26 @@
       "sportKey": "soccer_netherlands_eredivisie",
       "point": 3.5,
       "betmanPoint": 9.0,
-      "books": 11,
+      "books": 13,
       "homeEn": "SC Cambuur",
       "awayEn": "Sparta Rotterdam",
       "consensus": {
-       "over": 2.0,
-       "under": 1.75
+       "over": 2.02,
+       "under": 1.77
       },
       "pinnacle": {
-       "over": null,
-       "under": null
+       "over": 2.02,
+       "under": 1.86
       },
       "cutConsensus": {
-       "over": 0.17,
-       "under": -0.0457
+       "over": 0.1782,
+       "under": -0.0339
       },
       "cutPinnacle": {
-       "over": null,
-       "under": null
+       "over": 0.1782,
+       "under": 0.0161
       },
-      "cutAvg": 0.0622,
+      "cutAvg": 0.0721,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -5785,9 +5916,9 @@
        "lose": 4.2
       },
       "pinnacle": {
-       "win": 2.03,
-       "draw": 3.0,
-       "lose": 4.38
+       "win": 2.07,
+       "draw": 2.97,
+       "lose": 4.49
       },
       "cutConsensus": {
        "win": 0.05,
@@ -5795,9 +5926,9 @@
        "lose": 0.1667
       },
       "cutPinnacle": {
-       "win": 0.064,
-       "draw": 0.05,
-       "lose": 0.2009
+       "win": 0.0821,
+       "draw": 0.0404,
+       "lose": 0.2205
       },
       "cutAvg": 0.0889,
       "timeDiffSec": 0,
@@ -5891,30 +6022,30 @@
       "marketType": "h2h",
       "marketId": "43752672d246f58267557ef751013fc3",
       "sportKey": "soccer_usa_mls",
-      "books": 22,
+      "books": 23,
       "homeEn": "Philadelphia Union",
       "awayEn": "New England Revolution",
       "consensus": {
        "win": 1.52,
-       "draw": 4.575,
-       "lose": 5.28
+       "draw": 4.55,
+       "lose": 5.29
       },
       "pinnacle": {
-       "win": 1.54,
-       "draw": 4.66,
-       "lose": 5.27
+       "win": 1.56,
+       "draw": 4.7,
+       "lose": 5.29
       },
       "cutConsensus": {
        "win": 0.0461,
-       "draw": 0.1038,
-       "lose": 0.1761
+       "draw": 0.0989,
+       "lose": 0.1777
       },
       "cutPinnacle": {
-       "win": 0.0584,
-       "draw": 0.1202,
-       "lose": 0.1746
+       "win": 0.0705,
+       "draw": 0.1277,
+       "lose": 0.1777
       },
-      "cutAvg": 0.1087,
+      "cutAvg": 0.1076,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -5953,26 +6084,26 @@
       "sportKey": "soccer_usa_mls",
       "point": 3.5,
       "betmanPoint": 9.0,
-      "books": 12,
+      "books": 13,
       "homeEn": "Philadelphia Union",
       "awayEn": "New England Revolution",
       "consensus": {
-       "over": 2.055,
-       "under": 1.73
+       "over": 2.06,
+       "under": 1.72
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.2263,
-       "under": -0.1098
+       "over": 0.2282,
+       "under": -0.1163
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0583,
+      "cutAvg": 0.0559,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -6010,26 +6141,26 @@
       "homeEn": "FC Cincinnati",
       "awayEn": "Nashville SC",
       "consensus": {
-       "win": 3.1,
+       "win": 3.2,
        "draw": 3.75,
-       "lose": 2.08
+       "lose": 2.07
       },
       "pinnacle": {
-       "win": 3.39,
-       "draw": 3.76,
-       "lose": 2.05
+       "win": 3.43,
+       "draw": 3.81,
+       "lose": 2.07
       },
       "cutConsensus": {
-       "win": 0.1452,
+       "win": 0.1719,
        "draw": 0.0133,
-       "lose": 0.0673
+       "lose": 0.0628
       },
       "cutPinnacle": {
-       "win": 0.2183,
-       "draw": 0.016,
-       "lose": 0.0537
+       "win": 0.2274,
+       "draw": 0.0289,
+       "lose": 0.0628
       },
-      "cutAvg": 0.0753,
+      "cutAvg": 0.0827,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -6072,7 +6203,7 @@
       "homeEn": "FC Cincinnati",
       "awayEn": "Nashville SC",
       "consensus": {
-       "over": 2.13,
+       "over": 2.15,
        "under": 1.67
       },
       "pinnacle": {
@@ -6080,14 +6211,14 @@
        "under": null
       },
       "cutConsensus": {
-       "over": 0.2582,
+       "over": 0.2651,
        "under": -0.1617
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0482,
+      "cutAvg": 0.0517,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -6125,26 +6256,26 @@
       "homeEn": "Los Angeles FC",
       "awayEn": "St. Louis City SC",
       "consensus": {
-       "win": 1.65,
-       "draw": 4.2,
-       "lose": 4.5
+       "win": 1.58,
+       "draw": 4.3,
+       "lose": 4.8
       },
       "pinnacle": {
-       "win": 1.67,
-       "draw": 4.28,
-       "lose": 4.59
+       "win": 1.6,
+       "draw": 4.45,
+       "lose": 4.95
       },
       "cutConsensus": {
-       "win": 0.0606,
-       "draw": 0.0833,
-       "lose": 0.1333
+       "win": 0.019,
+       "draw": 0.1047,
+       "lose": 0.1875
       },
       "cutPinnacle": {
-       "win": 0.0719,
-       "draw": 0.1005,
-       "lose": 0.1503
+       "win": 0.0312,
+       "draw": 0.1348,
+       "lose": 0.2121
       },
-      "cutAvg": 0.0924,
+      "cutAvg": 0.1037,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -6200,22 +6331,22 @@
       "homeEn": "Los Angeles FC",
       "awayEn": "St. Louis City SC",
       "consensus": {
-       "over": 2.235,
-       "under": 1.6
+       "over": 2.23,
+       "under": 1.63
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.3289,
-       "under": -0.2937
+       "over": 0.3274,
+       "under": -0.2699
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0176,
+      "cutAvg": 0.0288,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -6249,11 +6380,11 @@
       "marketType": "h2h",
       "marketId": "8eb6c0ad9c8ce02d93e5413dcba1d13a",
       "sportKey": "soccer_usa_mls",
-      "books": 22,
+      "books": 23,
       "homeEn": "Portland Timbers",
       "awayEn": "FC Dallas",
       "consensus": {
-       "win": 2.105,
+       "win": 2.11,
        "draw": 3.85,
        "lose": 3.0
       },
@@ -6263,7 +6394,7 @@
        "lose": 3.02
       },
       "cutConsensus": {
-       "win": 0.0831,
+       "win": 0.0853,
        "draw": 0.026,
        "lose": 0.1167
       },
@@ -6272,7 +6403,7 @@
        "draw": 0.0648,
        "lose": 0.1225
       },
-      "cutAvg": 0.0753,
+      "cutAvg": 0.076,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -6311,7 +6442,7 @@
       "sportKey": "soccer_usa_mls",
       "point": 3.5,
       "betmanPoint": 9.0,
-      "books": 12,
+      "books": 13,
       "homeEn": "Portland Timbers",
       "awayEn": "FC Dallas",
       "consensus": {
@@ -7733,26 +7864,26 @@
       "homeEn": "ADO Den Haag",
       "awayEn": "FC Utrecht",
       "consensus": {
-       "win": 2.65,
+       "win": 2.66,
        "draw": 3.58,
        "lose": 2.4
       },
       "pinnacle": {
-       "win": 2.66,
-       "draw": 3.72,
-       "lose": 2.48
+       "win": 2.71,
+       "draw": 3.73,
+       "lose": 2.44
       },
       "cutConsensus": {
-       "win": 0.0755,
+       "win": 0.0789,
        "draw": 0.0503,
        "lose": 0.0958
       },
       "cutPinnacle": {
-       "win": 0.0789,
-       "draw": 0.086,
-       "lose": 0.125
+       "win": 0.0959,
+       "draw": 0.0885,
+       "lose": 0.1107
       },
-      "cutAvg": 0.0739,
+      "cutAvg": 0.075,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -7791,26 +7922,26 @@
       "sportKey": "soccer_netherlands_eredivisie",
       "point": 2.5,
       "betmanPoint": 9.0,
-      "books": 11,
+      "books": 10,
       "homeEn": "ADO Den Haag",
       "awayEn": "FC Utrecht",
       "consensus": {
-       "over": 1.57,
-       "under": 2.29
+       "over": 1.58,
+       "under": 2.265
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": -0.3185,
-       "under": 0.345
+       "over": -0.3101,
+       "under": 0.3377
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.0132,
+      "cutAvg": 0.0138,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -7903,26 +8034,26 @@
       "homeEn": "Swansea City",
       "awayEn": "Cardiff City",
       "consensus": {
-       "win": 2.035,
-       "draw": 3.72,
-       "lose": 3.18
+       "win": 2.1,
+       "draw": 3.7,
+       "lose": 3.105
       },
       "pinnacle": {
-       "win": 2.09,
-       "draw": 3.94,
-       "lose": 3.16
+       "win": 2.13,
+       "draw": 3.91,
+       "lose": 3.11
       },
       "cutConsensus": {
-       "win": 0.0565,
-       "draw": 0.0323,
-       "lose": 0.1352
+       "win": 0.0857,
+       "draw": 0.027,
+       "lose": 0.1143
       },
       "cutPinnacle": {
-       "win": 0.0813,
-       "draw": 0.0863,
-       "lose": 0.1297
+       "win": 0.0986,
+       "draw": 0.0793,
+       "lose": 0.1158
       },
-      "cutAvg": 0.0747,
+      "cutAvg": 0.0757,
       "timeDiffSec": 0,
       "matchedBy": "time"
      }
@@ -8088,24 +8219,24 @@
       "consensus": {
        "win": 2.15,
        "draw": 3.2,
-       "lose": 3.55
+       "lose": 3.6
       },
       "pinnacle": {
-       "win": 2.2,
+       "win": 2.17,
        "draw": 3.25,
-       "lose": 3.72
+       "lose": 3.8
       },
       "cutConsensus": {
        "win": 0.0744,
        "draw": 0.0469,
-       "lose": 0.1549
+       "lose": 0.1667
       },
       "cutPinnacle": {
-       "win": 0.0955,
+       "win": 0.0829,
        "draw": 0.0615,
-       "lose": 0.1935
+       "lose": 0.2105
       },
-      "cutAvg": 0.0921,
+      "cutAvg": 0.096,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -8201,7 +8332,7 @@
       "homeEn": "Fortuna Sittard",
       "awayEn": "Heerenveen",
       "consensus": {
-       "win": 3.53,
+       "win": 3.55,
        "draw": 3.65,
        "lose": 1.92
       },
@@ -8211,7 +8342,7 @@
        "lose": 1.93
       },
       "cutConsensus": {
-       "win": 0.1218,
+       "win": 0.1268,
        "draw": 0.0137,
        "lose": 0.0729
       },
@@ -8220,7 +8351,7 @@
        "draw": 0.0793,
        "lose": 0.0777
       },
-      "cutAvg": 0.0695,
+      "cutAvg": 0.0711,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -8263,22 +8394,22 @@
       "homeEn": "Fortuna Sittard",
       "awayEn": "Heerenveen",
       "consensus": {
-       "over": 2.32,
-       "under": 1.535
+       "over": 2.325,
+       "under": 1.525
       },
       "pinnacle": {
        "over": null,
        "under": null
       },
       "cutConsensus": {
-       "over": 0.3664,
-       "under": -0.3876
+       "over": 0.3677,
+       "under": -0.3967
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": -0.0106,
+      "cutAvg": -0.0145,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -8318,7 +8449,7 @@
       "consensus": {
        "win": 2.2,
        "draw": 3.85,
-       "lose": 2.8
+       "lose": 2.79
       },
       "pinnacle": {
        "win": 2.23,
@@ -8328,14 +8459,14 @@
       "cutConsensus": {
        "win": 0.1182,
        "draw": 0.013,
-       "lose": 0.0714
+       "lose": 0.0681
       },
       "cutPinnacle": {
        "win": 0.13,
        "draw": 0.0476,
        "lose": 0.0941
       },
-      "cutAvg": 0.0675,
+      "cutAvg": 0.0664,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -8378,22 +8509,22 @@
       "homeEn": "Feyenoord",
       "awayEn": "Ajax",
       "consensus": {
-       "over": 1.94,
-       "under": 1.805
+       "over": 1.93,
+       "under": 1.82
       },
       "pinnacle": {
        "over": 2.0,
        "under": 1.84
       },
       "cutConsensus": {
-       "over": 0.1082,
-       "under": 0.0305
+       "over": 0.1036,
+       "under": 0.0385
       },
       "cutPinnacle": {
        "over": 0.135,
        "under": 0.0489
       },
-      "cutAvg": 0.0693,
+      "cutAvg": 0.0711,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -8881,26 +9012,26 @@
       "homeEn": "Deportivo La Coruña",
       "awayEn": "Barcelona",
       "consensus": {
-       "win": 10.5,
+       "win": 10.0,
        "draw": 7.0,
        "lose": 1.21
       },
       "pinnacle": {
-       "win": 9.89,
-       "draw": 7.39,
-       "lose": 1.2
+       "win": 9.53,
+       "draw": 7.24,
+       "lose": 1.21
       },
       "cutConsensus": {
-       "win": 0.2,
+       "win": 0.16,
        "draw": 0.1429,
        "lose": 0.0579
       },
       "cutPinnacle": {
-       "win": 0.1507,
-       "draw": 0.1881,
-       "lose": 0.05
+       "win": 0.1186,
+       "draw": 0.1713,
+       "lose": 0.0579
       },
-      "cutAvg": 0.1336,
+      "cutAvg": 0.1203,
       "timeDiffSec": 0,
       "matchedBy": "time"
      }
@@ -9085,7 +9216,7 @@
       "awayEn": "AZ Alkmaar",
       "consensus": {
        "over": 2.11,
-       "under": 1.67
+       "under": 1.68
       },
       "pinnacle": {
        "over": null,
@@ -9093,13 +9224,13 @@
       },
       "cutConsensus": {
        "over": 0.2417,
-       "under": -0.1437
+       "under": -0.1369
       },
       "cutPinnacle": {
        "over": null,
        "under": null
       },
-      "cutAvg": 0.049,
+      "cutAvg": 0.0524,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -9471,7 +9602,7 @@
       "homeEn": "Celta Vigo",
       "awayEn": "Villarreal",
       "consensus": {
-       "over": 1.77,
+       "over": 1.78,
        "under": 2.06
       },
       "pinnacle": {
@@ -9479,14 +9610,14 @@
        "under": 2.13
       },
       "cutConsensus": {
-       "over": -0.0621,
+       "over": -0.0562,
        "under": 0.2136
       },
       "cutPinnacle": {
        "over": -0.0503,
        "under": 0.2394
       },
-      "cutAvg": 0.0758,
+      "cutAvg": 0.0787,
       "timeDiffSec": 0,
       "matchedBy": "time"
      }
@@ -9592,7 +9723,7 @@
       "homeEn": "NEC Nijmegen",
       "awayEn": "FC Twente Enschede",
       "consensus": {
-       "win": 3.7,
+       "win": 3.75,
        "draw": 3.9,
        "lose": 1.8
       },
@@ -9602,7 +9733,7 @@
        "lose": 1.82
       },
       "cutConsensus": {
-       "win": 0.1757,
+       "win": 0.1867,
        "draw": 0.0,
        "lose": 0.0389
       },
@@ -9611,7 +9742,7 @@
        "draw": 0.0758,
        "lose": 0.0495
       },
-      "cutAvg": 0.0715,
+      "cutAvg": 0.0752,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -9823,8 +9954,8 @@
       },
       "pinnacle": {
        "win": 2.16,
-       "draw": 3.81,
-       "lose": 3.28
+       "draw": 3.78,
+       "lose": 3.29
       },
       "cutConsensus": {
        "win": 0.0896,
@@ -9833,8 +9964,8 @@
       },
       "cutPinnacle": {
        "win": 0.1065,
-       "draw": 0.1207,
-       "lose": 0.1159
+       "draw": 0.1138,
+       "lose": 0.1185
       },
       "cutAvg": 0.0889,
       "timeDiffSec": 0,
@@ -9879,22 +10010,22 @@
       "homeEn": "Real Sociedad",
       "awayEn": "Sevilla",
       "consensus": {
-       "over": 1.76,
-       "under": 2.05
+       "over": 1.775,
+       "under": 2.04
       },
       "pinnacle": {
        "over": 1.82,
-       "under": 2.09
+       "under": 2.08
       },
       "cutConsensus": {
-       "over": -0.0682,
-       "under": 0.2098
+       "over": -0.0592,
+       "under": 0.2059
       },
       "cutPinnacle": {
        "over": -0.033,
-       "under": 0.2249
+       "under": 0.2212
       },
-      "cutAvg": 0.0708,
+      "cutAvg": 0.0733,
       "timeDiffSec": 0,
       "matchedBy": "name"
      }
@@ -10428,8 +10559,8 @@
      "win": 6.28,
      "draw": null,
      "lose": 1.01,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "73:81",
      "betType": "일반 승패",
      "marketType": "h2h"
     },
@@ -10441,8 +10572,8 @@
      "win": 1.74,
      "draw": null,
      "lose": 1.74,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "87.5:81",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -10454,8 +10585,8 @@
      "win": 1.74,
      "draw": null,
      "lose": 1.74,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "154:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -10470,8 +10601,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "154:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -10483,8 +10614,8 @@
      "win": 2.97,
      "draw": null,
      "lose": 1.23,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "76:78",
      "betType": "일반 승패",
      "marketType": "h2h"
     },
@@ -10496,8 +10627,8 @@
      "win": 1.74,
      "draw": null,
      "lose": 1.74,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "82.5:78",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -10509,8 +10640,8 @@
      "win": 1.73,
      "draw": null,
      "lose": 1.75,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "154:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -10525,8 +10656,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "154:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -10538,8 +10669,8 @@
      "win": 1.52,
      "draw": null,
      "lose": 2.03,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "88:81",
      "betType": "일반 승패",
      "marketType": "h2h"
     },
@@ -10551,8 +10682,8 @@
      "win": 1.73,
      "draw": null,
      "lose": 1.75,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "85.5:81",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -10564,8 +10695,8 @@
      "win": 1.73,
      "draw": null,
      "lose": 1.75,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "169:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -10580,8 +10711,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "169:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -10593,41 +10724,10 @@
      "win": 1.18,
      "draw": 4.95,
      "lose": 8.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:1",
      "betType": "승무패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "7aa2e13c09deb4fbd70e62312e82a514",
-      "sportKey": "soccer_netherlands_eredivisie",
-      "books": 22,
-      "homeEn": "Groningen",
-      "awayEn": "Willem II",
-      "consensus": {
-       "win": 1.25,
-       "draw": 6.085,
-       "lose": 9.8
-      },
-      "pinnacle": {
-       "win": 1.29,
-       "draw": 6.57,
-       "lose": 9.41
-      },
-      "cutConsensus": {
-       "win": 0.056,
-       "draw": 0.1865,
-       "lose": 0.102
-      },
-      "cutPinnacle": {
-       "win": 0.0853,
-       "draw": 0.2466,
-       "lose": 0.0648
-      },
-      "cutAvg": 0.1148,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "marketType": "h2h"
     },
     {
      "kickoff": "2026-11-28T04:00:00+09:00",
@@ -10637,8 +10737,8 @@
      "win": 1.73,
      "draw": 3.35,
      "lose": 3.5,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -10650,8 +10750,8 @@
      "win": 2.6,
      "draw": 3.65,
      "lose": 1.98,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-1:1",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -10663,8 +10763,8 @@
      "win": 4.16,
      "draw": null,
      "lose": 1.1,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "-2.5:1",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -10676,42 +10776,13 @@
      "win": 1.56,
      "draw": null,
      "lose": 1.97,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.56,
-     "under": 1.97,
-     "market": {
-      "marketType": "totals",
-      "marketId": "7aa2e13c09deb4fbd70e62312e82a514",
-      "sportKey": "soccer_netherlands_eredivisie",
-      "point": 3.5,
-      "betmanPoint": 9.0,
-      "books": 11,
-      "homeEn": "Groningen",
-      "awayEn": "Willem II",
-      "consensus": {
-       "over": 2.05,
-       "under": 1.73
-      },
-      "pinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutConsensus": {
-       "over": 0.239,
-       "under": -0.1387
-      },
-      "cutPinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutAvg": 0.0502,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "under": 1.97
     },
     {
      "kickoff": "2026-11-28T04:00:00+09:00",
@@ -10721,8 +10792,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -10734,8 +10805,8 @@
      "win": 1.45,
      "draw": null,
      "lose": 2.18,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "84:90",
      "betType": "일반 승패",
      "marketType": "h2h"
     },
@@ -10747,8 +10818,8 @@
      "win": 1.75,
      "draw": null,
      "lose": 1.73,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "80.5:90",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -10760,8 +10831,8 @@
      "win": 1.76,
      "draw": null,
      "lose": 1.72,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "174:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -10776,8 +10847,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "174:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -10789,8 +10860,8 @@
      "win": 1.28,
      "draw": null,
      "lose": 2.72,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "92:107",
      "betType": "일반 승패",
      "marketType": "h2h"
     },
@@ -10802,8 +10873,8 @@
      "win": 1.73,
      "draw": null,
      "lose": 1.75,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "86.5:107",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -10815,8 +10886,8 @@
      "win": 1.76,
      "draw": null,
      "lose": 1.72,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "199:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -10831,8 +10902,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "199:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -10844,8 +10915,8 @@
      "win": 1.51,
      "draw": 3.95,
      "lose": 4.05,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:3",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -10857,8 +10928,8 @@
      "win": 2.5,
      "draw": 3.4,
      "lose": 2.13,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:3",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -10870,8 +10941,8 @@
      "win": 4.55,
      "draw": 4.3,
      "lose": 1.41,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:3",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -10883,8 +10954,8 @@
      "win": 1.56,
      "draw": null,
      "lose": 1.97,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "6:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -10899,8 +10970,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "6:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -10912,8 +10983,8 @@
      "win": 2.95,
      "draw": 3.2,
      "lose": 1.96,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -10925,8 +10996,8 @@
      "win": 1.58,
      "draw": 3.45,
      "lose": 4.15,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -10938,8 +11009,8 @@
      "win": 1.62,
      "draw": null,
      "lose": 1.88,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -10954,8 +11025,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -10967,8 +11038,8 @@
      "win": 3.0,
      "draw": 3.2,
      "lose": 1.93,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -10980,8 +11051,8 @@
      "win": 1.67,
      "draw": 3.35,
      "lose": 3.75,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -10993,8 +11064,8 @@
      "win": 1.91,
      "draw": null,
      "lose": 1.6,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -11009,8 +11080,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -11022,8 +11093,8 @@
      "win": 1.54,
      "draw": null,
      "lose": 2.0,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "69:80",
      "betType": "일반 승패",
      "marketType": "h2h"
     },
@@ -11035,8 +11106,8 @@
      "win": 1.73,
      "draw": null,
      "lose": 1.75,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "66.5:80",
      "betType": "일반 소수핸디캡",
      "marketType": "h2h"
     },
@@ -11048,8 +11119,8 @@
      "win": 1.75,
      "draw": null,
      "lose": 1.73,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "149:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -11064,8 +11135,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "149:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -11077,41 +11148,10 @@
      "win": 2.7,
      "draw": 3.3,
      "lose": 2.04,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "승무패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "32b8e3ea76d9d8b2b36577063d40862e",
-      "sportKey": "soccer_efl_champ",
-      "books": 22,
-      "homeEn": "Southampton",
-      "awayEn": "Middlesbrough",
-      "consensus": {
-       "win": 3.1,
-       "draw": 3.675,
-       "lose": 2.12
-      },
-      "pinnacle": {
-       "win": 3.22,
-       "draw": 3.78,
-       "lose": 2.19
-      },
-      "cutConsensus": {
-       "win": 0.129,
-       "draw": 0.102,
-       "lose": 0.0377
-      },
-      "cutPinnacle": {
-       "win": 0.1615,
-       "draw": 0.127,
-       "lose": 0.0685
-      },
-      "cutAvg": 0.0896,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "marketType": "h2h"
     },
     {
      "kickoff": "2026-11-28T05:00:00+09:00",
@@ -11121,8 +11161,8 @@
      "win": 1.57,
      "draw": 3.8,
      "lose": 3.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:0",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -11134,42 +11174,13 @@
      "win": 1.46,
      "draw": null,
      "lose": 2.15,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.46,
-     "under": 2.15,
-     "market": {
-      "marketType": "totals",
-      "marketId": "32b8e3ea76d9d8b2b36577063d40862e",
-      "sportKey": "soccer_efl_champ",
-      "point": 3.5,
-      "betmanPoint": 9.0,
-      "books": 9,
-      "homeEn": "Southampton",
-      "awayEn": "Middlesbrough",
-      "consensus": {
-       "over": 2.32,
-       "under": 1.55
-      },
-      "pinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutConsensus": {
-       "over": 0.3707,
-       "under": -0.3871
-      },
-      "cutPinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutAvg": -0.0082,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "under": 2.15
     },
     {
      "kickoff": "2026-11-28T05:00:00+09:00",
@@ -11179,8 +11190,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -11192,8 +11203,8 @@
      "win": 2.33,
      "draw": 3.25,
      "lose": 2.35,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "3:2",
      "betType": "승무패",
      "marketType": "h2h"
     },
@@ -11205,8 +11216,8 @@
      "win": 4.55,
      "draw": 3.75,
      "lose": 1.48,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "2:2",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -11218,8 +11229,8 @@
      "win": 9.0,
      "draw": 6.3,
      "lose": 1.12,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:2",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -11231,8 +11242,8 @@
      "win": 1.91,
      "draw": null,
      "lose": 1.6,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
@@ -11247,8 +11258,8 @@
      "win": 1.81,
      "draw": null,
      "lose": 1.79,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "5:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -11260,41 +11271,10 @@
      "win": 1.92,
      "draw": 3.45,
      "lose": 2.85,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "1:3",
      "betType": "승무패",
-     "marketType": "h2h",
-     "market": {
-      "marketType": "h2h",
-      "marketId": "80c92a163a81b69fef76530221e2edd0",
-      "sportKey": "soccer_spain_la_liga",
-      "books": 21,
-      "homeEn": "Levante",
-      "awayEn": "Real Racing Club de Santander",
-      "consensus": {
-       "win": 1.95,
-       "draw": 3.95,
-       "lose": 3.45
-      },
-      "pinnacle": {
-       "win": 2.0,
-       "draw": 4.09,
-       "lose": 3.57
-      },
-      "cutConsensus": {
-       "win": 0.0154,
-       "draw": 0.1266,
-       "lose": 0.1739
-      },
-      "cutPinnacle": {
-       "win": 0.04,
-       "draw": 0.1565,
-       "lose": 0.2017
-      },
-      "cutAvg": 0.1053,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "marketType": "h2h"
     },
     {
      "kickoff": "2026-11-28T05:00:00+09:00",
@@ -11304,8 +11284,8 @@
      "win": 3.35,
      "draw": 3.55,
      "lose": 1.72,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "0:3",
      "betType": "일반 정수핸디캡",
      "marketType": "h2h"
     },
@@ -11317,42 +11297,13 @@
      "win": 1.57,
      "draw": null,
      "lose": 1.95,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 언더오버",
      "marketType": "totals",
      "totalPoint": 9.0,
      "over": 1.57,
-     "under": 1.95,
-     "market": {
-      "marketType": "totals",
-      "marketId": "80c92a163a81b69fef76530221e2edd0",
-      "sportKey": "soccer_spain_la_liga",
-      "point": 3.5,
-      "betmanPoint": 9.0,
-      "books": 11,
-      "homeEn": "Levante",
-      "awayEn": "Real Racing Club de Santander",
-      "consensus": {
-       "over": 2.07,
-       "under": 1.74
-      },
-      "pinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutConsensus": {
-       "over": 0.2415,
-       "under": -0.1207
-      },
-      "cutPinnacle": {
-       "over": null,
-       "under": null
-      },
-      "cutAvg": 0.0604,
-      "timeDiffSec": 0,
-      "matchedBy": "name"
-     }
+     "under": 1.95
     },
     {
      "kickoff": "2026-11-28T05:00:00+09:00",
@@ -11362,8 +11313,8 @@
      "win": 1.8,
      "draw": null,
      "lose": 1.8,
-     "status": "3",
-     "score": null,
+     "status": "4",
+     "score": "4:0",
      "betType": "일반 홀짝",
      "marketType": "h2h"
     },
@@ -11423,6 +11374,176 @@
      "marketType": "h2h"
     },
     {
+     "kickoff": "2026-11-28T08:10:00+09:00",
+     "league": "남농월예",
+     "home": "브라질_남자",
+     "away": "미국_남자",
+     "win": 1.64,
+     "draw": null,
+     "lose": 1.85,
+     "status": "3",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T08:10:00+09:00",
+     "league": "남농월예",
+     "home": "브라질_남자",
+     "away": "미국_남자",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "3",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T08:10:00+09:00",
+     "league": "남농월예",
+     "home": "브라질_남자",
+     "away": "미국_남자",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.74,
+     "under": 1.74
+    },
+    {
+     "kickoff": "2026-11-28T08:10:00+09:00",
+     "league": "남농월예",
+     "home": "브라질_남자",
+     "away": "미국_남자",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T09:00:00+09:00",
+     "league": "NBA",
+     "home": "뉴욕 닉스",
+     "away": "마이애미 히트",
+     "win": 1.45,
+     "draw": null,
+     "lose": 2.18,
+     "status": "3",
+     "score": null,
+     "betType": "일반 승패",
+     "marketType": "h2h",
+     "market": {
+      "marketType": "h2h",
+      "marketId": "3c522e32c3035d7dc3e1734903b84654",
+      "sportKey": "basketball_nba",
+      "books": 22,
+      "homeEn": "New York Knicks",
+      "awayEn": "Miami Heat",
+      "consensus": {
+       "win": 1.7,
+       "draw": null,
+       "lose": 2.16
+      },
+      "pinnacle": {
+       "win": 1.72,
+       "draw": null,
+       "lose": 2.28
+      },
+      "cutConsensus": {
+       "win": 0.1471,
+       "draw": null,
+       "lose": -0.0093
+      },
+      "cutPinnacle": {
+       "win": 0.157,
+       "draw": null,
+       "lose": 0.0439
+      },
+      "cutAvg": 0.0689,
+      "timeDiffSec": 720,
+      "matchedBy": "time"
+     }
+    },
+    {
+     "kickoff": "2026-11-28T09:00:00+09:00",
+     "league": "NBA",
+     "home": "뉴욕 닉스",
+     "away": "마이애미 히트",
+     "win": 1.74,
+     "draw": null,
+     "lose": 1.74,
+     "status": "3",
+     "score": null,
+     "betType": "일반 소수핸디캡",
+     "marketType": "h2h"
+    },
+    {
+     "kickoff": "2026-11-28T09:00:00+09:00",
+     "league": "NBA",
+     "home": "뉴욕 닉스",
+     "away": "마이애미 히트",
+     "win": 1.75,
+     "draw": null,
+     "lose": 1.73,
+     "status": "3",
+     "score": null,
+     "betType": "일반 언더오버",
+     "marketType": "totals",
+     "totalPoint": 9.0,
+     "over": 1.75,
+     "under": 1.73,
+     "market": {
+      "marketType": "totals",
+      "marketId": "3c522e32c3035d7dc3e1734903b84654",
+      "sportKey": "basketball_nba",
+      "point": 221.5,
+      "betmanPoint": 9.0,
+      "books": 9,
+      "homeEn": "New York Knicks",
+      "awayEn": "Miami Heat",
+      "consensus": {
+       "over": 1.91,
+       "under": 1.9
+      },
+      "pinnacle": {
+       "over": null,
+       "under": null
+      },
+      "cutConsensus": {
+       "over": 0.0838,
+       "under": 0.0895
+      },
+      "cutPinnacle": {
+       "over": null,
+       "under": null
+      },
+      "cutAvg": 0.0867,
+      "timeDiffSec": 720,
+      "matchedBy": "time"
+     }
+    },
+    {
+     "kickoff": "2026-11-28T09:00:00+09:00",
+     "league": "NBA",
+     "home": "뉴욕 닉스",
+     "away": "마이애미 히트",
+     "win": 1.8,
+     "draw": null,
+     "lose": 1.8,
+     "status": "3",
+     "score": null,
+     "betType": "일반 홀짝",
+     "marketType": "h2h"
+    },
+    {
      "kickoff": "2026-11-28T10:10:00+09:00",
      "league": "남농월예",
      "home": "콜롬비아_남자",
@@ -11439,27 +11560,27 @@
   }
  ],
  "marketSource": "the-odds-api.com",
- "marketFetchedAt": "2026-11-28T00:51:06.663100+09:00",
- "marketCreditsRemaining": 692,
+ "marketFetchedAt": "2026-11-28T09:10:49.046477+09:00",
+ "marketCreditsRemaining": 678,
  "marketRefreshIntervalMinutes": 630,
  "marketEstimatedCreditsPerRun": 14,
  "marketActiveLeagues": [
-  "에레디비",
-  "EFL챔",
-  "라리가",
   "NBA",
   "MLS",
   "K리그1",
   "J1리그",
+  "EFL챔",
+  "라리가",
+  "에레디비",
   "코파리베"
  ],
  "marketFetchedLeagues": [
-  "K리그1",
-  "J1리그",
-  "코파리베",
-  "에레디비",
   "EFL챔",
   "라리가",
-  "NBA"
+  "에레디비",
+  "코파리베",
+  "NBA",
+  "MLS",
+  "K리그1"
  ]
 }
